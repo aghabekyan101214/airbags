@@ -18,6 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/exportUsers', 'UnsubscribeController@exportUsers')->name('home');
+Route::post('/unsubscribing', 'UnsubscribeController@index');
 Route::get('/{vue_capture?}', function () {
     return view('home');
 })->where('vue_capture', '[\/\w\.-]*');

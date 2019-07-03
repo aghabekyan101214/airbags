@@ -19,6 +19,26 @@
                     <input type="email" class="form-control" v-model="email">
                 </div>
             </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Vin</label>
+                    <input type="email" class="form-control" v-model="vin">
+                </div>
+            </div>
+            <div>
+                <VueSignaturePad
+                        width="500px"
+                        height="500px"
+                        ref="signaturePad"
+                />
+            </div>
+            <div>
+                <button @click="save">Save</button>
+                <button @click="undo">Undo</button>
+            </div>
+            <div>
+                <input type="submit" class="btn btn-success" @click="unsubscribe()" value="Unsubscribe">
+            </div>
         </div>
     </div>
 </template>
@@ -28,12 +48,35 @@
         data: function() {
             return {
                 firstName: "",
-                lastName: ""
+                lastName: "",
+                email: "",
+                vin: "",
+                signature: ""
             }
 
         },
-        mounted() {
-            console.log('Component mounted.')
+        methods: {
+            unsubscribe() {
+                axios.post('/unsubscribing', {
+                    firstName: this.firstName,
+                    lastName: this.lastName,
+                    email: this.email,
+                    vin: this.vin,
+                    signature: this.signature
+                }).then(function (response) {
+                        console.log(response.data);
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            },
+            undo() {
+                this.$refs.signaturePad.undoSignature();
+            },
+            save() {
+                const { isEmpty, data } = this.$refs.signaturePad.saveSignature();
+                this.signature = data;
+            }
         }
     }
 </script>
