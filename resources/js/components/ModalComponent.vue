@@ -4,6 +4,7 @@
             <div class="model-description">
                 <h3>{{data.name}}</h3>
                 <button  style="position: absolute; right: 0; top: 0; background: white" class="modal-default-button" @click="$emit('close')">
+                    X
                 </button>
                 <span>Vehicles under recall:</span><br>
                 <span v-for="(car, i) in data.makes">{{ car }}<br></span>

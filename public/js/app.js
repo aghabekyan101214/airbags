@@ -1898,6 +1898,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ModalComponent",
   props: ['data', 'android', 'ios'],
@@ -39492,20 +39493,24 @@ var render = function() {
         [
           _c("h3", [_vm._v(_vm._s(_vm.data.name))]),
           _vm._v(" "),
-          _c("button", {
-            staticClass: "modal-default-button",
-            staticStyle: {
-              position: "absolute",
-              right: "0",
-              top: "0",
-              background: "white"
-            },
-            on: {
-              click: function($event) {
-                return _vm.$emit("close")
+          _c(
+            "button",
+            {
+              staticClass: "modal-default-button",
+              staticStyle: {
+                position: "absolute",
+                right: "0",
+                top: "0",
+                background: "white"
+              },
+              on: {
+                click: function($event) {
+                  return _vm.$emit("close")
+                }
               }
-            }
-          }),
+            },
+            [_vm._v("\n                X\n            ")]
+          ),
           _vm._v(" "),
           _c("span", [_vm._v("Vehicles under recall:")]),
           _c("br"),
