@@ -34,7 +34,7 @@
             <a href="#">Takata Airbag Recall 101</a>
         </section>
         <!--info-block end-->
-        <Modal v-if="showModal" @close="showModal = false" :data="carData" :android="android" :ios="ios" />
+        <Modal v-if="showModal" @close="showModal = false" :data="carData" :mobile="mobile" :ios="ios" />
     </div>
 
 </template>
@@ -42,14 +42,14 @@
 <script>
     import cars from "../data/cars";
     import Modal from "./ModalComponent";
-    import {isAndroid, isIOS} from "mobile-device-detect";
+    import {isMobileOnly, isIOS} from "mobile-device-detect";
     export default {
         data: function() {
             return {
                 cars: cars,
                 showModal: false,
                 carData: "",
-                android: isAndroid,
+                mobile: isMobileOnly,
                 ios: isIOS
             }
 

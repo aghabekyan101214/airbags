@@ -1851,7 +1851,7 @@ __webpack_require__.r(__webpack_exports__);
       cars: _data_cars__WEBPACK_IMPORTED_MODULE_0__["default"],
       showModal: false,
       carData: "",
-      android: mobile_device_detect__WEBPACK_IMPORTED_MODULE_2__["isAndroid"],
+      mobile: mobile_device_detect__WEBPACK_IMPORTED_MODULE_2__["isMobileOnly"],
       ios: mobile_device_detect__WEBPACK_IMPORTED_MODULE_2__["isIOS"]
     };
   },
@@ -1900,10 +1900,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ModalComponent",
-  props: ['data', 'android', 'ios'],
+  props: ['data', 'mobile', 'ios'],
   data: function data() {
     return {};
   }
@@ -39370,7 +39369,7 @@ var render = function() {
       _vm._v(" "),
       _vm.showModal
         ? _c("Modal", {
-            attrs: { data: _vm.carData, android: _vm.android, ios: _vm.ios },
+            attrs: { data: _vm.carData, mobile: _vm.mobile, ios: _vm.ios },
             on: {
               close: function($event) {
                 _vm.showModal = false
@@ -39523,7 +39522,7 @@ var render = function() {
             )
           ]),
           _vm._v(" "),
-          _vm.android
+          _vm.mobile
             ? _c(
                 "a",
                 {
@@ -39533,21 +39532,12 @@ var render = function() {
                 },
                 [_vm._v(_vm._s(_vm.data.phone))]
               )
-            : _vm.ios
-            ? _c(
+            : _c(
                 "a",
                 {
                   staticClass: "contact-icon detail-icon",
                   staticStyle: { color: "white", "text-decoration": "none" },
                   attrs: { href: "facetime://" + _vm.data.phone }
-                },
-                [_vm._v(_vm._s(_vm.data.phone))]
-              )
-            : _c(
-                "a",
-                {
-                  staticClass: "contact-icon detail-icon",
-                  staticStyle: { color: "white", "text-decoration": "none" }
                 },
                 [_vm._v(_vm._s(_vm.data.phone))]
               ),
