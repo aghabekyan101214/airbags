@@ -38754,7 +38754,7 @@ var render = function() {
                   _c(
                     "router-link",
                     { staticClass: "nav-link", attrs: { to: "/quick-facts" } },
-                    [_vm._v("Quick Facts")]
+                    [_vm._v("Quick Factss")]
                   )
                 ],
                 1

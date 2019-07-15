@@ -12,7 +12,7 @@
             <div class="collapse navbar-collapse" id="collapsingNavbar">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/quick-facts">Quick Facts</router-link>
+                        <router-link class="nav-link" to="/quick-facts">Quick Factss</router-link>
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link" to="/recall">About the FREE Repair</router-link>
