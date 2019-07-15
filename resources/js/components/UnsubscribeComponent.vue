@@ -40,10 +40,18 @@
                 <input type="submit" class="btn btn-success" @click="unsubscribe()" value="Unsubscribe">
             </div>
         </div>
+        <ul>
+            <li v-for="car in cars">{{ car.name }}
+                <ul>
+                    <li v-for="makes in car.makes">{{ makes }}</li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </template>
 
 <script>
+    import cars from "../data/cars";
     export default {
         data: function() {
             return {
@@ -51,7 +59,8 @@
                 lastName: "",
                 email: "",
                 vin: "",
-                signature: ""
+                signature: "",
+                cars: cars
             }
 
         },
