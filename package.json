@@ -33,6 +33,7 @@
   "author": "aimtech",
   "license": "ISC",
   "dependencies": {
+    "mobile-device-detect": "^0.2.3",
     "vue-router": "^3.0.6",
     "vue-signature-pad": "^1.1.10"
   }

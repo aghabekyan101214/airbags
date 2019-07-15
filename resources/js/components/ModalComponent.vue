@@ -4,7 +4,6 @@
             <div class="model-description">
                 <h3>{{data.name}}</h3>
                 <button  style="position: absolute; right: 0; top: 0; background: white" class="modal-default-button" @click="$emit('close')">
-                    X
                 </button>
                 <span>Vehicles under recall:</span><br>
                 <span v-for="(car, i) in data.makes">{{ car }}<br></span>
@@ -12,9 +11,11 @@
                     If your vehicle is on the list,
                     call to schedule your FREE repair
                 </div>
-                <a class="contact-icon detail-icon">1-888-546-1048</a>
-                <a class="visit-icon detail-icon">Visit our Website</a>
-                <a class="text-icon detail-icon">Click to text</a>
+                <a v-if="android" class="contact-icon detail-icon" style="color: white; text-decoration: none" :href="'tel:' + data.phone">{{ data.phone }}</a>
+                <a v-else-if="ios" class="contact-icon detail-icon" style="color: white; text-decoration: none" :href="'facetime://' + data.phone">{{ data.phone }}</a>
+                <a v-else class="contact-icon detail-icon" style="color: white; text-decoration: none">{{ data.phone }}</a>
+                <a class="visit-icon detail-icon" style="color: white; text-decoration: none" target="_blank" :href="url" v-for="url in data.url">Visit our Website</a>
+                <a v-if="data.text" class="text-icon detail-icon">Click to text</a>
             </div>
         </div>
     </transition>
@@ -23,7 +24,7 @@
 <script>
     export default {
         name: "ModalComponent",
-        props:['data'],
+        props:['data', 'android', 'ios'],
         data: function() {
             return {
 

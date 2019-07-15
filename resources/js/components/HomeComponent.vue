@@ -7,7 +7,7 @@
                     SEE IF YOUR VEHICLE IS ON THE LIST
                 </button>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">SEARCH BY VIN OR LICENSE PLATE</a>
+                    <a class="dropdown-item" target="_blank" href="http://www.nhtsa.gov/equipment/takata-recall-spotlight">SEARCH BY VIN OR LICENSE PLATE</a>
                     <a class="dropdown-item" href="#">SEARCH BY VEHICLE BRAND</a>
                 </div>
             </div>
@@ -34,7 +34,7 @@
             <a href="#">Takata Airbag Recall 101</a>
         </section>
         <!--info-block end-->
-        <Modal v-if="showModal" @close="showModal = false" :data="carData" />
+        <Modal v-if="showModal" @close="showModal = false" :data="carData" :android="isAndroid" :ios="isIOS" />
     </div>
 
 </template>
@@ -42,6 +42,7 @@
 <script>
     import cars from "../data/cars";
     import Modal from "./ModalComponent";
+    import {isAndroid, isIOS} from "mobile-device-detect";
     export default {
         data: function() {
             return {
