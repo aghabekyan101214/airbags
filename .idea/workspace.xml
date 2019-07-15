@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b0b683d-445c-4951-8110-4904042ea755" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/ModalComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ModalComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/HomeComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/HomeComponent.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/components/HomeComponent.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="36" column="94" selection-start-line="36" selection-start-column="85" selection-end-line="36" selection-end-column="94" />
+            <state relative-caret-position="255">
+              <caret line="36" column="103" selection-start-line="36" selection-start-column="103" selection-end-line="36" selection-end-column="103" />
               <folding>
                 <element signature="e#1697#1729#0" expanded="true" />
               </folding>
@@ -40,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/components/ModalComponent.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -60,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -173,9 +172,9 @@
         <option value="$PROJECT_DIR$/resources/js/components/VinLookupComponent.vue" />
         <option value="$PROJECT_DIR$/resources/js/routes/routes.js" />
         <option value="$PROJECT_DIR$/resources/js/data/cars.js" />
-        <option value="$PROJECT_DIR$/resources/js/components/HomeComponent.vue" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/resources/js/components/ModalComponent.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/HomeComponent.vue" />
       </list>
     </option>
   </component>
@@ -394,12 +393,12 @@
       <workItem from="1562145779434" duration="4777000" />
       <workItem from="1562152060185" duration="7037000" />
       <workItem from="1563112913472" duration="4681000" />
-      <workItem from="1563168174920" duration="22990000" />
+      <workItem from="1563168174920" duration="23558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39485000" />
+    <option name="totallyTimeSpent" value="40053000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -650,16 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/HomeComponent.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="36" column="94" selection-start-line="36" selection-start-column="85" selection-end-line="36" selection-end-column="94" />
-          <folding>
-            <element signature="e#1697#1729#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/VinLookupComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -670,7 +659,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -684,6 +673,16 @@
             <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#transition#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#2;n#div#0;n#div#0;n#transition#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#transition#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/HomeComponent.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="36" column="103" selection-start-line="36" selection-start-column="103" selection-end-line="36" selection-end-column="103" />
+          <folding>
+            <element signature="e#1697#1729#0" expanded="true" />
           </folding>
         </state>
       </provider>

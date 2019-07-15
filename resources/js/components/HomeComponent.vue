@@ -34,7 +34,7 @@
             <a href="#">Takata Airbag Recall 101</a>
         </section>
         <!--info-block end-->
-        <Modal v-if="showModal" @close="showModal = false" :data="carData" :android="isAndroid" :ios="isIOS" />
+        <Modal v-if="showModal" @close="showModal = false" :data="carData" :android="android" :ios="ios" />
     </div>
 
 </template>
@@ -49,6 +49,8 @@
                 cars: cars,
                 showModal: false,
                 carData: ""
+                android: isAndroid,
+                ios: isIOS
             }
 
         },
