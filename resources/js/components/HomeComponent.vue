@@ -48,7 +48,7 @@
             return {
                 cars: cars,
                 showModal: false,
-                carData: ""
+                carData: "",
                 android: isAndroid,
                 ios: isIOS
             }
