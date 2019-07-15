@@ -12,8 +12,8 @@
                     If your vehicle is on the list,
                     call to schedule your FREE repair
                 </div>
-                <a v-if="mobile" class="contact-icon detail-icon" style="color: white; text-decoration: none" :href="'tel:' + data.phone">{{ data.phone }}</a>
-                <a v-else class="contact-icon detail-icon" style="color: white; text-decoration: none" :href="'facetime://' + data.phone">{{ data.phone }}</a>
+                <a v-if="android" class="contact-icon detail-icon" style="color: white; text-decoration: none" :href="'tel:' + data.phone">{{ data.phone }}</a>
+                <a v-else-if="ios" class="contact-icon detail-icon" style="color: white; text-decoration: none" :href="'facetime://' + data.phone">{{ data.phone }}</a>
                 <a class="visit-icon detail-icon" style="color: white; text-decoration: none" target="_blank" :href="url" v-for="url in data.url">Visit our Website</a>
                 <a v-if="data.text" class="text-icon detail-icon">Click to text</a>
             </div>
@@ -24,7 +24,7 @@
 <script>
     export default {
         name: "ModalComponent",
-        props:['data', 'mobile', 'ios'],
+        props:['data', 'mobile', 'ios', 'android'],
         data: function() {
             return {
 

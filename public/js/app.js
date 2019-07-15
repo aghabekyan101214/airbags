@@ -1852,7 +1852,8 @@ __webpack_require__.r(__webpack_exports__);
       showModal: false,
       carData: "",
       mobile: mobile_device_detect__WEBPACK_IMPORTED_MODULE_2__["isMobileOnly"],
-      ios: mobile_device_detect__WEBPACK_IMPORTED_MODULE_2__["isIOS"]
+      ios: mobile_device_detect__WEBPACK_IMPORTED_MODULE_2__["isIOS"],
+      android: mobile_device_detect__WEBPACK_IMPORTED_MODULE_2__["isAndroid"]
     };
   },
   methods: {
@@ -1902,7 +1903,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ModalComponent",
-  props: ['data', 'mobile', 'ios'],
+  props: ['data', 'mobile', 'ios', 'android'],
   data: function data() {
     return {};
   }
@@ -39369,7 +39370,12 @@ var render = function() {
       _vm._v(" "),
       _vm.showModal
         ? _c("Modal", {
-            attrs: { data: _vm.carData, mobile: _vm.mobile, ios: _vm.ios },
+            attrs: {
+              data: _vm.carData,
+              mobile: _vm.mobile,
+              ios: _vm.ios,
+              android: _vm.android
+            },
             on: {
               close: function($event) {
                 _vm.showModal = false
@@ -39522,7 +39528,7 @@ var render = function() {
             )
           ]),
           _vm._v(" "),
-          _vm.mobile
+          _vm.android
             ? _c(
                 "a",
                 {
@@ -39532,7 +39538,8 @@ var render = function() {
                 },
                 [_vm._v(_vm._s(_vm.data.phone))]
               )
-            : _c(
+            : _vm.ios
+            ? _c(
                 "a",
                 {
                   staticClass: "contact-icon detail-icon",
@@ -39540,7 +39547,8 @@ var render = function() {
                   attrs: { href: "facetime://" + _vm.data.phone }
                 },
                 [_vm._v(_vm._s(_vm.data.phone))]
-              ),
+              )
+            : _vm._e(),
           _vm._v(" "),
           _vm._l(_vm.data.url, function(url) {
             return _c(
