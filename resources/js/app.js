@@ -38,6 +38,6 @@ Vue.component('footer-component', require('./components/FooterComponent.vue').de
  */
 
 const app = new Vue({
-    el: '#app',
-    router
+    el: '#wrapper',
+    router,
 });

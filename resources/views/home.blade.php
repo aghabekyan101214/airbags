@@ -23,14 +23,10 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Airbag') }}</title>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset("site/css/fontawesome.min.css") }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset("site/css/bootstrap.min.css") }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset("site/css/style.css") }}">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -40,12 +36,13 @@
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<div id="app">
+<div id="wrapper">
     <header-component></header-component>
-        <router-view></router-view>
-    <footer-component></footer-component>
+    <router-view/>
 </div>
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset("site/js/popper.js") }}"></script>
+{{--<script src="{{ asset("site/js/bootstrap.js") }}"></script>--}}
 </body>
 </html>

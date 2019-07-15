@@ -1,5 +1,8 @@
 const cars = [
     {
+        img: "acura.png",
+        phone: "001-888-234-2138",
+        url: "http://recalls.acura.com/",
         name: "Acura",
         makes: [
             "2003 Acura 3.2CL",
@@ -15,6 +18,9 @@ const cars = [
         ]
     },
     {
+        img: "audi.png",
+        phone: "001-800-253-2834",
+        url: "http://audiusa.com/recall",
         name: "Audi",
         makes: [
             "2006-2013 Audi A3",
@@ -30,6 +36,9 @@ const cars = [
         ]
     },
     {
+        img: "bmw.png",
+        phone: "001-844-504-4340",
+        url: "https://www.bmwusa.com/safety-and-emission-recalls.html",
         name: "BMW",
         makes: [
             "2008-2013 BMW 1 Series",
@@ -43,6 +52,9 @@ const cars = [
         ]
     },
     {
+        img: "cadillac.png",
+        phone: "001-800-458-8006",
+        url: "https://my.cadillac.com/recalls/",
         name: "Cadillac",
         makes: [
             "2007-2014 Cadillac Escalade",
@@ -51,6 +63,9 @@ const cars = [
         ]
     },
     {
+        img: "chevrolet.png",
+        phone: "001-800-630-2438",
+        url: "http://my.gm.com/recalls",
         name: "Chevrolet",
         makes: [
             "2007-2013 Chevrolet Avalanche",
@@ -61,6 +76,9 @@ const cars = [
         ]
     },
     {
+        img: "chrysler.png",
+        phone: "001-833-585-0144",
+        url: "https://www.mopar.com/en-us/my-vehicle/recalls/search.html",
         name: "Chrysler",
         makes: [
             "2005-2015 Chrysler 300",
@@ -70,12 +88,18 @@ const cars = [
         ]
     },
     {
+        img: "sterling_bullet.png",
+        phone: "001-800-385-4357",
+        url: "https://alliancetruckparts.com/sterling",
         name: "Daimler Trucks North America (Sterling Bullet)",
         makes: [
             "2008-2009 Sterling Bullet",
         ]
     },
     {
+        img: "sprinter.png",
+        phone: "001-877-762-8267",
+        url: "https://www.mbvans.com/sprinter/owners-",
         name: "Daimler Vans USA LLC (Sprinter)",
         makes: [
             "2007-2009 Dodge Sprinter",
@@ -84,6 +108,9 @@ const cars = [
         ]
     },
     {
+        img: "dodge.png",
+        phone: "001-833-585-0144",
+        url: "https://www.mopar.com/en-us/my-vehicle/recalls/search.html",
         name: "Dodge/Ram",
         makes: [
             "2008-2014 Dodge Challenger",
@@ -99,6 +126,9 @@ const cars = [
         ]
     },
     {
+        img: "ferrari.png",
+        phone: "001-201-816-2668",
+        url: "https://auto.ferrari.com/en_US/owners/recall-campaign/",
         name: "Ferrari",
         makes: [
             "2010-2015 Ferrari 458 Italia",
@@ -117,13 +147,19 @@ const cars = [
 
         ]
     },
+    // {
+    //     img: "fisker.png",
+    //     phone: "",
+    //     url: "",
+    //     name: "Fisker",
+    //     makes: [
+    //         "2012 Fisker Karma"
+    //     ]
+    // },
     {
-        name: "Fisker",
-        makes: [
-            "2012 Fisker Karma"
-        ]
-    },
-    {
+        img: "ford.png",
+        phone: "001-866-436-7332",
+        url: "https://owner.ford.com/service/what-you-need-to-know-about-the-",
         name: "Ford",
         makes: [
             "2007-2010 Ford Edge",
@@ -134,6 +170,9 @@ const cars = [
         ]
     },
     {
+        img: "gmc.png",
+        phone: "001-866-996-9463",
+        url: "https://my.gm.com/recalls",
         name: "GMC",
         makes: [
             "2007-2014 GMC Sierra HD",
@@ -143,6 +182,9 @@ const cars = [
         ]
     },
     {
+        img: "honda.png",
+        phone: "001-888-234-2138",
+        url: "https://owners.honda.com/service-maintenance/recalls",
         name: "Honda",
         makes: [
             "2001-2012 Honda Accord",
@@ -163,6 +205,9 @@ const cars = [
         ]
     },
     {
+        img: "infiniti.png",
+        phone: "001-888-387-5947",
+        url: "https://www.infinitiusa.com/takata-airbag-recall.html",
         name: "Infiniti",
         makes: [
             "2003-2008 Infiniti FX",
@@ -173,24 +218,36 @@ const cars = [
         ]
     },
     {
+        img: "jaguar.png",
+        phone: "001-800-452-4827",
+        url: "https://www.jaguarusa.com/owners/airbag-recall/index.html",
         name: "Jaguar",
         makes: [
             "2009-2015 Jaguar XF"
         ]
     },
     {
+        img: "jeep.png",
+        phone: "001-833-585-0144",
+        url: "001-833-585-0144",
         name: "Jeep",
         makes: [
             "2007-2016 Jeep Wrangler"
         ]
     },
     {
+        img: "land_rover.png",
+        phone: "001-833-585-0144",
+        url: "https://www.landroverusa.com/ownership/airbag-recall/index.html",
         name: "Land Rover",
         makes: [
             "2007-2012 Land Rover Range Rover"
         ]
     },
     {
+        img: "lexus.png",
+        phone: "001-800-255-3987",
+        url: "https://www.toyota.com/recall",
         name: "Lexus",
         makes: [
             "2007-2012 Lexus ES350",
@@ -203,6 +260,9 @@ const cars = [
         ]
     },
     {
+        img: "lincoln.png",
+        phone: "001-800-521-4140",
+        url: "https://owner.lincoln.com/service/frequently-asked-questions-",
         name: "Lincoln",
         makes: [
             "2007-2010 Lincoln MKX",
@@ -210,6 +270,9 @@ const cars = [
         ]
     },
     {
+        img: "mazda.png",
+        phone: "001-800-222-5500",
+        url: "https://www.mazdarecallinfo.com/",
         name: "Mazda",
         makes: [
             "2004-2009 Mazda B-Series",
@@ -222,17 +285,23 @@ const cars = [
 
         ]
     },
+    // {
+    //     img: "mclaren.png",
+    //     phone: "",
+    //     url: "",
+    //     name: "McLaren",
+    //     makes: [
+    //         "2016-2017 McLaren 570",
+    //         "2015-2016 McLaren 650S",
+    //         "2016 McLaren 675LT",
+    //         "2012-2014 McLaren MP4-12C",
+    //         "2011-2015 McLaren P1",
+    //     ]
+    // },
     {
-        name: "McLaren",
-        makes: [
-            "2016-2017 McLaren 570",
-            "2015-2016 McLaren 650S",
-            "2016 McLaren 675LT",
-            "2012-2014 McLaren MP4-12C",
-            "2011-2015 McLaren P1",
-        ]
-    },
-    {
+        img: "mercedes.png",
+        phone: "001-877-496-3691",
+        url: "https://www.mbusa.com/mercedes/recall",
         name: "Mercedes-Benz",
         makes: [
             "2005-2014 Mercedes-Benz C-Class",
@@ -249,12 +318,18 @@ const cars = [
         ]
     },
     {
+        img: "mercury.png",
+        phone: "0001-866-436-7332",
+        url: "https://owner.ford.com/service/what-you-need-to-know-about-",
         name: "Mercury",
         makes: [
             "2006-2011 Mercury Milan"
         ]
     },
     {
+        img: "mitsubishi.png",
+        phone: "001-655-681-6147",
+        url: "https://www.mitsubishicars.com/recall",
         name: "Mitsubishi",
         makes: [
             "2012-2017 Mitsubishi i-MiEV",
@@ -266,6 +341,9 @@ const cars = [
         ]
     },
     {
+        img: "nissan.png",
+        phone: "001-888-546-1048",
+        url: "https://www.nissanusa.com/takata-airbag-recall.html",
         name: "Nissan",
         makes: [
             "2001-2003 Nissan Maxima",
@@ -275,12 +353,18 @@ const cars = [
         ]
     },
     {
+        img: "pontiac.png",
+        phone: "001-800-620-7668",
+        url: "https://my.gm.com/recalls",
         name: "Pontiac",
         makes: [
             "2003-2010 Pontiac Vibe"
         ]
     },
     {
+        img: "saab.png",
+        phone: "001-800-955-9007",
+        url: "https://my.gm.com/recalls",
         name: "Saab",
         makes: [
             "2005-2006 Saab 9-2x",
@@ -289,18 +373,27 @@ const cars = [
         ]
     },
     {
+        img: "saturn.png",
+        phone: "001-800-972-8876",
+        url: "https://my.gm.com/recalls",
         name: "Saturn",
         makes: [
             "2008-2009 Saturn Astra"
         ]
     },
     {
+        img: "scion.png",
+        phone: "001-800-331-4331",
+        url: "https://www.toyota.com/recall",
         name: "Scion",
         makes: [
             "2008-2015 Scion XB"
         ]
     },
     {
+        img: "subaru.png",
+        phone: "001-0844-373-6614",
+        url: "https://www.subaru.com/vehicle-recalls.html",
         name: "Subaru",
         makes: [
             "2003-2006 Subaru Baja",
@@ -313,12 +406,18 @@ const cars = [
         ]
     },
     {
+        img: "tesla.png",
+        phone: "001-877-798-3752",
+        url: "https://www.tesla.com/vin-recall-search",
         name: "Tesla",
         makes: [
             "2012-2016 Tesla Model S"
         ]
     },
     {
+        img: "toyota.png",
+        phone: "001-800-331-4331",
+        url: "https://www.toyota.com/recall",
         name: "Toyota",
         makes: [
             "2010-2016 Toyota 4Runner",
@@ -334,6 +433,9 @@ const cars = [
         ]
     },
     {
+        img: "volkswagen.png",
+        phone: "001-800-893-5298",
+        url: "https://www.vw.com/owners/recalls/",
         name: "Volkswagen",
         makes: [
             "2009-2017 Volkswagen CC",

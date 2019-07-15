@@ -1,11 +1,17 @@
 import Vue from 'vue';
 import VueRouter from "vue-router";
 
-import UnsubscribeComponent from '../components/UnsubscribeComponent';
+import HomeComponent from "../components/HomeComponent";
+import QuickFactsComponent from "../components/QuickFactsComponent";
+import RecallComponent from "../components/RecallComponent";
+import SpreadTheWorldComponent from "../components/SpreadTheWorldComponent";
 
 Vue.use(VueRouter);
 const routes = [
-    { path: '/unsubscribe', component: UnsubscribeComponent },
+    { path: '/', component: HomeComponent},
+    { path: '/quick-facts', component: QuickFactsComponent},
+    { path: '/recall', component: RecallComponent},
+    { path: '/spread-the-world', component: SpreadTheWorldComponent},
 ];
 
 const router = new VueRouter({
