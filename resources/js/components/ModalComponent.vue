@@ -12,9 +12,15 @@
                     If your vehicle is on the list,
                     call to schedule your FREE repair
                 </div>
-                <a v-if="android" class="contact-icon detail-icon" style="color: white; text-decoration: none" :href="'tel:' + data.phone">{{ data.phone }}</a>
-                <a v-else-if="ios" class="contact-icon detail-icon" style="color: white; text-decoration: none" :href="'facetime://' + data.phone">{{ data.phone }}</a>
-                <a class="visit-icon detail-icon" style="color: white; text-decoration: none" target="_blank" :href="url" v-for="url in data.url">Visit our Website</a>
+                <a v-if="mobile" class="contact-icon detail-icon" style="color: white; text-decoration: none" :href="'tel:' + data.phone">{{ data.phone }}</a>
+                <a class="visit-icon detail-icon" :style="'color: white; text-decoration: none;' + style" target="_blank" :href="url" v-for="(url, i) in data.url">
+                    <span v-if="data.url.length > 1" class="fz-17">
+                        <span v-if="i == 0" style="display: inline">Dodge and Mercedes-Benz Sprinter Customers,</span>
+                        <span v-if="i == 1" style="display: inline">Freightliner Sprinter Customers,</span>
+                        <span style="text-decoration: underline; display: inline" class="fz-17">Visit our Website</span>
+                    </span>
+                    <span v-else-if="data.url.length == 1">Visit our Website</span>
+                    </a>
                 <a v-if="data.text && mobile" :href="'sms:/' + data.phone" style="color: white; text-decoration: none" class="text-icon detail-icon">Click to text</a>
             </div>
         </div>
@@ -27,7 +33,12 @@
         props:['data', 'mobile', 'ios', 'android'],
         data: function() {
             return {
-
+                style: ""
+            }
+        },
+        created() {
+            if(this.$props.data.url.length > 1) {
+                this.style = "margin-bottom: 30px;";
             }
         },
 
@@ -77,6 +88,10 @@
     .modal-leave-active .modal-container {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
+    }
+
+    .fz-17 {
+        font-size: 17px;
     }
 </style>
 

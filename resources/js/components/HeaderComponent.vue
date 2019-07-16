@@ -1,8 +1,8 @@
 <template>
     <header>
         <nav class="navbar navbar-toggleable-sm bg-faded">
-            <router-link class="navbar-brand" to="/">
-                <img src="/site/images/logo.png" alt="logo" height="" width="">
+            <router-link class="navbar-brand nb" to="/">
+                <img src="/site/images/logo_new.png" alt="logo" height="" width="">
             </router-link>
             <button ref="nav" class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
                 <span> </span>
@@ -18,7 +18,7 @@
                         <router-link class="nav-link" to="/free-repair">About the <span class="yellow-txt">FREE </span> Repair</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/#">More About the Recall</router-link>
+                        <a class="nav-link" href="https://www.nhtsa.gov/equipment/takata-recall-spotlight" target="_blank">More About the Recall</a>
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link" to="/spread-the-world">Spread the Word, Save a Life</router-link>
@@ -42,3 +42,9 @@
         }
     }
 </script>
+
+<style scoped>
+    .nb {
+        padding-top: 0!important;
+    }
+</style>
