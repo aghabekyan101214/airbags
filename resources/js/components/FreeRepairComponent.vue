@@ -14,7 +14,7 @@
                         A <span class="yellow-txt">FREE</span> loaner vehicle or other alternate transportation is available during your repair.
                     </li>
                     <li>
-                        To schedule your repair, go to your vehicle brand and call the listed phone number, or you can contact your preferred local dealer directly.
+                        To schedule your repair, <a href="/#car-block">go to your vehicle brand </a> and call the listed phone number, or you can contact your preferred local dealer directly.
                     </li>
                 </ul>
             </section>
@@ -28,3 +28,10 @@
 
     }
 </script>
+
+<style scoped>
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+</style>
