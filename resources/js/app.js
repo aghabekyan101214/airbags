@@ -16,6 +16,7 @@ window.axios = require('axios');
 import router from "./routes/routes";
 import VueSignaturePad from 'vue-signature-pad';
 
+
 Vue.use(VueSignaturePad);
 /**
  * The following block of code may be used to automatically register your

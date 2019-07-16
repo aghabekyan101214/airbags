@@ -29,12 +29,10 @@
                     </li>
                     <li>
                         <span>Takata airbag recall repairs are completed at NO COST by your local dealer. Free loaner vehicles or other forms of alternate transportation are available during the repair. Some dealers can also offer FREE mobile repair at your home or office, inquire when scheduling your appointment.</span>
-                        <a href="https://twitter.com/intent/tweet?text=Hello%20world" class="to-tweet">Tweet this</a>
                     </li>
 
                     <li>
                         <span> FREE loaner vehicles or other forms of alternate transportation are available during the repair. Some dealers can also offer FREE mobile repair at your home or office, inquire when scheduling your appointment.</span>
-                        <a href="#" class="to-tweet">Tweet this</a>
                     </li>
                 </ul>
             </section>
