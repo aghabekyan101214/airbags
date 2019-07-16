@@ -1725,11 +1725,50 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('Component mounted.');
-  }
-});
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FreeRepairComponent.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/FreeRepairComponent.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
 
@@ -1801,16 +1840,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ModalComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ModalComponent */ "./resources/js/components/ModalComponent.vue");
 /* harmony import */ var mobile_device_detect__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! mobile-device-detect */ "./node_modules/mobile-device-detect/dist/index.js");
 /* harmony import */ var mobile_device_detect__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(mobile_device_detect__WEBPACK_IMPORTED_MODULE_2__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -1965,52 +1994,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/RecallComponent.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/RecallComponent.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2063,6 +2046,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2076,6 +2065,31 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/parts/VehicleSearchComponent.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/parts/VehicleSearchComponent.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -6541,7 +6555,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.modal-mask[data-v-4b2d100a] {\n    position: fixed;\n    z-index: 9998;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    display: table;\n    -webkit-transition: opacity .3s ease;\n    transition: opacity .3s ease;\n}\n.model-description[data-v-4b2d100a]{\n    height: 100vh;\n}\n.modal-header h3[data-v-4b2d100a] {\n    margin-top: 0;\n    color: #42b983;\n}\n\n/*\n * The following styles are auto-applied to elements with\n * transition=\"modal\" when their visibility is toggled\n * by Vue.js.\n *\n * You can easily play with the modal transition by editing\n * these styles.\n */\n.modal-enter[data-v-4b2d100a] {\n    opacity: 0;\n}\n.modal-leave-active[data-v-4b2d100a] {\n    opacity: 0;\n}\n.modal-enter .modal-container[data-v-4b2d100a],\n.modal-leave-active .modal-container[data-v-4b2d100a] {\n    -webkit-transform: scale(1.1);\n    transform: scale(1.1);\n}\n", ""]);
+exports.push([module.i, "\n.modal-mask[data-v-4b2d100a] {\n    position: fixed;\n    z-index: 9998;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    display: table;\n    -webkit-transition: opacity .3s ease;\n    transition: opacity .3s ease;\n}\n.model-description[data-v-4b2d100a]{\n    height: 100vh;\n}\n.modal-header h3[data-v-4b2d100a] {\n    margin-top: 0;\n    color: #42b983;\n}\n.model-description[data-v-4b2d100a] {\n    overflow: auto;\n}\n/*\n * The following styles are auto-applied to elements with\n * transition=\"modal\" when their visibility is toggled\n * by Vue.js.\n *\n * You can easily play with the modal transition by editing\n * these styles.\n */\n.modal-enter[data-v-4b2d100a] {\n    opacity: 0;\n}\n.modal-leave-active[data-v-4b2d100a] {\n    opacity: 0;\n}\n.modal-enter .modal-container[data-v-4b2d100a],\n.modal-leave-active .modal-container[data-v-4b2d100a] {\n    -webkit-transform: scale(1.1);\n    transform: scale(1.1);\n}\n", ""]);
 
 // exports
 
@@ -39193,7 +39207,104 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [_c("h1")])
+    return _c("footer", [
+      _c("p", [_vm._v("More Information")]),
+      _vm._v(" "),
+      _c("img", {
+        attrs: {
+          src: "/site/images/logo-nhtsa-white.png",
+          alt: "logo-nhtsa-white"
+        }
+      }),
+      _vm._v(" "),
+      _c("a", { attrs: { href: "#" } }, [
+        _vm._v("NHTSA Takata Airbag Recall Spotlight")
+      ]),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c("img", {
+        attrs: { src: "/site/images/airbag-recall.png", alt: "airbag-recall" }
+      }),
+      _vm._v(" "),
+      _c("a", { attrs: { href: "#" } }, [_vm._v("Takata Airbag Recall 101")])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FreeRepairComponent.vue?vue&type=template&id=5eba93c9&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/FreeRepairComponent.vue?vue&type=template&id=5eba93c9& ***!
+  \**********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container black-block" }, [
+    _c(
+      "div",
+      { staticClass: "container" },
+      [_vm._m(0), _vm._v(" "), _c("vehicle-search")],
+      1
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", { staticClass: "panel" }, [
+      _c("h3", { staticClass: "sml-title" }, [
+        _vm._v("About the"),
+        _c("span", { staticClass: "yellow-txt" }, [_vm._v(" FREE")]),
+        _vm._v(" repair:")
+      ]),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [
+          _vm._v(
+            "\n                    The repair is completed at absolutely "
+          ),
+          _c("span", { staticClass: "yellow-txt" }, [_vm._v("NO COST")]),
+          _vm._v(
+            " to you, and performed by preferred local dealer.\n                "
+          )
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _vm._v(
+            "\n                    Most repairs can be completed in one hour or less.\n                "
+          )
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _vm._v("\n                    A "),
+          _c("span", { staticClass: "yellow-txt" }, [_vm._v("FREE")]),
+          _vm._v(
+            " loaner vehicle or other alternate transportation is available during your repair.\n                "
+          )
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _vm._v(
+            "\n                    To schedule your repair, go to your vehicle brand and call the listed phone number, or you can contact your preferred local dealer directly.\n                "
+          )
+        ])
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -39274,8 +39385,14 @@ var render = function() {
                 [
                   _c(
                     "router-link",
-                    { staticClass: "nav-link", attrs: { to: "/recall" } },
-                    [_vm._v("About the FREE Repair")]
+                    { staticClass: "nav-link", attrs: { to: "/free-repair" } },
+                    [
+                      _vm._v("About the "),
+                      _c("span", { staticClass: "yellow-txt" }, [
+                        _vm._v("FREE ")
+                      ]),
+                      _vm._v(" Repair")
+                    ]
                   )
                 ],
                 1
@@ -39366,8 +39483,6 @@ var render = function() {
         )
       ]),
       _vm._v(" "),
-      _vm._m(2),
-      _vm._v(" "),
       _vm.showModal
         ? _c("Modal", {
             attrs: {
@@ -39437,33 +39552,6 @@ var staticRenderFns = [
       _c("h2", [_vm._v("SEARCH BY VEHICLE BRAND")]),
       _vm._v(" "),
       _c("p", [_vm._v("choose from the list below")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("section", { staticClass: "info-block" }, [
-      _c("p", [_vm._v("More Information")]),
-      _vm._v(" "),
-      _c("img", {
-        attrs: {
-          src: "/site/images/logo-nhtsa-white.png",
-          alt: "logo-nhtsa-white"
-        }
-      }),
-      _vm._v(" "),
-      _c("a", { attrs: { href: "#" } }, [
-        _vm._v("NHTSA Takata Airbag Recall Spotlight")
-      ]),
-      _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("img", {
-        attrs: { src: "/site/images/airbag-recall.png", alt: "airbag-recall" }
-      }),
-      _vm._v(" "),
-      _c("a", { attrs: { href: "#" } }, [_vm._v("Takata Airbag Recall 101")])
     ])
   }
 ]
@@ -39562,10 +39650,16 @@ var render = function() {
             )
           }),
           _vm._v(" "),
-          _vm.data.text
-            ? _c("a", { staticClass: "text-icon detail-icon" }, [
-                _vm._v("Click to text")
-              ])
+          _vm.data.text && _vm.mobile
+            ? _c(
+                "a",
+                {
+                  staticClass: "text-icon detail-icon",
+                  staticStyle: { color: "white", "text-decoration": "none" },
+                  attrs: { href: "sms:/" + _vm.data.phone }
+                },
+                [_vm._v("Click to text")]
+              )
             : _vm._e()
         ],
         2
@@ -39595,226 +39689,134 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container black-block" }, [
+    _c(
+      "div",
+      { staticClass: "container" },
+      [_vm._m(0), _vm._v(" "), _c("vehicle-search")],
+      1
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container black-block" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("section", { staticClass: "panel" }, [
-          _c("h3", { staticClass: "sml-title" }, [
-            _vm._v("Spread the Word, Save a Life")
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "sml-description" }, [
+    return _c("section", { staticClass: "panel" }, [
+      _c("h3", { staticClass: "sml-title" }, [
+        _vm._v(
+          "\n                Quick Facts About the\n                largest automotive safety\n                recall in US history:\n            "
+        )
+      ]),
+      _vm._v(" "),
+      _c("ul", { staticClass: "quick-facts-list" }, [
+        _c("li", [
+          _c("span", [
             _vm._v(
-              "\n                Help Morgan Freeman spread the word about\n                the dangers of the Takata Airbag Recall. Share\n                the below videos on social media, you might\n                just save a life.\n            "
+              "More than 41 million vehicles in the US have been recalled due to a defective Tataka Airbag.  TWEET THIS"
             )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("section", [
-          _c("img", {
-            staticClass: "lazy-loaded",
-            attrs: {
-              src: "//via.placeholder.com/315x150",
-              "data-lazy-type": "image",
-              "data-src": "//via.placeholder.com/350x150"
-            }
-          }),
-          _vm._v(" "),
-          _c("div", { staticClass: "social-row" }, [
-            _vm._v("\n                SHARE THIS STORY:\n                "),
-            _c("a", { attrs: { href: "#" } }, [
-              _c("img", {
-                attrs: { src: "/site/images/instagram-icon.png", alt: "icon" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("a", { attrs: { href: "#" } }, [
-              _c("img", {
-                attrs: { src: "/site/images/fb-icon.png", alt: "icon" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("a", { attrs: { href: "#" } }, [
-              _c("img", {
-                attrs: { src: "/site/images/twitter-icon.png", alt: "icon" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("section", [
-          _c("img", {
-            staticClass: "lazy-loaded",
-            attrs: {
-              src: "//via.placeholder.com/315x150",
-              "data-lazy-type": "image",
-              "data-src": "//via.placeholder.com/350x150"
-            }
-          }),
-          _vm._v(" "),
-          _c("div", { staticClass: "social-row" }, [
-            _vm._v("\n                SHARE THIS STORY:\n                "),
-            _c("a", { attrs: { href: "#" } }, [
-              _c("img", {
-                attrs: { src: "/site/images/instagram-icon.png", alt: "icon" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("a", { attrs: { href: "#" } }, [
-              _c("img", {
-                attrs: { src: "/site/images/fb-icon.png", alt: "icon" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("a", { attrs: { href: "#" } }, [
-              _c("img", {
-                attrs: { src: "/site/images/twitter-icon.png", alt: "icon" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("section", [
-          _c("img", {
-            staticClass: "lazy-loaded",
-            attrs: {
-              src: "//via.placeholder.com/315x150",
-              "data-lazy-type": "image",
-              "data-src": "//via.placeholder.com/350x150"
-            }
-          }),
-          _vm._v(" "),
-          _c("div", { staticClass: "social-row" }, [
-            _vm._v("\n                SHARE THIS STORY:\n                "),
-            _c("a", { attrs: { href: "#" } }, [
-              _c("img", {
-                attrs: { src: "/site/images/instagram-icon.png", alt: "icon" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("a", { attrs: { href: "#" } }, [
-              _c("img", {
-                attrs: { src: "/site/images/fb-icon.png", alt: "icon" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("a", { attrs: { href: "#" } }, [
-              _c("img", {
-                attrs: { src: "/site/images/twitter-icon.png", alt: "icon" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "gradient-bg search-banner" }, [
-          _c("p", [_vm._v("SEE IF YOUR VEHICLE IS ON THE LIST")]),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-primary", attrs: { type: "button" } },
-            [_vm._v("SEARCH BY VIN OR LICENSE PLATE")]
-          ),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-primary", attrs: { type: "button" } },
-            [_vm._v("SEARCH BY VEHICLE BRAND")]
-          )
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/RecallComponent.vue?vue&type=template&id=444f1f51&":
-/*!******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/RecallComponent.vue?vue&type=template&id=444f1f51& ***!
-  \******************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container black-block" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("section", { staticClass: "panel" }, [
-          _c("h3", { staticClass: "sml-title" }, [
-            _vm._v("About the"),
-            _c("span", { staticClass: "yellow-txt" }, [_vm._v(" FREE")]),
-            _vm._v(" repair:")
           ]),
           _vm._v(" "),
-          _c("ul", [
-            _c("li", [
-              _vm._v(
-                "\n                    The repair is completed at absolutely "
-              ),
-              _c("span", { staticClass: "yellow-txt" }, [_vm._v("NO COST")]),
-              _vm._v(
-                " to you, and performed by preferred local dealer.\n                "
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v(
-                "\n                    Most repairs can be completed in one hour or less.\n                "
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v("\n                    A "),
-              _c("span", { staticClass: "yellow-txt" }, [_vm._v("FREE")]),
-              _vm._v(
-                " loaner vehicle or other alternate transportation is available during your repair.\n                "
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v(
-                "\n                    To schedule your repair, go to your vehicle brand and call the listed phone number, or you can contact your preferred local dealer directly.\n                "
-              )
-            ])
+          _c(
+            "a",
+            {
+              staticClass: "to-tweet",
+              attrs: { href: "https://ctt.ac/Ktrdf", target: "_blank" }
+            },
+            [_vm._v("Tweet this")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("span", [
+            _vm._v(
+              "Vehicles from model years 2000 to 2018, from 34 different brands have been affected."
+            )
+          ]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "to-tweet",
+              attrs: { href: "https://ctt.ac/LWqK0", target: "_blank" }
+            },
+            [_vm._v("Tweet this")]
+          )
+        ]),
+        _c("li", [
+          _c("span", [
+            _vm._v(
+              "A part inside the defective Takata airbags can explode, shooting sharp metal fragments at passengers inside the vehicle. This can occur no matter what causes the airbag to deploy. "
+            )
+          ]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "to-tweet",
+              attrs: { href: "https://ctt.ac/1E4q6", target: "_blank" }
+            },
+            [_vm._v("Tweet this")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("span", [
+            _vm._v(
+              "Recalled vehicles located in areas of high humidity are at even greater risk."
+            )
+          ]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "to-tweet",
+              attrs: { href: "https://ctt.ac/R040e", target: "_blank" }
+            },
+            [_vm._v("Tweet this")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("span", [
+            _vm._v(
+              "16 people in the US have died and hundreds more have reported serious injuries. TWEET THIS"
+            )
+          ]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "to-tweet",
+              attrs: { href: "https://ctt.ac/ygcHU", target: "_blank" }
+            },
+            [_vm._v("Tweet this")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("span", [
+            _vm._v(
+              "Takata airbag recall repairs are completed at NO COST by your local dealer. Free loaner vehicles or other forms of alternate transportation are available during the repair. Some dealers can also offer FREE mobile repair at your home or office, inquire when scheduling your appointment."
+            )
+          ]),
+          _vm._v(" "),
+          _c("a", { staticClass: "to-tweet", attrs: { href: "#" } }, [
+            _vm._v("Tweet this")
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "gradient-bg search-banner" }, [
-          _c("p", [_vm._v("SEE IF YOUR VEHICLE IS ON THE LIST")]),
+        _c("li", [
+          _c("span", [
+            _vm._v(
+              " FREE loaner vehicles or other forms of alternate transportation are available during the repair. Some dealers can also offer FREE mobile repair at your home or office, inquire when scheduling your appointment."
+            )
+          ]),
           _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-primary", attrs: { type: "button" } },
-            [_vm._v("SEARCH BY VIN OR LICENSE PLATE")]
-          ),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-primary", attrs: { type: "button" } },
-            [_vm._v("SEARCH BY VEHICLE BRAND")]
-          )
+          _c("a", { staticClass: "to-tweet", attrs: { href: "#" } }, [
+            _vm._v("Tweet this")
+          ])
         ])
       ])
     ])
@@ -39841,75 +39843,128 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container black-block" }, [
+    _c(
+      "div",
+      { staticClass: "container" },
+      [
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _vm._m(3),
+        _vm._v(" "),
+        _c("vehicle-search")
+      ],
+      1
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container black-block" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("section", { staticClass: "panel" }, [
-          _c("h3", { staticClass: "sml-title" }, [
-            _vm._v(
-              "\n                Important facts about the\n                largest automotive safety\n                recall in US history:\n            "
-            )
-          ]),
-          _vm._v(" "),
-          _c("ul", [
-            _c("li", [
-              _vm._v(
-                "\n                    More than 41 million vehicles in the US have been recalled due to a defective Tataka Airbag.  TWEET THIS\n                "
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v(
-                "\n                    Vehicles from model years 2000 to 2018, from 34 different brands have been affected.\n                "
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v(
-                "\n                    A part inside the defective Takata airbags can explode, shooting sharp metal fragments at passengers inside the vehicle. This can occur no matter what causes the airbag to deploy.\n                "
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v(
-                "\n                    Recalled vehicles located in areas of high humidity are at even greater risk.\n                "
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v(
-                "\n                    16 people in the US have died and hundreds more have reported serious injuries. TWEET THIS\n                "
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v(
-                "\n                    Takata airbag recall repairs are completed at NO COST by your local dealer. Free loaner vehicles or other forms of alternate transportation are available during the repair. Some dealers can also offer FREE mobile repair at your home or office, inquire when scheduling your appointment.\n                "
-              )
-            ])
-          ])
+    return _c("section", { staticClass: "panel" }, [
+      _c("h3", { staticClass: "sml-title" }, [
+        _vm._v("Spread the Word, Save a Life")
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "sml-description" }, [
+        _vm._v(
+          "\n                Help Morgan Freeman spread the word about\n                the dangers of the Takata Airbag Recall. Share\n                the below videos on social media, you might\n                just save a life.\n            "
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", [
+      _c("img", {
+        staticClass: "lazy-loaded",
+        attrs: { src: "/site/images/placeholder-img.png" }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "social-row" }, [
+        _vm._v("\n                SHARE THIS STORY:\n                "),
+        _c("a", { attrs: { href: "#" } }, [
+          _c("img", {
+            attrs: { src: "/site/images/instagram-icon.png", alt: "icon" }
+          })
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "gradient-bg search-banner" }, [
-          _c("p", [_vm._v("SEE IF YOUR VEHICLE IS ON THE LIST")]),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-primary", attrs: { type: "button" } },
-            [_vm._v("SEARCH BY VIN OR LICENSE PLATE")]
-          ),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-primary", attrs: { type: "button" } },
-            [_vm._v("SEARCH BY VEHICLE BRAND")]
-          )
+        _c("a", { attrs: { href: "#" } }, [
+          _c("img", { attrs: { src: "/site/images/fb-icon.png", alt: "icon" } })
+        ]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "#" } }, [
+          _c("img", {
+            attrs: { src: "/site/images/twitter-icon.png", alt: "icon" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", [
+      _c("img", {
+        staticClass: "lazy-loaded",
+        attrs: { src: "/site/images/placeholder-img.png" }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "social-row" }, [
+        _vm._v("\n                SHARE THIS STORY:\n                "),
+        _c("a", { attrs: { href: "#" } }, [
+          _c("img", {
+            attrs: { src: "/site/images/instagram-icon.png", alt: "icon" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "#" } }, [
+          _c("img", { attrs: { src: "/site/images/fb-icon.png", alt: "icon" } })
+        ]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "#" } }, [
+          _c("img", {
+            attrs: { src: "/site/images/twitter-icon.png", alt: "icon" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", [
+      _c("img", {
+        staticClass: "lazy-loaded",
+        attrs: { src: "/site/images/placeholder-img.png" }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "social-row" }, [
+        _vm._v("\n                SHARE THIS STORY:\n                "),
+        _c("a", { attrs: { href: "#" } }, [
+          _c("img", {
+            attrs: { src: "/site/images/instagram-icon.png", alt: "icon" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "#" } }, [
+          _c("img", { attrs: { src: "/site/images/fb-icon.png", alt: "icon" } })
+        ]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "#" } }, [
+          _c("img", {
+            attrs: { src: "/site/images/twitter-icon.png", alt: "icon" }
+          })
         ])
       ])
     ])
@@ -39944,6 +39999,62 @@ var render = function() {
   })
 }
 var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/parts/VehicleSearchComponent.vue?vue&type=template&id=4efe7563&":
+/*!*******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/parts/VehicleSearchComponent.vue?vue&type=template&id=4efe7563& ***!
+  \*******************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "gradient-bg search-banner" }, [
+      _c("p", [_vm._v("SEE IF YOUR VEHICLE IS ON THE LIST")]),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          attrs: {
+            href: "http://www.nhtsa.gov/equipment/takata-recall-spotlight",
+            target: "_blank"
+          }
+        },
+        [
+          _c("button", { staticClass: "btn btn-primary" }, [
+            _vm._v("SEARCH BY VIN OR LICENSE PLATE")
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c("a", { attrs: { href: "#" } }, [
+        _c(
+          "button",
+          { staticClass: "btn btn-primary", attrs: { type: "button" } },
+          [_vm._v("SEARCH BY VEHICLE BRAND")]
+        )
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -55069,6 +55180,7 @@ Vue.use(vue_signature_pad__WEBPACK_IMPORTED_MODULE_1__["default"]);
 
 Vue.component('header-component', __webpack_require__(/*! ./components/HeaderComponent.vue */ "./resources/js/components/HeaderComponent.vue")["default"]);
 Vue.component('footer-component', __webpack_require__(/*! ./components/FooterComponent.vue */ "./resources/js/components/FooterComponent.vue")["default"]);
+Vue.component('vehicle-search', __webpack_require__(/*! ./components/parts/VehicleSearchComponent */ "./resources/js/components/parts/VehicleSearchComponent.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -55204,6 +55316,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FooterComponent_vue_vue_type_template_id_abfbddf2___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FooterComponent_vue_vue_type_template_id_abfbddf2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/FreeRepairComponent.vue":
+/*!*********************************************************!*\
+  !*** ./resources/js/components/FreeRepairComponent.vue ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _FreeRepairComponent_vue_vue_type_template_id_5eba93c9___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FreeRepairComponent.vue?vue&type=template&id=5eba93c9& */ "./resources/js/components/FreeRepairComponent.vue?vue&type=template&id=5eba93c9&");
+/* harmony import */ var _FreeRepairComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FreeRepairComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/FreeRepairComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _FreeRepairComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _FreeRepairComponent_vue_vue_type_template_id_5eba93c9___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _FreeRepairComponent_vue_vue_type_template_id_5eba93c9___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/FreeRepairComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/FreeRepairComponent.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/FreeRepairComponent.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FreeRepairComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./FreeRepairComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FreeRepairComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FreeRepairComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/FreeRepairComponent.vue?vue&type=template&id=5eba93c9&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/components/FreeRepairComponent.vue?vue&type=template&id=5eba93c9& ***!
+  \****************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FreeRepairComponent_vue_vue_type_template_id_5eba93c9___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./FreeRepairComponent.vue?vue&type=template&id=5eba93c9& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FreeRepairComponent.vue?vue&type=template&id=5eba93c9&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FreeRepairComponent_vue_vue_type_template_id_5eba93c9___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FreeRepairComponent_vue_vue_type_template_id_5eba93c9___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -55503,75 +55684,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/RecallComponent.vue":
-/*!*****************************************************!*\
-  !*** ./resources/js/components/RecallComponent.vue ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _RecallComponent_vue_vue_type_template_id_444f1f51___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./RecallComponent.vue?vue&type=template&id=444f1f51& */ "./resources/js/components/RecallComponent.vue?vue&type=template&id=444f1f51&");
-/* harmony import */ var _RecallComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RecallComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/RecallComponent.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _RecallComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _RecallComponent_vue_vue_type_template_id_444f1f51___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _RecallComponent_vue_vue_type_template_id_444f1f51___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/RecallComponent.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/RecallComponent.vue?vue&type=script&lang=js&":
-/*!******************************************************************************!*\
-  !*** ./resources/js/components/RecallComponent.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_RecallComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./RecallComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/RecallComponent.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_RecallComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/RecallComponent.vue?vue&type=template&id=444f1f51&":
-/*!************************************************************************************!*\
-  !*** ./resources/js/components/RecallComponent.vue?vue&type=template&id=444f1f51& ***!
-  \************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RecallComponent_vue_vue_type_template_id_444f1f51___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./RecallComponent.vue?vue&type=template&id=444f1f51& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/RecallComponent.vue?vue&type=template&id=444f1f51&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RecallComponent_vue_vue_type_template_id_444f1f51___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RecallComponent_vue_vue_type_template_id_444f1f51___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
 /***/ "./resources/js/components/SpreadTheWorldComponent.vue":
 /*!*************************************************************!*\
   !*** ./resources/js/components/SpreadTheWorldComponent.vue ***!
@@ -55710,6 +55822,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/parts/VehicleSearchComponent.vue":
+/*!******************************************************************!*\
+  !*** ./resources/js/components/parts/VehicleSearchComponent.vue ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _VehicleSearchComponent_vue_vue_type_template_id_4efe7563___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VehicleSearchComponent.vue?vue&type=template&id=4efe7563& */ "./resources/js/components/parts/VehicleSearchComponent.vue?vue&type=template&id=4efe7563&");
+/* harmony import */ var _VehicleSearchComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./VehicleSearchComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/parts/VehicleSearchComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _VehicleSearchComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _VehicleSearchComponent_vue_vue_type_template_id_4efe7563___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _VehicleSearchComponent_vue_vue_type_template_id_4efe7563___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/parts/VehicleSearchComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/parts/VehicleSearchComponent.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/components/parts/VehicleSearchComponent.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VehicleSearchComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./VehicleSearchComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/parts/VehicleSearchComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VehicleSearchComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/parts/VehicleSearchComponent.vue?vue&type=template&id=4efe7563&":
+/*!*************************************************************************************************!*\
+  !*** ./resources/js/components/parts/VehicleSearchComponent.vue?vue&type=template&id=4efe7563& ***!
+  \*************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VehicleSearchComponent_vue_vue_type_template_id_4efe7563___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./VehicleSearchComponent.vue?vue&type=template&id=4efe7563& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/parts/VehicleSearchComponent.vue?vue&type=template&id=4efe7563&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VehicleSearchComponent_vue_vue_type_template_id_4efe7563___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VehicleSearchComponent_vue_vue_type_template_id_4efe7563___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/data/cars.js":
 /*!***********************************!*\
   !*** ./resources/js/data/cars.js ***!
@@ -55721,70 +55902,70 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 var cars = [{
   img: "acura.png",
-  phone: "001-888-234-2138",
+  phone: "1-888-234-2138",
   url: ["http://recalls.acura.com/"],
   name: "Acura",
   text: true,
   makes: ["2003 Acura 3.2CL", "2002-2003 Acura 3.2TL", "2013-2016 Acura ILX", "2013-2014 Acura ILX Hybrid", "2003-2006 Acura MDX", "2007-2016 Acura RDX", "2005-2012 Acura RL", "2009-2014 Acura TL", "2009-2014 Acura TSX", "2010-2013 Acura ZDX"]
 }, {
   img: "audi.png",
-  phone: "001-800-253-2834",
+  phone: "1-800-253-2834",
   url: ["http://audiusa.com/recall"],
   name: "Audi",
   text: false,
   makes: ["2006-2013 Audi A3", "2005-2008 Audi A4 Avant", "2006-2009 Audi A4 Cabriolet", "2005-2008 Audi A4 Sedan", "2010-2011 Audi A5 Cabriolet", "2003-2011 Audi A6 Avant", "2005-2011 Audi A6 Sedan", "2009-2012 Audi Q5", "2017 Audi R8", "2008 Audi RS 4 Cabriolet"]
 }, {
   img: "bmw.png",
-  phone: "001-844-504-4340",
+  phone: "1-844-504-4340",
   url: ["https://www.bmwusa.com/safety-and-emission-recalls.html"],
   name: "BMW",
   text: true,
   makes: ["2008-2013 BMW 1 Series", "2000-2013 BMW 3 Series", "2002-2003 BMW 5 Series", "2011-2015 BMW X1", "2007-2010 BMW X3", "2003-2013 BMW X5", "2008-2014 BMW X6", "2010-2011 BMW X6 Hybrid"]
 }, {
   img: "cadillac.png",
-  phone: "001-800-458-8006",
+  phone: "1-800-458-8006",
   url: ["https://my.cadillac.com/recalls/"],
   name: "Cadillac",
   text: false,
   makes: ["2007-2014 Cadillac Escalade", "2007-2014 Cadillac Escalade ESV", "2007-2013 Cadillac Escalade EXT"]
 }, {
   img: "chevrolet.png",
-  phone: "001-800-630-2438",
+  phone: "1-800-630-2438",
   url: ["http://my.gm.com/recalls"],
   name: "Chevrolet",
   text: false,
   makes: ["2007-2013 Chevrolet Avalanche", "2007-2014 Chevrolet Silverado HD", "2007-2013 Chevrolet Silverado LD", "2007-2014 Chevrolet Suburban", "2007-2014 Chevrolet Tahoe"]
 }, {
   img: "chrysler.png",
-  phone: "001-833-585-0144",
+  phone: "1-833-585-0144",
   url: ["https://www.mopar.com/en-us/my-vehicle/recalls/search.html"],
   name: "Chrysler",
   text: false,
   makes: ["2005-2015 Chrysler 300", "2007-2009 Chrysler Aspen", "2007-2008 Chrysler Crossfire"]
 }, {
   img: "sterling_bullet.png",
-  phone: "001-800-385-4357",
+  phone: "1-800-385-4357",
   url: ["https://alliancetruckparts.com/sterling"],
   name: "Daimler Trucks North America (Sterling Bullet)",
   text: false,
   makes: ["2008-2009 Sterling Bullet"]
 }, {
   img: "sprinter.png",
-  phone: "001-877-762-8267",
+  phone: "1-877-762-8267",
   url: ["https://www.mbvans.com/sprinter/owners-resources/recall", "https://www.freightlinersprinterusa.com/freightliner/owners-resources/recall"],
   name: "Daimler Vans USA LLC (Sprinter)",
   text: false,
   makes: ["2007-2009 Dodge Sprinter", "2007-2017 Freightliner Sprinter", "2010-2017 Mercedes-Benz Sprinter"]
 }, {
   img: "dodge.png",
-  phone: "001-833-585-0144",
+  phone: "1-833-585-0144",
   url: ["https://www.mopar.com/en-us/my-vehicle/recalls/search.html"],
   name: "Dodge/Ram",
   text: false,
   makes: ["2008-2014 Dodge Challenger", "2006-2015 Dodge Charger", "2005-2011 Dodge Dakota", "2004-2009 Dodge Durango", "2005-2008 Dodge Magnum", "2003-2008 Dodge Ram 1500/2500/3500 Pickup", "2005-2009 Dodge Ram 2500 Pickup", "2007-2010 Dodge Ram 3500 Cab Chassis", "2006-2009 Dodge Ram 3500 Pickup", "2008-2010 Dodge Ram 4500/5500 Cab Chassis"]
 }, {
   img: "ferrari.png",
-  phone: "001-201-816-2668",
+  phone: "1-201-816-2668",
   url: ["https://auto.ferrari.com/en_US/owners/recall-campaign/"],
   name: "Ferrari",
   text: false,
@@ -55800,70 +55981,70 @@ var cars = [{
 // },
 {
   img: "ford.png",
-  phone: "001-866-436-7332",
+  phone: "1-866-436-7332",
   url: ["https://owner.ford.com/service/what-you-need-to-know-about-the-takata-airbag-recall.html"],
   name: "Ford",
   text: true,
   makes: ["2007-2010 Ford Edge", "2006-2012 Ford Fusion", "2005-2006 Ford GT", "2005-2014 Ford Mustang", "2004-2011 Ford Ranger"]
 }, {
   img: "gmc.png",
-  phone: "001-866-996-9463",
+  phone: "1-866-996-9463",
   url: ["https://my.gm.com/recalls"],
   name: "GMC",
   text: false,
   makes: ["2007-2014 GMC Sierra HD", "2007-2013 GMC Sierra LD", "2007-2014 GMC Yukon", "2007-2014 GMC Yukon XL"]
 }, {
   img: "honda.png",
-  phone: "001-888-234-2138",
+  phone: "1-888-234-2138",
   url: ["https://owners.honda.com/service-maintenance/recalls"],
   name: "Honda",
   text: true,
   makes: ["2001-2012 Honda Accord", "2001-2011 Honda Civic", "2003-2011 Honda Civic Hybrid", "2001-2011 Honda Civic NGV", "2010-2015 Honda Crosstour", "2002-2011 Honda CR-V", "2011-2015 Honda CR-Z", "2003-2011 Honda Element", "2010-2014 Honda FCX Clarity", "2007-2013 Honda Fit", "2013-2014 Honda Fit EV", "2010-2014 Honda Insight", "2002-2004 Honda Odyssey", "2003-2015 Honda Pilot", "2006-2014 Honda Ridgeline"]
 }, {
   img: "infiniti.png",
-  phone: "001-888-387-5947",
+  phone: "1-888-387-5947",
   url: ["https://www.infinitiusa.com/takata-airbag-recall.html"],
   name: "Infiniti",
   text: true,
   makes: ["2003-2008 Infiniti FX", "2001 Infiniti I30", "2002-2004 Infiniti I35", "2006-2010 Infiniti M", "2002-2003 Infiniti QX4"]
 }, {
   img: "jaguar.png",
-  phone: "001-800-452-4827",
+  phone: "1-800-452-4827",
   url: ["https://www.jaguarusa.com/owners/airbag-recall/index.html"],
   name: "Jaguar",
   text: false,
   makes: ["2009-2015 Jaguar XF"]
 }, {
   img: "jeep.png",
-  phone: "001-833-585-0144",
+  phone: "1-833-585-0144",
   url: ["https://www.mopar.com/en-us/my-"],
   name: "Jeep",
   text: false,
   makes: ["2007-2016 Jeep Wrangler"]
 }, {
   img: "land_rover.png",
-  phone: "001-833-585-0144",
+  phone: "1-833-585-0144",
   url: ["https://www.landroverusa.com/ownership/airbag-recall/index.html"],
   name: "Land Rover",
   text: false,
   makes: ["2007-2012 Land Rover Range Rover"]
 }, {
   img: "lexus.png",
-  phone: "001-800-255-3987",
+  phone: "1-800-255-3987",
   url: ["https://www.toyota.com/recall"],
   name: "Lexus",
   text: true,
   makes: ["2007-2012 Lexus ES350", "2010-2017 Lexus GX460", "2006-2013 Lexus IS250/350", "2010-2015 Lexus IS250C/350C", "2008-2014 Lexus IS F", "2012 Lexus LFA", "2002-2010 Lexus SC430"]
 }, {
   img: "lincoln.png",
-  phone: "001-800-521-4140",
+  phone: "1-800-521-4140",
   url: ["https://owner.lincoln.com/service/frequently-asked-questions-regarding-takata-airbag-inflator-recalls.html"],
   name: "Lincoln",
   text: false,
   makes: ["2007-2010 Lincoln MKX", "2006-2012 Lincoln Zephyr/MKZ"]
 }, {
   img: "mazda.png",
-  phone: "001-800-222-5500",
+  phone: "1-800-222-5500",
   url: ["https://www.mazdarecallinfo.com/"],
   name: "Mazda",
   text: true,
@@ -55883,7 +56064,7 @@ var cars = [{
 // },
 {
   img: "mercedes.png",
-  phone: "001-877-496-3691",
+  phone: "1-877-496-3691",
   url: ["https://www.mbusa.com/mercedes/recall"],
   name: "Mercedes-Benz",
   text: false,
@@ -55897,70 +56078,70 @@ var cars = [{
   makes: ["2006-2011 Mercury Milan"]
 }, {
   img: "mitsubishi.png",
-  phone: "001-655-681-6147",
+  phone: "1-655-681-6147",
   url: ["https://www.mitsubishicars.com/recall"],
   name: "Mitsubishi",
   text: false,
   makes: ["2012-2017 Mitsubishi i-MiEV", "2004-2007 Mitsubishi Lancer", "2004-2006 Mitsubishi Lancer Evolution", "2004 Mitsubishi Lancer Sportback", "2006-2009 Mitsubishi Raider"]
 }, {
   img: "nissan.png",
-  phone: "001-888-546-1048",
+  phone: "1-888-546-1048",
   url: ["https://www.nissanusa.com/takata-airbag-recall.html"],
   name: "Nissan",
   text: true,
   makes: ["2001-2003 Nissan Maxima", "2002-2004 Nissan Pathfinder", "2002-2006 Nissan Sentra", "2007-2012 Nissan Versa"]
 }, {
   img: "pontiac.png",
-  phone: "001-800-620-7668",
+  phone: "1-800-620-7668",
   url: ["https://my.gm.com/recalls"],
   name: "Pontiac",
   text: false,
   makes: ["2003-2010 Pontiac Vibe"]
 }, {
   img: "saab.png",
-  phone: "001-800-955-9007",
+  phone: "1-800-955-9007",
   url: ["https://my.gm.com/recalls"],
   name: "Saab",
   text: false,
   makes: ["2005-2006 Saab 9-2x", "2006-2011 Saab 9-3", "2006-2009 Saab 9-5"]
 }, {
   img: "saturn.png",
-  phone: "001-800-972-8876",
+  phone: "1-800-972-8876",
   url: ["https://my.gm.com/recalls"],
   name: "Saturn",
   text: false,
   makes: ["2008-2009 Saturn Astra"]
 }, {
   img: "scion.png",
-  phone: "001-800-331-4331",
+  phone: "1-800-331-4331",
   url: ["https://www.toyota.com/recall"],
   name: "Scion",
   text: true,
   makes: ["2008-2015 Scion XB"]
 }, {
   img: "subaru.png",
-  phone: "001-0844-373-6614",
+  phone: "1-0844-373-6614",
   url: ["https://www.subaru.com/vehicle-recalls.html"],
   name: "Subaru",
   text: true,
   makes: ["2003-2006 Subaru Baja", "2009-2013 Subaru Forester", "2004-2011 Subaru Impreza (Including WRX/STI)", "2003-2014 Subaru Legacy", "2003-2014 Subaru Outback", "2006-2014 Subaru Tribeca", "2012-2014 Subaru WRX/STI"]
 }, {
   img: "tesla.png",
-  phone: "001-877-798-3752",
+  phone: "1-877-798-3752",
   url: ["https://www.tesla.com/vin-recall-search"],
   name: "Tesla",
   text: false,
   makes: ["2012-2016 Tesla Model S"]
 }, {
   img: "toyota.png",
-  phone: "001-800-331-4331",
+  phone: "1-800-331-4331",
   url: ["https://www.toyota.com/recall"],
   name: "Toyota",
   text: true,
   makes: ["2010-2016 Toyota 4Runner", "2003-2013 Toyota Corolla", "2003-2008 Toyota Corolla Matrix", "2009-2013 Toyota Matrix", "2004-2005 Toyota Rav4", "2002-2006 Toyota Sequoia", "2011-2014 Toyota Sienna", "2003-2006 Toyota Tundra", "2006-2011 Toyota Yaris (Hatch Back)", "2007-2012 Toyota Yaris (Sedan)"]
 }, {
   img: "volkswagen.png",
-  phone: "001-800-893-5298",
+  phone: "1-800-893-5298",
   url: ["https://www.vw.com/owners/recalls/"],
   name: "Volkswagen",
   text: false,
@@ -55984,7 +56165,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _components_HomeComponent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/HomeComponent */ "./resources/js/components/HomeComponent.vue");
 /* harmony import */ var _components_QuickFactsComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/QuickFactsComponent */ "./resources/js/components/QuickFactsComponent.vue");
-/* harmony import */ var _components_RecallComponent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/RecallComponent */ "./resources/js/components/RecallComponent.vue");
+/* harmony import */ var _components_FreeRepairComponent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/FreeRepairComponent */ "./resources/js/components/FreeRepairComponent.vue");
 /* harmony import */ var _components_SpreadTheWorldComponent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/SpreadTheWorldComponent */ "./resources/js/components/SpreadTheWorldComponent.vue");
 /* harmony import */ var _components_VinLookupComponent__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/VinLookupComponent */ "./resources/js/components/VinLookupComponent.vue");
 
@@ -56002,8 +56183,8 @@ var routes = [{
   path: '/quick-facts',
   component: _components_QuickFactsComponent__WEBPACK_IMPORTED_MODULE_3__["default"]
 }, {
-  path: '/recall',
-  component: _components_RecallComponent__WEBPACK_IMPORTED_MODULE_4__["default"]
+  path: '/free-repair',
+  component: _components_FreeRepairComponent__WEBPACK_IMPORTED_MODULE_4__["default"]
 }, {
   path: '/spread-the-world',
   component: _components_SpreadTheWorldComponent__WEBPACK_IMPORTED_MODULE_5__["default"]

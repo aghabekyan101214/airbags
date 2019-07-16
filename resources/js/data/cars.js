@@ -1,7 +1,7 @@
 const cars = [
     {
         img: "acura.png",
-        phone: "001-888-234-2138",
+        phone: "1-888-234-2138",
         url: [
             "http://recalls.acura.com/",
         ],
@@ -22,7 +22,7 @@ const cars = [
     },
     {
         img: "audi.png",
-        phone: "001-800-253-2834",
+        phone: "1-800-253-2834",
         url: [
             "http://audiusa.com/recall",
         ],
@@ -43,7 +43,7 @@ const cars = [
     },
     {
         img: "bmw.png",
-        phone: "001-844-504-4340",
+        phone: "1-844-504-4340",
         url: [
             "https://www.bmwusa.com/safety-and-emission-recalls.html",
         ],
@@ -62,7 +62,7 @@ const cars = [
     },
     {
         img: "cadillac.png",
-        phone: "001-800-458-8006",
+        phone: "1-800-458-8006",
         url: [
             "https://my.cadillac.com/recalls/",
         ],
@@ -76,7 +76,7 @@ const cars = [
     },
     {
         img: "chevrolet.png",
-        phone: "001-800-630-2438",
+        phone: "1-800-630-2438",
         url: [
             "http://my.gm.com/recalls",
         ],
@@ -92,7 +92,7 @@ const cars = [
     },
     {
         img: "chrysler.png",
-        phone: "001-833-585-0144",
+        phone: "1-833-585-0144",
         url: [
             "https://www.mopar.com/en-us/my-vehicle/recalls/search.html",
         ],
@@ -107,7 +107,7 @@ const cars = [
     },
     {
         img: "sterling_bullet.png",
-        phone: "001-800-385-4357",
+        phone: "1-800-385-4357",
         url: [
             "https://alliancetruckparts.com/sterling",
         ],
@@ -119,7 +119,7 @@ const cars = [
     },
     {
         img: "sprinter.png",
-        phone: "001-877-762-8267",
+        phone: "1-877-762-8267",
         url: [
             "https://www.mbvans.com/sprinter/owners-resources/recall",
             "https://www.freightlinersprinterusa.com/freightliner/owners-resources/recall"
@@ -134,7 +134,7 @@ const cars = [
     },
     {
         img: "dodge.png",
-        phone: "001-833-585-0144",
+        phone: "1-833-585-0144",
         url: [
             "https://www.mopar.com/en-us/my-vehicle/recalls/search.html",
         ],
@@ -155,7 +155,7 @@ const cars = [
     },
     {
         img: "ferrari.png",
-        phone: "001-201-816-2668",
+        phone: "1-201-816-2668",
         url: [
             "https://auto.ferrari.com/en_US/owners/recall-campaign/",
         ],
@@ -189,7 +189,7 @@ const cars = [
     // },
     {
         img: "ford.png",
-        phone: "001-866-436-7332",
+        phone: "1-866-436-7332",
         url: [
             "https://owner.ford.com/service/what-you-need-to-know-about-the-takata-airbag-recall.html",
         ],
@@ -205,7 +205,7 @@ const cars = [
     },
     {
         img: "gmc.png",
-        phone: "001-866-996-9463",
+        phone: "1-866-996-9463",
         url: [
             "https://my.gm.com/recalls",
         ],
@@ -220,7 +220,7 @@ const cars = [
     },
     {
         img: "honda.png",
-        phone: "001-888-234-2138",
+        phone: "1-888-234-2138",
         url: [
             "https://owners.honda.com/service-maintenance/recalls",
         ],
@@ -246,7 +246,7 @@ const cars = [
     },
     {
         img: "infiniti.png",
-        phone: "001-888-387-5947",
+        phone: "1-888-387-5947",
         url: [
             "https://www.infinitiusa.com/takata-airbag-recall.html",
         ],
@@ -262,7 +262,7 @@ const cars = [
     },
     {
         img: "jaguar.png",
-        phone: "001-800-452-4827",
+        phone: "1-800-452-4827",
         url: [
             "https://www.jaguarusa.com/owners/airbag-recall/index.html",
         ],
@@ -274,7 +274,7 @@ const cars = [
     },
     {
         img: "jeep.png",
-        phone: "001-833-585-0144",
+        phone: "1-833-585-0144",
         url: [
             "https://www.mopar.com/en-us/my-",
         ],
@@ -286,7 +286,7 @@ const cars = [
     },
     {
         img: "land_rover.png",
-        phone: "001-833-585-0144",
+        phone: "1-833-585-0144",
         url: [
             "https://www.landroverusa.com/ownership/airbag-recall/index.html",
         ],
@@ -298,7 +298,7 @@ const cars = [
     },
     {
         img: "lexus.png",
-        phone: "001-800-255-3987",
+        phone: "1-800-255-3987",
         url: [
             "https://www.toyota.com/recall",
         ],
@@ -316,7 +316,7 @@ const cars = [
     },
     {
         img: "lincoln.png",
-        phone: "001-800-521-4140",
+        phone: "1-800-521-4140",
         url: [
             "https://owner.lincoln.com/service/frequently-asked-questions-regarding-takata-airbag-inflator-recalls.html",
         ],
@@ -329,7 +329,7 @@ const cars = [
     },
     {
         img: "mazda.png",
-        phone: "001-800-222-5500",
+        phone: "1-800-222-5500",
         url: [
             "https://www.mazdarecallinfo.com/",
         ],
@@ -361,7 +361,7 @@ const cars = [
     // },
     {
         img: "mercedes.png",
-        phone: "001-877-496-3691",
+        phone: "1-877-496-3691",
         url: [
             "https://www.mbusa.com/mercedes/recall",
         ],
@@ -395,7 +395,7 @@ const cars = [
     },
     {
         img: "mitsubishi.png",
-        phone: "001-655-681-6147",
+        phone: "1-655-681-6147",
         url: [
             "https://www.mitsubishicars.com/recall",
         ],
@@ -412,7 +412,7 @@ const cars = [
     },
     {
         img: "nissan.png",
-        phone: "001-888-546-1048",
+        phone: "1-888-546-1048",
         url: [
             "https://www.nissanusa.com/takata-airbag-recall.html",
         ],
@@ -427,7 +427,7 @@ const cars = [
     },
     {
         img: "pontiac.png",
-        phone: "001-800-620-7668",
+        phone: "1-800-620-7668",
         url: [
             "https://my.gm.com/recalls",
         ],
@@ -439,7 +439,7 @@ const cars = [
     },
     {
         img: "saab.png",
-        phone: "001-800-955-9007",
+        phone: "1-800-955-9007",
         url: [
             "https://my.gm.com/recalls",
         ],
@@ -453,7 +453,7 @@ const cars = [
     },
     {
         img: "saturn.png",
-        phone: "001-800-972-8876",
+        phone: "1-800-972-8876",
         url: [
             "https://my.gm.com/recalls",
         ],
@@ -465,7 +465,7 @@ const cars = [
     },
     {
         img: "scion.png",
-        phone: "001-800-331-4331",
+        phone: "1-800-331-4331",
         url: [
             "https://www.toyota.com/recall",
         ],
@@ -477,7 +477,7 @@ const cars = [
     },
     {
         img: "subaru.png",
-        phone: "001-0844-373-6614",
+        phone: "1-0844-373-6614",
         url: [
             "https://www.subaru.com/vehicle-recalls.html",
         ],
@@ -495,7 +495,7 @@ const cars = [
     },
     {
         img: "tesla.png",
-        phone: "001-877-798-3752",
+        phone: "1-877-798-3752",
         url: [
             "https://www.tesla.com/vin-recall-search",
         ],
@@ -507,7 +507,7 @@ const cars = [
     },
     {
         img: "toyota.png",
-        phone: "001-800-331-4331",
+        phone: "1-800-331-4331",
         url: [
             "https://www.toyota.com/recall"
         ],
@@ -528,7 +528,7 @@ const cars = [
     },
     {
         img: "volkswagen.png",
-        phone: "001-800-893-5298",
+        phone: "1-800-893-5298",
         url: [
             "https://www.vw.com/owners/recalls/"
         ],

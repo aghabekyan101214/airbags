@@ -15,7 +15,7 @@
                 <a v-if="android" class="contact-icon detail-icon" style="color: white; text-decoration: none" :href="'tel:' + data.phone">{{ data.phone }}</a>
                 <a v-else-if="ios" class="contact-icon detail-icon" style="color: white; text-decoration: none" :href="'facetime://' + data.phone">{{ data.phone }}</a>
                 <a class="visit-icon detail-icon" style="color: white; text-decoration: none" target="_blank" :href="url" v-for="url in data.url">Visit our Website</a>
-                <a v-if="data.text" class="text-icon detail-icon">Click to text</a>
+                <a v-if="data.text && mobile" :href="'sms:/' + data.phone" style="color: white; text-decoration: none" class="text-icon detail-icon">Click to text</a>
             </div>
         </div>
     </transition>
@@ -53,6 +53,9 @@
         color: #42b983;
     }
 
+    .model-description {
+        overflow: auto;
+    }
     /*
      * The following styles are auto-applied to elements with
      * transition="modal" when their visibility is toggled

@@ -24,16 +24,6 @@
                 </div>
             </div>
         </section>
-        <!--panel end-->
-        <section class="info-block">
-            <p>More Information</p>
-            <img src="/site/images/logo-nhtsa-white.png" alt="logo-nhtsa-white">
-            <a href="#">NHTSA Takata Airbag Recall Spotlight</a>
-            <br>
-            <img src="/site/images/airbag-recall.png" alt="airbag-recall">
-            <a href="#">Takata Airbag Recall 101</a>
-        </section>
-        <!--info-block end-->
         <Modal v-if="showModal" @close="showModal = false" :data="carData" :mobile="mobile" :ios="ios" :android="android" />
     </div>
 

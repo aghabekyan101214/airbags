@@ -18,11 +18,7 @@
                     </li>
                 </ul>
             </section>
-            <div class="gradient-bg search-banner">
-                <p>SEE IF YOUR VEHICLE IS ON THE LIST</p>
-                <button type="button" class="btn btn-primary">SEARCH BY VIN OR LICENSE PLATE</button>
-                <button type="button" class="btn btn-primary">SEARCH BY VEHICLE BRAND</button>
-            </div>
+            <vehicle-search></vehicle-search>
         </div>
     </div>
 </template>

@@ -30,7 +30,7 @@ Vue.use(VueSignaturePad);
 
 Vue.component('header-component', require('./components/HeaderComponent.vue').default);
 Vue.component('footer-component', require('./components/FooterComponent.vue').default);
-
+Vue.component('vehicle-search', require('./components/parts/VehicleSearchComponent').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

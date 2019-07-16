@@ -38,7 +38,8 @@
 
 <div id="wrapper">
     <header-component></header-component>
-    <router-view/>
+    <router-view></router-view>
+    <footer-component></footer-component>
 </div>
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>

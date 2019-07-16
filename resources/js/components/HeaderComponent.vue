@@ -15,7 +15,7 @@
                         <router-link class="nav-link" to="/quick-facts">Quick Facts</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/recall">About the FREE Repair</router-link>
+                        <router-link class="nav-link" to="/free-repair">About the <span class="yellow-txt">FREE </span> Repair</router-link>
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link" to="/#">More About the Recall</router-link>
@@ -42,5 +42,3 @@
         }
     }
 </script>
-
-<!--<router-link to="/unsubscribe">Unsubscribe</router-link>-->
