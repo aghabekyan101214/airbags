@@ -39802,9 +39802,16 @@ var staticRenderFns = [
             )
           ]),
           _vm._v(" "),
-          _c("a", { staticClass: "to-tweet", attrs: { href: "#" } }, [
-            _vm._v("Tweet this")
-          ])
+          _c(
+            "a",
+            {
+              staticClass: "to-tweet",
+              attrs: {
+                href: "https://twitter.com/intent/tweet?text=Hello%20world"
+              }
+            },
+            [_vm._v("Tweet this")]
+          )
         ]),
         _vm._v(" "),
         _c("li", [
