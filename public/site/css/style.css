@@ -58,8 +58,7 @@
     }
 
     header .navbar-brand img {
-        width: 157px;
-        height: 50px;
+        width: 100%;
         margin-left: 20px;
     }
 

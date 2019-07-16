@@ -4,7 +4,7 @@
         <img src="/site/images/logo-nhtsa-white.png" alt="logo-nhtsa-white">
         <a href="#">NHTSA Takata Airbag Recall Spotlight</a>
         <br/>
-        <img src="/site/images/airbag-recall.png" alt="airbag-recall">
+        <img class="rec-log" src="/site/images/logo_new.png" alt="airbag-recall">
         <a href="#">Takata Airbag Recall 101</a>
     </footer>
 </template>
@@ -14,3 +14,9 @@
 
     }
 </script>
+<style scoped>
+    .rec-log {
+        width: 195px;
+        height: 75px;
+    }
+</style>

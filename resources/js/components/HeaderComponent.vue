@@ -2,7 +2,7 @@
     <header>
         <nav class="navbar navbar-toggleable-sm bg-faded">
             <router-link class="navbar-brand nb" to="/">
-                <img src="/site/images/logo_new.png" alt="logo" height="" width="">
+                <img src="/site/images/logo.png" alt="logo" height="" width="">
             </router-link>
             <button ref="nav" class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
                 <span> </span>
@@ -44,7 +44,5 @@
 </script>
 
 <style scoped>
-    .nb {
-        padding-top: 0!important;
-    }
+
 </style>
