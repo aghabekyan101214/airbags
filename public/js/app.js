@@ -39877,7 +39877,7 @@ var staticRenderFns = [
         _c("li", [
           _c("span", [
             _vm._v(
-              "More than 41 million vehicles in the US have been recalled due to a defective Tataka Airbag.  TWEET THIS"
+              "More than 41 million vehicles in the US have been recalled due to a defective Tataka Airbag."
             )
           ]),
           _vm._v(" "),
@@ -39944,7 +39944,7 @@ var staticRenderFns = [
         _c("li", [
           _c("span", [
             _vm._v(
-              "16 people in the US have died and hundreds more have reported serious injuries. TWEET THIS"
+              "16 people in the US have died and hundreds more have reported serious injuries."
             )
           ]),
           _vm._v(" "),
