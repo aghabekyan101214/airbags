@@ -17,11 +17,7 @@
                 <div class="social-row">
                     SHARE THIS STORY:
                     <a href="#"><img src="/site/images/instagram-icon.png" alt="icon"> </a>
-                    <div class="fb-share-button"
-                         data-href="/site/videos/home_video.mp4"
-                         data-layout="button_count">
-                    </div>
-<!--                    <a href="#"><img src="/site/images/fb-icon.png" alt="icon"> </a>-->
+                    <a href="javascript:void(0)" @click="share('/site/videos/home_video.mp4')"><img src="/site/images/fb-icon.png" alt="icon"> </a>
                     <a :href="'https://twitter.com/intent/tweet?text=' + baseUrl + '/site/videos/home_video.mp4'"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
                 </div>
             </section>
@@ -32,11 +28,7 @@
                 <div class="social-row">
                     SHARE THIS STORY:
                     <a href="#"><img src="/site/images/instagram-icon.png" alt="icon"> </a>
-                    <div class="fb-share-button"
-                         data-href="/site/videos/video1.mp4"
-                         data-layout="button_count">
-                    </div>
-<!--                    <a href="#"><img src="/site/images/fb-icon.png" alt="icon"> </a>-->
+                    <a href="javascript:void(0)" @click="share('/site/videos/video1.mp4')"><img src="/site/images/fb-icon.png" alt="icon"> </a>
                     <a :href="'https://twitter.com/intent/tweet?text=' + baseUrl + '/site/videos/video1.mp4'"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
                 </div>
             </section>
@@ -47,11 +39,11 @@
                 <div class="social-row">
                     SHARE THIS STORY:
                     <a href="#"><img src="/site/images/instagram-icon.png" alt="icon"> </a>
-                    <div class="fb-share-button"
-                         data-href="/site/videos/video2.mp4"
-                         data-layout="button_count">
-                    </div>
-<!--                    <a href="#"><img src="/site/images/fb-icon.png" alt="icon"> </a>-->
+<!--                    <div class="fb-share-button"-->
+<!--                         data-href="/site/videos/video2.mp4"-->
+<!--                         data-layout="button_count">-->
+<!--                    </div>-->
+                    <a href="javascript:void(0)" @click="share('/site/videos/video2.mp4')"><img src="/site/images/fb-icon.png" alt="icon"> </a>
                     <a :href="'https://twitter.com/intent/tweet?text=' + baseUrl + '/site/videos/video2.mp4'"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
                 </div>
             </section>
@@ -69,5 +61,13 @@
             }
 
         },
+        methods: {
+            share(url) {
+                FB.ui({
+                    method: 'share',
+                    href: window.location.origin + url,
+                }, function(response){});
+            }
+        }
     }
 </script>
