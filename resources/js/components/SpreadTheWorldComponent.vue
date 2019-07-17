@@ -11,30 +11,36 @@
                 </p>
             </section>
             <section>
-                <img class="lazy-loaded" src="/site/images/placeholder-img.png">
+                <video controls>
+                    <source src="/site/videos/home_video.mp4" type="video/mp4">
+                </video>
                 <div class="social-row">
                     SHARE THIS STORY:
                     <a href="#"><img src="/site/images/instagram-icon.png" alt="icon"> </a>
                     <a href="#"><img src="/site/images/fb-icon.png" alt="icon"> </a>
-                    <a href="#"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
+                    <a :href="'https://twitter.com/intent/tweet?text=' + baseUrl + '/site/videos/home_video.mp4'"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
                 </div>
             </section>
             <section>
-                <img class="lazy-loaded" src="/site/images/placeholder-img.png">
+                <video controls>
+                    <source src="/site/videos/video1.mp4" type="video/mp4">
+                </video>
                 <div class="social-row">
                     SHARE THIS STORY:
                     <a href="#"><img src="/site/images/instagram-icon.png" alt="icon"> </a>
                     <a href="#"><img src="/site/images/fb-icon.png" alt="icon"> </a>
-                    <a href="#"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
+                    <a :href="'https://twitter.com/intent/tweet?text=' + baseUrl + '/site/videos/video1.mp4'"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
                 </div>
             </section>
             <section>
-                <img class="lazy-loaded" src="/site/images/placeholder-img.png">
+                <video controls>
+                    <source src="/site/videos/video2.mp4" type="video/mp4">
+                </video>
                 <div class="social-row">
                     SHARE THIS STORY:
                     <a href="#"><img src="/site/images/instagram-icon.png" alt="icon"> </a>
                     <a href="#"><img src="/site/images/fb-icon.png" alt="icon"> </a>
-                    <a href="#"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
+                    <a :href="'https://twitter.com/intent/tweet?text=' + baseUrl + '/site/videos/video2.mp4'"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
                 </div>
             </section>
             <vehicle-search></vehicle-search>
@@ -45,6 +51,11 @@
 
 <script>
     export default {
+        data: function() {
+            return {
+                baseUrl: window.location.origin
+            }
 
+        },
     }
 </script>

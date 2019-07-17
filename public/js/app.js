@@ -2076,7 +2076,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      baseUrl: window.location.origin
+    };
+  }
+});
 
 /***/ }),
 
@@ -40103,11 +40115,89 @@ var render = function() {
       [
         _vm._m(0),
         _vm._v(" "),
-        _vm._m(1),
+        _c("section", [
+          _vm._m(1),
+          _vm._v(" "),
+          _c("div", { staticClass: "social-row" }, [
+            _vm._v("\n                SHARE THIS STORY:\n                "),
+            _vm._m(2),
+            _vm._v(" "),
+            _vm._m(3),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                attrs: {
+                  href:
+                    "https://twitter.com/intent/tweet?text=" +
+                    _vm.baseUrl +
+                    "/site/videos/home_video.mp4"
+                }
+              },
+              [
+                _c("img", {
+                  attrs: { src: "/site/images/twitter-icon.png", alt: "icon" }
+                })
+              ]
+            )
+          ])
+        ]),
         _vm._v(" "),
-        _vm._m(2),
+        _c("section", [
+          _vm._m(4),
+          _vm._v(" "),
+          _c("div", { staticClass: "social-row" }, [
+            _vm._v("\n                SHARE THIS STORY:\n                "),
+            _vm._m(5),
+            _vm._v(" "),
+            _vm._m(6),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                attrs: {
+                  href:
+                    "https://twitter.com/intent/tweet?text=" +
+                    _vm.baseUrl +
+                    "/site/videos/video1.mp4"
+                }
+              },
+              [
+                _c("img", {
+                  attrs: { src: "/site/images/twitter-icon.png", alt: "icon" }
+                })
+              ]
+            )
+          ])
+        ]),
         _vm._v(" "),
-        _vm._m(3),
+        _c("section", [
+          _vm._m(7),
+          _vm._v(" "),
+          _c("div", { staticClass: "social-row" }, [
+            _vm._v("\n                SHARE THIS STORY:\n                "),
+            _vm._m(8),
+            _vm._v(" "),
+            _vm._m(9),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                attrs: {
+                  href:
+                    "https://twitter.com/intent/tweet?text=" +
+                    _vm.baseUrl +
+                    "/site/videos/video2.mp4"
+                }
+              },
+              [
+                _c("img", {
+                  attrs: { src: "/site/images/twitter-icon.png", alt: "icon" }
+                })
+              ]
+            )
+          ])
+        ]),
         _vm._v(" "),
         _c("vehicle-search")
       ],
@@ -40136,90 +40226,84 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", [
-      _c("img", {
-        staticClass: "lazy-loaded",
-        attrs: { src: "/site/images/placeholder-img.png" }
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "social-row" }, [
-        _vm._v("\n                SHARE THIS STORY:\n                "),
-        _c("a", { attrs: { href: "#" } }, [
-          _c("img", {
-            attrs: { src: "/site/images/instagram-icon.png", alt: "icon" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("a", { attrs: { href: "#" } }, [
-          _c("img", { attrs: { src: "/site/images/fb-icon.png", alt: "icon" } })
-        ]),
-        _vm._v(" "),
-        _c("a", { attrs: { href: "#" } }, [
-          _c("img", {
-            attrs: { src: "/site/images/twitter-icon.png", alt: "icon" }
-          })
-        ])
-      ])
+    return _c("video", { attrs: { controls: "" } }, [
+      _c("source", {
+        attrs: { src: "/site/videos/home_video.mp4", type: "video/mp4" }
+      })
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", [
+    return _c("a", { attrs: { href: "#" } }, [
       _c("img", {
-        staticClass: "lazy-loaded",
-        attrs: { src: "/site/images/placeholder-img.png" }
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "social-row" }, [
-        _vm._v("\n                SHARE THIS STORY:\n                "),
-        _c("a", { attrs: { href: "#" } }, [
-          _c("img", {
-            attrs: { src: "/site/images/instagram-icon.png", alt: "icon" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("a", { attrs: { href: "#" } }, [
-          _c("img", { attrs: { src: "/site/images/fb-icon.png", alt: "icon" } })
-        ]),
-        _vm._v(" "),
-        _c("a", { attrs: { href: "#" } }, [
-          _c("img", {
-            attrs: { src: "/site/images/twitter-icon.png", alt: "icon" }
-          })
-        ])
-      ])
+        attrs: { src: "/site/images/instagram-icon.png", alt: "icon" }
+      })
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", [
+    return _c("a", { attrs: { href: "#" } }, [
+      _c("img", { attrs: { src: "/site/images/fb-icon.png", alt: "icon" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("video", { attrs: { controls: "" } }, [
+      _c("source", {
+        attrs: { src: "/site/videos/video1.mp4", type: "video/mp4" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { attrs: { href: "#" } }, [
       _c("img", {
-        staticClass: "lazy-loaded",
-        attrs: { src: "/site/images/placeholder-img.png" }
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "social-row" }, [
-        _vm._v("\n                SHARE THIS STORY:\n                "),
-        _c("a", { attrs: { href: "#" } }, [
-          _c("img", {
-            attrs: { src: "/site/images/instagram-icon.png", alt: "icon" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("a", { attrs: { href: "#" } }, [
-          _c("img", { attrs: { src: "/site/images/fb-icon.png", alt: "icon" } })
-        ]),
-        _vm._v(" "),
-        _c("a", { attrs: { href: "#" } }, [
-          _c("img", {
-            attrs: { src: "/site/images/twitter-icon.png", alt: "icon" }
-          })
-        ])
-      ])
+        attrs: { src: "/site/images/instagram-icon.png", alt: "icon" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { attrs: { href: "#" } }, [
+      _c("img", { attrs: { src: "/site/images/fb-icon.png", alt: "icon" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("video", { attrs: { controls: "" } }, [
+      _c("source", {
+        attrs: { src: "/site/videos/video2.mp4", type: "video/mp4" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { attrs: { href: "#" } }, [
+      _c("img", {
+        attrs: { src: "/site/images/instagram-icon.png", alt: "icon" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { attrs: { href: "#" } }, [
+      _c("img", { attrs: { src: "/site/images/fb-icon.png", alt: "icon" } })
     ])
   }
 ]
