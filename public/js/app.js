@@ -2082,6 +2082,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -40119,10 +40131,18 @@ var render = function() {
           _vm._m(1),
           _vm._v(" "),
           _c("div", { staticClass: "social-row" }, [
-            _vm._v("\n                SHARE THIS STORY:\n                "),
+            _vm._v(
+              "\n                    SHARE THIS STORY:\n                    "
+            ),
             _vm._m(2),
             _vm._v(" "),
-            _vm._m(3),
+            _c("div", {
+              staticClass: "fb-share-button",
+              attrs: {
+                "data-href": "/site/videos/home_video.mp4",
+                "data-layout": "button_count"
+              }
+            }),
             _vm._v(" "),
             _c(
               "a",
@@ -40144,13 +40164,21 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("section", [
-          _vm._m(4),
+          _vm._m(3),
           _vm._v(" "),
           _c("div", { staticClass: "social-row" }, [
-            _vm._v("\n                SHARE THIS STORY:\n                "),
-            _vm._m(5),
+            _vm._v(
+              "\n                    SHARE THIS STORY:\n                    "
+            ),
+            _vm._m(4),
             _vm._v(" "),
-            _vm._m(6),
+            _c("div", {
+              staticClass: "fb-share-button",
+              attrs: {
+                "data-href": "/site/videos/video1.mp4",
+                "data-layout": "button_count"
+              }
+            }),
             _vm._v(" "),
             _c(
               "a",
@@ -40172,13 +40200,21 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("section", [
-          _vm._m(7),
+          _vm._m(5),
           _vm._v(" "),
           _c("div", { staticClass: "social-row" }, [
-            _vm._v("\n                SHARE THIS STORY:\n                "),
-            _vm._m(8),
+            _vm._v(
+              "\n                    SHARE THIS STORY:\n                    "
+            ),
+            _vm._m(6),
             _vm._v(" "),
-            _vm._m(9),
+            _c("div", {
+              staticClass: "fb-share-button",
+              attrs: {
+                "data-href": "/site/videos/video2.mp4",
+                "data-layout": "button_count"
+              }
+            }),
             _vm._v(" "),
             _c(
               "a",
@@ -40217,7 +40253,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("p", { staticClass: "sml-description" }, [
         _vm._v(
-          "\n                Help Morgan Freeman spread the word about\n                the dangers of the Takata Airbag Recall. Share\n                the below videos on social media, you might\n                just save a life.\n            "
+          "\n                    Help Morgan Freeman spread the word about\n                    the dangers of the Takata Airbag Recall. Share\n                    the below videos on social media, you might\n                    just save a life.\n                "
         )
       ])
     ])
@@ -40226,7 +40262,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("video", { attrs: { preload: "none", controls: "" } }, [
+    return _c("video", { attrs: { controls: "", preload: "none" } }, [
       _c("source", {
         attrs: { src: "/site/videos/home_video.mp4", type: "video/mp4" }
       })
@@ -40246,15 +40282,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("a", { attrs: { href: "#" } }, [
-      _c("img", { attrs: { src: "/site/images/fb-icon.png", alt: "icon" } })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("video", { attrs: { preload: "none", controls: "" } }, [
+    return _c("video", { attrs: { controls: "", preload: "none" } }, [
       _c("source", {
         attrs: { src: "/site/videos/video1.mp4", type: "video/mp4" }
       })
@@ -40274,15 +40302,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("a", { attrs: { href: "#" } }, [
-      _c("img", { attrs: { src: "/site/images/fb-icon.png", alt: "icon" } })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("video", { attrs: { preload: "none", controls: "" } }, [
+    return _c("video", { attrs: { controls: "", preload: "none" } }, [
       _c("source", {
         attrs: { src: "/site/videos/video2.mp4", type: "video/mp4" }
       })
@@ -40296,14 +40316,6 @@ var staticRenderFns = [
       _c("img", {
         attrs: { src: "/site/images/instagram-icon.png", alt: "icon" }
       })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("a", { attrs: { href: "#" } }, [
-      _c("img", { attrs: { src: "/site/images/fb-icon.png", alt: "icon" } })
     ])
   }
 ]
