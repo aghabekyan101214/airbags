@@ -1,7 +1,9 @@
 <template>
     <div>
         <section class="video-block">
-            <img @click="showVideoModal = true" src="/site/images/video-img.png" alt="">
+            <img src="/site/images/Morgan_Freeman.jpg" alt="">
+            <img @click="showVideoModal = true" src="/site/images/play.png" alt="play" class="play-button">
+            <p class="text">Morgan Freeman discusses the serious nature of the Takata airbag recall</p>
             <div class="dropdown">
                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                     SEE IF YOUR VEHICLE IS ON THE LIST
@@ -68,3 +70,21 @@
         }
     }
 </script>
+<style scoped>
+    .play-button {
+        position: absolute;
+        height: 130px;
+        width: 130px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -12%);
+    }
+    .text {
+        position: absolute;
+        top: 70%;
+        color:#fff;
+        width: 100%;
+        text-align: center;
+        padding: 0 30px;
+    }
+</style>
