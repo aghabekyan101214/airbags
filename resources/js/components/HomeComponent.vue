@@ -1,7 +1,7 @@
 <template>
     <div>
         <section class="video-block">
-            <img src="/site/images/video-img.png" alt="">
+            <img @click="showVideoModal = true" src="/site/images/video-img.png" alt="">
             <div class="dropdown">
                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                     SEE IF YOUR VEHICLE IS ON THE LIST
@@ -25,6 +25,7 @@
             </div>
         </section>
         <Modal v-if="showModal" @close="showModal = false" :data="carData" :mobile="mobile" :ios="ios" :android="android" />
+        <video-modal v-if="showVideoModal" @close="showVideoModal = false"></video-modal>
     </div>
 
 </template>
@@ -33,8 +34,10 @@
     import Vue from 'vue';
     import cars from "../data/cars";
     import Modal from "./ModalComponent";
+    import VideoModal from "./parts/VideoModal";
     import {isMobileOnly, isIOS, isAndroid} from "mobile-device-detect";
     import VueScrollTo from 'vue-scrollto';
+
     Vue.use(VueScrollTo);
 
     export default {
@@ -42,6 +45,7 @@
             return {
                 cars: cars,
                 showModal: false,
+                showVideoModal: false,
                 carData: "",
                 mobile: isMobileOnly,
                 ios: isIOS,
@@ -59,7 +63,8 @@
             }
         },
         components: {
-            Modal
+            Modal,
+            VideoModal
         }
     }
 </script>

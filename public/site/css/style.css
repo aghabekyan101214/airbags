@@ -186,7 +186,7 @@
         position: relative;
     }
 
-    .video-block img {
+    .video-block img, video {
         width: 100%;
     }
 
