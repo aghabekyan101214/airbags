@@ -40226,7 +40226,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("video", { attrs: { controls: "" } }, [
+    return _c("video", { attrs: { preload: "none", controls: "" } }, [
       _c("source", {
         attrs: { src: "/site/videos/home_video.mp4", type: "video/mp4" }
       })
@@ -40254,7 +40254,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("video", { attrs: { controls: "" } }, [
+    return _c("video", { attrs: { preload: "none", controls: "" } }, [
       _c("source", {
         attrs: { src: "/site/videos/video1.mp4", type: "video/mp4" }
       })
@@ -40282,7 +40282,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("video", { attrs: { controls: "" } }, [
+    return _c("video", { attrs: { preload: "none", controls: "" } }, [
       _c("source", {
         attrs: { src: "/site/videos/video2.mp4", type: "video/mp4" }
       })

@@ -11,7 +11,7 @@
                 </p>
             </section>
             <section>
-                <video controls>
+                <video preload="none" controls>
                     <source src="/site/videos/home_video.mp4" type="video/mp4">
                 </video>
                 <div class="social-row">
@@ -22,7 +22,7 @@
                 </div>
             </section>
             <section>
-                <video controls>
+                <video preload="none" controls>
                     <source src="/site/videos/video1.mp4" type="video/mp4">
                 </video>
                 <div class="social-row">
@@ -33,7 +33,7 @@
                 </div>
             </section>
             <section>
-                <video controls>
+                <video preload="none" controls>
                     <source src="/site/videos/video2.mp4" type="video/mp4">
                 </video>
                 <div class="social-row">
