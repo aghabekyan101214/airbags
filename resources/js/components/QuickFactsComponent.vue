@@ -9,7 +9,7 @@
                 </h3>
                 <ul class="quick-facts-list">
                     <li>
-                        <span>More than 41 million vehicles in the US have been recalled due to a defective Tataka Airbag.  TWEET THIS</span>
+                        <span>More than 41 million vehicles in the US have been recalled due to a defective Tataka Airbag.</span>
                         <a href="https://ctt.ac/Ktrdf" target="_blank" class="to-tweet">Tweet this</a>
                     </li>
                     <li>
@@ -24,7 +24,7 @@
                         <a href="https://ctt.ac/R040e" target="_blank" class="to-tweet">Tweet this</a>
                     </li>
                     <li>
-                        <span>16 people in the US have died and hundreds more have reported serious injuries. TWEET THIS</span>
+                        <span>16 people in the US have died and hundreds more have reported serious injuries.</span>
                         <a href="https://ctt.ac/ygcHU" target="_blank" class="to-tweet">Tweet this</a>
                     </li>
                     <li>
