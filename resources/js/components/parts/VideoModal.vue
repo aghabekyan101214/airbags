@@ -4,7 +4,7 @@
             <div class="modal-wrapper" @click="$emit('close')">
                 <div class="modal-container">
                     <video controls>
-                        <source src="/site/videos/home_video.mp4" type="video/mp4">
+                        <source src="/site/videos/video2.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>

@@ -138,7 +138,7 @@ const cars = [
         url: [
             "https://www.mopar.com/en-us/my-vehicle/recalls/search.html",
         ],
-        name: "Dodge/Ram",
+        name: "Dodge (FCA)",
         text: false,
         makes: [
             "2008-2014 Dodge Challenger",
@@ -146,6 +146,17 @@ const cars = [
             "2005-2011 Dodge Dakota",
             "2004-2009 Dodge Durango",
             "2005-2008 Dodge Magnum",
+        ]
+    },
+    {
+        img: "ram.png",
+        phone: "1-833-585-0144",
+        url: [
+            "https://www.mopar.com/en-us/my-vehicle/recalls/search.html",
+        ],
+        name: "Dodge RAM (FCA)",
+        text: false,
+        makes: [
             "2003-2008 Dodge Ram 1500/2500/3500 Pickup",
             "2005-2009 Dodge Ram 2500 Pickup",
             "2007-2010 Dodge Ram 3500 Cab Chassis",
@@ -363,22 +374,22 @@ const cars = [
         img: "mercedes.png",
         phone: "1-877-496-3691",
         url: [
-            "https://www.mbusa.com/mercedes/recall",
+            "www.mbusa.com/recall",
         ],
         name: "Mercedes-Benz",
         text: false,
         makes: [
-            "2005-2014 Mercedes-Benz C-Class",
-            "2010-2011 Mercedes-Benz E-Class",
-            "2011-2017 Mercedes-Benz E-Class Cabrio",
-            "2010-2017 Mercedes-Benz E-Class Coupe",
-            "2009-2012 Mercedes-Benz GL-Class",
-            "2010-2015 Mercedes-Benz GLK-Class",
-            "2009-2010 Mercedes-Benz ML-Class",
-            "2009-2012 Mercedes-Benz R-Class",
-            "2007-2008 Mercedes-Benz SLK-Class",
-            "2011-2015 Mercedes-Benz SLS-Class",
-
+            "2005-2007 C-Class (203 Platform)",
+            "2008-2015 C-Class (204 Platform)",
+            "2009-2011 ML-Class",
+            "2009-2012 GL-Class",
+            "2009-2012 R-Class",
+            "2010-2015 GLK-Class",
+            "2011-2015 SLS-Class",
+            "2007-2008 SLK-Class",
+            "2010-2011 E-Class Sedan",
+            "2010-2017 E-Class Coupe",
+            "2011-2017 E-Class Cabriolet",
         ]
     },
     {

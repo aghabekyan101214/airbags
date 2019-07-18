@@ -73,8 +73,8 @@
 <style scoped>
     .play-button {
         position: absolute;
-        height: 130px;
-        width: 130px;
+        height: 80px;
+        width: 80px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -12%);
