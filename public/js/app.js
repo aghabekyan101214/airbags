@@ -1879,6 +1879,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -2062,38 +2063,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      baseUrl: window.location.origin
+      baseUrl: window.location.origin,
+      data: ""
     };
   },
-  methods: {
-    share: function share() {
-      var a = this.$refs.a.getElementsByTagName('iframe');
-    }
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get('/get-spread-videos').then(function (response) {
+      return _this.data = response.data;
+    });
   }
 });
 
@@ -6663,7 +6645,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.play-button[data-v-782dcf83] {\n    position: absolute;\n    height: 80px;\n    width: 80px;\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translate(-50%, -12%);\n            transform: translate(-50%, -12%);\n}\n.text[data-v-782dcf83] {\n    position: absolute;\n    top: 70%;\n    color:#fff;\n    width: 100%;\n    text-align: center;\n    padding: 0 30px;\n}\n", ""]);
+exports.push([module.i, "\n.play-button[data-v-782dcf83] {\n    position: absolute;\n    height: 80px;\n    width: 80px;\n    top: 62%;\n    opacity: 0.7;\n    left: 50%;\n    -webkit-transform: translate(-50%, -12%);\n            transform: translate(-50%, -12%);\n}\n.text[data-v-782dcf83] {\n    position: absolute;\n    top: 76%;\n    font-size: 14px;\n    color:#fff;\n    width: 100%;\n    text-align: center;\n    padding: 0 30px;\n}\n@media (max-width: 600px){\n.panel[data-v-782dcf83] {\n        padding: 20px 0 20px 0;\n}\n.panel img[data-v-782dcf83] {\n        height: 35px;\n        margin-top: 10px;\n}\n}\n\n", ""]);
 
 // exports
 
@@ -39860,7 +39842,25 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("section", { staticClass: "model-details" }, [
-        _vm._m(0),
+        _c("div", { staticClass: "panel" }, [
+          _c("h2", [_vm._v("SEARCH BY VEHICLE BRAND")]),
+          _vm._v(" "),
+          _c("p", [_vm._v("choose from the list below")]),
+          _vm._v(" "),
+          _c("p", [
+            _c("img", {
+              directives: [
+                {
+                  name: "scroll-to",
+                  rawName: "v-scroll-to",
+                  value: "#car-block",
+                  expression: "'#car-block'"
+                }
+              ],
+              attrs: { src: "/site/images/arrow_down.png", alt: "" }
+            })
+          ])
+        ]),
         _vm._v(" "),
         _c(
           "div",
@@ -39910,18 +39910,7 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "panel" }, [
-      _c("h2", [_vm._v("SEARCH BY VEHICLE BRAND")]),
-      _vm._v(" "),
-      _c("p", [_vm._v("choose from the list below")])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -39983,7 +39972,7 @@ var render = function() {
             )
           ]),
           _vm._v(" "),
-          _vm.mobile
+          _vm.mobile && _vm.data.phone !== ""
             ? _c(
                 "a",
                 {
@@ -40039,7 +40028,7 @@ var render = function() {
             )
           }),
           _vm._v(" "),
-          _vm.data.text && _vm.mobile
+          _vm.data.text && _vm.mobile && _vm.data.phone !== ""
             ? _c(
                 "a",
                 {
@@ -40231,141 +40220,58 @@ var render = function() {
       [
         _vm._m(0),
         _vm._v(" "),
-        _c("section", [
-          _vm._m(1),
-          _vm._v(" "),
-          _c("div", { staticClass: "social-row" }, [
-            _vm._v("\n                SHARE THIS STORY:\n                "),
-            _vm._m(2),
+        _vm._l(_vm.data, function(video) {
+          return _c("section", [
+            _c("video", { attrs: { controls: "", preload: "none" } }, [
+              _c("source", { attrs: { src: "/storage/" + video.video } })
+            ]),
             _vm._v(" "),
-            _c(
-              "a",
-              {
-                attrs: {
-                  href:
-                    "https://www.facebook.com/sharer/sharer.php?u=" +
-                    _vm.baseUrl +
-                    "/site/videos/home_video.mp4",
-                  target: "_blank"
-                }
-              },
-              [
-                _c("img", {
-                  attrs: { src: "/site/images/fb-icon.png", alt: "icon" }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                attrs: {
-                  href:
-                    "https://twitter.com/intent/tweet?text=" +
-                    _vm.baseUrl +
-                    "/site/videos/home_video.mp4"
-                }
-              },
-              [
-                _c("img", {
-                  attrs: { src: "/site/images/twitter-icon.png", alt: "icon" }
-                })
-              ]
-            )
+            _c("div", { staticClass: "social-row" }, [
+              _vm._v("\n                    SHARE THIS STORY:\n"),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "https://www.facebook.com/sharer/sharer.php?u=" +
+                      _vm.baseUrl +
+                      "/storage/" +
+                      video.video,
+                    target: "_blank"
+                  }
+                },
+                [
+                  _c("img", {
+                    attrs: { src: "/site/images/fb-icon.png", alt: "icon" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "https://twitter.com/intent/tweet?text=" +
+                      _vm.baseUrl +
+                      "/storage/" +
+                      video.video
+                  }
+                },
+                [
+                  _c("img", {
+                    attrs: { src: "/site/images/twitter-icon.png", alt: "icon" }
+                  })
+                ]
+              )
+            ])
           ])
-        ]),
-        _vm._v(" "),
-        _c("section", [
-          _vm._m(3),
-          _vm._v(" "),
-          _c("div", { staticClass: "social-row" }, [
-            _vm._v("\n                SHARE THIS STORY:\n                "),
-            _vm._m(4),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                attrs: {
-                  href:
-                    "https://www.facebook.com/sharer/sharer.php?u=" +
-                    _vm.baseUrl +
-                    "/site/videos/video1.mp4",
-                  target: "_blank"
-                }
-              },
-              [
-                _c("img", {
-                  attrs: { src: "/site/images/fb-icon.png", alt: "icon" }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                attrs: {
-                  href:
-                    "https://twitter.com/intent/tweet?text=" +
-                    _vm.baseUrl +
-                    "/site/videos/video1.mp4"
-                }
-              },
-              [
-                _c("img", {
-                  attrs: { src: "/site/images/twitter-icon.png", alt: "icon" }
-                })
-              ]
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("section", [
-          _vm._m(5),
-          _vm._v(" "),
-          _c("div", { staticClass: "social-row" }, [
-            _vm._v("\n                SHARE THIS STORY:\n                "),
-            _vm._m(6),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                attrs: {
-                  href:
-                    "https://www.facebook.com/sharer/sharer.php?u=" +
-                    _vm.baseUrl +
-                    "/site/videos/video2.mp4",
-                  target: "_blank"
-                }
-              },
-              [
-                _c("img", {
-                  attrs: { src: "/site/images/fb-icon.png", alt: "icon" }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                attrs: {
-                  href:
-                    "https://twitter.com/intent/tweet?text=" +
-                    _vm.baseUrl +
-                    "/site/videos/video2.mp4"
-                }
-              },
-              [
-                _c("img", {
-                  attrs: { src: "/site/images/twitter-icon.png", alt: "icon" }
-                })
-              ]
-            )
-          ])
-        ]),
+        }),
         _vm._v(" "),
         _c("vehicle-search")
       ],
-      1
+      2
     )
   ])
 }
@@ -40381,69 +40287,9 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("p", { staticClass: "sml-description" }, [
         _vm._v(
-          "\n                Help Morgan Freeman spread the word about\n                the dangers of the Takata Airbag Recall. Share\n                the below videos on social media, you might\n                just save a life.\n            "
+          "\n                    Help Morgan Freeman spread the word about\n                    the dangers of the Takata Airbag Recall. Share\n                    the below videos on social media, you might\n                    just save a life.\n                "
         )
       ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("video", { attrs: { controls: "", preload: "none" } }, [
-      _c("source", {
-        attrs: { src: "/site/videos/home_video.mp4", type: "video/mp4" }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("a", { attrs: { href: "#" } }, [
-      _c("img", {
-        attrs: { src: "/site/images/instagram-icon.png", alt: "icon" }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("video", { attrs: { controls: "", preload: "none" } }, [
-      _c("source", {
-        attrs: { src: "/site/videos/video1.mp4", type: "video/mp4" }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("a", { attrs: { href: "#" } }, [
-      _c("img", {
-        attrs: { src: "/site/images/instagram-icon.png", alt: "icon" }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("video", { attrs: { controls: "", preload: "none" } }, [
-      _c("source", {
-        attrs: { src: "/site/videos/video2.mp4", type: "video/mp4" }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("a", { attrs: { href: "#" } }, [
-      _c("img", {
-        attrs: { src: "/site/images/instagram-icon.png", alt: "icon" }
-      })
     ])
   }
 ]
@@ -56199,11 +56045,11 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js"); // window.axios.defaults.headers.common = {
-//     'X-Requested-With': 'XMLHttpRequest',
-//     'X-CSRF-TOKEN' : document.querySelector('meta[name="csrf-token"]').getAttribute('content')
-// };
-
+window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+window.axios.defaults.headers.common = {
+  'X-Requested-With': 'XMLHttpRequest',
+  'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+};
 
 
 Vue.use(vue_signature_pad__WEBPACK_IMPORTED_MODULE_1__["default"]);
@@ -57170,7 +57016,7 @@ var cars = [{
   makes: ["2003-2008 Dodge Ram 1500/2500/3500 Pickup", "2005-2009 Dodge Ram 2500 Pickup", "2007-2010 Dodge Ram 3500 Cab Chassis", "2006-2009 Dodge Ram 3500 Pickup", "2008-2010 Dodge Ram 4500/5500 Cab Chassis"]
 }, {
   img: "ferrari.png",
-  phone: "1-201-816-2668",
+  phone: "",
   url: ["https://auto.ferrari.com/en_US/owners/recall-campaign/"],
   name: "Ferrari",
   text: false,

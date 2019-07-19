@@ -166,7 +166,7 @@ const cars = [
     },
     {
         img: "ferrari.png",
-        phone: "1-201-816-2668",
+        phone: "",
         url: [
             "https://auto.ferrari.com/en_US/owners/recall-campaign/",
         ],

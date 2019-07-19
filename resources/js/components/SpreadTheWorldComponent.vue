@@ -10,37 +10,15 @@
                     just save a life.
                 </p>
             </section>
-            <section>
+            <section v-for="video in data">
                 <video controls preload="none">
-                    <source src="/site/videos/home_video.mp4" type="video/mp4">
+                    <source :src="'/storage/' + video.video">
                 </video>
                 <div class="social-row">
                     SHARE THIS STORY:
-                    <a href="#"><img src="/site/images/instagram-icon.png" alt="icon"> </a>
-                    <a :href="'https://www.facebook.com/sharer/sharer.php?u=' + baseUrl + '/site/videos/home_video.mp4'" target="_blank"><img src="/site/images/fb-icon.png" alt="icon"> </a>
-                    <a :href="'https://twitter.com/intent/tweet?text=' + baseUrl + '/site/videos/home_video.mp4'"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
-                </div>
-            </section>
-            <section>
-                <video controls preload="none">
-                    <source src="/site/videos/video1.mp4" type="video/mp4">
-                </video>
-                <div class="social-row">
-                    SHARE THIS STORY:
-                    <a href="#"><img src="/site/images/instagram-icon.png" alt="icon"> </a>
-                    <a :href="'https://www.facebook.com/sharer/sharer.php?u=' + baseUrl + '/site/videos/video1.mp4'" target="_blank"><img src="/site/images/fb-icon.png" alt="icon"> </a>
-                    <a :href="'https://twitter.com/intent/tweet?text=' + baseUrl + '/site/videos/video1.mp4'"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
-                </div>
-            </section>
-            <section>
-                <video controls preload="none">
-                    <source src="/site/videos/video2.mp4" type="video/mp4">
-                </video>
-                <div class="social-row">
-                    SHARE THIS STORY:
-                    <a href="#"><img src="/site/images/instagram-icon.png" alt="icon"> </a>
-                    <a :href="'https://www.facebook.com/sharer/sharer.php?u=' + baseUrl + '/site/videos/video2.mp4'" target="_blank"><img src="/site/images/fb-icon.png" alt="icon"> </a>
-                    <a :href="'https://twitter.com/intent/tweet?text=' + baseUrl + '/site/videos/video2.mp4'"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
+<!--                    <a href="#"><img src="/site/images/instagram-icon.png" alt="icon"> </a>-->
+                    <a :href="'https://www.facebook.com/sharer/sharer.php?u=' + baseUrl + '/storage/' + video.video" target="_blank"><img src="/site/images/fb-icon.png" alt="icon"> </a>
+                    <a :href="'https://twitter.com/intent/tweet?text=' + baseUrl + '/storage/' + video.video"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
                 </div>
             </section>
             <vehicle-search></vehicle-search>
@@ -53,15 +31,14 @@
     export default {
         data: function() {
             return {
-                baseUrl: window.location.origin
+                baseUrl: window.location.origin,
+                data: ""
             }
 
         },
-        methods: {
-            share() {
-                let a = this.$refs.a.getElementsByTagName('iframe');
-
-            }
+        mounted () {
+            axios.get('/get-spread-videos')
+                .then(response => (this.data = response.data))
         }
     }
 </script>

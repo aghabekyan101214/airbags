@@ -19,6 +19,7 @@
             <div class="panel">
                 <h2>SEARCH BY VEHICLE BRAND</h2>
                 <p>choose from the list below</p>
+                <p><img v-scroll-to="'#car-block'" src="/site/images/arrow_down.png" alt=""></p>
             </div>
             <div class="car-block" id="car-block">
                 <div v-for="(car, i) in cars">
@@ -75,16 +76,30 @@
         position: absolute;
         height: 80px;
         width: 80px;
-        top: 50%;
+        top: 62%;
+        opacity: 0.7;
         left: 50%;
         transform: translate(-50%, -12%);
     }
     .text {
         position: absolute;
-        top: 70%;
+        top: 76%;
+        font-size: 14px;
         color:#fff;
         width: 100%;
         text-align: center;
         padding: 0 30px;
     }
+
+    @media (max-width: 600px){
+        .panel {
+            padding: 20px 0 20px 0;
+        }
+
+        .panel img {
+            height: 35px;
+            margin-top: 10px;
+        }
+    }
+
 </style>

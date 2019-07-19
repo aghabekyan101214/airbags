@@ -12,7 +12,7 @@
                     If your vehicle is on the list,
                     call to schedule your FREE repair
                 </div>
-                <a v-if="mobile" class="contact-icon detail-icon" style="color: white; text-decoration: none" :href="'tel:' + data.phone">{{ data.phone }}</a>
+                <a v-if="mobile && data.phone !== ''" class="contact-icon detail-icon" style="color: white; text-decoration: none" :href="'tel:' + data.phone">{{ data.phone }}</a>
                 <a class="visit-icon detail-icon" :style="'color: white; text-decoration: none;' + style" target="_blank" :href="url" v-for="(url, i) in data.url">
                     <span v-if="data.url.length > 1" class="fz-17">
                         <span v-if="i == 0" style="display: inline">Dodge and Mercedes-Benz Sprinter Customers,</span>
@@ -21,7 +21,7 @@
                     </span>
                     <span v-else-if="data.url.length == 1">Visit our Website</span>
                     </a>
-                <a v-if="data.text && mobile" :href="'sms:/' + data.phone" style="color: white; text-decoration: none" class="text-icon detail-icon">Click to text</a>
+                <a v-if="data.text && mobile && data.phone !== ''" :href="'sms:/' + data.phone" style="color: white; text-decoration: none" class="text-icon detail-icon">Click to text</a>
             </div>
         </div>
     </transition>
