@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Artisan;
 |
 */
 Route::get('/foo', function () {
-    shell_exec("php artisan storage:link");
+    return Artisan::call('storage:link');
 });
 Auth::routes();
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');

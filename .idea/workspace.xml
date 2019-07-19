@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b0b683d-445c-4951-8110-4904042ea755" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/public/storage/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -393,12 +394,12 @@
       <workItem from="1563340404451" duration="18973000" />
       <workItem from="1563426801846" duration="6246000" />
       <workItem from="1563513011676" duration="9263000" />
-      <workItem from="1563523678543" duration="11607000" />
+      <workItem from="1563523678543" duration="11719000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107602000" />
+    <option name="totallyTimeSpent" value="107714000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
