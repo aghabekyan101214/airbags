@@ -20,6 +20,7 @@ Route::group(['prefix' => 'control-panel',  'middleware' => 'auth'], function()
 {
     Route::get('/', 'admin\AdminController@index');
     Route::resource('/spread-the-world', 'admin\SpreadTheWorldController');
+    Route::resource('/quick-facts', 'admin\QuickFactsController');
 });
 
 Route::get('/{vue_capture?}', function () {

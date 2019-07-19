@@ -2021,6 +2021,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -40178,7 +40179,20 @@ var staticRenderFns = [
             _vm._v(
               "Takata airbag recall repairs are completed at NO COST by your local dealer. Free loaner vehicles or other forms of alternate transportation are available during the repair. Some dealers can also offer FREE mobile repair at your home or office, inquire when scheduling your appointment."
             )
-          ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "to-tweet",
+              attrs: {
+                href:
+                  "https://twitter.com/intent/tweet?text=adsasdsadsadasdasd",
+                target: "_blank"
+              }
+            },
+            [_vm._v("Tweet this")]
+          )
         ]),
         _vm._v(" "),
         _c("li", [
