@@ -12,9 +12,7 @@ use Illuminate\Support\Facades\Artisan;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/foo', function () {
-    return Artisan::call('storage:link');
-});
+
 Auth::routes();
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::get('/get-spread-videos', 'SpreadTheWorldController@getVideos');
