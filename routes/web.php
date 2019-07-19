@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/foo', function () {
-    Artisan::call('storage:link');
+    shell_exec("php artisan storage:link");
 });
 Auth::routes();
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
@@ -23,8 +24,8 @@ Route::group(['prefix' => 'control-panel',  'middleware' => 'auth'], function()
     Route::resource('/spread-the-world', 'admin\SpreadTheWorldController');
 });
 
-Route::get('/{vue_capture?}', function () {
-    return view('home');
-})->where('vue_capture', '[\/\w\.-]*');
-
-
+//Route::get('/{vue_capture?}', function () {
+//    return view('home');
+//})->where('vue_capture', '[\/\w\.-]*');
+//
+//
