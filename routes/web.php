@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Artisan;
 Auth::routes();
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::get('/get-spread-videos', 'SpreadTheWorldController@getVideos');
+Route::get('/get-quick-facts', 'QuickFactsController@getFacts');
 Route::group(['prefix' => 'control-panel',  'middleware' => 'auth'], function()
 {
     Route::get('/', 'admin\AdminController@index');

@@ -10,7 +10,7 @@
         <div class="form-group">
             <input type="file" class="form-control form-control-user" name="file" required placeholder="file">
         </div>
-        <button class="btn btn-primary btn-user btn-block">Add</button>
+        <button class="btn btn-primary btn-user btn-block">Update</button>
     </form>
     <div class="row">
         <video width="320" height="240" controls>

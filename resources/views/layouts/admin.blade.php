@@ -61,6 +61,11 @@
                 <i class="fas fa-fw fa-pager"></i>
                 <span>Spread The World</span></a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/control-panel/quick-facts">
+                <i class="fas fa-fw fa-pager"></i>
+                <span>Quick Facts</span></a>
+        </li>
 
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">

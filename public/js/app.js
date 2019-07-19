@@ -1999,30 +1999,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      data: ""
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get('/get-quick-facts').then(function (response) {
+      return _this.data = response.data;
+    });
+  }
+});
 
 /***/ }),
 
@@ -40072,140 +40062,44 @@ var render = function() {
     _c(
       "div",
       { staticClass: "container" },
-      [_vm._m(0), _vm._v(" "), _c("vehicle-search")],
+      [
+        _c("section", { staticClass: "panel" }, [
+          _c("h3", { staticClass: "sml-title" }, [
+            _vm._v(
+              "\n                Quick Facts About the\n                largest automotive safety\n                recall in US history:\n            "
+            )
+          ]),
+          _vm._v(" "),
+          _c(
+            "ul",
+            { staticClass: "quick-facts-list" },
+            _vm._l(_vm.data, function(d) {
+              return _c("li", [
+                _c("span", [_vm._v(_vm._s(d.text))]),
+                _vm._v(" "),
+                d.url !== null
+                  ? _c(
+                      "a",
+                      {
+                        staticClass: "to-tweet",
+                        attrs: { href: d.url, target: "_blank" }
+                      },
+                      [_vm._v("Tweet this")]
+                    )
+                  : _vm._e()
+              ])
+            }),
+            0
+          )
+        ]),
+        _vm._v(" "),
+        _c("vehicle-search")
+      ],
       1
     )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("section", { staticClass: "panel" }, [
-      _c("h3", { staticClass: "sml-title" }, [
-        _vm._v(
-          "\n                Quick Facts About the\n                largest automotive safety\n                recall in US history:\n            "
-        )
-      ]),
-      _vm._v(" "),
-      _c("ul", { staticClass: "quick-facts-list" }, [
-        _c("li", [
-          _c("span", [
-            _vm._v(
-              "More than 41 million vehicles in the US have been recalled due to a defective Tataka Airbag."
-            )
-          ]),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "to-tweet",
-              attrs: { href: "https://ctt.ac/Ktrdf", target: "_blank" }
-            },
-            [_vm._v("Tweet this")]
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("span", [
-            _vm._v(
-              "Vehicles from model years 2000 to 2018, from 34 different brands have been affected."
-            )
-          ]),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "to-tweet",
-              attrs: { href: "https://ctt.ac/LWqK0", target: "_blank" }
-            },
-            [_vm._v("Tweet this")]
-          )
-        ]),
-        _c("li", [
-          _c("span", [
-            _vm._v(
-              "A part inside the defective Takata airbags can explode, shooting sharp metal fragments at passengers inside the vehicle. This can occur no matter what causes the airbag to deploy. "
-            )
-          ]),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "to-tweet",
-              attrs: { href: "https://ctt.ac/1E4q6", target: "_blank" }
-            },
-            [_vm._v("Tweet this")]
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("span", [
-            _vm._v(
-              "Recalled vehicles located in areas of high humidity are at even greater risk."
-            )
-          ]),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "to-tweet",
-              attrs: { href: "https://ctt.ac/R040e", target: "_blank" }
-            },
-            [_vm._v("Tweet this")]
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("span", [
-            _vm._v(
-              "16 people in the US have died and hundreds more have reported serious injuries."
-            )
-          ]),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "to-tweet",
-              attrs: { href: "https://ctt.ac/ygcHU", target: "_blank" }
-            },
-            [_vm._v("Tweet this")]
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("span", [
-            _vm._v(
-              "Takata airbag recall repairs are completed at NO COST by your local dealer. Free loaner vehicles or other forms of alternate transportation are available during the repair. Some dealers can also offer FREE mobile repair at your home or office, inquire when scheduling your appointment."
-            )
-          ]),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "to-tweet",
-              attrs: {
-                href:
-                  "https://twitter.com/intent/tweet?text=adsasdsadsadasdasd",
-                target: "_blank"
-              }
-            },
-            [_vm._v("Tweet this")]
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("span", [
-            _vm._v(
-              " FREE loaner vehicles or other forms of alternate transportation are available during the repair. Some dealers can also offer FREE mobile repair at your home or office, inquire when scheduling your appointment."
-            )
-          ])
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

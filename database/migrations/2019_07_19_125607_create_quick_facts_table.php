@@ -15,8 +15,8 @@ class CreateQuickFactsTable extends Migration
     {
         Schema::create('quick_facts', function (Blueprint $table) {
             $table->increments('id');
-            $table->text();
-            $table->text();
+            $table->text('text');
+            $table->text("url")->nullable();
             $table->timestamps();
         });
     }
