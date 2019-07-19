@@ -24,8 +24,8 @@ Route::group(['prefix' => 'control-panel',  'middleware' => 'auth'], function()
     Route::resource('/spread-the-world', 'admin\SpreadTheWorldController');
 });
 
-//Route::get('/{vue_capture?}', function () {
-//    return view('home');
-//})->where('vue_capture', '[\/\w\.-]*');
-//
-//
+Route::get('/{vue_capture?}', function () {
+    return view('home');
+})->where('vue_capture', '[\/\w\.-]*');
+
+
