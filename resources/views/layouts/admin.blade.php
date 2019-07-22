@@ -20,7 +20,8 @@
 
     <!-- Custom styles for this page -->
     <link href="{{ asset("admin/vendor/datatables/dataTables.bootstrap4.min.css") }}" rel="stylesheet">
-
+{{--    jquery link--}}
+    <script src="{{ asset("admin/vendor/jquery/jquery.min.js") }}"></script>
 </head>
 <body id="page-top">
 
@@ -55,6 +56,12 @@
         <div class="sidebar-heading">
             Pages
         </div>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/control-panel/vehicles">
+                <i class="fas fa-fw fa-pager"></i>
+                <span>Affected Vehicles</span></a>
+        </li>
 
         <li class="nav-item">
             <a class="nav-link" href="/control-panel/spread-the-world">
@@ -163,7 +170,6 @@
         </div>
 
             <!-- Bootstrap core JavaScript-->
-            <script src="{{ asset("admin/vendor/jquery/jquery.min.js") }}"></script>
             <script src="{{ asset("admin/vendor/bootstrap/js/bootstrap.bundle.min.js") }}"></script>
 
             <!-- Core plugin JavaScript-->

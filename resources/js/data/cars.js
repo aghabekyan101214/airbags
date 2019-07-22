@@ -189,15 +189,6 @@ const cars = [
 
         ]
     },
-    // {
-    //     img: "fisker.png",
-    //     phone: "",
-    //     url: "",
-    //     name: "Fisker",
-    //     makes: [
-    //         "2012 Fisker Karma"
-    //     ]
-    // },
     {
         img: "ford.png",
         phone: "1-866-436-7332",

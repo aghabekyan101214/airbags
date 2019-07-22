@@ -46,7 +46,7 @@
     export default {
         data: function() {
             return {
-                cars: cars,
+                cars: "",
                 showModal: false,
                 showVideoModal: false,
                 carData: "",
@@ -59,7 +59,7 @@
         methods: {
             info(i) {
                 this.showModal = true;
-                this.carData = cars[i];
+                this.carData = this.cars[i];
             },
             scrollToMakes() {
 
@@ -68,6 +68,18 @@
         components: {
             Modal,
             VideoModal
+        },
+        created() {
+            var self = this;
+            axios.get('/vehicles', {
+
+            })
+                .then(function (response) {
+                    self.cars = response.data;
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
         }
     }
 </script>

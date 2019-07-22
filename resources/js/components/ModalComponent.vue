@@ -7,19 +7,19 @@
                     X
                 </button>
                 <span>Vehicles under recall:</span><br>
-                <span v-for="(car, i) in data.makes">{{ car }}<br></span>
+                <span v-for="(car, i) in data.makes">{{ car.make }}<br></span>
                 <div class="contact-list">
                     If your vehicle is on the list,
                     call to schedule your FREE repair
                 </div>
                 <a v-if="mobile && data.phone !== ''" class="contact-icon detail-icon" style="color: white; text-decoration: none" :href="'tel:' + data.phone">{{ data.phone }}</a>
-                <a class="visit-icon detail-icon" :style="'color: white; text-decoration: none;' + style" target="_blank" :href="url" v-for="(url, i) in data.url">
-                    <span v-if="data.url.length > 1" class="fz-17">
+                <a class="visit-icon detail-icon" :style="'color: white; text-decoration: none;' + style" target="_blank" :href="url.url" v-for="(url, i) in data.urls">
+                    <span v-if="data.urls.length > 1" class="fz-17">
                         <span v-if="i == 0" style="display: inline">Dodge and Mercedes-Benz Sprinter Customers,</span>
                         <span v-if="i == 1" style="display: inline">Freightliner Sprinter Customers,</span>
                         <span style="text-decoration: underline; display: inline" class="fz-17">Visit our Website</span>
                     </span>
-                    <span v-else-if="data.url.length == 1">Visit our Website</span>
+                    <span v-else-if="data.urls.length === 1">Visit our Website</span>
                     </a>
                 <a v-if="data.text && mobile && data.phone !== ''" :href="'sms:/' + data.phone" style="color: white; text-decoration: none" class="text-icon detail-icon">Click to text</a>
             </div>
@@ -37,7 +37,7 @@
             }
         },
         created() {
-            if(this.$props.data.url.length > 1) {
+            if(this.$props.data.urls.length > 1) {
                 this.style = "margin-bottom: 30px;";
             }
         },
