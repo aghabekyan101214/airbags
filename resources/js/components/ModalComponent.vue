@@ -21,7 +21,7 @@
                     </span>
                     <span v-else-if="data.urls.length === 1">Visit our Website</span>
                     </a>
-                <a v-if="data.text && mobile && data.phone !== ''" :href="'sms:/' + data.phone" style="color: white; text-decoration: none" class="text-icon detail-icon">Click to text</a>
+                <a v-if="data.text == '1' && mobile && data.phone !== ''" :href="'sms:/' + data.phone" style="color: white; text-decoration: none" class="text-icon detail-icon">Click to text</a>
             </div>
         </div>
     </transition>
