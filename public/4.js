@@ -33,7 +33,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("iframe", {
-    attrs: { src: "https://www.nhtsa.gov/recalls", frameborder: "0" }
+    attrs: { src: "http://nhtsa.dot.gov/recalls", frameborder: "0" }
   })
 }
 var staticRenderFns = []
