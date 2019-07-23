@@ -45,12 +45,7 @@ var staticRenderFns = [
     return _c("div", [
       _c("iframe", { attrs: { src: "http://Nhtsa.dot.gov/recalls" } }),
       _vm._v(" "),
-      _c("iframe", {
-        attrs: {
-          src: "https://www.w3schools.com",
-          sandbox: "allow-same-origin allow-scripts"
-        }
-      })
+      _c("iframe", { attrs: { src: "https://www.w3schools.com" } })
     ])
   }
 ]
