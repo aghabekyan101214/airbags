@@ -43,14 +43,14 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
+      _c("iframe", { attrs: { src: "http://Nhtsa.dot.gov/recalls" } }),
+      _vm._v(" "),
       _c("iframe", {
         attrs: {
-          src: "http://Nhtsa.dot.gov/recalls",
+          src: "https://www.w3schools.com",
           sandbox: "allow-same-origin allow-scripts"
         }
-      }),
-      _vm._v(" "),
-      _c("iframe", { attrs: { src: "https://www.w3schools.com" } })
+      })
     ])
   }
 ]
