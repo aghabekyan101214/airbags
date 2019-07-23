@@ -1,5 +1,8 @@
 <template>
-    <iframe src="http://nhtsa.dot.gov/recalls" frameborder="0"></iframe>
+    <div>
+        <iframe src="http://Nhtsa.dot.gov/recalls" sandbox="allow-same-origin allow-scripts"></iframe>
+        <iframe src="https://www.w3schools.com"></iframe>
+    </div>
 </template>
 
 <script>

@@ -13,6 +13,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -32,11 +35,25 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("iframe", {
-    attrs: { src: "http://nhtsa.dot.gov/recalls", frameborder: "0" }
-  })
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("iframe", {
+        attrs: {
+          src: "http://Nhtsa.dot.gov/recalls",
+          sandbox: "allow-same-origin allow-scripts"
+        }
+      }),
+      _vm._v(" "),
+      _c("iframe", { attrs: { src: "https://www.w3schools.com" } })
+    ])
+  }
+]
 render._withStripped = true
 
 
