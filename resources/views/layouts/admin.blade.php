@@ -74,6 +74,12 @@
                 <span>Quick Facts</span></a>
         </li>
 
+        <li class="nav-item">
+            <a class="nav-link" href="/control-panel/statics">
+                <i class="fas fa-fw fa-pager"></i>
+                <span>Static Datas</span></a>
+        </li>
+
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
 

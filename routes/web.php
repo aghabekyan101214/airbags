@@ -17,6 +17,7 @@ Auth::routes();
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::get('/get-spread-videos', 'SpreadTheWorldController@getVideos');
 Route::get('/get-quick-facts', 'QuickFactsController@getFacts');
+Route::get('/static', 'StaticDataController@index');
 Route::get('/vehicles', 'VehiclesController@index');
 //Route::post('/insert', 'InsertController@insert');
 Route::group(['prefix' => 'control-panel',  'middleware' => 'auth'], function()
@@ -25,6 +26,7 @@ Route::group(['prefix' => 'control-panel',  'middleware' => 'auth'], function()
     Route::resource('/spread-the-world', 'admin\SpreadTheWorldController');
     Route::resource('/quick-facts', 'admin\QuickFactsController');
     Route::resource('/vehicles', 'admin\VehiclesController');
+    Route::resource('/statics', 'admin\StaticsController');
 });
 
 Route::get('/{vue_capture?}', function () {

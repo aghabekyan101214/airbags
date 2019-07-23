@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{68:function(t,e,a){"use strict";a.r(e);var n={},r=a(0),s=Object(r.a)(n,function(){var t=this.$createElement;return(this._self._c||t)("iframe",{attrs:{src:"https://www.nhtsa.gov/equipment/takata-recall-spotlight",frameborder:"0"}})},[],!1,null,null,null);e.default=s.exports}}]);

@@ -1,11 +1,11 @@
 import Vue from 'vue';
 import VueRouter from "vue-router";
 
-import HomeComponent from "../components/HomeComponent";
-import QuickFactsComponent from "../components/QuickFactsComponent";
-import FreeRepairComponent from "../components/FreeRepairComponent";
-import SpreadTheWorldComponent from "../components/SpreadTheWorldComponent";
-import VinLookupComponent from "../components/VinLookupComponent";
+const HomeComponent = () => import('../components/HomeComponent');
+const QuickFactsComponent = () => import('../components/QuickFactsComponent');
+const FreeRepairComponent = () => import('../components/FreeRepairComponent');
+const SpreadTheWorldComponent = () => import('../components/SpreadTheWorldComponent');
+const VinLookupComponent = () => import('../components/VinLookupComponent');
 
 Vue.use(VueRouter);
 const routes = [

@@ -23,7 +23,7 @@
             </div>
             <div class="car-block" id="car-block">
                 <div v-for="(car, i) in cars">
-                    <img @click="info(i)" v-bind:src="'/site/images/' + car.img" :alt="car.name">
+                    <img @click="info(i)" v-bind:src="'/storage/' + car.img" :alt="car.name">
                 </div>
             </div>
         </section>
@@ -35,7 +35,6 @@
 
 <script>
     import Vue from 'vue';
-    import cars from "../data/cars";
     import Modal from "./ModalComponent";
     import VideoModal from "./parts/VideoModal";
     import {isMobileOnly, isIOS, isAndroid} from "mobile-device-detect";
@@ -47,6 +46,7 @@
         data: function() {
             return {
                 cars: "",
+                staticData: "",
                 showModal: false,
                 showVideoModal: false,
                 carData: "",

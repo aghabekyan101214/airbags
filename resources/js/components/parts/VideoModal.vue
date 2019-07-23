@@ -4,7 +4,7 @@
             <div class="modal-wrapper" @click="$emit('close')">
                 <div class="modal-container">
                     <video controls>
-                        <source src="/site/videos/video2.mp4" type="video/mp4">
+                        <source v-if="staticData.home_video" :src="'/storage/' + staticData.home_video" type="video/mp4">
                     </video>
                 </div>
             </div>
@@ -14,7 +14,23 @@
 
 <script>
     export default {
+        data: function() {
+            return {
+                staticData: {}
+            }
+        },
+        created() {
+            var self = this;
+            axios.get('/static', {
 
+            })
+                .then(function (response) {
+                    self.staticData = response.data;
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+        }
     }
 </script>
 
