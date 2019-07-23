@@ -1,1 +1,182 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{10:function(t,a,e){var s=e(33);"string"==typeof s&&(s=[[t.i,s,""]]);var n={hmr:!0,transform:void 0,insertInto:void 0};e(3)(s,n);s.locals&&(t.exports=s.locals)},32:function(t,a,e){"use strict";var s=e(10);e.n(s).a},33:function(t,a,e){(t.exports=e(2)(!1)).push([t.i,"\n.fb-share-button[data-v-2dea6524] {\n    background-image: url('/site/images/fb-icon.png');\n}\n",""])},69:function(t,a,e){"use strict";e.r(a);var s={data:function(){return{baseUrl:window.location.origin,data:""}},mounted:function(){var t=this;axios.get("/get-spread-videos").then(function(a){return t.data=a.data})}},n=(e(32),e(0)),i=Object(n.a)(s,function(){var t=this,a=t.$createElement,e=t._self._c||a;return e("div",{staticClass:"container black-block"},[e("div",{staticClass:"container"},[t._m(0),t._v(" "),t._l(t.data,function(a){return e("section",[e("video",{attrs:{controls:"",preload:"none"}},[e("source",{attrs:{src:"/storage/"+a.video}})]),t._v(" "),e("div",{staticClass:"social-row"},[t._v("\n                    SHARE THIS STORY:\n"),t._v(" "),e("a",{attrs:{href:"https://www.facebook.com/sharer/sharer.php?u="+t.baseUrl+"/storage/"+a.video,target:"_blank"}},[e("img",{attrs:{src:"/site/images/fb-icon.png",alt:"icon"}})]),t._v(" "),e("a",{attrs:{href:"https://twitter.com/intent/tweet?text="+t.baseUrl+"/storage/"+a.video}},[e("img",{attrs:{src:"/site/images/twitter-icon.png",alt:"icon"}})])])])}),t._v(" "),e("vehicle-search")],2)])},[function(){var t=this.$createElement,a=this._self._c||t;return a("section",{staticClass:"panel"},[a("h3",{staticClass:"sml-title"},[this._v("Spread the Word, Save a Life")]),this._v(" "),a("p",{staticClass:"sml-description"},[this._v("\n                    Help Morgan Freeman spread the word about\n                    the dangers of the Takata Airbag Recall. Share\n                    the below videos on social media, you might\n                    just save a life.\n                ")])])}],!1,null,"2dea6524",null);a.default=i.exports}}]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[3],{
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuickFactsComponent.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/QuickFactsComponent.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      data: ""
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get('/get-quick-facts').then(function (response) {
+      return _this.data = response.data;
+    });
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuickFactsComponent.vue?vue&type=template&id=d5fc7e30&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/QuickFactsComponent.vue?vue&type=template&id=d5fc7e30& ***!
+  \**********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container black-block" }, [
+    _c(
+      "div",
+      { staticClass: "container" },
+      [
+        _c("section", { staticClass: "panel" }, [
+          _c("h3", { staticClass: "sml-title" }, [
+            _vm._v(
+              "\n                Quick Facts About the\n                largest automotive safety\n                recall in US history:\n            "
+            )
+          ]),
+          _vm._v(" "),
+          _c(
+            "ul",
+            { staticClass: "quick-facts-list" },
+            _vm._l(_vm.data, function(d) {
+              return _c("li", [
+                _c("span", [_vm._v(_vm._s(d.text))]),
+                _vm._v(" "),
+                d.url !== null
+                  ? _c(
+                      "a",
+                      {
+                        staticClass: "to-tweet",
+                        attrs: { href: d.url, target: "_blank" }
+                      },
+                      [_vm._v("Tweet this")]
+                    )
+                  : _vm._e()
+              ])
+            }),
+            0
+          )
+        ]),
+        _vm._v(" "),
+        _c("vehicle-search")
+      ],
+      1
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/QuickFactsComponent.vue":
+/*!*********************************************************!*\
+  !*** ./resources/js/components/QuickFactsComponent.vue ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _QuickFactsComponent_vue_vue_type_template_id_d5fc7e30___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./QuickFactsComponent.vue?vue&type=template&id=d5fc7e30& */ "./resources/js/components/QuickFactsComponent.vue?vue&type=template&id=d5fc7e30&");
+/* harmony import */ var _QuickFactsComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./QuickFactsComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/QuickFactsComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _QuickFactsComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _QuickFactsComponent_vue_vue_type_template_id_d5fc7e30___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _QuickFactsComponent_vue_vue_type_template_id_d5fc7e30___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/QuickFactsComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/QuickFactsComponent.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/QuickFactsComponent.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_QuickFactsComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./QuickFactsComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuickFactsComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_QuickFactsComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/QuickFactsComponent.vue?vue&type=template&id=d5fc7e30&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/components/QuickFactsComponent.vue?vue&type=template&id=d5fc7e30& ***!
+  \****************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuickFactsComponent_vue_vue_type_template_id_d5fc7e30___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./QuickFactsComponent.vue?vue&type=template&id=d5fc7e30& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuickFactsComponent.vue?vue&type=template&id=d5fc7e30&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuickFactsComponent_vue_vue_type_template_id_d5fc7e30___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuickFactsComponent_vue_vue_type_template_id_d5fc7e30___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ })
+
+}]);
