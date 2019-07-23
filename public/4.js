@@ -16,6 +16,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -45,7 +47,13 @@ var staticRenderFns = [
     return _c("div", [
       _c("iframe", { attrs: { src: "http://Nhtsa.dot.gov/recalls" } }),
       _vm._v(" "),
-      _c("iframe", { attrs: { src: "https://www.w3schools.com" } })
+      _c("iframe", {
+        attrs: {
+          id: "inlineFrameExample",
+          src:
+            "https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
+        }
+      })
     ])
   }
 ]
