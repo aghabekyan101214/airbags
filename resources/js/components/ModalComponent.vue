@@ -36,7 +36,7 @@
                 style: ""
             }
         },
-        created() {
+        mounted() {
             if(this.$props.data.urls.length > 1) {
                 this.style = "margin-bottom: 30px;";
             }

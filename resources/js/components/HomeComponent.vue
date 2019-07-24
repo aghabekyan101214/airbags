@@ -9,7 +9,8 @@
                     SEE IF YOUR VEHICLE IS ON THE LIST
                 </button>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" target="_blank" href="https://www.nhtsa.gov/recalls">SEARCH BY VIN OR LICENSE PLATE</a>
+                    <a class="dropdown-item" target="_blank" href="https://www.nhtsa.gov/recalls">SEARCH BY VIN OR
+                        LICENSE PLATE</a>
                     <a class="dropdown-item" v-scroll-to="'#car-block'" href="#car-block">SEARCH BY VEHICLE BRAND</a>
                 </div>
             </div>
@@ -27,7 +28,8 @@
                 </div>
             </div>
         </section>
-        <Modal v-if="showModal" @close="showModal = false" :data="carData" :mobile="mobile" :ios="ios" :android="android" />
+        <Modal v-if="showModal" @close="showModal = false" :data="carData" :mobile="mobile" :ios="ios"
+               :android="android"/>
         <video-modal v-if="showVideoModal" @close="showVideoModal = false"></video-modal>
     </div>
 
@@ -43,7 +45,7 @@
     Vue.use(VueScrollTo);
 
     export default {
-        data: function() {
+        data: function () {
             return {
                 cars: "",
                 staticData: "",
@@ -58,8 +60,8 @@
         },
         methods: {
             info(i) {
-                this.showModal = true;
                 this.carData = this.cars[i];
+                this.showModal = true;
             },
             scrollToMakes() {
 
@@ -71,15 +73,17 @@
         },
         created() {
             var self = this;
-            axios.get('/vehicles', {
-
-            })
+            axios.get('/vehicles', {})
                 .then(function (response) {
                     self.cars = response.data;
+                    self.$emit('loaded', true);
                 })
                 .catch(function (error) {
                     console.log(error);
                 });
+        },
+        mounted() {
+
         }
     }
 </script>
@@ -93,17 +97,18 @@
         left: 50%;
         transform: translate(-50%, -12%);
     }
+
     .text {
         position: absolute;
         top: 76%;
         font-size: 14px;
-        color:#fff;
+        color: #fff;
         width: 100%;
         text-align: center;
         padding: 0 30px;
     }
 
-    @media (max-width: 600px){
+    @media (max-width: 600px) {
         .panel {
             padding: 20px 0 20px 0;
         }

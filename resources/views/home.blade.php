@@ -54,10 +54,8 @@
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<div id="wrapper">
-    <header-component></header-component>
-        <router-view></router-view>
-    <footer-component></footer-component>
+<div id="app">
+    <layout></layout>
 </div>
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>

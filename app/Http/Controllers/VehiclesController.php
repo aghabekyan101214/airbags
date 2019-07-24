@@ -10,6 +10,7 @@ class VehiclesController extends Controller
     public function index(Request $r)
     {
         $data = Vehicle::with(['urls', "makes"])->get()->toArray();
+//        sleep(5);
         return $data;
     }
 }

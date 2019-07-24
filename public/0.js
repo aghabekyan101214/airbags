@@ -52,6 +52,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 
@@ -73,8 +75,8 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_scrollto__WEBPACK_IMPORTED_MO
   },
   methods: {
     info: function info(i) {
-      this.showModal = true;
       this.carData = this.cars[i];
+      this.showModal = true;
     },
     scrollToMakes: function scrollToMakes() {}
   },
@@ -86,10 +88,12 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_scrollto__WEBPACK_IMPORTED_MO
     var self = this;
     axios.get('/vehicles', {}).then(function (response) {
       self.cars = response.data;
+      self.$emit('loaded', true);
     })["catch"](function (error) {
       console.log(error);
     });
-  }
+  },
+  mounted: function mounted() {}
 });
 
 /***/ }),
@@ -140,7 +144,7 @@ __webpack_require__.r(__webpack_exports__);
       style: ""
     };
   },
-  created: function created() {
+  mounted: function mounted() {
     if (this.$props.data.urls.length > 1) {
       this.style = "margin-bottom: 30px;";
     }
@@ -202,7 +206,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.play-button[data-v-782dcf83] {\n    position: absolute;\n    height: 80px;\n    width: 80px;\n    top: 62%;\n    opacity: 0.7;\n    left: 50%;\n    -webkit-transform: translate(-50%, -12%);\n            transform: translate(-50%, -12%);\n}\n.text[data-v-782dcf83] {\n    position: absolute;\n    top: 76%;\n    font-size: 14px;\n    color:#fff;\n    width: 100%;\n    text-align: center;\n    padding: 0 30px;\n}\n@media (max-width: 600px){\n.panel[data-v-782dcf83] {\n        padding: 20px 0 20px 0;\n}\n.panel img[data-v-782dcf83] {\n        height: 35px;\n        margin-top: 10px;\n}\n}\n\n", ""]);
+exports.push([module.i, "\n.play-button[data-v-782dcf83] {\n    position: absolute;\n    height: 80px;\n    width: 80px;\n    top: 62%;\n    opacity: 0.7;\n    left: 50%;\n    -webkit-transform: translate(-50%, -12%);\n            transform: translate(-50%, -12%);\n}\n.text[data-v-782dcf83] {\n    position: absolute;\n    top: 76%;\n    font-size: 14px;\n    color: #fff;\n    width: 100%;\n    text-align: center;\n    padding: 0 30px;\n}\n@media (max-width: 600px) {\n.panel[data-v-782dcf83] {\n        padding: 20px 0 20px 0;\n}\n.panel img[data-v-782dcf83] {\n        height: 35px;\n        margin-top: 10px;\n}\n}\n\n", ""]);
 
 // exports
 
@@ -400,7 +404,7 @@ var render = function() {
                   href: "https://www.nhtsa.gov/recalls"
                 }
               },
-              [_vm._v("SEARCH BY VIN OR LICENSE PLATE")]
+              [_vm._v("SEARCH BY VIN OR\n                    LICENSE PLATE")]
             ),
             _vm._v(" "),
             _c(
