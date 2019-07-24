@@ -82,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/resources/js/components/VinLookupComponent.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+              <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -495,12 +495,12 @@
       <workItem from="1563523678543" duration="16888000" />
       <workItem from="1563774749246" duration="19086000" />
       <workItem from="1563858155404" duration="13008000" />
-      <workItem from="1563947879028" duration="5170000" />
+      <workItem from="1563947879028" duration="5270000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150147000" />
+    <option name="totallyTimeSpent" value="150247000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -942,7 +942,7 @@
     <entry file="file://$PROJECT_DIR$/resources/js/components/VinLookupComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
         </state>
       </provider>
     </entry>
