@@ -1,58 +1,60 @@
 <template>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label>First Name</label>
-                    <input type="text" class="form-control" v-model="firstName">
+    <div class="col-md-12" style="background: white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <div class="form-group">
+                        <label>First Name <span style="color: red">{{ errors.first('firstName') }}</span></label>
+                        <input type="text" v-validate="'required|alpha'" class="form-control" name="firstName" v-model="firstName">
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label>Last Name</label>
-                    <input type="text" class="form-control" v-model="lastName">
+                <div class="col-md-6 col-xs-12">
+                    <div class="form-group">
+                        <label>Last Name <span style="color: red">{{ errors.first('lastName') }}</span></label>
+                        <input type="text"  v-validate="'required|alpha'" class="form-control" name="lastName" v-model="lastName">
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label>Email</label>
-                    <input type="email" class="form-control" v-model="email">
+                <div class="col-md-6 col-xs-12">
+                    <div class="form-group">
+                        <label>Email <span style="color: red">{{ errors.first('email') }}</span></label>
+                        <input v-validate="'required|email'" name="email" type="text" class="form-control" v-model="email">
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label>Vin</label>
-                    <input type="email" class="form-control" v-model="vin">
+                <div class="col-md-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="">Vin <span style="color: red">{{ errors.first('vin') }}</span></label>
+                        <input type="text" v-validate="'required'" class="form-control" name="vin" v-model="vin">
+                    </div>
                 </div>
-            </div>
-            <div>
-                <VueSignaturePad
-                        width="500px"
-                        height="500px"
-                        ref="signaturePad"
-                />
-            </div>
-            <div>
-                <button @click="save">Save</button>
-                <button @click="undo">Undo</button>
-            </div>
-            <div>
-                <input type="submit" class="btn btn-success" @click="unsubscribe()" value="Unsubscribe">
+                <div class="col-md-12 col-xs-12">
+                    <div class="form-group">
+                        <label>Put Your Signature Here <span ref="signatureError" style="color: red"></span></label>
+                        <VueSignaturePad
+                                :style="'border: 1px solid black'"
+                                height="500px"
+                                ref="signaturePad"
+                        />
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button @click="undo">Undo</button>
+                </div>
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-success" @click="unsubscribe()" value="Unsubscribe">
+                </div>
             </div>
         </div>
-        <ul>
-            <li v-for="car in cars">{{ car.name }}
-                <ul>
-                    <li v-for="makes in car.makes">{{ makes }}</li>
-                </ul>
-            </li>
-        </ul>
+        <unsubscribe-popup ></unsubscribe-popup>
     </div>
+
 </template>
 
 <script>
-    import cars from "../data/cars";
+    import UnsubscribePopup from "./parts/UnsubscribePopup"
     export default {
+        components: {
+            UnsubscribePopup
+        },
         data: function() {
             return {
                 firstName: "",
@@ -60,12 +62,33 @@
                 email: "",
                 vin: "",
                 signature: "",
-                cars: cars
+                showModal: false
             }
 
         },
         methods: {
             unsubscribe() {
+                const { isEmpty, data } = this.$refs.signaturePad.saveSignature();
+                this.signature = data;
+                if(isEmpty) {
+                    this.$refs.signatureError.innerHTML = "Please put your signature below";
+                    return;
+                }
+                this.$refs.signatureError.innerHTML = "";
+                this.$validator.validate().then(valid => {
+                    if (!valid) {
+                        window.scrollTo(0,0);
+                    } else {
+                        this.send();
+                    }
+                });
+            },
+            undo() {
+                this.$refs.signaturePad.undoSignature();
+            },
+
+            send() {
+                var self = this;
                 axios.post('/unsubscribing', {
                     firstName: this.firstName,
                     lastName: this.lastName,
@@ -73,19 +96,15 @@
                     vin: this.vin,
                     signature: this.signature
                 }).then(function (response) {
-                        console.log(response.data);
-                    })
+                    self.showModal = true;
+                })
                     .catch(function (error) {
                         console.log(error);
                     });
-            },
-            undo() {
-                this.$refs.signaturePad.undoSignature();
-            },
-            save() {
-                const { isEmpty, data } = this.$refs.signaturePad.saveSignature();
-                this.signature = data;
             }
+        },
+        created() {
+            this.$emit("loaded");
         }
     }
 </script>

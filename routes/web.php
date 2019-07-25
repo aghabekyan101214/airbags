@@ -19,6 +19,7 @@ Route::get('/get-spread-videos', 'SpreadTheWorldController@getVideos');
 Route::get('/get-quick-facts', 'QuickFactsController@getFacts');
 Route::get('/static', 'StaticDataController@index');
 Route::get('/vehicles', 'VehiclesController@index');
+Route::post('/unsubscribing', 'UnsubscribeController@store');
 //Route::post('/insert', 'InsertController@insert');
 Route::group(['prefix' => 'control-panel',  'middleware' => 'auth'], function()
 {

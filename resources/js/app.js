@@ -15,7 +15,9 @@ window.axios.defaults.headers.common = {
 
 import router from "./routes/routes";
 import VueSignaturePad from 'vue-signature-pad';
+import VeeValidate from "vee-validate";
 
+Vue.use(VeeValidate);
 Vue.use(VueSignaturePad);
 /**
  * The following block of code may be used to automatically register your

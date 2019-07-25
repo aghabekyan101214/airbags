@@ -1,30 +1,44 @@
 <template>
     <div>
         <section class="video-block">
-            <img src="/site/images/Morgan_Freeman.jpg" alt="">
-            <img @click="showVideoModal = true" src="/site/images/play.png" alt="play" class="play-button">
-            <p class="text">Morgan Freeman discusses the serious nature of the Takata airbag recall</p>
-            <div class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                    SEE IF YOUR VEHICLE IS ON THE LIST
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" target="_blank" href="https://www.nhtsa.gov/recalls">SEARCH BY VIN OR
-                        LICENSE PLATE</a>
-                    <a class="dropdown-item" v-scroll-to="'#car-block'" href="#car-block">SEARCH BY VEHICLE BRAND</a>
+            <div class="video-content"><img src="/site/images/home-desktop.jpg" class="video-desktop"></div>
+            <div class="video-content"><img src="/site/images/video-img-mobile.png" class="video-mobile"></div>
+
+<!--                    <div class="text-block col-md-12  ">-->
+<!--                        <p>“1 out of 6 vehicles have been <br> affected by the Takata Airbag Recall. <br>Check to see if yours is one</p>-->
+<!--                        <p>It could save our life.“</p>-->
+<!--                        <p class="morgan">- Morgan</p>-->
+<!--                    </div>-->
+
+            <div class="mixed-block">
+                <img @click="showVideoModal = true" src="/site/images/play.png" alt="play" class="play-button">
+                <p class="text">Morgan Freeman discusses the serious nature of the Takata airbag recall</p>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        SEE IF YOUR VEHICLE IS ON THE LIST
+                    </button>
+                    <div class="dropdown-menu">
+                        <router-link to="/vin-lookup">
+                            <button class="dropdown-item">SEARCH BY VIN OR LICENSE PLATE</button>
+                        </router-link>
+                        <a class="dropdown-item" v-scroll-to="'#car-block'" href="#car-block">SEARCH BY VEHICLE BRAND</a>
+                    </div>
                 </div>
             </div>
+
         </section>
         <!--video-block end-->
         <section class="model-details">
             <div class="panel">
                 <h2>SEARCH BY VEHICLE BRAND</h2>
                 <p>choose from the list below</p>
-                <p><img v-scroll-to="'#car-block'" src="/site/images/arrow_down.png" alt=""></p>
+                <p><img v-scroll-to="'#car-block'" height="30" class="cursor-pointer" src="/site/images/arrow_down.png" alt=""></p>
             </div>
-            <div class="car-block" id="car-block">
-                <div v-for="(car, i) in cars">
-                    <img @click="info(i)" v-bind:src="'/storage/' + car.img" :alt="car.name">
+            <div class="car-block" id="car-block" ref="carBlock">
+                <div class="container car-block-inner">
+                    <div v-for="(car, i) in cars">
+                        <img @click="info(i)" class="cursor-pointer" v-bind:src="'/storage/' + car.img" :alt="car.name">
+                    </div>
                 </div>
             </div>
         </section>
@@ -63,9 +77,6 @@
                 this.carData = this.cars[i];
                 this.showModal = true;
             },
-            scrollToMakes() {
-
-            }
         },
         components: {
             Modal,
@@ -82,10 +93,18 @@
                     console.log(error);
                 });
         },
-        mounted() {
 
-        }
     }
+    window.addEventListener("load", function(event) {
+        let hash = window.location.hash;
+        if(hash !== undefined) {
+            var top = document.getElementById('car-block').offsetTop;
+            window.scroll({
+                top: top,
+                behavior: 'smooth'
+            });
+        }
+    });
 </script>
 <style scoped>
     .play-button {
@@ -98,24 +117,40 @@
         transform: translate(-50%, -12%);
     }
 
-    .text {
-        position: absolute;
-        top: 76%;
-        font-size: 14px;
-        color: #fff;
-        width: 100%;
-        text-align: center;
-        padding: 0 30px;
+
+    .panel img {
+        margin-top: 10px;
     }
 
     @media (max-width: 600px) {
         .panel {
-            padding: 20px 0 20px 0;
+            padding: 20px 0 15px 0;
         }
 
-        .panel img {
-            height: 35px;
-            margin-top: 10px;
+        .text {
+            position: absolute;
+            top: 76%;
+            font-size: 14px;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 0 30px;
+        }
+    }
+    @media (min-width: 1200px) {
+        .text-block p {
+
+            font-size: 32px;
+            font-family: "Montserrat";
+            color: rgb(255, 255, 255);
+            line-height: 1.25;
+
+        }
+
+        .text-block {
+            position: absolute;
+            right: 15%;
+            top: 20%;
         }
     }
 

@@ -35,6 +35,19 @@
 </script>
 
 <style scoped>
+    @media (min-width: 1200px) {
+        .modal-container {
+            height: 500px;
+            text-align: center;
+        }
+        video{
+            height: 100%;
+            width: auto!important;
+        }
+    }
+    video {
+        width: 100%;
+    }
     .modal-mask {
         position: fixed;
         z-index: 9998;
