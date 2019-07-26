@@ -5,9 +5,9 @@
             <router-link to="/vin-lookup">
                 <button class="btn btn-primary">SEARCH BY VIN OR LICENSE PLATE</button>
             </router-link>
-            <a href="/#car-block">
+            <router-link to="/#car-block">
                 <button type="button" class="btn btn-primary">SEARCH BY VEHICLE BRAND</button>
-            </a>
+            </router-link>
         </div>
     </div>
 </template>

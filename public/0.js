@@ -144,14 +144,21 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_scrollto__WEBPACK_IMPORTED_MO
     })["catch"](function (error) {
       console.log(error);
     });
+  },
+  mounted: function mounted() {
+    var hash = window.location.hash;
+
+    if (hash != "undefined") {
+      this.$scrollTo(this.$refs.carBlock, 1500);
+    }
   }
 });
 window.addEventListener("load", function (event) {
   var hash = window.location.hash;
-  console.log(hash);
 
   if (hash != "undefined") {
     var top = document.getElementById('car-block').offsetTop;
+    console.log(top);
     window.scroll({
       top: top,
       behavior: 'smooth'

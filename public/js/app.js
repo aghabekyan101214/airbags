@@ -49894,26 +49894,19 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _vm._m(0)
+        _c("router-link", { attrs: { to: "/#car-block" } }, [
+          _c(
+            "button",
+            { staticClass: "btn btn-primary", attrs: { type: "button" } },
+            [_vm._v("SEARCH BY VEHICLE BRAND")]
+          )
+        ])
       ],
       1
     )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("a", { attrs: { href: "/#car-block" } }, [
-      _c(
-        "button",
-        { staticClass: "btn btn-primary", attrs: { type: "button" } },
-        [_vm._v("SEARCH BY VEHICLE BRAND")]
-      )
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
