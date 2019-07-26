@@ -148,6 +148,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_scrollto__WEBPACK_IMPORTED_MO
 });
 window.addEventListener("load", function (event) {
   var hash = window.location.hash;
+  console.log(hash);
 
   if (hash != "") {
     var top = document.getElementById('car-block').offsetTop;

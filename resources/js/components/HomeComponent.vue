@@ -136,6 +136,7 @@
     }
     window.addEventListener("load", function(event) {
         let hash = window.location.hash;
+        console.log(hash)
         if(hash != "") {
             var top = document.getElementById('car-block').offsetTop;
             window.scroll({
