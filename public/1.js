@@ -436,7 +436,7 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("unsubscribe-popup")
+      _vm.showModal ? _c("unsubscribe-popup") : _vm._e()
     ],
     1
   )

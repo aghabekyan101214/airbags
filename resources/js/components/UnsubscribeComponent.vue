@@ -44,7 +44,7 @@
                 </div>
             </div>
         </div>
-        <unsubscribe-popup ></unsubscribe-popup>
+        <unsubscribe-popup v-if="showModal"></unsubscribe-popup>
     </div>
 
 </template>
