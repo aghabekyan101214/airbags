@@ -527,3 +527,12 @@ footer a, footer p{display:block;text-align:center;color:#fff;}
     }
 
 }
+
+@media (max-width: 360px) {
+    header .navbar-brand {
+        width: 70%!important;
+    }
+    .play-icon-mobile {
+        right: 42%!important;
+    }
+}
