@@ -6,7 +6,7 @@ const QuickFactsComponent = () => import('../components/QuickFactsComponent');
 const FreeRepairComponent = () => import('../components/FreeRepairComponent');
 const SpreadTheWorldComponent = () => import('../components/SpreadTheWorldComponent');
 const VinLookupComponent = () => import('../components/VinLookupComponent');
-const UnsubscribeComponent = () => import('../components/UnsubscribeComponent');
+// const UnsubscribeComponent = () => import('../components/UnsubscribeComponent');
 
 Vue.use(VueRouter);
 const routes = [
@@ -15,7 +15,7 @@ const routes = [
     { path: '/free-repair', component: FreeRepairComponent},
     { path: '/spread-the-world', component: SpreadTheWorldComponent},
     { path: '/vin-lookup', component: VinLookupComponent},
-    { path: '/unsubscribe', component: UnsubscribeComponent},
+    // { path: '/unsubscribe', component: UnsubscribeComponent},
 ];
 
 const router = new VueRouter({

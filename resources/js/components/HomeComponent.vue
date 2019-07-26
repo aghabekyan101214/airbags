@@ -161,6 +161,10 @@
         margin-top: 10px;
     }
 
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
     @media (max-width: 600px) {
         .panel {
             padding: 20px 0 15px 0;
