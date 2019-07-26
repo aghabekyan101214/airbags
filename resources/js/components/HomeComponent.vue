@@ -1,31 +1,70 @@
 <template>
     <div>
-        <section class="video-block">
-            <div class="video-content"><img src="/site/images/home-desktop.jpg" class="video-desktop"></div>
-            <div class="video-content"><img src="/site/images/video-img-mobile.png" class="video-mobile"></div>
-
-<!--                    <div class="text-block col-md-12  ">-->
-<!--                        <p>“1 out of 6 vehicles have been <br> affected by the Takata Airbag Recall. <br>Check to see if yours is one</p>-->
-<!--                        <p>It could save our life.“</p>-->
-<!--                        <p class="morgan">- Morgan</p>-->
+<!--        <section class="video-block">-->
+<!--            <div class="video-content"><img src="/site/images/home-desktop.jpg" class="video-desktop"></div>-->
+<!--            <div class="video-content"><img src="/site/images/video-img-mobile.png" class="video-mobile"></div>-->
+<!--            <div class="mixed-block">-->
+<!--                <img @click="showVideoModal = true" src="/site/images/play.png" alt="play" class="play-button">-->
+<!--                <p class="text">Morgan Freeman discusses the serious nature of the Takata airbag recall</p>-->
+<!--                <div class="dropdown">-->
+<!--                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">-->
+<!--                        SEE IF YOUR VEHICLE IS ON THE LIST-->
+<!--                    </button>-->
+<!--                    <div class="dropdown-menu">-->
+<!--                        <router-link to="/vin-lookup">-->
+<!--                            <button class="dropdown-item">SEARCH BY VIN OR LICENSE PLATE</button>-->
+<!--                        </router-link>-->
+<!--                        <a class="dropdown-item" v-scroll-to="'#car-block'" href="#car-block">SEARCH BY VEHICLE BRAND</a>-->
 <!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
-            <div class="mixed-block">
-                <img @click="showVideoModal = true" src="/site/images/play.png" alt="play" class="play-button">
-                <p class="text">Morgan Freeman discusses the serious nature of the Takata airbag recall</p>
-                <div class="dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        SEE IF YOUR VEHICLE IS ON THE LIST
-                    </button>
-                    <div class="dropdown-menu">
-                        <router-link to="/vin-lookup">
-                            <button class="dropdown-item">SEARCH BY VIN OR LICENSE PLATE</button>
-                        </router-link>
-                        <a class="dropdown-item" v-scroll-to="'#car-block'" href="#car-block">SEARCH BY VEHICLE BRAND</a>
+<!--        </section>-->
+        <section class="video-block">
+            <div class="video-content">
+                <img src="/site/images/video-img-desktop.png" class="video-desktop">
+                <div class="video-details">
+                    <div class="desktop-details">
+                        <p>
+                            “1 out of 6 vehicles have been
+                            affected by the <span class="yellow-txt">Takata Airbag Recall.</span>
+                            Check to see if yours is one.
+
+                            It could save your life.”
+                        </p>
+                        <br>
+                        <p>It could save your life.”</p>
+                        <p>- Morgan</p>
+                    </div>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            SEE IF YOUR VEHICLE IS ON THE LIST
+                        </button>
+                        <div class="dropdown-menu">
+                            <router-link to="/vin-lookup">
+                                <button class="dropdown-item">SEARCH BY VIN OR LICENSE PLATE</button>
+                            </router-link>
+                            <a class="dropdown-item" v-scroll-to="'#car-block'" href="#car-block">SEARCH BY VEHICLE BRAND</a>
+                        </div>
+                        <p class="txt-sml">
+                            Morgan Freeman discusses the serious
+                            nature of the Takata Airbag Recall.
+                        </p>
+                        <a class="play-icon" @click="showVideoModal = true">WATCH NOW</a>
+                        <img class="play-icon-mobile" src="/site/images/play-icon-mobile.png" @click="showVideoModal = true" alt="play-icon">
                     </div>
                 </div>
             </div>
-
+            <div class="video-content"><img src="/site/images/video-img-mobile.png" class="video-mobile"></div>
+            <div class="dropdown">
+                <!--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    SEE IF YOUR VEHICLE IS ON THE LIST
+                </button>-->
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">SEARCH BY VIN OR LICENSE PLATE</a>
+                    <a class="dropdown-item" href="#">SEARCH BY VEHICLE BRAND</a>
+                </div>
+            </div>
         </section>
         <!--video-block end-->
         <section class="model-details">
@@ -97,7 +136,7 @@
     }
     window.addEventListener("load", function(event) {
         let hash = window.location.hash;
-        if(hash !== undefined) {
+        if(hash != "") {
             var top = document.getElementById('car-block').offsetTop;
             window.scroll({
                 top: top,
@@ -125,6 +164,14 @@
     @media (max-width: 600px) {
         .panel {
             padding: 20px 0 15px 0;
+        }
+        .play-icon {
+            display: none;
+        }
+        .play-icon-mobile {
+            display: block;
+            width: auto!important;
+            height: 80px;
         }
 
         .text {

@@ -65302,11 +65302,8 @@ var SpreadTheWorldComponent = function SpreadTheWorldComponent() {
 
 var VinLookupComponent = function VinLookupComponent() {
   return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ../components/VinLookupComponent */ "./resources/js/components/VinLookupComponent.vue"));
-};
+}; // const UnsubscribeComponent = () => import('../components/UnsubscribeComponent');
 
-var UnsubscribeComponent = function UnsubscribeComponent() {
-  return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ../components/UnsubscribeComponent */ "./resources/js/components/UnsubscribeComponent.vue"));
-};
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
 var routes = [{
@@ -65324,9 +65321,6 @@ var routes = [{
 }, {
   path: '/vin-lookup',
   component: VinLookupComponent
-}, {
-  path: '/unsubscribe',
-  component: UnsubscribeComponent
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: 'history',

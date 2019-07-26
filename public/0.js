@@ -68,6 +68,45 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -110,7 +149,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_scrollto__WEBPACK_IMPORTED_MO
 window.addEventListener("load", function (event) {
   var hash = window.location.hash;
 
-  if (hash !== undefined) {
+  if (hash != "") {
     var top = document.getElementById('car-block').offsetTop;
     window.scroll({
       top: top,
@@ -240,7 +279,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.play-button[data-v-782dcf83] {\n    position: absolute;\n    height: 80px;\n    width: 80px;\n    top: 62%;\n    opacity: 0.7;\n    left: 50%;\n    -webkit-transform: translate(-50%, -12%);\n            transform: translate(-50%, -12%);\n}\n.panel img[data-v-782dcf83] {\n    margin-top: 10px;\n}\n@media (max-width: 600px) {\n.panel[data-v-782dcf83] {\n        padding: 20px 0 15px 0;\n}\n.text[data-v-782dcf83] {\n        position: absolute;\n        top: 76%;\n        font-size: 14px;\n        color: #fff;\n        width: 100%;\n        text-align: center;\n        padding: 0 30px;\n}\n}\n@media (min-width: 1200px) {\n.text-block p[data-v-782dcf83] {\n\n        font-size: 32px;\n        font-family: \"Montserrat\";\n        color: rgb(255, 255, 255);\n        line-height: 1.25;\n}\n.text-block[data-v-782dcf83] {\n        position: absolute;\n        right: 15%;\n        top: 20%;\n}\n}\n\n", ""]);
+exports.push([module.i, "\n.play-button[data-v-782dcf83] {\n    position: absolute;\n    height: 80px;\n    width: 80px;\n    top: 62%;\n    opacity: 0.7;\n    left: 50%;\n    -webkit-transform: translate(-50%, -12%);\n            transform: translate(-50%, -12%);\n}\n.panel img[data-v-782dcf83] {\n    margin-top: 10px;\n}\n@media (max-width: 600px) {\n.panel[data-v-782dcf83] {\n        padding: 20px 0 15px 0;\n}\n.play-icon[data-v-782dcf83] {\n        display: none;\n}\n.play-icon-mobile[data-v-782dcf83] {\n        display: block;\n        width: auto!important;\n        height: 80px;\n}\n.text[data-v-782dcf83] {\n        position: absolute;\n        top: 76%;\n        font-size: 14px;\n        color: #fff;\n        width: 100%;\n        text-align: center;\n        padding: 0 30px;\n}\n}\n@media (min-width: 1200px) {\n.text-block p[data-v-782dcf83] {\n\n        font-size: 32px;\n        font-family: \"Montserrat\";\n        color: rgb(255, 255, 255);\n        line-height: 1.25;\n}\n.text-block[data-v-782dcf83] {\n        position: absolute;\n        right: 15%;\n        top: 20%;\n}\n}\n\n", ""]);
 
 // exports
 
@@ -394,72 +433,97 @@ var render = function() {
     "div",
     [
       _c("section", { staticClass: "video-block" }, [
-        _vm._m(0),
+        _c("div", { staticClass: "video-content" }, [
+          _c("img", {
+            staticClass: "video-desktop",
+            attrs: { src: "/site/images/video-img-desktop.png" }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "video-details" }, [
+            _vm._m(0),
+            _vm._v(" "),
+            _c("div", { staticClass: "dropdown" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-primary dropdown-toggle",
+                  attrs: { type: "button", "data-toggle": "dropdown" }
+                },
+                [
+                  _vm._v(
+                    "\n                            SEE IF YOUR VEHICLE IS ON THE LIST\n                        "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "dropdown-menu" },
+                [
+                  _c("router-link", { attrs: { to: "/vin-lookup" } }, [
+                    _c("button", { staticClass: "dropdown-item" }, [
+                      _vm._v("SEARCH BY VIN OR LICENSE PLATE")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      directives: [
+                        {
+                          name: "scroll-to",
+                          rawName: "v-scroll-to",
+                          value: "#car-block",
+                          expression: "'#car-block'"
+                        }
+                      ],
+                      staticClass: "dropdown-item",
+                      attrs: { href: "#car-block" }
+                    },
+                    [_vm._v("SEARCH BY VEHICLE BRAND")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("p", { staticClass: "txt-sml" }, [
+                _vm._v(
+                  "\n                            Morgan Freeman discusses the serious\n                            nature of the Takata Airbag Recall.\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "play-icon",
+                  on: {
+                    click: function($event) {
+                      _vm.showVideoModal = true
+                    }
+                  }
+                },
+                [_vm._v("WATCH NOW")]
+              ),
+              _vm._v(" "),
+              _c("img", {
+                staticClass: "play-icon-mobile",
+                attrs: {
+                  src: "/site/images/play-icon-mobile.png",
+                  alt: "play-icon"
+                },
+                on: {
+                  click: function($event) {
+                    _vm.showVideoModal = true
+                  }
+                }
+              })
+            ])
+          ])
+        ]),
         _vm._v(" "),
         _vm._m(1),
         _vm._v(" "),
-        _c("div", { staticClass: "mixed-block" }, [
-          _c("img", {
-            staticClass: "play-button",
-            attrs: { src: "/site/images/play.png", alt: "play" },
-            on: {
-              click: function($event) {
-                _vm.showVideoModal = true
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("p", { staticClass: "text" }, [
-            _vm._v(
-              "Morgan Freeman discusses the serious nature of the Takata airbag recall"
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "dropdown" }, [
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-primary dropdown-toggle",
-                attrs: { type: "button", "data-toggle": "dropdown" }
-              },
-              [
-                _vm._v(
-                  "\n                        SEE IF YOUR VEHICLE IS ON THE LIST\n                    "
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "dropdown-menu" },
-              [
-                _c("router-link", { attrs: { to: "/vin-lookup" } }, [
-                  _c("button", { staticClass: "dropdown-item" }, [
-                    _vm._v("SEARCH BY VIN OR LICENSE PLATE")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    directives: [
-                      {
-                        name: "scroll-to",
-                        rawName: "v-scroll-to",
-                        value: "#car-block",
-                        expression: "'#car-block'"
-                      }
-                    ],
-                    staticClass: "dropdown-item",
-                    attrs: { href: "#car-block" }
-                  },
-                  [_vm._v("SEARCH BY VEHICLE BRAND")]
-                )
-              ],
-              1
-            )
-          ])
-        ])
+        _vm._m(2)
       ]),
       _vm._v(" "),
       _c("section", { staticClass: "model-details" }, [
@@ -552,11 +616,24 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "video-content" }, [
-      _c("img", {
-        staticClass: "video-desktop",
-        attrs: { src: "/site/images/home-desktop.jpg" }
-      })
+    return _c("div", { staticClass: "desktop-details" }, [
+      _c("p", [
+        _vm._v(
+          "\n                            “1 out of 6 vehicles have been\n                            affected by the "
+        ),
+        _c("span", { staticClass: "yellow-txt" }, [
+          _vm._v("Takata Airbag Recall.")
+        ]),
+        _vm._v(
+          "\n                            Check to see if yours is one.\n\n                            It could save your life.”\n                        "
+        )
+      ]),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c("p", [_vm._v("It could save your life.”")]),
+      _vm._v(" "),
+      _c("p", [_vm._v("- Morgan")])
     ])
   },
   function() {
@@ -568,6 +645,22 @@ var staticRenderFns = [
         staticClass: "video-mobile",
         attrs: { src: "/site/images/video-img-mobile.png" }
       })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "dropdown" }, [
+      _c("div", { staticClass: "dropdown-menu" }, [
+        _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
+          _vm._v("SEARCH BY VIN OR LICENSE PLATE")
+        ]),
+        _vm._v(" "),
+        _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
+          _vm._v("SEARCH BY VEHICLE BRAND")
+        ])
+      ])
     ])
   }
 ]
