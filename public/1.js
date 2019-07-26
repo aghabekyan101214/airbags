@@ -62,6 +62,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -74,7 +86,9 @@ __webpack_require__.r(__webpack_exports__);
       email: "",
       vin: "",
       signature: "",
-      showModal: false
+      showModal: false,
+      make: "",
+      model: ""
     };
   },
   methods: {
@@ -111,7 +125,9 @@ __webpack_require__.r(__webpack_exports__);
         lastName: this.lastName,
         email: this.email,
         vin: this.vin,
-        signature: this.signature
+        signature: this.signature,
+        make: this.make,
+        model: this.model
       }).then(function (response) {
         self.showModal = true;
       })["catch"](function (error) {
@@ -395,6 +411,84 @@ var render = function() {
                       return
                     }
                     _vm.vin = $event.target.value
+                  }
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-6 col-xs-12" }, [
+            _c("div", { staticClass: "form-group" }, [
+              _c("label", { attrs: { for: "" } }, [
+                _vm._v("Make "),
+                _c("span", { staticStyle: { color: "red" } }, [
+                  _vm._v(_vm._s(_vm.errors.first("make")))
+                ])
+              ]),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "validate",
+                    rawName: "v-validate",
+                    value: "required",
+                    expression: "'required'"
+                  },
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.make,
+                    expression: "make"
+                  }
+                ],
+                staticClass: "form-control",
+                attrs: { type: "text", name: "make" },
+                domProps: { value: _vm.make },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.make = $event.target.value
+                  }
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-6 col-xs-12" }, [
+            _c("div", { staticClass: "form-group" }, [
+              _c("label", { attrs: { for: "" } }, [
+                _vm._v("Model "),
+                _c("span", { staticStyle: { color: "red" } }, [
+                  _vm._v(_vm._s(_vm.errors.first("model")))
+                ])
+              ]),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "validate",
+                    rawName: "v-validate",
+                    value: "required",
+                    expression: "'required'"
+                  },
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.model,
+                    expression: "model"
+                  }
+                ],
+                staticClass: "form-control",
+                attrs: { type: "text", name: "model" },
+                domProps: { value: _vm.model },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.model = $event.target.value
                   }
                 }
               })

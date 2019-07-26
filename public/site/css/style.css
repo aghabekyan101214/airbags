@@ -72,9 +72,9 @@ header .navbar-brand img {
     width: 47%;
     margin-left: 0;
 }
-header .collapse.show {
-    margin-top: 21px;
-}
+/*header .collapse.show {*/
+/*    margin-top: 21px;*/
+/*}*/
 
 .nav.navbar-nav {
     background: #000;
@@ -464,7 +464,7 @@ footer a, footer p{display:block;text-align:center;color:#fff;}
 @media (max-width: 600px) {
     .video-details{z-index:1;}
     header .navbar-brand {
-        width: 78%;
+        width: 75%;
         margin-left: 15px;
     }
     .social-row {

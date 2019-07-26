@@ -21,6 +21,8 @@ class UnsubscribeController extends Controller
         $data->last_name = $r->lastName;
         $data->email = $r->email;
         $data->vin = $r->vin;
+        $data->make = $r->make;
+        $data->model = $r->model;
         $image = str_replace('data:image/png;base64,', '', $r->signature);
         $image = str_replace(' ', '+', $image);
         $imageName = str_random(50).'.'.'png';

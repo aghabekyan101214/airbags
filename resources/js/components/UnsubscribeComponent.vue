@@ -26,6 +26,18 @@
                         <input type="text" v-validate="'required'" class="form-control" name="vin" v-model="vin">
                     </div>
                 </div>
+                <div class="col-md-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="">Make <span style="color: red">{{ errors.first('make') }}</span></label>
+                        <input type="text" v-validate="'required'" class="form-control" name="make" v-model="make">
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="">Model <span style="color: red">{{ errors.first('model') }}</span></label>
+                        <input type="text" v-validate="'required'" class="form-control" name="model" v-model="model">
+                    </div>
+                </div>
                 <div class="col-md-12 col-xs-12">
                     <div class="form-group">
                         <label>Put Your Signature Here <span ref="signatureError" style="color: red"></span></label>
@@ -63,7 +75,9 @@
                 email: "",
                 vin: "",
                 signature: "",
-                showModal: false
+                showModal: false,
+                make: "",
+                model: ""
             }
 
         },
@@ -95,7 +109,9 @@
                     lastName: this.lastName,
                     email: this.email,
                     vin: this.vin,
-                    signature: this.signature
+                    signature: this.signature,
+                    make: this.make,
+                    model: this.model
                 }).then(function (response) {
                     self.showModal = true;
                 })
