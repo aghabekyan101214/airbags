@@ -61,6 +61,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -120,6 +121,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   created: function created() {
     this.$emit("loaded");
+  },
+  mounted: function mounted() {
+    this.$nextTick(function () {
+      this.$refs.signaturePad.resizeCanvas();
+    });
   }
 });
 
@@ -411,7 +417,14 @@ var render = function() {
                 _c("VueSignaturePad", {
                   ref: "signaturePad",
                   style: "border: 1px solid black",
-                  attrs: { height: "500px" }
+                  attrs: {
+                    height: "500px",
+                    options: {
+                      onLoad: function() {
+                        _vm.$refs.signaturePad.resizeCanvas()
+                      }
+                    }
+                  }
                 })
               ],
               1

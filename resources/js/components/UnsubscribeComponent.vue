@@ -33,6 +33,7 @@
                                 :style="'border: 1px solid black'"
                                 height="500px"
                                 ref="signaturePad"
+                                :options="{onLoad: () => {$refs.signaturePad.resizeCanvas()}}"
                         />
                     </div>
                 </div>
@@ -105,6 +106,13 @@
         },
         created() {
             this.$emit("loaded");
+        },
+        mounted() {
+            this.$nextTick(function () {
+                this.$refs.signaturePad.resizeCanvas()
+            })
         }
+
+
     }
 </script>
