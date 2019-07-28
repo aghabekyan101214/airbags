@@ -134,7 +134,7 @@
         },
         mounted() {
             let hash = window.location.hash;
-            if(hash != "undefined") {
+            if(hash != undefined || hash != "") {
                 this.$scrollTo(this.$refs.carBlock, 1500)
             }
         }
@@ -142,9 +142,8 @@
     }
     window.addEventListener("load", function(event) {
         let hash = window.location.hash;
-        if(hash != "undefined") {
+        if(hash.length > 0) {
             var top = document.getElementById('car-block').offsetTop;
-            console.log(top)
             window.scroll({
                 top: top,
                 behavior: 'smooth'

@@ -65278,27 +65278,27 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var HomeComponent = function HomeComponent() {
-  return Promise.all(/*! import() */[__webpack_require__.e(5), __webpack_require__.e(0)]).then(__webpack_require__.bind(null, /*! ../components/HomeComponent */ "./resources/js/components/HomeComponent.vue"));
+  return Promise.all(/*! import() */[__webpack_require__.e(6), __webpack_require__.e(0)]).then(__webpack_require__.bind(null, /*! ../components/HomeComponent */ "./resources/js/components/HomeComponent.vue"));
 };
 
 var QuickFactsComponent = function QuickFactsComponent() {
-  return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ../components/QuickFactsComponent */ "./resources/js/components/QuickFactsComponent.vue"));
+  return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ../components/QuickFactsComponent */ "./resources/js/components/QuickFactsComponent.vue"));
 };
 
 var FreeRepairComponent = function FreeRepairComponent() {
-  return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ../components/FreeRepairComponent */ "./resources/js/components/FreeRepairComponent.vue"));
+  return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../components/FreeRepairComponent */ "./resources/js/components/FreeRepairComponent.vue"));
 };
 
 var SpreadTheWorldComponent = function SpreadTheWorldComponent() {
-  return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../components/SpreadTheWorldComponent */ "./resources/js/components/SpreadTheWorldComponent.vue"));
+  return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ../components/SpreadTheWorldComponent */ "./resources/js/components/SpreadTheWorldComponent.vue"));
 };
 
 var VinLookupComponent = function VinLookupComponent() {
-  return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ../components/VinLookupComponent */ "./resources/js/components/VinLookupComponent.vue"));
+  return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ../components/VinLookupComponent */ "./resources/js/components/VinLookupComponent.vue"));
 };
 
 var UnsubscribeComponent = function UnsubscribeComponent() {
-  return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ../components/UnsubscribeComponent */ "./resources/js/components/UnsubscribeComponent.vue"));
+  return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ../components/UnsubscribeComponent */ "./resources/js/components/UnsubscribeComponent.vue"));
 };
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
