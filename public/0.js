@@ -756,7 +756,8 @@ var render = function() {
                       },
                       [_vm._v(_vm._s(_vm.data.phone))]
                     )
-                  : _c(
+                  : !_vm.mobile && _vm.data.phone !== null
+                  ? _c(
                       "a",
                       {
                         staticClass: "contact-icon detail-icon",
@@ -766,7 +767,8 @@ var render = function() {
                         }
                       },
                       [_vm._v(_vm._s(_vm.data.phone))]
-                    ),
+                    )
+                  : _vm._e(),
                 _vm._v(" "),
                 _vm._l(_vm.data.urls, function(url, i) {
                   return _c(

@@ -18,7 +18,7 @@
                         <div class="contact-vehicle">
                             <a v-if="data.phone !== null && mobile" class="contact-icon detail-icon"
                                style="color: white; text-decoration: none" :href="'tel:' + data.phone">{{ data.phone }}</a>
-                            <a v-else class="contact-icon detail-icon"
+                            <a v-else-if="!mobile && data.phone !== null" class="contact-icon detail-icon"
                                style="color: white; text-decoration: none">{{ data.phone }}</a>
 
                             <a class="visit-icon detail-icon" :style="'color: white; text-decoration: none;' + style"
