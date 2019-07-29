@@ -134,7 +134,7 @@
         },
         mounted() {
             let hash = window.location.hash;
-            if(hash != undefined || hash != "") {
+            if(hash.length > 0) {
                 this.$scrollTo(this.$refs.carBlock, 1500)
             }
         }

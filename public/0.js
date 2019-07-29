@@ -148,7 +148,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_scrollto__WEBPACK_IMPORTED_MO
   mounted: function mounted() {
     var hash = window.location.hash;
 
-    if (hash != undefined || hash != "") {
+    if (hash.length > 0) {
       this.$scrollTo(this.$refs.carBlock, 1500);
     }
   }
