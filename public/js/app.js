@@ -2002,8 +2002,10 @@ __webpack_require__.r(__webpack_exports__);
   },
   mounted: function mounted() {
     var pathName = window.location.pathname;
+    var w = window.innerWidth;
+    console.log(w);
 
-    if (pathName === "/spread-the-world") {
+    if (pathName === "/spread-the-world" && w > 1200) {
       window.addEventListener('scroll', this.handleScroll);
     }
   },
