@@ -1,25 +1,5 @@
 <template>
     <div>
-<!--        <section class="video-block">-->
-<!--            <div class="video-content"><img src="/site/images/home-desktop.jpg" class="video-desktop"></div>-->
-<!--            <div class="video-content"><img src="/site/images/video-img-mobile.png" class="video-mobile"></div>-->
-<!--            <div class="mixed-block">-->
-<!--                <img @click="showVideoModal = true" src="/site/images/play.png" alt="play" class="play-button">-->
-<!--                <p class="text">Morgan Freeman discusses the serious nature of the Takata airbag recall</p>-->
-<!--                <div class="dropdown">-->
-<!--                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">-->
-<!--                        SEE IF YOUR VEHICLE IS ON THE LIST-->
-<!--                    </button>-->
-<!--                    <div class="dropdown-menu">-->
-<!--                        <router-link to="/vin-lookup">-->
-<!--                            <button class="dropdown-item">SEARCH BY VIN OR LICENSE PLATE</button>-->
-<!--                        </router-link>-->
-<!--                        <a class="dropdown-item" v-scroll-to="'#car-block'" href="#car-block">SEARCH BY VEHICLE BRAND</a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-
-<!--        </section>-->
         <section class="video-block">
             <div class="video-content">
                 <img src="/site/images/video-img-desktop.png" class="video-desktop">
@@ -41,9 +21,7 @@
                             SEE IF YOUR VEHICLE IS ON THE LIST
                         </button>
                         <div class="dropdown-menu">
-                            <router-link to="/vin-lookup">
-                                <button class="dropdown-item">SEARCH BY VIN OR LICENSE PLATE</button>
-                            </router-link>
+                            <button @click="$emit('showIframe')" class="dropdown-item">SEARCH BY VIN OR LICENSE PLATE</button>
                             <a class="dropdown-item" v-scroll-to="'#car-block'" href="#car-block">SEARCH BY VEHICLE BRAND</a>
                         </div>
                         <p class="txt-sml">

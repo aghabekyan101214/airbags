@@ -30,7 +30,7 @@
                 </nav>
             </div>
         </header>
-        <router-view @loaded="change"></router-view>
+        <router-view @loaded="change" @showIframe="showIframe = true"></router-view>
         <footer>
             <div class="container">
                 <div class="row">
@@ -47,15 +47,21 @@
                 </div>
             </div>
         </footer>
+        <iframeComponent v-if="showIframe" @close="showIframe = false"></iframeComponent>
     </div>
     <!--header end-->
 </template>
 
 <script>
+    import iframeComponent from '../parts/IframeComponent';
     export default {
+        components: {
+            iframeComponent
+        },
        data: function () {
            return {
-               loaded: false
+               loaded: false,
+               showIframe: false
            }
        },
         watch: {

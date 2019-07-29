@@ -85,28 +85,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -460,44 +438,46 @@ var render = function() {
                 },
                 [
                   _vm._v(
-                    "\n                            SEE IF YOUR VEHICLE IS ON THE LIST\n                        "
+                    "\n                        SEE IF YOUR VEHICLE IS ON THE LIST\n                    "
                   )
                 ]
               ),
               _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "dropdown-menu" },
-                [
-                  _c("router-link", { attrs: { to: "/vin-lookup" } }, [
-                    _c("button", { staticClass: "dropdown-item" }, [
-                      _vm._v("SEARCH BY VIN OR LICENSE PLATE")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      directives: [
-                        {
-                          name: "scroll-to",
-                          rawName: "v-scroll-to",
-                          value: "#car-block",
-                          expression: "'#car-block'"
-                        }
-                      ],
-                      staticClass: "dropdown-item",
-                      attrs: { href: "#car-block" }
-                    },
-                    [_vm._v("SEARCH BY VEHICLE BRAND")]
-                  )
-                ],
-                1
-              ),
+              _c("div", { staticClass: "dropdown-menu" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "dropdown-item",
+                    on: {
+                      click: function($event) {
+                        return _vm.$emit("showIframe")
+                      }
+                    }
+                  },
+                  [_vm._v("SEARCH BY VIN OR LICENSE PLATE")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    directives: [
+                      {
+                        name: "scroll-to",
+                        rawName: "v-scroll-to",
+                        value: "#car-block",
+                        expression: "'#car-block'"
+                      }
+                    ],
+                    staticClass: "dropdown-item",
+                    attrs: { href: "#car-block" }
+                  },
+                  [_vm._v("SEARCH BY VEHICLE BRAND")]
+                )
+              ]),
               _vm._v(" "),
               _c("p", { staticClass: "txt-sml" }, [
                 _vm._v(
-                  "\n                            Morgan Freeman discusses the serious\n                            nature of the Takata Airbag Recall.\n                        "
+                  "\n                        Morgan Freeman discusses the serious\n                        nature of the Takata Airbag Recall.\n                    "
                 )
               ]),
               _vm._v(" "),
@@ -628,13 +608,13 @@ var staticRenderFns = [
     return _c("div", { staticClass: "desktop-details" }, [
       _c("p", [
         _vm._v(
-          "\n                            “1 out of 6 vehicles have been\n                            affected by the "
+          "\n                        “1 out of 6 vehicles have been\n                        affected by the "
         ),
         _c("span", { staticClass: "yellow-txt" }, [
           _vm._v("Takata Airbag Recall.")
         ]),
         _vm._v(
-          "\n                            Check to see if yours is one.\n\n                            It could save your life.”\n                        "
+          "\n                        Check to see if yours is one.\n\n                        It could save your life.”\n                    "
         )
       ]),
       _vm._v(" "),
