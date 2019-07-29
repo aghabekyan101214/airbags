@@ -179,18 +179,9 @@
         right: 10px;
         height: 20px;
     }
-
+    .cursor-pointer {
+        cursor: pointer;
+    }
 
 </style>
-._2002_2003_Acura_3_2TL_2003_Acura_3_2CL_2003_200 {
-font-size: 18px;
-font-family: "Montserrat";
-color: rgb(255, 255, 255);
-line-height: 2.222;
-position: absolute;
-left: 370.443px;
-top: 1152.872px;
-width: 210px;
-height: 173px;
-z-index: 91;
-}
+
