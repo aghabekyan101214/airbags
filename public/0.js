@@ -216,6 +216,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ModalComponent",
   props: ['data', 'mobile', 'ios', 'android'],
@@ -305,7 +307,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n@media (max-width: 600px) {\n.modal-mask[data-v-4b2d100a] {\n        position: fixed;\n        z-index: 9998;\n        top: 0;\n        left: 0;\n        width: 100%;\n        height: 100%;\n        display: table;\n        -webkit-transition: opacity .3s ease;\n        transition: opacity .3s ease;\n}\n.model-description[data-v-4b2d100a] {\n        height: 100vh;\n}\n.modal-container[data-v-4b2d100a] {\n        width: auto!important;\n}\n}\n@media(min-width: 1200px) {\n.contact-vehicle[data-v-4b2d100a] {\n        display: -webkit-box;\n        display: flex;\n}\n.contact-icon[data-v-4b2d100a] {\n        background-size: 17px;\n}\n.contact-vehicle a[data-v-4b2d100a] {\n        padding-left: 30px;\n        line-height: 18px;\n}\n.recall-vehicle[data-v-4b2d100a] {\n        font-size: 24px;\n}\n.recall-cars div[data-v-4b2d100a] {\n        line-height: 2.222;\n}\n}\n.modal-mask[data-v-4b2d100a] {\n    position: fixed;\n    z-index: 9998;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background-color: rgba(0, 0, 0, .5);\n    display: table;\n    -webkit-transition: opacity .3s ease;\n    transition: opacity .3s ease;\n}\n.modal-wrapper[data-v-4b2d100a] {\n    display: table-cell;\n    vertical-align: middle;\n}\n.modal-container[data-v-4b2d100a] {\n    margin: 0px auto;\n    background-color: #fff;\n    width: 650px;\n    border-radius: 2px;\n    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\n    -webkit-transition: all .3s ease;\n    transition: all .3s ease;\n}\n.modal-header h3[data-v-4b2d100a] {\n    margin-top: 0;\n    color: #42b983;\n}\n.modal-body[data-v-4b2d100a] {\n    margin: 20px 0;\n}\n.modal-default-button[data-v-4b2d100a] {\n    float: right;\n}\n.contact-list[data-v-4b2d100a] {\n    line-height: 1.125;\n    font-size: 24px;\n}\n/*\n * The following styles are auto-applied to elements with\n * transition=\"modal\" when their visibility is toggled\n * by Vue.js.\n *\n * You can easily play with the modal transition by editing\n * these styles.\n */\n.modal-enter[data-v-4b2d100a] {\n    opacity: 0;\n}\n.modal-leave-active[data-v-4b2d100a] {\n    opacity: 0;\n}\n.modal-enter .modal-container[data-v-4b2d100a],\n.modal-leave-active .modal-container[data-v-4b2d100a] {\n    -webkit-transform: scale(1.1);\n    transform: scale(1.1);\n}\n.fz-17[data-v-4b2d100a] {\n    font-size: 17px;\n}\n.model-description[data-v-4b2d100a] {\n    position: relative;\n}\n.close-btn[data-v-4b2d100a] {\n    position: absolute;\n    top: 10px;\n    right: 10px;\n    height: 20px;\n}\n.cursor-pointer[data-v-4b2d100a] {\n    cursor: pointer;\n}\n\n", ""]);
+exports.push([module.i, "\n@media (max-width: 600px) {\n.modal-mask[data-v-4b2d100a] {\n        position: fixed;\n        z-index: 9998;\n        top: 0;\n        left: 0;\n        width: 100%;\n        height: 100%;\n        display: table;\n        -webkit-transition: opacity .3s ease;\n        transition: opacity .3s ease;\n}\n.model-description[data-v-4b2d100a] {\n        height: 100vh;\n}\n.modal-container[data-v-4b2d100a] {\n        width: auto!important;\n}\n}\n@media(min-width: 1200px) {\n.contact-vehicle[data-v-4b2d100a] {\n        display: -webkit-box;\n        display: flex;\n}\n.contact-icon[data-v-4b2d100a] {\n        background-size: 17px;\n}\n.contact-vehicle a[data-v-4b2d100a] {\n        padding-left: 30px;\n        line-height: 18px;\n}\n.recall-vehicle[data-v-4b2d100a] {\n        font-size: 24px;\n}\n.recall-cars div[data-v-4b2d100a] {\n        line-height: 2.222;\n}\n}\n.modal-mask[data-v-4b2d100a] {\n    position: fixed;\n    z-index: 9998;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background-color: rgba(0, 0, 0, .5);\n    display: table;\n    -webkit-transition: opacity .3s ease;\n    transition: opacity .3s ease;\n}\n.modal-wrapper[data-v-4b2d100a] {\n    display: table-cell;\n    vertical-align: middle;\n}\n.modal-container[data-v-4b2d100a] {\n    margin: 0px auto;\n    background-color: #fff;\n    width: 780px;\n    border-radius: 2px;\n    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\n    -webkit-transition: all .3s ease;\n    transition: all .3s ease;\n}\n.modal-header h3[data-v-4b2d100a] {\n    margin-top: 0;\n    color: #42b983;\n}\n.modal-body[data-v-4b2d100a] {\n    margin: 20px 0;\n}\n.modal-default-button[data-v-4b2d100a] {\n    float: right;\n}\n.contact-list[data-v-4b2d100a] {\n    line-height: 1.125;\n    font-size: 24px;\n}\n/*\n * The following styles are auto-applied to elements with\n * transition=\"modal\" when their visibility is toggled\n * by Vue.js.\n *\n * You can easily play with the modal transition by editing\n * these styles.\n */\n.modal-enter[data-v-4b2d100a] {\n    opacity: 0;\n}\n.modal-leave-active[data-v-4b2d100a] {\n    opacity: 0;\n}\n.modal-enter .modal-container[data-v-4b2d100a],\n.modal-leave-active .modal-container[data-v-4b2d100a] {\n    -webkit-transform: scale(1.1);\n    transform: scale(1.1);\n}\n.fz-17[data-v-4b2d100a] {\n    font-size: 17px;\n}\n.model-description[data-v-4b2d100a] {\n    position: relative;\n}\n.close-btn[data-v-4b2d100a] {\n    position: absolute;\n    top: 10px;\n    right: 10px;\n    height: 20px;\n}\n.cursor-pointer[data-v-4b2d100a] {\n    cursor: pointer;\n}\n\n", ""]);
 
 // exports
 
@@ -741,7 +743,7 @@ var render = function() {
               "div",
               { staticClass: "contact-vehicle" },
               [
-                _vm.data.phone !== ""
+                _vm.data.phone !== null && _vm.mobile
                   ? _c(
                       "a",
                       {
@@ -754,7 +756,17 @@ var render = function() {
                       },
                       [_vm._v(_vm._s(_vm.data.phone))]
                     )
-                  : _vm._e(),
+                  : _c(
+                      "a",
+                      {
+                        staticClass: "contact-icon detail-icon",
+                        staticStyle: {
+                          color: "white",
+                          "text-decoration": "none"
+                        }
+                      },
+                      [_vm._v(_vm._s(_vm.data.phone))]
+                    ),
                 _vm._v(" "),
                 _vm._l(_vm.data.urls, function(url, i) {
                   return _c(
@@ -819,9 +831,7 @@ var render = function() {
                       },
                       [_vm._v("Click to text")]
                     )
-                  : _vm._e(),
-                _vm._v(" "),
-                _c("a")
+                  : _vm._e()
               ],
               2
             )

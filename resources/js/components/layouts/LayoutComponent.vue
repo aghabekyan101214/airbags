@@ -37,12 +37,12 @@
                     <p>More Information</p>
                     <div class="col-sm-6">
                         <img src="/site/images/logo-nhtsa-white.png" width="35%" alt="logo-nhtsa-white">
-                        <a href="#">NHTSA Takata Airbag Recall Spotlight</a>
+                        <a href="https://www.nhtsa.gov/equipment/takata-recall-spotlight" target="_blank">NHTSA Takata Airbag Recall Spotlight</a>
                         <br/>
                     </div>
                     <div class="col-sm-6">
                         <img src="/site/images/airbag-recall-desktop.png" width="30%" alt="airbag-recall">
-                        <a href="#">Takata Airbag Recall 101</a>
+                        <a href="https://www.nhtsa.gov/equipment/takata-recall-spotlight" target="_blank">Takata Airbag Recall 101</a>
                     </div>
                 </div>
             </div>

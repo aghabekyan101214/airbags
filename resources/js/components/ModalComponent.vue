@@ -16,8 +16,11 @@
                             to schedule your FREE repair
                         </div>
                         <div class="contact-vehicle">
-                            <a v-if="data.phone !== ''" class="contact-icon detail-icon"
+                            <a v-if="data.phone !== null && mobile" class="contact-icon detail-icon"
                                style="color: white; text-decoration: none" :href="'tel:' + data.phone">{{ data.phone }}</a>
+                            <a v-else class="contact-icon detail-icon"
+                               style="color: white; text-decoration: none">{{ data.phone }}</a>
+
                             <a class="visit-icon detail-icon" :style="'color: white; text-decoration: none;' + style"
                                target="_blank" :href="url.url" v-for="(url, i) in data.urls">
                             <span v-if="data.urls.length > 1" class="fz-17">
@@ -29,7 +32,6 @@
                             </a>
                             <a v-if="data.text == '1' && mobile && data.phone !== ''" :href="'sms:/' + data.phone"
                                style="color: white; text-decoration: none" class="text-icon detail-icon">Click to text</a>
-                            <a v-if=""></a>
                         </div>
                     </div>
                 </div>
@@ -120,7 +122,7 @@
     .modal-container {
         margin: 0px auto;
         background-color: #fff;
-        width: 650px;
+        width: 780px;
         border-radius: 2px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
         transition: all .3s ease;
