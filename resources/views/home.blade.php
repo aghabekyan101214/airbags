@@ -45,8 +45,8 @@
     <meta property="og:image:type" content="image/png" />
     <meta property="og:description" content="simple description">
     <meta property="og:image" content="{{ asset('site/images/video-img-desktop.png') }}">
-    <meta property="og:image:width" content="400" />
-    <meta property="og:image:height" content="300" />
+    <meta property="og:image:width" content="400px" />
+    <meta property="og:image:height" content="300px" />
 </head>
 <body>
 
