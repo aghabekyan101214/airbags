@@ -48,7 +48,6 @@
     <meta property="og:image:width" content="400" />
     <meta property="og:image:height" content="300" />
     <meta property="og:video" content="{{ asset("/storage/tO0wb1updriy8MJbPAeuAumeHIxDpoGXc91a9Uvc.mp4") }}">
-    <meta property="og:video:secure_url" content="{{ asset("/storage/tO0wb1updriy8MJbPAeuAumeHIxDpoGXc91a9Uvc.mp4") }}">
     <meta property="og:video:width" content="900">
     <meta property="og:video:height" content="900">
 </head>
