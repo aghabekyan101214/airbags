@@ -188,10 +188,11 @@
             top: 20%;
         }
 
-        .car-logo {
-            max-height: 90px;
-            max-width: 90px;
-        }
+
     }
 
+    .car-logo {
+        max-height: 90px;
+        max-width: 90px;
+    }
 </style>
