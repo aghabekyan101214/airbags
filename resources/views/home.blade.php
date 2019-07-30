@@ -42,7 +42,7 @@
 
     <meta property="og:url" content="{{ url('/spread-the-world') }}" />
     <meta property="og:title" content="simple title">
-    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:description" content="simple description">
     <meta property="og:type" content="website">
     <meta property="og:image" content="http://206.81.16.112//storage/audi.png">
