@@ -43,7 +43,7 @@
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="Your Website Title" />
     <meta property="og:description"   content="Your description" />
-    <meta property="og:image:url"         content="{{ asset('site/images/video-img-desktop.png') }}" />
+    <meta property="og:image:url"     content="{{ asset('/storage/slam.gif') }}" />
 
 </head>
 <body>
