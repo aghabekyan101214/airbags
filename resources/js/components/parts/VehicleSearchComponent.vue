@@ -39,7 +39,6 @@
         mounted() {
             let pathName = window.location.pathname;
             let w = window.innerWidth;
-            console.log(w);
             if(pathName === "/spread-the-world" && w > 1200) {
                 window.addEventListener('scroll', this.handleScroll);
             }

@@ -266,7 +266,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.play-button[data-v-782dcf83] {\n    position: absolute;\n    height: 80px;\n    width: 80px;\n    top: 62%;\n    opacity: 0.7;\n    left: 50%;\n    -webkit-transform: translate(-50%, -12%);\n            transform: translate(-50%, -12%);\n}\n.panel img[data-v-782dcf83] {\n    margin-top: 10px;\n}\n.cursor-pointer[data-v-782dcf83] {\n    cursor: pointer;\n}\n@media (max-width: 600px) {\n.panel[data-v-782dcf83] {\n        padding: 20px 0 15px 0;\n}\n.play-icon[data-v-782dcf83] {\n        display: none;\n}\n.play-icon-mobile[data-v-782dcf83] {\n        display: block;\n        width: auto!important;\n        height: 80px;\n}\n.text[data-v-782dcf83] {\n        position: absolute;\n        top: 76%;\n        font-size: 14px;\n        color: #fff;\n        width: 100%;\n        text-align: center;\n        padding: 0 30px;\n}\n}\n@media (min-width: 1200px) {\n.text-block p[data-v-782dcf83] {\n\n        font-size: 32px;\n        font-family: \"Montserrat\";\n        color: rgb(255, 255, 255);\n        line-height: 1.25;\n}\n.text-block[data-v-782dcf83] {\n        position: absolute;\n        right: 15%;\n        top: 20%;\n}\n}\n\n", ""]);
+exports.push([module.i, "\n.play-button[data-v-782dcf83] {\n    position: absolute;\n    height: 80px;\n    width: 80px;\n    top: 62%;\n    opacity: 0.7;\n    left: 50%;\n    -webkit-transform: translate(-50%, -12%);\n            transform: translate(-50%, -12%);\n}\n.panel img[data-v-782dcf83] {\n    margin-top: 10px;\n}\n.cursor-pointer[data-v-782dcf83] {\n    cursor: pointer;\n}\n@media (max-width: 600px) {\n.panel[data-v-782dcf83] {\n        padding: 20px 0 15px 0;\n}\n.play-icon[data-v-782dcf83] {\n        display: none;\n}\n.play-icon-mobile[data-v-782dcf83] {\n        display: block;\n        width: auto!important;\n        height: 80px;\n}\n.text[data-v-782dcf83] {\n        position: absolute;\n        top: 76%;\n        font-size: 14px;\n        color: #fff;\n        width: 100%;\n        text-align: center;\n        padding: 0 30px;\n}\n}\n@media (min-width: 1200px) {\n.text-block p[data-v-782dcf83] {\n\n        font-size: 32px;\n        font-family: \"Montserrat\";\n        color: rgb(255, 255, 255);\n        line-height: 1.25;\n}\n.text-block[data-v-782dcf83] {\n        position: absolute;\n        right: 15%;\n        top: 20%;\n}\n.car-logo[data-v-782dcf83] {\n        max-height: 90px;\n}\n}\n\n", ""]);
 
 // exports
 
@@ -555,7 +555,7 @@ var render = function() {
               _vm._l(_vm.cars, function(car, i) {
                 return _c("div", [
                   _c("img", {
-                    staticClass: "cursor-pointer",
+                    staticClass: "cursor-pointer car-logo",
                     attrs: { src: "/storage/" + car.img, alt: car.name },
                     on: {
                       click: function($event) {

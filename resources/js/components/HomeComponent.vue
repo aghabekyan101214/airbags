@@ -54,7 +54,7 @@
             <div class="car-block" id="car-block" ref="carBlock">
                 <div class="container car-block-inner">
                     <div v-for="(car, i) in cars">
-                        <img @click="info(i)" class="cursor-pointer" v-bind:src="'/storage/' + car.img" :alt="car.name">
+                        <img @click="info(i)" class="cursor-pointer car-logo" v-bind:src="'/storage/' + car.img" :alt="car.name">
                     </div>
                 </div>
             </div>
@@ -186,6 +186,10 @@
             position: absolute;
             right: 15%;
             top: 20%;
+        }
+
+        .car-logo {
+            max-height: 90px;
         }
     }
 

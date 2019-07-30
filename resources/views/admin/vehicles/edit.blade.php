@@ -29,7 +29,7 @@
             <input type="text" class="form-control form-control-user" value="{{ $data['page_data']->name }}" name="name" required placeholder="Mark">
         </div>
         <div class="form-group">
-            <input type="text" class="form-control form-control-user" value="{{ $data['page_data']->phone }}" name="phone" required placeholder="Phone">
+            <input type="text" class="form-control form-control-user" value="{{ $data['page_data']->phone }}" name="phone" placeholder="Phone">
         </div>
 
         <div class="form-group">

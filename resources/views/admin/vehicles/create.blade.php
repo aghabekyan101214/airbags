@@ -25,7 +25,7 @@
             <input type="text" class="form-control form-control-user" name="name" required placeholder="Mark">
         </div>
         <div class="form-group">
-            <input type="text" class="form-control form-control-user" name="phone" required placeholder="Phone">
+            <input type="text" class="form-control form-control-user" name="phone" placeholder="Phone">
         </div>
         <div class="form-group">
             <select name="text" id="" class="form-control" required>
