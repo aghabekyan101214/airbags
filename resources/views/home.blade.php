@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" prefix="og: http://ogp.me/ns#">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <!-- Google Tag Manager -->
     <script>
@@ -39,14 +39,12 @@
     <link rel="stylesheet" type="text/css" href="{{ asset("site/css/fontawesome.min.css") }}"/>
     <link rel="stylesheet" type="text/css" href="{{ asset("site/css/bootstrap.min.css") }}"/>
     <link rel="stylesheet" type="text/css" href="{{ asset("site/css/style.css") }}">
+    <meta property="og:url"           content="{{ url('/') }}" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Your Website Title" />
+    <meta property="og:description"   content="Your description" />
+    <meta property="og:image"         content="{{ asset('site/images/video-img-desktop.png') }}" />
 
-{{--    <meta property="og:url" content="{{ url('/spread-the-world') }}" />--}}
-    <meta property="og:title" content="simple title">
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:description" content="simple description">
-    <meta property="og:image" content="{{ asset('site/images/video-img-desktop.png') }}">
-    <meta property="og:image:width" content="400px" />
-    <meta property="og:image:height" content="300px" />
 </head>
 <body>
 
