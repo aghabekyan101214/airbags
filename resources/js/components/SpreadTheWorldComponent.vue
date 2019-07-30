@@ -18,7 +18,7 @@
                     <div class="social-row">
                         SHARE THIS STORY:
 
-                        <div class="fb-share-button" :data-href="baseUrl + '/storage/' + video.video" data-layout="button_count" data-size="small"></div>
+                        <div class="fb-share-button" :data-href="baseUrl + '/storage/' + video.video" data-layout="button_count" data-size="small"><a target="_blank" :href="'https://www.facebook.com/sharer/sharer.php?u='+baseUrl + '/storage/' + video.video + '&amp;src=sdkpreparse'" class="fb-xfbml-parse-ignore"><img src="/site/images/fb-icon.png" alt="icon"></a></div>
 <!--                        <a :href="'https://www.facebook.com/sharer/sharer.php?u=' + baseUrl + '/storage/' + video.video" target="_blank"><img src="/site/images/fb-icon.png" alt="icon"> </a>-->
                         <a :href="'https://twitter.com/intent/tweet?text=' + baseUrl + '/storage/' + video.video"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
                     </div>
@@ -52,7 +52,5 @@
 </script>
 
 <style scoped>
-    .fb-share-button {
-        background-image: url('/site/images/fb-icon.png');
-    }
+
 </style>
