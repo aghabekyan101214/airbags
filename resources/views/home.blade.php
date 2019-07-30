@@ -49,6 +49,7 @@
     <meta property="og:video:type" content="text/html" />
     <meta property="og:video:width" content="1280" />
     <meta property="og:video:height" content="720" />
+    <meta name="description" content="">
 </head>
 <body>
 
