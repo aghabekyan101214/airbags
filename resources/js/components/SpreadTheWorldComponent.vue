@@ -18,9 +18,9 @@
                     <div class="social-row">
                         SHARE THIS STORY:
 
-                        <a target="_blank" :href="'https://www.facebook.com/sharer/sharer.php?u='+baseUrl+'/spread-the-world/video/'+video.video+'&amp;src=sdkpreparse'" class="fb-xfbml-parse-ignore"><img src="/site/images/fb-icon.png" alt="icon"></a>
+                        <a target="_blank" :href="'https://www.facebook.com/sharer/sharer.php?u='+baseUrl+'/spread-the-world/video/'+video.video+'&quote='+shareText+'&amp;src=sdkpreparse'" class="fb-xfbml-parse-ignore"><img src="/site/images/fb-icon.png" alt="icon"></a>
 <!--                        <a :href="'https://www.facebook.com/sharer/sharer.php?u=' + baseUrl + '/storage/' + video.video" target="_blank"><img src="/site/images/fb-icon.png" alt="icon"> </a>-->
-                        <a :href="'https://twitter.com/intent/tweet?url=' + baseUrl + '/spread-the-world/video/' + video.video+'&text=asdasd'"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
+                        <a :href="'https://twitter.com/intent/tweet?url=' + baseUrl + '/spread-the-world/video/' + video.video+'&text='+shareText"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
                     </div>
                 </section>
             </div>
@@ -34,7 +34,8 @@
         data: function() {
             return {
                 baseUrl: window.location.origin,
-                data: ""
+                data: "",
+                shareText: "1 in 6 vehicles in the US have been affected by the potentially deadly Takata Airbag recall. Yours could be one of them. Check on http://safeairbags.com. It could save your life."
             }
 
         },
@@ -47,6 +48,8 @@
         },
         created() {
             document.title = "Spread The Word - SafeAirbags.com";
+            let desc = "";
+            document.querySelector('meta[name="description"]').setAttribute("content", desc);
         }
     }
 </script>

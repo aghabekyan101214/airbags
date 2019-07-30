@@ -34,6 +34,8 @@
         created() {
             this.$emit('loaded', true);
             document.title = "Free Takata Airbag Repair - Safeairbags.com";
+            let desc = "";
+            document.querySelector('meta[name="description"]').setAttribute("content", desc);
         }
     }
 </script>

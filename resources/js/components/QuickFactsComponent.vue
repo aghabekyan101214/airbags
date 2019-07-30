@@ -43,6 +43,8 @@
         },
         created() {
             document.title = "Quick Facts About the Takata Airbag Recall";
+            let desc = "";
+            document.querySelector('meta[name="description"]').setAttribute("content", desc);
         }
     }
 </script>
