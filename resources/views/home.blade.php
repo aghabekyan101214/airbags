@@ -40,6 +40,9 @@
     <link rel="stylesheet" type="text/css" href="{{ asset("site/css/bootstrap.min.css") }}"/>
     <link rel="stylesheet" type="text/css" href="{{ asset("site/css/style.css") }}">
 
+    <meta property="og:url"           content="{{ url('/spread-the-world') }}" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:image" content="{{ asset('site/images/video-img-desktop.png') }}">
     <meta property="og:type" content="video">
     <meta property="og:video:width" content="900">
     <meta property="og:video:height" content="900">
