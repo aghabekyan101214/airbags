@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b0b683d-445c-4951-8110-4904042ea755" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/resources/js/components/SpreadTheWorldComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/SpreadTheWorldComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/components/SpreadTheWorldComponent.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+            <state relative-caret-position="221">
+              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -87,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
+            <state relative-caret-position="238">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
             </state>
           </provider>
         </entry>
@@ -211,8 +212,8 @@
         <option value="$PROJECT_DIR$/resources/js/components/FreeRepairComponent.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/HomeComponent.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/layouts/LayoutComponent.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/SpreadTheWorldComponent.vue" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/SpreadTheWorldComponent.vue" />
       </list>
     </option>
   </component>
@@ -577,12 +578,12 @@
       <workItem from="1564033805888" duration="29197000" />
       <workItem from="1564119594484" duration="11661000" />
       <workItem from="1564322298844" duration="734000" />
-      <workItem from="1564462846026" duration="17072000" />
+      <workItem from="1564462846026" duration="17362000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222302000" />
+    <option name="totallyTimeSpent" value="222592000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1005,13 +1006,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/SpreadTheWorldComponent.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/HomeComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1377">
@@ -1021,8 +1015,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
+        <state relative-caret-position="238">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/SpreadTheWorldComponent.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
         </state>
       </provider>
     </entry>
