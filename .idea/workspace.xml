@@ -43,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/resources/js/components/SpreadTheWorldComponent.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="20" column="147" selection-start-line="20" selection-start-column="147" selection-end-line="20" selection-end-column="147" />
+              <caret line="20" column="119" selection-start-line="20" selection-start-column="119" selection-end-line="20" selection-end-column="119" />
             </state>
           </provider>
         </entry>
@@ -91,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="527">
-              <caret line="46" column="61" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
+              <caret line="60" column="122" lean-forward="true" selection-start-line="60" selection-start-column="122" selection-end-line="60" selection-end-column="122" />
             </state>
           </provider>
         </entry>
@@ -577,12 +577,12 @@
       <workItem from="1564033805888" duration="29197000" />
       <workItem from="1564119594484" duration="11661000" />
       <workItem from="1564322298844" duration="734000" />
-      <workItem from="1564462846026" duration="18303000" />
+      <workItem from="1564462846026" duration="19913000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223533000" />
+    <option name="totallyTimeSpent" value="225143000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1015,14 +1015,14 @@
     <entry file="file://$PROJECT_DIR$/resources/js/components/SpreadTheWorldComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="147" selection-start-line="20" selection-start-column="147" selection-end-line="20" selection-end-column="147" />
+          <caret line="20" column="119" selection-start-line="20" selection-start-column="119" selection-end-line="20" selection-end-column="119" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
-          <caret line="46" column="61" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
+          <caret line="60" column="122" lean-forward="true" selection-start-line="60" selection-start-column="122" selection-end-line="60" selection-end-column="122" />
         </state>
       </provider>
     </entry>
