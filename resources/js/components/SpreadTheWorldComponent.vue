@@ -18,7 +18,7 @@
                     <div class="social-row">
                         SHARE THIS STORY:
 
-                        <a target="_blank" :href="'https://www.facebook.com/sharer/sharer.php?u='+baseUrl+'/spread-the-world/#share'+i+'&amp;src=sdkpreparse'" class="fb-xfbml-parse-ignore"><img src="/site/images/fb-icon.png" alt="icon"></a>
+                        <a target="_blank" :href="'https://www.facebook.com/sharer/sharer.php?u='+baseUrl+'/spread-the-world/video/'+video.video+'&amp;src=sdkpreparse'" class="fb-xfbml-parse-ignore"><img src="/site/images/fb-icon.png" alt="icon"></a>
 <!--                        <a :href="'https://www.facebook.com/sharer/sharer.php?u=' + baseUrl + '/storage/' + video.video" target="_blank"><img src="/site/images/fb-icon.png" alt="icon"> </a>-->
                         <a :href="'https://twitter.com/intent/tweet?text=' + baseUrl + '/storage/' + video.video"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
                     </div>

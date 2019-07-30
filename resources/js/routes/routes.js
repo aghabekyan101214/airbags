@@ -5,6 +5,7 @@ const HomeComponent = () => import('../components/HomeComponent');
 const QuickFactsComponent = () => import('../components/QuickFactsComponent');
 const FreeRepairComponent = () => import('../components/FreeRepairComponent');
 const SpreadTheWorldComponent = () => import('../components/SpreadTheWorldComponent');
+const SharedVideoComponent = () => import('../components/SharedVideoComponent');
 // const VinLookupComponent = () => import('../components/VinLookupComponent');
 // const UnsubscribeComponent = () => import('../components/UnsubscribeComponent');
 
@@ -14,6 +15,7 @@ const routes = [
     { path: '/quick-facts', component: QuickFactsComponent},
     { path: '/free-repair', component: FreeRepairComponent},
     { path: '/spread-the-world', component: SpreadTheWorldComponent},
+    { path: '/spread-the-world/video/:id', component: SharedVideoComponent},
     // { path: '/vin-lookup', component: VinLookupComponent},
     // { path: '/unsubscribe', component: UnsubscribeComponent},
 ];
