@@ -48,7 +48,7 @@
         },
         created() {
             document.title = "Spread The Word - SafeAirbags.com";
-            let desc = "";
+            let desc = "Help spread the word about the Takata Airbag Recall by sharing important information with your friends and family.\n";
             document.querySelector('meta[name="description"]').setAttribute("content", desc);
         }
     }

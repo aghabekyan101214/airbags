@@ -110,7 +110,7 @@
                     console.log(error);
                 });
             document.title = "Takata Airbag Recall - SafeAirbags.com";
-            let desc = "";
+            let desc = "1 in 6 vehicles have been affected by the Takata Airbag Recall. Check to see if yours is one. It could save your life.";
             document.querySelector('meta[name="description"]').setAttribute("content", desc);
         },
         mounted() {

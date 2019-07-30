@@ -43,7 +43,7 @@
         },
         created() {
             document.title = "Quick Facts About the Takata Airbag Recall";
-            let desc = "";
+            let desc = "More than 41 million vehicles are affected by the Takata Airbag Recall, making it the largest auto recall in US history. Learn and share quick facts about this important recall.";
             document.querySelector('meta[name="description"]').setAttribute("content", desc);
         }
     }
