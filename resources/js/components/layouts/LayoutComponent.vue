@@ -1,5 +1,6 @@
 <template>
     <div v-show="loaded" id="wrapper">
+        {{ $route.meta.title }}
         <header>
             <div class="container header">
                 <nav  class="navbar navbar-toggleable-sm bg-faded">

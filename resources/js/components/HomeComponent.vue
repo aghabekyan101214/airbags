@@ -109,6 +109,9 @@
                 .catch(function (error) {
                     console.log(error);
                 });
+            document.title = "Takata Airbag Recall - SafeAirbags.com";
+            let desc = "asdasds";
+            document.querySelector('meta[name="description"]').setAttribute("content", desc);
         },
         mounted() {
             let hash = window.location.hash;

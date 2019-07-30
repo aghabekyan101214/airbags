@@ -4,11 +4,11 @@
         <div class="container">
             <div class="row">
                 <div class="panel col-12">
-                    <h3 class="sml-title">
+                    <h1 class="sml-title">
                         Quick Facts About the
                         largest automotive safety
                         recall in US history:
-                    </h3>
+                    </h1>
                 </div>
                 <div class="col-sm-7">
                     <section class="panel">
@@ -40,6 +40,9 @@
                     this.data = response.data;
                     this.$emit('loaded', true)
                 });
+        },
+        created() {
+            document.title = "Quick Facts About the Takata Airbag Recall";
         }
     }
 </script>

@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="panel col-12">
-                    <h3 class="sml-title">About the<span class="yellow-txt"> FREE</span> repair:</h3>
+                    <h1 class="sml-title">About the<span class="yellow-txt"> FREE</span> repair:</h1>
                 </div>
                 <div class="col-sm-7">
                     <section class="panel">
@@ -33,6 +33,7 @@
     export default {
         created() {
             this.$emit('loaded', true);
+            document.title = "Free Takata Airbag Repair - Safeairbags.com";
         }
     }
 </script>
