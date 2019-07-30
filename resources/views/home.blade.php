@@ -40,13 +40,14 @@
     <link rel="stylesheet" type="text/css" href="{{ asset("site/css/bootstrap.min.css") }}"/>
     <link rel="stylesheet" type="text/css" href="{{ asset("site/css/style.css") }}">
 
-    <meta property="og:url"           content="{{ url('/spread-the-world') }}"/>
-    <meta property="og:type"          content="website"/>
-    <meta property="og:title"         content="Your Website Title"/>
-    <meta property="og:description"   content="Your description"/>
-    <meta property ="fb:app_id"       content = "1234567891011121"/>
-    <meta property="og:image:url"     content="{{ asset('/storage/slam.gif') }}" />
-
+    <meta property="og:url" content="{{ url('/') }}" />
+    <meta property="og:title" content="simple title">
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:type"          content="article" />
+    <meta property="og:description" content="simple description">
+    <meta property="og:image" content="{{ asset('site/images/home-desktop.jpg') }}">
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
 </head>
 <body>
 
@@ -56,7 +57,13 @@
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v4.0"></script>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 <div id="app">
     <layout></layout>
 </div>
