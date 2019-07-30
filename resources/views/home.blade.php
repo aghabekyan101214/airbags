@@ -40,12 +40,12 @@
     <link rel="stylesheet" type="text/css" href="{{ asset("site/css/bootstrap.min.css") }}"/>
     <link rel="stylesheet" type="text/css" href="{{ asset("site/css/style.css") }}">
 
-    <meta property="og:url"           content="{{ url('/spread-the-world') }}" />
+    <meta property="og:url" content="{{ url('/spread-the-world') }}" />
     <meta property="og:title" content="simple title">
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:description" content="simple description">
     <meta property="og:type" content="website">
     <meta property="og:image" content="{{ asset('site/images/video-img-desktop.png') }}">
-    <meta property="og:image:secure_url" content="{{ asset('site/images/video-img-desktop.png') }}" />
     <meta property="og:image:width" content="400" />
     <meta property="og:image:height" content="300" />
     <meta property="og:video" content="{{ asset("/storage/tO0wb1updriy8MJbPAeuAumeHIxDpoGXc91a9Uvc.mp4") }}">
