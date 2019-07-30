@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/app/Http/Controllers/admin/VehiclesController.php" line="51" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b0b683d-445c-4951-8110-4904042ea755" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/js/components/SpreadTheWorldComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/SpreadTheWorldComponent.vue" afterDir="false" />
-    </list>
+    <list default="true" id="5b0b683d-445c-4951-8110-4904042ea755" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/resources/js/components/SpreadTheWorldComponent.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="20" column="228" selection-start-line="20" selection-start-column="228" selection-end-line="20" selection-end-column="228" />
+              <caret line="20" column="229" selection-start-line="20" selection-start-column="229" selection-end-line="20" selection-end-column="229" />
             </state>
           </provider>
         </entry>
@@ -577,12 +575,12 @@
       <workItem from="1564033805888" duration="29197000" />
       <workItem from="1564119594484" duration="11661000" />
       <workItem from="1564322298844" duration="734000" />
-      <workItem from="1564462846026" duration="21324000" />
+      <workItem from="1564462846026" duration="21425000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226554000" />
+    <option name="totallyTimeSpent" value="226655000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1022,7 +1020,7 @@
     <entry file="file://$PROJECT_DIR$/resources/js/components/SpreadTheWorldComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="228" selection-start-line="20" selection-start-column="228" selection-end-line="20" selection-end-column="228" />
+          <caret line="20" column="229" selection-start-line="20" selection-start-column="229" selection-end-line="20" selection-end-column="229" />
         </state>
       </provider>
     </entry>
