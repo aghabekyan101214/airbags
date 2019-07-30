@@ -43,11 +43,12 @@
     <meta property="og:url"           content="{{ url('/spread-the-world') }}" />
     <meta property="og:image" content="{{ asset('site/images/video-img-desktop.png') }}">
     <meta property="og:type" content="video/mp4">
+    <meta property="og:title" content="simple title">
+    <meta property="og:description" content="simple description">
     <meta property="og:video:secure_url" content="{{ asset("/storage/tO0wb1updriy8MJbPAeuAumeHIxDpoGXc91a9Uvc.mp4") }}">
     <meta property="og:video:width" content="900">
     <meta property="og:video:height" content="900">
     <meta property="og:video" content="{{ asset("/storage/tO0wb1updriy8MJbPAeuAumeHIxDpoGXc91a9Uvc.mp4") }}">
-    <meta name="description" content="asdasdsa asds das asdsa das"/>
 </head>
 <body>
 

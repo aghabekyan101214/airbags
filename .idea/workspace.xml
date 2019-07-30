@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b0b683d-445c-4951-8110-4904042ea755" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +25,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/components/HomeComponent.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1836">
+            <state relative-caret-position="1377">
               <caret line="112" column="33" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
             </state>
           </provider>
@@ -90,8 +91,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="43" column="89" lean-forward="true" selection-start-line="43" selection-start-column="89" selection-end-line="43" selection-end-column="89" />
+            <state relative-caret-position="323">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
             </state>
           </provider>
         </entry>
@@ -305,9 +306,9 @@
       <path value="$PROJECT_DIR$/vendor/markbaker/complex" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="269" />
-    <option name="y" value="531" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="209" />
+    <option name="y" value="512" />
     <option name="width" value="1221" />
     <option name="height" value="669" />
   </component>
@@ -577,12 +578,12 @@
       <workItem from="1564033805888" duration="29197000" />
       <workItem from="1564119594484" duration="11661000" />
       <workItem from="1564322298844" duration="734000" />
-      <workItem from="1564462846026" duration="11843000" />
+      <workItem from="1564462846026" duration="12243000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217073000" />
+    <option name="totallyTimeSpent" value="217473000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -594,10 +595,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="269" y="531" width="1221" height="669" extended-state="0" />
+    <frame x="209" y="512" width="1221" height="669" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25581396" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25581396" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -612,7 +613,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32899022" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4989339" visible="true" weight="0.4085821" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4989339" weight="0.4085821" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="12" sideWeight="0.49946696" visible="true" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -984,13 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/FreeRepairComponent.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/layouts/LayoutComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-340">
@@ -1005,6 +999,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/FreeRepairComponent.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/SpreadTheWorldComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1014,15 +1015,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/HomeComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
+        <state relative-caret-position="1377">
           <caret line="112" column="33" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="43" column="89" lean-forward="true" selection-start-line="43" selection-start-column="89" selection-end-line="43" selection-end-column="89" />
+        <state relative-caret-position="323">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
