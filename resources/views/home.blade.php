@@ -45,7 +45,7 @@
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:description" content="simple description">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://206.81.16.112/site/images/video-img-desktop.png">
+    <meta property="og:image" content="http://206.81.16.112//storage/audi.png">
 {{--    <meta property="og:image" content="{{ asset('site/images/video-img-desktop.png') }}">--}}
     <meta property="og:image:width" content="400" />
     <meta property="og:image:height" content="300" />
