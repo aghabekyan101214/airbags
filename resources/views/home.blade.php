@@ -41,9 +41,9 @@
     <link rel="stylesheet" type="text/css" href="{{ asset("site/css/style.css") }}">
 
     <meta property="og:url"           content="{{ url('/spread-the-world') }}" />
-    <meta property="og:type"          content="website" />
     <meta property="og:image" content="{{ asset('site/images/video-img-desktop.png') }}">
-    <meta property="og:type" content="video">
+    <meta property="og:type" content="video/mp4">
+    <meta property="og:video:secure_url" content="{{ asset("/storage/tO0wb1updriy8MJbPAeuAumeHIxDpoGXc91a9Uvc.mp4") }}">
     <meta property="og:video:width" content="900">
     <meta property="og:video:height" content="900">
     <meta property="og:video" content="{{ asset("/storage/tO0wb1updriy8MJbPAeuAumeHIxDpoGXc91a9Uvc.mp4") }}">
