@@ -42,7 +42,7 @@
                     </div>
                     <div class="col-sm-6">
                         <img src="/site/images/airbag-recall-desktop.png" width="30%" alt="airbag-recall">
-                        <a href="https://www.nhtsa.gov/equipment/takata-recall-spotlight" target="_blank">Takata Airbag Recall 101</a>
+                        <a href="https://www.airbagrecall.com/en/airbag-recall-101" target="_blank">Takata Airbag Recall 101</a>
                     </div>
                 </div>
             </div>

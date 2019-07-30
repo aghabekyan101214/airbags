@@ -50055,8 +50055,7 @@ var staticRenderFns = [
               "a",
               {
                 attrs: {
-                  href:
-                    "https://www.nhtsa.gov/equipment/takata-recall-spotlight",
+                  href: "https://www.airbagrecall.com/en/airbag-recall-101",
                   target: "_blank"
                 }
               },
