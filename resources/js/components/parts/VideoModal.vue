@@ -3,8 +3,8 @@
         <div class="modal-mask">
             <div class="modal-wrapper" @click="$emit('close')">
                 <div class="modal-container">
-                    <video controls>
-                        <source v-if="staticData.home_video" :src="'/storage/' + staticData.home_video" type="video/mp4">
+                    <video v-if="staticData.home_video" autoplay controls>
+                        <source :src="'/storage/' + staticData.home_video" type="video/mp4">
                     </video>
                 </div>
             </div>

@@ -21,6 +21,7 @@
 
 body{
     background:#000;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -516,7 +517,7 @@ footer a, footer p{display:block;text-align:center;color:#fff;}
         line-height: 30px;
         font-family: 'Montserrat-Regular';
         right: 12px;
-        z-index: 16;
+        z-index: 0;
         width: 48%;
     }
     .play-icon {

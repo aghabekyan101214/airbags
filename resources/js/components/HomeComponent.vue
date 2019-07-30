@@ -39,7 +39,7 @@
                     SEE IF YOUR VEHICLE IS ON THE LIST
                 </button>-->
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">SEARCH BY VIN OR LICENSE PLATE</a>
+                    <a class="dropdown-item" href="#">SEARCH BY VIN</a>
                     <a class="dropdown-item" href="#">SEARCH BY VEHICLE BRAND</a>
                 </div>
             </div>
@@ -140,6 +140,10 @@
         transform: translate(-50%, -12%);
     }
 
+    .car-logo {
+        max-height: 90px;
+        max-width: 90px;
+    }
 
     .panel img {
         margin-top: 10px;
@@ -191,8 +195,5 @@
 
     }
 
-    .car-logo {
-        max-height: 90px;
-        max-width: 90px;
-    }
+
 </style>

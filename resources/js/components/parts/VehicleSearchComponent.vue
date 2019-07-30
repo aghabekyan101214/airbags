@@ -2,7 +2,7 @@
     <div class="col-sm-5">
         <div class="gradient-bg search-banner vehicleBlock" id="vehicleBlock" ref="vehicleBlock">
             <p>SEE IF YOUR VEHICLE IS ON THE LIST</p>
-            <button @click="showIframe = true" class="btn btn-primary">SEARCH BY VIN OR LICENSE PLATE</button>
+            <button @click="showIframe = true" class="btn btn-primary">SEARCH BY VIN</button>
             <router-link to="/#car-block">
                 <button type="button" class="btn btn-primary">SEARCH BY VEHICLE BRAND</button>
             </router-link>
