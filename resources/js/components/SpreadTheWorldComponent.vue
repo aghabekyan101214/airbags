@@ -12,7 +12,7 @@
             </section>
             <div class="col-sm-7">
                 <section v-for="(video, i) in data">
-                    <video width="100%" :id="'share' + i" controls preload="none">
+                    <video width="100%" :id="'share' + i" controls>
                         <source :src="'/storage/' + video.video">
                     </video>
                     <div class="social-row">
