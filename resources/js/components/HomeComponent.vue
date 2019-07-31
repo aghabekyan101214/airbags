@@ -20,7 +20,7 @@
                             SEE IF YOUR VEHICLE IS ON THE LIST
                         </button>
                         <div class="dropdown-menu">
-                            <button @click="$emit('showIframe')" class="dropdown-item">SEARCH BY VIN OR LICENSE PLATE</button>
+                            <button @click="$emit('showIframe')" class="dropdown-item">SEARCH BY VIN</button>
                             <a class="dropdown-item" v-scroll-to="'#car-block'" href="#car-block">SEARCH BY VEHICLE BRAND</a>
                         </div>
                         <p class="txt-sml">
