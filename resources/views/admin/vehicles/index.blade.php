@@ -15,15 +15,17 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>id</th>
-                            <th>Video</th>
+                            <th>Id</th>
+                            <th>Logo</th>
+                            <th>Make</th>
                             <th>Settings</th>
                         </tr>
                     </thead>
                     <tfoot>
                         <tr>
-                            <th>id</th>
-                            <th>Video</th>
+                            <th>Id</th>
+                            <th>Logo</th>
+                            <th>Make</th>
                             <th>Settings</th>
                         </tr>
                     </tfoot>
@@ -33,6 +35,9 @@
                                 <td>{{ $d->id }}</td>
                                 <td>
                                     <img height="100" src="{{ asset("storage/$d->img") }}" alt="">
+                                </td>
+                                <td>
+                                    {{ $d->name }}
                                 </td>
                                 <td style="display: flex; justify-content: center; vertical-align: middle">
                                     <a class="btn btn-primary" href="/{{ Request::path()."/".$d->id }}/edit"><i class="fa fa-edit"></i></a>
