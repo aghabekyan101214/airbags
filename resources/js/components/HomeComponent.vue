@@ -2,7 +2,7 @@
     <div>
         <section class="video-block">
             <div class="video-content">
-                <img src="/site/images/video-img-desktop.png" class="video-desktop">
+                <img src="/site/images/video-img-desktop.jpg" class="video-desktop">
                 <div class="video-details">
                     <div class="desktop-details">
                         <p>
