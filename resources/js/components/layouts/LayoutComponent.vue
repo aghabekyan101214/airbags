@@ -6,12 +6,15 @@
                     <router-link class="navbar-brand nb" :to="'/' + getLang">
                         <img src="/site/images/logo.png" alt="logo" height="" width="">
                     </router-link>
-<!--                    <a href="javascript:void(0)" @click="changeLang('es')">-->
-<!--                        <flag iso="es" class="cursor-pointer" />-->
-<!--                    </a>-->
-<!--                    <a href="javascript:void(0)" @click="changeLang('en')">-->
-<!--                        <flag iso="us" class="cursor-pointer" @click="changeLang()" />-->
-<!--                    </a>-->
+                    <div class="localization">
+                        <a href="javascript:void(0)" class="en-lang" @click="changeLang('en')">
+                            English
+                        </a>
+                        <span style="color:white">|</span>
+                        <a href="javascript:void(0)" class="es-lang" @click="changeLang('es')">
+                            Espanol
+                        </a>
+                    </div>
                     <button ref="nav" class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
                         <span> </span>
                         <span> </span>
@@ -108,5 +111,15 @@
     }
     .cursor-pointer {
         cursor: pointer;
+    }
+    .localization a {
+        text-decoration: none;
+        color: white;
+    }
+    .es-lang{
+        margin-left: 5px;
+    }
+    .en-lang{
+        margin-right: 5px;
     }
 </style>
