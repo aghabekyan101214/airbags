@@ -53,7 +53,8 @@
             <div class="car-block" id="car-block" ref="carBlock">
                 <div class="container car-block-inner">
                     <div v-for="(car, i) in cars">
-                        <img @click="info(i)" class="cursor-pointer car-logo" v-bind:src="'/storage/' + car.img" :alt="car.name">
+                        <img @click="info(i)" v-if="car.img !== ''" class="cursor-pointer car-logo" v-bind:src="'/storage/' + car.img" :alt="car.name">
+                        <span @click="info(i)" v-else>{{ car.name }}</span>
                     </div>
                 </div>
             </div>
