@@ -3,9 +3,15 @@
         <header>
             <div class="container header">
                 <nav  class="navbar navbar-toggleable-sm bg-faded">
-                    <router-link class="navbar-brand nb" to="/">
+                    <router-link class="navbar-brand nb" :to="'/' + getLang">
                         <img src="/site/images/logo.png" alt="logo" height="" width="">
                     </router-link>
+<!--                    <a href="javascript:void(0)" @click="changeLang('es')">-->
+<!--                        <flag iso="es" class="cursor-pointer" />-->
+<!--                    </a>-->
+<!--                    <a href="javascript:void(0)" @click="changeLang('en')">-->
+<!--                        <flag iso="us" class="cursor-pointer" @click="changeLang()" />-->
+<!--                    </a>-->
                     <button ref="nav" class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
                         <span> </span>
                         <span> </span>
@@ -13,24 +19,24 @@
                     </button>
                     <div class="collapse navbar-collapse" id="collapsingNavbar">
                         <ul class="nav navbar-nav">
-                            <li class="nav-item">
-                                <router-link class="nav-link" to="/quick-facts">Quick Facts</router-link>
+                            <li class="nav-item" >
+                                <router-link class="nav-link" :to="'/' + getLang + '/quick-facts'">{{$lang.header.quick_facts}}</router-link>
                             </li>
                             <li class="nav-item">
-                                <router-link class="nav-link" to="/free-repair">About the <span class="yellow-txt">FREE </span> Repair</router-link>
+                                <router-link class="nav-link" :to="'/' + getLang + '/free-repair'">About the <span class="yellow-txt">FREE </span> Repair</router-link>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="https://www.nhtsa.gov/equipment/takata-recall-spotlight" target="_blank">More About the Recall</a>
                             </li>
                             <li class="nav-item">
-                                <router-link class="nav-link" to="/spread-the-world">Spread the Word, Save a Life</router-link>
+                                <router-link class="nav-link" :to="'/' + getLang + '/spread-the-world'">Spread the Word, Save a Life</router-link>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </header>
-        <router-view @loaded="change" @showIframe="showIframe = true"></router-view>
+        <router-view @loaded="change" @showIframe="showIframe = true" :lang="getLang"></router-view>
         <footer>
             <div class="container">
                 <div class="row">
@@ -65,19 +71,33 @@
            }
        },
         watch: {
-            '$route' () {
+            '$route' (to) {
                 let aria = this.$refs.nav.getAttribute("aria-expanded");
                 if(aria == 'true') {
                     this.$refs.nav.click()
                 }
+                this.$lang.setLang(to.params.lang);
             }
         },
 
         methods: {
             change (value) {
                 this.loaded = true;
+            },
+            changeLang(lang) {
+                this.$lang.setLang(lang);
+                let current = this.$route.path;
+                current = current.split("/");
+                current.splice(0,2).join();
+                this.$router.push("/" + lang + "/" + current);
             }
         },
+
+        computed: {
+            getLang: function() {
+                return this.$lang.getLang();
+            }
+        }
     }
 </script>
 
@@ -85,5 +105,8 @@
     .rec-log {
         width: 195px;
         height: 75px;
+    }
+    .cursor-pointer {
+        cursor: pointer;
     }
 </style>

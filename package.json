@@ -35,8 +35,10 @@
   "dependencies": {
     "mobile-device-detect": "^0.2.3",
     "vee-validate": "^2.2.13",
+    "vue-flag-icon": "^1.0.6",
     "vue-router": "^3.0.6",
     "vue-scrollto": "^2.15.0",
-    "vue-signature-pad": "^1.1.10"
+    "vue-signature-pad": "^1.1.10",
+    "vuejs-localization": "^1.0.3"
   }
 }

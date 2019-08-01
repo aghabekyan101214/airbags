@@ -18,9 +18,9 @@
                     <div class="social-row">
                         SHARE THIS STORY:
 
-                        <a target="_blank" :href="'https://www.facebook.com/sharer/sharer.php?u='+baseUrl+'/spread-the-world/video/'+video.video+'&quote='+shareText+'&amp;src=sdkpreparse'" class="fb-xfbml-parse-ignore"><img src="/site/images/fb-icon.png" alt="icon"></a>
+                        <a target="_blank" :href="'https://www.facebook.com/sharer/sharer.php?u=' + baseUrl+ '/' + lang +'/spread-the-world/video/'+video.video+'&quote='+shareText+'&amp;src=sdkpreparse'" class="fb-xfbml-parse-ignore"><img src="/site/images/fb-icon.png" alt="icon"></a>
 <!--                        <a :href="'https://www.facebook.com/sharer/sharer.php?u=' + baseUrl + '/storage/' + video.video" target="_blank"><img src="/site/images/fb-icon.png" alt="icon"> </a>-->
-                        <a :href="'https://twitter.com/intent/tweet?url=' + baseUrl + '/spread-the-world/video/' + video.video+'&text='+shareText"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
+                        <a :href="'https://twitter.com/intent/tweet?url=' + baseUrl+ '/' + lang +'/spread-the-world/video/' + video.video+'&text='+shareText"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
                     </div>
                 </section>
             </div>
@@ -31,6 +31,7 @@
 
 <script>
     export default {
+        props: ['lang'],
         data: function() {
             return {
                 baseUrl: window.location.origin,

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html>
 <head>
     <!-- Google Tag Manager -->
     <script>
@@ -44,11 +44,6 @@
     <meta property="og:title" content="Airbags Recall"/>
     <meta property="og:image" content="{{ asset('site/images/mf.png') }}"/>
     <meta property="og:description" content="Airbags Recall By Morgan" />
-    <meta property="og:video:url" content="{{ asset("/storage/tO0wb1updriy8MJbPAeuAumeHIxDpoGXc91a9Uvc.mp4") }}" />
-    <meta property="og:video:secure_url" content="{{ asset("/storage/tO0wb1updriy8MJbPAeuAumeHIxDpoGXc91a9Uvc.mp4") }}" />
-    <meta property="og:video:type" content="text/html" />
-    <meta property="og:video:width" content="1280" />
-    <meta property="og:video:height" content="720" />
     <meta name="description" content="">
 </head>
 <body>

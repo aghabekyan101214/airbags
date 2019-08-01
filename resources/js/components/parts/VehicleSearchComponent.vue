@@ -3,7 +3,7 @@
         <div class="gradient-bg search-banner vehicleBlock" id="vehicleBlock" ref="vehicleBlock">
             <p>SEE IF YOUR VEHICLE IS ON THE LIST</p>
             <button @click="showIframe = true" class="btn btn-primary">SEARCH BY VIN</button>
-            <router-link to="/#car-block">
+            <router-link :to="'/' + getLang +'/#car-block'">
                 <button type="button" class="btn btn-primary">SEARCH BY VEHICLE BRAND</button>
             </router-link>
         </div>
@@ -41,6 +41,11 @@
             let w = window.innerWidth;
             if(pathName === "/spread-the-world" && w > 1200) {
                 window.addEventListener('scroll', this.handleScroll);
+            }
+        },
+        computed: {
+            getLang: function() {
+                return this.$lang.getLang();
             }
         },
         destroyed(){

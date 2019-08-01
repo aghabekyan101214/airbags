@@ -28,11 +28,11 @@
                             nature of the Takata Airbag Recall.
                         </p>
                         <a class="play-icon" @click="showVideoModal = true">WATCH NOW</a>
-                        <img class="play-icon-mobile" src="/site/images/play-icon-mobile.png" @click="showVideoModal = true" alt="play-icon">
+                        <img class="play-icon-mobile" src="/site/images/play.png" @click="showVideoModal = true" alt="play-icon">
                     </div>
                 </div>
             </div>
-            <div class="video-content"><img src="/site/images/video-img-mobile.png" class="video-mobile"></div>
+            <div class="video-content"><img src="/site/images/video-img-mobile.jpg" class="video-mobile"></div>
             <div class="dropdown">
                 <!--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                     SEE IF YOUR VEHICLE IS ON THE LIST
@@ -137,7 +137,6 @@
         height: 80px;
         width: 80px;
         top: 62%;
-        opacity: 0.7;
         left: 50%;
         transform: translate(-50%, -12%);
     }
@@ -165,7 +164,7 @@
         .play-icon-mobile {
             display: block;
             width: auto!important;
-            height: 80px;
+            height: 100px;
         }
 
         .text {
