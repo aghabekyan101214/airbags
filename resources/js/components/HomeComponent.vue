@@ -14,7 +14,6 @@
                                 It could save your life.”
                             </p>
                             <br>
-                            <p>It could save your life.”</p>
                             <p>- Morgan</p>
                         </div>
                         <div class="dropdown">
@@ -46,7 +45,6 @@
                                 It could save your life."
                             </p>
                             <br>
-                            <p>It could save your life.”</p>
                             <p>- Morgan</p>
                         </div>
                         <div class="dropdown">

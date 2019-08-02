@@ -17,9 +17,7 @@ import router from "./routes/routes";
 import VueSignaturePad from 'vue-signature-pad';
 import VeeValidate from "vee-validate";
 import Lang from "vuejs-localization";
-import FlagIcon from 'vue-flag-icon'
 
-Vue.use(FlagIcon);
 Vue.use(VeeValidate);
 Vue.use(VueSignaturePad);
 Vue.use(Lang, {
