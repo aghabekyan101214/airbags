@@ -73,6 +73,11 @@
                         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                             {{$lang.home.see_in_list}}
                         </button>
+                        <div class="dropdown-menu">
+                            <!--                                <button @click="$emit('showIframe')" class="dropdown-item upper">{{$lang.parts.search_vin }}</button>-->
+                            <a href="https://www.nhtsa.gov/recalls" target="_blank" class="dropdown-item">{{$lang.parts.search_vin }}</a>
+                            <a class="dropdown-item" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
+                        </div>
 
                         <p class="txt-sml">
                             {{$lang.home.text}}
@@ -82,16 +87,6 @@
                 </div>
             </div>
             <div class="video-content"><img src="/site/images/video-img-mobile.jpg" class="video-mobile"></div>
-            <div class="dropdown">
-                <!--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                    SEE IF YOUR VEHICLE IS ON THE LIST
-                </button>-->
-                <div class="dropdown-menu">
-<!--                    <button @click="$emit('showIframe')" class="dropdown-item">{{$lang.parts.search_vin }}</button>-->
-                    <a href="https://www.nhtsa.gov/recalls" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
-                    <a class="dropdown-item" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
-                </div>
-            </div>
         </section>
 
         <!--video-block end-->

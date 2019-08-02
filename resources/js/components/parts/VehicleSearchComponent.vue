@@ -8,8 +8,8 @@
                     {{$lang.parts.search_vin }}
                 </button>
             </a>
-            <router-link :to="'/' + getLang +'/#car-block'">
-                <button type="button" class="btn btn-primary">{{ $lang.parts.search_vehicle }}</button>
+            <router-link  :to="'/' + getLang +'/#car-block'">
+                <button :class="{font: this.$lang.getLang() === 'es'}" type="button" class="btn btn-primary">{{ $lang.parts.search_vehicle }}</button>
             </router-link>
         </div>
         <iframeComponent v-if="showIframe" @close="showIframe = false"></iframeComponent>
@@ -59,8 +59,15 @@
     }
 </script>
 
-<style>
+<style scoped>
     .vehicleBlock {
         position: relative;
     }
+
+    @media (max-width: 600px) {
+        .font{
+            font-size: 13px!important;
+        }
+    }
+
 </style>
