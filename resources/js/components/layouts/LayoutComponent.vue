@@ -38,7 +38,7 @@
                                 <a class="nav-link" href="https://www.nhtsa.gov/equipment/takata-recall-spotlight" target="_blank">{{$lang.header.recall}}</a>
                             </li>
                             <li class="nav-item">
-                                <router-link class="nav-link" :to="'/' + getLang + '/spread-the-world'">{{$lang.header.spread}}</router-link>
+                                <router-link class="nav-link" :to="'/' + getLang + '/spread-the-word'">{{$lang.header.spread}}</router-link>
                             </li>
                         </ul>
                     </div>
@@ -49,7 +49,7 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <p>More Information</p>
+                    <p>{{$lang.footer.more_info}}</p>
                     <div class="col-sm-6">
                         <img src="/site/images/logo-nhtsa-white.png" width="35%" alt="logo-nhtsa-white">
                         <a href="https://www.nhtsa.gov/equipment/takata-recall-spotlight" target="_blank">{{$lang.footer.nhtsa}}</a>

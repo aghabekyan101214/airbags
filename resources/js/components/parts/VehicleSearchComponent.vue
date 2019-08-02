@@ -1,10 +1,10 @@
 <template>
     <div class="col-sm-5">
         <div class="gradient-bg search-banner vehicleBlock" id="vehicleBlock" ref="vehicleBlock">
-            <p>SEE IF YOUR VEHICLE IS ON THE LIST</p>
-            <button @click="showIframe = true" class="btn btn-primary">SEARCH BY VIN</button>
+            <p class="upper">{{ $lang.parts.see_in_list }}</p>
+            <button @click="showIframe = true" class="btn btn-primary">{{ $lang.parts.search_vin }}</button>
             <router-link :to="'/' + getLang +'/#car-block'">
-                <button type="button" class="btn btn-primary">SEARCH BY VEHICLE BRAND</button>
+                <button type="button" class="btn btn-primary">{{ $lang.parts.search_vehicle }}</button>
             </router-link>
         </div>
         <iframeComponent v-if="showIframe" @close="showIframe = false"></iframeComponent>

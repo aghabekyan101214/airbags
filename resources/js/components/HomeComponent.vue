@@ -22,8 +22,8 @@
                                 {{$lang.home.see_in_list}}
                             </button>
                             <div class="dropdown-menu">
-                                <button @click="$emit('showIframe')" class="dropdown-item">SEARCH BY VIN</button>
-                                <a class="dropdown-item" v-scroll-to="'#car-block'" href="#">SEARCH BY VEHICLE BRAND</a>
+                                <button @click="$emit('showIframe')" class="dropdown-item upper">{{$lang.parts.search_vin }}</button>
+                                <a class="dropdown-item upper" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                             </div>
                             <p class="txt-sml">
                                 Morgan Freeman discusses the serious
@@ -54,8 +54,8 @@
                                 {{$lang.home.see_in_list}}
                             </button>
                             <div class="dropdown-menu">
-                                <button @click="$emit('showIframe')" class="dropdown-item">SEARCH BY VIN</button>
-                                <a class="dropdown-item" v-scroll-to="'#car-block'" href="#">SEARCH BY VEHICLE BRAND</a>
+                                <button @click="$emit('showIframe')" class="dropdown-item upper">{{$lang.parts.search_vin }}</button>
+                                <a class="dropdown-item upper" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                             </div>
                             <p class="txt-sml">
                                 Morgan Freeman discusses the serious
@@ -66,11 +66,11 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a style="width: 10%" class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a style="width: 10%" class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
@@ -83,15 +83,11 @@
                         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                             {{$lang.home.see_in_list}}
                         </button>
-                        <div class="dropdown-menu">
-                            <button @click="$emit('showIframe')" class="dropdown-item">SEARCH BY VIN</button>
-                            <a class="dropdown-item" v-scroll-to="'#car-block'" href="#car-block">SEARCH BY VEHICLE BRAND</a>
-                        </div>
+
                         <p class="txt-sml">
                             Morgan Freeman discusses the serious
                             nature of the Takata Airbag Recall.
                         </p>
-                        <a class="play-icon" @click="showVideoModal = true">WATCH NOW</a>
                         <img class="play-icon-mobile" src="/site/images/play.png" @click="showVideoModal = true" alt="play-icon">
                     </div>
                 </div>
@@ -102,8 +98,8 @@
                     SEE IF YOUR VEHICLE IS ON THE LIST
                 </button>-->
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">SEARCH BY VIN</a>
-                    <a class="dropdown-item" href="#">SEARCH BY VEHICLE BRAND</a>
+                    <button @click="$emit('showIframe')" class="dropdown-item">{{$lang.parts.search_vin }}</button>
+                    <a class="dropdown-item" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                 </div>
             </div>
         </section>
@@ -111,7 +107,7 @@
         <!--video-block end-->
         <section class="model-details">
             <div class="panel">
-                <h2>{{$lang.home.search}}</h2>
+                <h2 class="upper">{{$lang.home.search}}</h2>
                 <p>{{$lang.home.choose}}</p>
                 <p><img v-scroll-to="'#car-block'" height="30" class="cursor-pointer" src="/site/images/arrow_down.png" alt=""></p>
             </div>

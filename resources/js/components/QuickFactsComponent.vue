@@ -5,9 +5,7 @@
             <div class="row">
                 <div class="panel col-12">
                     <h1 class="sml-title">
-                        Quick Facts About the
-                        largest automotive safety
-                        recall in US history:
+                        {{$lang.parts.quick_facts_header}}
                     </h1>
                 </div>
                 <div class="col-sm-7">

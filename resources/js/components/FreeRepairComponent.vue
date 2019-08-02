@@ -9,16 +9,16 @@
                     <section class="panel">
                         <ul>
                             <li>
-                                The repair is completed at absolutely <span class="yellow-txt">NO COST</span> to you, and performed by preferred local dealer.
+                                {{$lang.repair.first}}
                             </li>
                             <li>
-                                Most repairs can be completed in one hour or less.
+                                {{$lang.repair.second}}
                             </li>
                             <li>
-                                A <span class="yellow-txt">FREE</span> loaner vehicle or other alternate transportation is available during your repair.
+                                {{$lang.repair.third}}
                             </li>
                             <li>
-                                To schedule your repair, <router-link to="/#car-block">go to your vehicle brand </router-link> and call the listed phone number, or you can contact your preferred local dealer directly.
+                                {{$lang.repair.fourth_1}} <router-link to="/#car-block">{{$lang.repair.link}}</router-link> {{$lang.repair.fourth_2}}
                             </li>
                         </ul>
                     </section>

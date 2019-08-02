@@ -2,12 +2,9 @@
     <div class="container black-block">
         <div class="row">
             <section class="panel col-12">
-                <h1 class="sml-title">Spread the Word, Save a Life</h1>
+                <h1 class="sml-title">{{ $lang.spread.header }}</h1>
                 <p class="sml-description">
-                    Help Morgan Freeman spread the word about
-                    the dangers of the Takata Airbag Recall. Share
-                    the below videos on social media, you might
-                    just save a life.
+                    {{ $lang.spread.text }}
                 </p>
             </section>
             <div class="col-sm-7">
@@ -16,11 +13,11 @@
                         <source :src="'/storage/' + video.video">
                     </video>
                     <div class="social-row">
-                        SHARE THIS STORY:
+                        {{ $lang.spread.share }}
 
-                        <a target="_blank" :href="'https://www.facebook.com/sharer/sharer.php?u=' + baseUrl+ '/' + lang +'/spread-the-world/video/'+video.video+'&quote='+shareText+'&amp;src=sdkpreparse'" class="fb-xfbml-parse-ignore"><img src="/site/images/fb-icon.png" alt="icon"></a>
+                        <a target="_blank" :href="'https://www.facebook.com/sharer/sharer.php?u=' + baseUrl+ '/' + lang +'/spread-the-word/video/'+video.video+'&quote='+shareText+'&amp;src=sdkpreparse'" class="fb-xfbml-parse-ignore"><img src="/site/images/fb-icon.png" alt="icon"></a>
 <!--                        <a :href="'https://www.facebook.com/sharer/sharer.php?u=' + baseUrl + '/storage/' + video.video" target="_blank"><img src="/site/images/fb-icon.png" alt="icon"> </a>-->
-                        <a :href="'https://twitter.com/intent/tweet?url=' + baseUrl+ '/' + lang +'/spread-the-world/video/' + video.video+'&text='+shareText"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
+                        <a :href="'https://twitter.com/intent/tweet?url=' + baseUrl+ '/' + lang +'/spread-the-word/video/' + video.video+'&text='+shareText"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
                     </div>
                 </section>
             </div>

@@ -22,8 +22,8 @@ const routes = [
         {path: '/', component: HomeComponent},
         {path: '/quick-facts', component: QuickFactsComponent},
         {path: '/free-repair', component: FreeRepairComponent},
-        {path: '/spread-the-world', component: SpreadTheWorldComponent},
-        {path: '/spread-the-world/video/:id', component: SharedVideoComponent},
+        {path: '/spread-the-word', component: SpreadTheWorldComponent},
+        {path: '/spread-the-word/video/:id', component: SharedVideoComponent},
         {path: '/vin-lookup', component: VinLookupComponent}
     ]),
 ];
