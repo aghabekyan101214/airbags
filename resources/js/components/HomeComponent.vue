@@ -3,7 +3,7 @@
         <div v-if="width > 600" id="carouselExampleControls" class="video-block carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active video-content">
-                    <img src="/site/images/slider-item1.jpg" alt="Morgan Freeman" class="video-desktop">
+                    <img src="/site/images/slider-item1-min.jpg" alt="Morgan Freeman" class="video-desktop">
                     <div class="video-details">
                         <div class="desktop-details">
                             <p>
@@ -34,7 +34,7 @@
 
                 </div>
                 <div class="carousel-item  video-content">
-                    <img src="/site/images/slider-item3.jpg" class="video-desktop">
+                    <img src="/site/images/slider-item3-min.jpg" class="video-desktop">
                     <div class="video-details">
                         <div class="desktop-details">
                             <p>
@@ -90,7 +90,7 @@
                     </div>
                 </div>
             </div>
-            <div class="video-content"><img src="/site/images/video-img-mobile.jpg" class="video-mobile"></div>
+            <div class="video-content"><img src="/site/images/video-img-mobile-min.jpg" class="video-mobile"></div>
             <div class="dropdown">
                 <!--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                     SEE IF YOUR VEHICLE IS ON THE LIST
