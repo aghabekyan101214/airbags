@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="panel col-12">
-                    <h1 class="sml-title">About the<span class="yellow-txt"> FREE</span> repair:</h1>
+                    <h1 class="sml-title">{{$lang.repair.title}}</h1>
                 </div>
                 <div class="col-sm-7">
                     <section class="panel">

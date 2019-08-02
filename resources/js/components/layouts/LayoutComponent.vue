@@ -35,7 +35,7 @@
                                 <router-link class="nav-link" :to="'/' + getLang + '/free-repair'">{{$lang.header.free_repair}}</router-link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://www.nhtsa.gov/equipment/takata-recall-spotlight" target="_blank">{{$lang.header.recall}}</a>
+                                <a class="nav-link" :href="$lang.header.link" target="_blank">{{$lang.header.recall}}</a>
                             </li>
                             <li class="nav-item">
                                 <router-link class="nav-link" :to="'/' + getLang + '/spread-the-word'">{{$lang.header.spread}}</router-link>
@@ -52,12 +52,12 @@
                     <p>{{$lang.footer.more_info}}</p>
                     <div class="col-sm-6">
                         <img src="/site/images/logo-nhtsa-white.png" width="35%" alt="logo-nhtsa-white">
-                        <a href="https://www.nhtsa.gov/equipment/takata-recall-spotlight" target="_blank">{{$lang.footer.nhtsa}}</a>
+                        <a :href="$lang.footer.link1" target="_blank">{{$lang.footer.nhtsa}}</a>
                         <br/>
                     </div>
                     <div class="col-sm-6">
                         <img src="/site/images/airbag-recall-desktop.png" width="30%" alt="airbag-recall">
-                        <a href="https://www.airbagrecall.com/en/airbag-recall-101" target="_blank">{{$lang.footer.recall}}</a>
+                        <a :href="$lang.footer.link2" target="_blank">{{$lang.footer.recall}}</a>
                     </div>
                 </div>
             </div>

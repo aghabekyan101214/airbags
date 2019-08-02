@@ -2,7 +2,12 @@
     <div class="col-sm-5">
         <div class="gradient-bg search-banner vehicleBlock" id="vehicleBlock" ref="vehicleBlock">
             <p class="upper">{{ $lang.parts.see_in_list }}</p>
-            <button @click="showIframe = true" class="btn btn-primary">{{ $lang.parts.search_vin }}</button>
+<!--            <button @click="showIframe = true" class="btn btn-primary">{{ $lang.parts.search_vin }}</button>-->
+            <a href="https://www.nhtsa.gov/recalls" target="_blank">
+                <button class="btn btn-primary upper">
+                    {{$lang.parts.search_vin }}
+                </button>
+            </a>
             <router-link :to="'/' + getLang +'/#car-block'">
                 <button type="button" class="btn btn-primary">{{ $lang.parts.search_vehicle }}</button>
             </router-link>

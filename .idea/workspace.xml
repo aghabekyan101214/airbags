@@ -5,7 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b0b683d-445c-4951-8110-4904042ea755" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/site/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/site/images/slider-item1-min.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/images/slider-item1-min.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/site/images/slider-item3-min.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/images/slider-item3-min.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/site/images/video-img-mobile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/images/video-img-mobile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/FreeRepairComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/FreeRepairComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/HomeComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/HomeComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/ModalComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ModalComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/layouts/LayoutComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/layouts/LayoutComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/parts/VehicleSearchComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/parts/VehicleSearchComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/lang/en/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/lang/en/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/lang/en/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/lang/en/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/lang/en/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/lang/en/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/lang/en/repair.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/lang/en/repair.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/lang/es/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/lang/es/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/lang/es/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/lang/es/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/lang/es/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/lang/es/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/lang/es/repair.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/lang/es/repair.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/components/HomeComponent.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="92" column="78" selection-start-line="92" selection-start-column="78" selection-end-line="92" selection-end-column="78" />
+            <state relative-caret-position="289">
+              <caret line="68" column="23" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -35,40 +53,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+        <entry file="file://$PROJECT_DIR$/resources/js/lang/en/footer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#492#529#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/lang/en/parts.js">
+        <entry file="file://$PROJECT_DIR$/resources/js/lang/es/footer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="95" />
+            <state relative-caret-position="85">
+              <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/SpreadTheWorldComponent.vue">
+        <entry file="file://$PROJECT_DIR$/resources/js/lang/en/header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/lang/en/spread.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+            <state relative-caret-position="85">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -76,26 +82,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/components/parts/VehicleSearchComponent.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            <state relative-caret-position="119">
+              <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/lang/es/spread.js">
+        <entry file="file://$PROJECT_DIR$/resources/js/lang/es/header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/site/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="10736" selection-start-column="10736" selection-end-column="10736" />
+            <state relative-caret-position="85">
+              <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
             </state>
           </provider>
         </entry>
@@ -103,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/components/layouts/LayoutComponent.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="40" column="99" selection-start-line="40" selection-start-column="99" selection-end-line="40" selection-end-column="99" />
+            <state relative-caret-position="323">
+              <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#nav#0;n#div#0;n#header#0;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
@@ -113,10 +110,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/SharedVideoComponent.vue">
+        <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="607">
-              <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+            <state relative-caret-position="663">
+              <caret line="63" column="56" lean-forward="true" selection-start-line="63" selection-start-column="56" selection-end-line="63" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/js/lang/es/home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/js/lang/es/vehicles.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -133,7 +148,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>img</find>
       <find>fis</find>
       <find>acur</find>
       <find>dai</find>
@@ -161,7 +175,9 @@
       <find>.log</find>
       <find>video-content</find>
       <find>scr</find>
+      <find>.play-icon-mobile{</find>
       <find>carBlock</find>
+      <find>txt-s</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -185,8 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/js/components/HeaderComponent.vue" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/StaticDataController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/VehiclesController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/components/parts/UnsubscribePopup.vue" />
@@ -194,7 +208,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/UnsubscribeController.php" />
         <option value="$PROJECT_DIR$/resources/js/components/UnsubscribeComponent.vue" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/resources/js/components/ModalComponent.vue" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/resources/views/admin/vehicles/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/vehicles/edit.blade.php" />
@@ -210,13 +223,6 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/public/.htaccess" />
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
-        <option value="$PROJECT_DIR$/resources/js/lang/en/header.js" />
-        <option value="$PROJECT_DIR$/resources/js/lang/es/header.js" />
-        <option value="$PROJECT_DIR$/resources/js/lang/en/home.js" />
-        <option value="$PROJECT_DIR$/resources/js/lang/es/home.js" />
-        <option value="$PROJECT_DIR$/resources/js/lang/en/footer.js" />
-        <option value="$PROJECT_DIR$/resources/js/lang/es/footer.js" />
         <option value="$PROJECT_DIR$/resources/views/admin/facts/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/facts/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/admin/QuickFactsController.php" />
@@ -224,17 +230,27 @@
         <option value="$PROJECT_DIR$/resources/js/lang/en/parts.js" />
         <option value="$PROJECT_DIR$/resources/js/lang/es/parts.js" />
         <option value="$PROJECT_DIR$/resources/js/components/QuickFactsComponent.vue" />
-        <option value="$PROJECT_DIR$/resources/js/lang/en/repair.js" />
-        <option value="$PROJECT_DIR$/resources/js/components/FreeRepairComponent.vue" />
-        <option value="$PROJECT_DIR$/resources/js/lang/es/repair.js" />
         <option value="$PROJECT_DIR$/resources/js/routes/routes.js" />
-        <option value="$PROJECT_DIR$/resources/js/components/layouts/LayoutComponent.vue" />
         <option value="$PROJECT_DIR$/resources/js/lang/es/spread.js" />
         <option value="$PROJECT_DIR$/resources/js/lang/en/spread.js" />
         <option value="$PROJECT_DIR$/resources/js/components/SpreadTheWorldComponent.vue" />
-        <option value="$PROJECT_DIR$/resources/js/components/parts/VehicleSearchComponent.vue" />
-        <option value="$PROJECT_DIR$/public/site/css/style.css" />
         <option value="$PROJECT_DIR$/resources/js/app.js" />
+        <option value="$PROJECT_DIR$/resources/js/lang/en/repair.js" />
+        <option value="$PROJECT_DIR$/resources/js/components/FreeRepairComponent.vue" />
+        <option value="$PROJECT_DIR$/resources/js/lang/en/vehicles.js" />
+        <option value="$PROJECT_DIR$/resources/js/components/ModalComponent.vue" />
+        <option value="$PROJECT_DIR$/public/site/css/style.css" />
+        <option value="$PROJECT_DIR$/resources/js/lang/en/home.js" />
+        <option value="$PROJECT_DIR$/resources/js/lang/es/home.js" />
+        <option value="$PROJECT_DIR$/resources/js/lang/es/repair.js" />
+        <option value="$PROJECT_DIR$/resources/js/lang/en/footer.js" />
+        <option value="$PROJECT_DIR$/resources/js/lang/es/vehicles.js" />
+        <option value="$PROJECT_DIR$/resources/js/lang/es/footer.js" />
+        <option value="$PROJECT_DIR$/resources/js/lang/en/header.js" />
+        <option value="$PROJECT_DIR$/resources/js/lang/es/header.js" />
+        <option value="$PROJECT_DIR$/resources/js/components/layouts/LayoutComponent.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/parts/VehicleSearchComponent.vue" />
+        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/components/HomeComponent.vue" />
       </list>
     </option>
@@ -589,12 +605,12 @@
       <workItem from="1564552640758" duration="243000" />
       <workItem from="1564572341563" duration="4423000" />
       <workItem from="1564635988469" duration="29772000" />
-      <workItem from="1564722281980" duration="17144000" />
+      <workItem from="1564722281980" duration="23554000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="287435000" />
+    <option name="totallyTimeSpent" value="293845000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -624,7 +640,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32827735" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159913" side_tool="true" weight="0.23726977" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49840087" visible="true" weight="0.27843988" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49840087" visible="true" weight="0.30552545" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="12" sideWeight="0.4989339" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -677,37 +693,12 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UnsubscribeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/parts/UnsubscribePopup.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1116530">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/ModalComponent.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1887">
-          <caret line="111" column="16" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#transition#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#transition#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -787,13 +778,6 @@
         <state relative-caret-position="-255" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/parts/VideoModal.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="91" selection-start-line="6" selection-start-column="75" selection-end-line="6" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/VinLookupComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -843,48 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="93" selection-start-line="39" selection-start-column="93" selection-end-line="39" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/lang/es/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/lang/en/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/lang/en/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/lang/es/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/lang/es/footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/facts/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -913,13 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/lang/en/footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/QuickFactsComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -934,43 +869,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/FreeRepairComponent.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="147" selection-start-line="20" selection-start-column="147" selection-end-line="20" selection-end-column="147" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/lang/en/repair.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="105" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/lang/es/repair.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="101" selection-start-line="3" selection-start-column="101" selection-end-line="3" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/routes/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/layouts/LayoutComponent.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="40" column="99" selection-start-line="40" selection-start-column="99" selection-end-line="40" selection-end-column="99" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#nav#0;n#div#0;n#header#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1010,20 +914,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/parts/VehicleSearchComponent.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/site/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10736" selection-start-column="10736" selection-end-column="10736" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1034,10 +924,136 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/FreeRepairComponent.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/parts/VideoModal.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="91" selection-start-line="6" selection-start-column="75" selection-end-line="6" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/lang/en/repair.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/site/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9374" selection-start-column="9374" selection-end-column="9374" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/lang/es/repair.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/ModalComponent.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="31" column="96" selection-start-line="31" selection-start-column="96" selection-end-line="31" selection-end-column="96" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#transition#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#transition#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/lang/en/vehicles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/lang/en/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/lang/es/vehicles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/lang/en/footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/lang/es/footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/lang/en/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/lang/es/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/layouts/LayoutComponent.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#nav#0;n#div#0;n#header#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/lang/es/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/parts/VehicleSearchComponent.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="63" column="56" lean-forward="true" selection-start-line="63" selection-start-column="56" selection-end-line="63" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/HomeComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="92" column="78" selection-start-line="92" selection-start-column="78" selection-end-line="92" selection-end-column="78" />
+        <state relative-caret-position="289">
+          <caret line="68" column="23" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="23" />
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />

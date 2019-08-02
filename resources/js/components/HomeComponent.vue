@@ -7,11 +7,7 @@
                     <div class="video-details">
                         <div class="desktop-details">
                             <p>
-                                “1 out of 6 vehicles have been
-                                affected by the <span class="yellow-txt">Takata Airbag Recall.</span>
-                                Check to see if yours is one.
-
-                                It could save your life.”
+                                {{ $lang.home.slider_text1 }}
                             </p>
                             <br>
                             <p>- Morgan</p>
@@ -21,14 +17,14 @@
                                 {{$lang.home.see_in_list}}
                             </button>
                             <div class="dropdown-menu">
-                                <button @click="$emit('showIframe')" class="dropdown-item upper">{{$lang.parts.search_vin }}</button>
+                                <a href="https://www.nhtsa.gov/recalls" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
+<!--                                <button @click="$emit('showIframe')" class="dropdown-item upper">{{$lang.parts.search_vin }}</button>-->
                                 <a class="dropdown-item upper" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                             </div>
                             <p class="txt-sml">
-                                Morgan Freeman discusses the serious
-                                nature of the Takata Airbag Recall.
+                                {{$lang.home.text}}
                             </p>
-                            <a @click="showVideoModal = true" class="play-icon">WATCH NOW</a>
+                            <a @click="showVideoModal = true" class="play-icon">{{$lang.home.watch}}</a>
                         </div>
                     </div>
 
@@ -38,11 +34,7 @@
                     <div class="video-details">
                         <div class="desktop-details">
                             <p>
-                                "The fix is simple, fast and  <span class="yellow-txt"> FREE. </span>
-                                Parts are available at your local dealer.
-                                Schedule your repair today.
-
-                                It could save your life."
+                                {{ $lang.home.slider_text1 }}
                             </p>
                             <br>
                             <p>- Morgan</p>
@@ -52,14 +44,14 @@
                                 {{$lang.home.see_in_list}}
                             </button>
                             <div class="dropdown-menu">
-                                <button @click="$emit('showIframe')" class="dropdown-item upper">{{$lang.parts.search_vin }}</button>
+<!--                                <button @click="$emit('showIframe')" class="dropdown-item upper">{{$lang.parts.search_vin }}</button>-->
+                                <a href="https://www.nhtsa.gov/recalls" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
                                 <a class="dropdown-item upper" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                             </div>
                             <p class="txt-sml">
-                                Morgan Freeman discusses the serious
-                                nature of the Takata Airbag Recall.
+                                {{$lang.home.text}}
                             </p>
-                            <a @click="showVideoModal = true" class="play-icon">WATCH NOW</a>
+                            <a @click="showVideoModal = true" class="play-icon">{{$lang.home.watch}}</a>
                         </div>
                     </div>
                 </div>
@@ -83,8 +75,7 @@
                         </button>
 
                         <p class="txt-sml">
-                            Morgan Freeman discusses the serious
-                            nature of the Takata Airbag Recall.
+                            {{$lang.home.text}}
                         </p>
                         <img class="play-icon-mobile" src="/site/images/play.png" @click="showVideoModal = true" alt="play-icon">
                     </div>
@@ -96,7 +87,8 @@
                     SEE IF YOUR VEHICLE IS ON THE LIST
                 </button>-->
                 <div class="dropdown-menu">
-                    <button @click="$emit('showIframe')" class="dropdown-item">{{$lang.parts.search_vin }}</button>
+<!--                    <button @click="$emit('showIframe')" class="dropdown-item">{{$lang.parts.search_vin }}</button>-->
+                    <a href="https://www.nhtsa.gov/recalls" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
                     <a class="dropdown-item" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                 </div>
             </div>

@@ -7,13 +7,14 @@
                     <div class="model-description">
                         <h3>{{data.name}}</h3>
                         <img src="/site/images/close.png" class="modal-default-button close-btn cursor-pointer" @click="$emit('close')" alt="close">
-                        <span class="recall-vehicle">Vehicles under recall:</span><br>
+                        <span class="recall-vehicle">{{ $lang.vehicles.under_recall }}</span><br>
                         <div class="recall-cars row">
                             <div class="col-md-6 col-lg-6 col-xs-12" v-for="(car, i) in data.makes">{{ car.make }}<br></div>
                         </div>
                         <div class="contact-list">
-                            If your vehicle is on the list, call <br>
-                            to schedule your FREE repair
+                            {{ $lang.vehicles.on_list }}
+                            <br>
+                            {{ $lang.vehicles.on_list2 }}
                         </div>
                         <div class="contact-vehicle">
                             <a v-if="data.phone !== null && mobile" class="contact-icon detail-icon"
@@ -28,10 +29,10 @@
                                 <span v-if="i == 1" style="display: inline">Freightliner Sprinter Customers,</span>
                                 <span style="text-decoration: underline; display: inline" class="fz-17">Visit our Website</span>
                             </span>
-                                <span v-else-if="data.urls.length === 1">Visit our Website</span>
+                                <span v-else-if="data.urls.length === 1">{{ $lang.vehicles.visit }}</span>
                             </a>
                             <a v-if="data.text == '1' && mobile && data.phone !== ''" :href="'sms:/' + data.phone"
-                               style="color: white; text-decoration: none" class="text-icon detail-icon">Click to text</a>
+                               style="color: white; text-decoration: none" class="text-icon detail-icon">{{ $lang.vehicles.text }}</a>
                         </div>
                     </div>
                 </div>
