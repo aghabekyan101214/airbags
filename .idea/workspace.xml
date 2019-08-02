@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b0b683d-445c-4951-8110-4904042ea755" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/public/site/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/HomeComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/HomeComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/parts/VehicleSearchComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/parts/VehicleSearchComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/lang/en/vehicles.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/lang/en/vehicles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/lang/en/parts.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/lang/en/parts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/lang/es/parts.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/lang/es/parts.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,20 +36,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/lang/en/footer.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/js/components/parts/VehicleSearchComponent.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/parts/VehicleSearchComponent.vue">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/js/lang/en/parts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="70" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
+            <state relative-caret-position="68">
+              <caret line="4" column="96" selection-start-line="4" selection-start-column="96" selection-end-line="4" selection-end-column="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/js/lang/es/parts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -103,15 +111,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1020">
               <caret line="60" column="6" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/lang/es/home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -216,8 +215,6 @@
         <option value="$PROJECT_DIR$/resources/views/admin/facts/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/admin/QuickFactsController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/facts/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/js/lang/en/parts.js" />
-        <option value="$PROJECT_DIR$/resources/js/lang/es/parts.js" />
         <option value="$PROJECT_DIR$/resources/js/components/QuickFactsComponent.vue" />
         <option value="$PROJECT_DIR$/resources/js/routes/routes.js" />
         <option value="$PROJECT_DIR$/resources/js/lang/es/spread.js" />
@@ -240,6 +237,8 @@
         <option value="$PROJECT_DIR$/resources/js/components/HomeComponent.vue" />
         <option value="$PROJECT_DIR$/public/site/css/style.css" />
         <option value="$PROJECT_DIR$/resources/js/lang/en/vehicles.js" />
+        <option value="$PROJECT_DIR$/resources/js/lang/es/parts.js" />
+        <option value="$PROJECT_DIR$/resources/js/lang/en/parts.js" />
         <option value="$PROJECT_DIR$/resources/js/components/parts/VehicleSearchComponent.vue" />
       </list>
     </option>
@@ -601,12 +600,12 @@
       <workItem from="1564552640758" duration="243000" />
       <workItem from="1564572341563" duration="4423000" />
       <workItem from="1564635988469" duration="29772000" />
-      <workItem from="1564722281980" duration="26262000" />
+      <workItem from="1564722281980" duration="26546000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296553000" />
+    <option name="totallyTimeSpent" value="296837000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -848,13 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/lang/es/parts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/routes/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -890,13 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/lang/en/parts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="95" />
         </state>
       </provider>
     </entry>
@@ -1049,10 +1034,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/lang/es/parts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/lang/en/parts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="96" selection-start-line="4" selection-start-column="96" selection-end-line="4" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/parts/VehicleSearchComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="70" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
+        <state relative-caret-position="85">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>
