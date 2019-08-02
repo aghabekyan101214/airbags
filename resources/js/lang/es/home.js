@@ -1,7 +1,5 @@
 module.exports = {
-    speech: "“1 out of 6 vehicleso have been\n" +
-        "                            affected by the <span class=\"yellow-txt\">Takata Airbag Recall.</span>\n" +
-        "                            Check to see if yours is one.\n" +
-        "\n" +
-        "                            It could save your lifeo.”"
+    search: "Búsqueda por fabricante de su vehículo",
+    choose: "Escoja de la lista abajo",
+    see_in_list: "Verifique si su vehículo está en la lista"
 }

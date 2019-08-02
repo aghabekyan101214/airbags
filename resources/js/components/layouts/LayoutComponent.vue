@@ -6,7 +6,7 @@
                     <router-link class="navbar-brand nb" :to="'/' + getLang">
                         <img src="/site/images/logo.png" alt="logo" height="" width="">
                     </router-link>
-                    <div class="localization">
+                    <div class="localization" v-if="width > 600">
                         <a href="javascript:void(0)" class="en-lang" @click="changeLang('en')">
                             English
                         </a>
@@ -14,6 +14,12 @@
                         <a href="javascript:void(0)" class="es-lang" @click="changeLang('es')">
                             Espanol
                         </a>
+                    </div>
+                    <div class="localization-mobile" v-else>
+                        <select class="language-mobile" v-model="getLang" @change="changeLang($event)">
+                            <option value="en">En</option>
+                            <option value="es">Es</option>
+                        </select>
                     </div>
                     <button ref="nav" class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
                         <span> </span>
@@ -26,13 +32,13 @@
                                 <router-link class="nav-link" :to="'/' + getLang + '/quick-facts'">{{$lang.header.quick_facts}}</router-link>
                             </li>
                             <li class="nav-item">
-                                <router-link class="nav-link" :to="'/' + getLang + '/free-repair'">About the <span class="yellow-txt">FREE </span> Repair</router-link>
+                                <router-link class="nav-link" :to="'/' + getLang + '/free-repair'">{{$lang.header.free_repair}}</router-link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://www.nhtsa.gov/equipment/takata-recall-spotlight" target="_blank">More About the Recall</a>
+                                <a class="nav-link" href="https://www.nhtsa.gov/equipment/takata-recall-spotlight" target="_blank">{{$lang.header.recall}}</a>
                             </li>
                             <li class="nav-item">
-                                <router-link class="nav-link" :to="'/' + getLang + '/spread-the-world'">Spread the Word, Save a Life</router-link>
+                                <router-link class="nav-link" :to="'/' + getLang + '/spread-the-world'">{{$lang.header.spread}}</router-link>
                             </li>
                         </ul>
                     </div>
@@ -46,12 +52,12 @@
                     <p>More Information</p>
                     <div class="col-sm-6">
                         <img src="/site/images/logo-nhtsa-white.png" width="35%" alt="logo-nhtsa-white">
-                        <a href="https://www.nhtsa.gov/equipment/takata-recall-spotlight" target="_blank">NHTSA Takata Airbag Recall Spotlight</a>
+                        <a href="https://www.nhtsa.gov/equipment/takata-recall-spotlight" target="_blank">{{$lang.footer.nhtsa}}</a>
                         <br/>
                     </div>
                     <div class="col-sm-6">
                         <img src="/site/images/airbag-recall-desktop.png" width="30%" alt="airbag-recall">
-                        <a href="https://www.airbagrecall.com/en/airbag-recall-101" target="_blank">Takata Airbag Recall 101</a>
+                        <a href="https://www.airbagrecall.com/en/airbag-recall-101" target="_blank">{{$lang.footer.recall}}</a>
                     </div>
                 </div>
             </div>
@@ -70,7 +76,7 @@
        data: function () {
            return {
                loaded: false,
-               showIframe: false
+               showIframe: false,
            }
        },
         watch: {
@@ -88,6 +94,9 @@
                 this.loaded = true;
             },
             changeLang(lang) {
+                if(typeof lang !== 'string') {
+                    lang = lang.target.value;
+                }
                 this.$lang.setLang(lang);
                 let current = this.$route.path;
                 current = current.split("/");
@@ -97,8 +106,15 @@
         },
 
         computed: {
-            getLang: function() {
-                return this.$lang.getLang();
+            getLang:  {
+                get: function() {
+                    return this.$lang.getLang();
+                },
+                set: function(newValue) {
+                }
+            },
+            width: function() {
+                return window.innerWidth;
             }
         }
     }
@@ -121,6 +137,17 @@
     }
     .en-lang{
         margin-right: 5px;
+    }
+    .language-mobile {
+        color: white;
+        background: black;
+        width: 100%;
+    }
+    .localization-mobile {
+        position: absolute;
+        right: 60px;
+        width: 55px;
+        top: 17px;
     }
 
 </style>

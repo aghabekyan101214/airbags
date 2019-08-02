@@ -16,7 +16,8 @@
                     <thead>
                         <tr>
                             <th>id</th>
-                            <th>Text</th>
+                            <th>Text English</th>
+                            <th>Text Spanish</th>
                             <th>Url</th>
                             <th>Settings</th>
                         </tr>
@@ -24,7 +25,8 @@
                     <tfoot>
                         <tr>
                             <th>id</th>
-                            <th>Text</th>
+                            <th>Text English</th>
+                            <th>Text Spanish</th>
                             <th>Url</th>
                             <th>Settings</th>
                         </tr>
@@ -34,7 +36,10 @@
                             <tr>
                                 <td>{{ $d->id }}</td>
                                 <td>
-                                    <p>{{ $d->text }}</p>
+                                    <p>{{ $d->text_en }}</p>
+                                </td>
+                                <td>
+                                    <p>{{ $d->text_es }}</p>
                                 </td>
                                 <td>
                                     <p>{{ $d->url }}</p>

@@ -70,7 +70,7 @@ header .navbar-brand {
     width: 50%;
 }
 header .navbar-brand img {
-    width: 47%;
+    width: 75%;
     margin-left: 0;
 }
 /*header .collapse.show {*/
@@ -191,9 +191,9 @@ header .navbar-brand img {
     line-height: 75px;
     font-size: 30px;
 }
-.video-content{
-    position: relative;
-}
+/*.video-content{*/
+/*    position: relative;*/
+/*}*/
 .video-content .video-details{
     position: absolute;
     top: 14%;
@@ -563,4 +563,23 @@ footer a, footer p{display:block;text-align:center;color:#fff;}
     .txt-sml {
         top: 475px;
     }
+}
+
+
+.video-content.item-left .video-details {
+    left: 14%;
+}
+
+.item-left .txt-sml {
+    float: left;
+}
+.video-block  .item-left .dropdown-toggle::after {
+    left: 257px;
+}
+.item-left .play-icon {
+    float: left;
+}
+.video-block .item-left  .btn-primary {
+
+    float: left;
 }

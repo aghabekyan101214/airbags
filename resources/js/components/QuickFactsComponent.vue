@@ -14,7 +14,8 @@
                     <section class="panel">
                         <ul class="quick-facts-list">
                             <li v-for="d in data">
-                                <span>{{ d.text }}</span>
+                                <span v-if="lang === 'en'">{{ d.text_en}}</span>
+                                <span v-else-if="lang === 'es'">{{ d.text_es}}</span>
                                 <a v-if="d.url !== null" :href="d.url" target="_blank" class="to-tweet">Tweet this</a>
                             </li>
                         </ul>
@@ -28,9 +29,10 @@
 
 <script>
     export default {
+        props: ['lang'],
         data: function() {
             return {
-                data: ""
+                data: "",
             }
 
         },

@@ -61,7 +61,7 @@
 </div>
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
-<script src="{{ asset("site/js/popper.js") }}"></script>
+{{--<script src="{{ asset("site/js/popper.js") }}"></script>--}}
 {{--twitter--}}
 <script>
     window.twttr = (function(d, s, id) {

@@ -42,7 +42,8 @@ class QuickFactsController extends Controller
     {
         $data = new QuickFact();
         $data->url = $request->url;
-        $data->text = $request->text;
+        $data->text_en = $request->text_en;
+        $data->text_es = $request->text_es;
         $data->save();
         return redirect($this->url);
     }
@@ -81,7 +82,8 @@ class QuickFactsController extends Controller
     {
         $data = QuickFact::findOrFail($id);
         $data->url = $request->url;
-        $data->text = $request->text;
+        $data->text_en = $request->text_en;
+        $data->text_es = $request->text_es;
         $data->save();
 
         return redirect($this->url);

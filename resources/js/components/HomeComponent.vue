@@ -1,23 +1,87 @@
 <template>
     <div>
-        <section class="video-block">
-            <div class="video-content">
-                <img src="/site/images/video-img-desktop.jpg" class="video-desktop">
-                <div class="video-details">
-                    <div class="desktop-details">
-                        <p>
-                            “1 out of 6 vehicles have been
-                            affected by the <span class="yellow-txt">Takata Airbag Recall.</span>
-                            Check to see if yours is one.
+        <div v-if="width > 600" id="carouselExampleControls" class="video-block carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active video-content">
+                    <img src="/site/images/slider-item1.jpg" alt="Morgan Freeman" class="video-desktop">
+                    <div class="video-details">
+                        <div class="desktop-details">
+                            <p>
+                                “1 out of 6 vehicles have been
+                                affected by the <span class="yellow-txt">Takata Airbag Recall.</span>
+                                Check to see if yours is one.
 
-                            It could save your life.”
-                        </p>
-                        <br>
-                        <p>- Morgan</p>
+                                It could save your life.”
+                            </p>
+                            <br>
+                            <p>It could save your life.”</p>
+                            <p>- Morgan</p>
+                        </div>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                {{$lang.home.see_in_list}}
+                            </button>
+                            <div class="dropdown-menu">
+                                <button @click="$emit('showIframe')" class="dropdown-item">SEARCH BY VIN</button>
+                                <a class="dropdown-item" v-scroll-to="'#car-block'" href="#">SEARCH BY VEHICLE BRAND</a>
+                            </div>
+                            <p class="txt-sml">
+                                Morgan Freeman discusses the serious
+                                nature of the Takata Airbag Recall.
+                            </p>
+                            <a @click="showVideoModal = true" class="play-icon">WATCH NOW</a>
+                        </div>
                     </div>
+
+                </div>
+                <div class="carousel-item  video-content">
+                    <img src="/site/images/slider-item3.jpg" class="video-desktop">
+                    <div class="video-details">
+                        <div class="desktop-details">
+                            <p>
+                                "The fix is simple, fast and  <span class="yellow-txt"> FREE. </span>
+                                Parts are available at your local dealer.
+                                Schedule your repair today.
+
+                                It could save your life."
+                            </p>
+                            <br>
+                            <p>It could save your life.”</p>
+                            <p>- Morgan</p>
+                        </div>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                {{$lang.home.see_in_list}}
+                            </button>
+                            <div class="dropdown-menu">
+                                <button @click="$emit('showIframe')" class="dropdown-item">SEARCH BY VIN</button>
+                                <a class="dropdown-item" v-scroll-to="'#car-block'" href="#">SEARCH BY VEHICLE BRAND</a>
+                            </div>
+                            <p class="txt-sml">
+                                Morgan Freeman discusses the serious
+                                nature of the Takata Airbag Recall.
+                            </p>
+                            <a @click="showVideoModal = true" class="play-icon">WATCH NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <section v-else class="video-block">
+            <div class="video-content">
+                <div class="video-details">
                     <div class="dropdown">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            SEE IF YOUR VEHICLE IS ON THE LIST
+                            {{$lang.home.see_in_list}}
                         </button>
                         <div class="dropdown-menu">
                             <button @click="$emit('showIframe')" class="dropdown-item">SEARCH BY VIN</button>
@@ -43,11 +107,12 @@
                 </div>
             </div>
         </section>
+
         <!--video-block end-->
         <section class="model-details">
             <div class="panel">
-                <h2>SEARCH BY VEHICLE BRAND</h2>
-                <p>choose from the list below</p>
+                <h2>{{$lang.home.search}}</h2>
+                <p>{{$lang.home.choose}}</p>
                 <p><img v-scroll-to="'#car-block'" height="30" class="cursor-pointer" src="/site/images/arrow_down.png" alt=""></p>
             </div>
             <div class="car-block" id="car-block" ref="carBlock">
@@ -85,7 +150,8 @@
                 carData: "",
                 mobile: isMobileOnly,
                 ios: isIOS,
-                android: isAndroid
+                android: isAndroid,
+                width: ""
             }
 
         },
@@ -118,6 +184,7 @@
             if(hash.length > 0) {
                 this.$scrollTo(this.$refs.carBlock, 1500)
             }
+            this.width =  window.innerWidth;
         }
 
     }
