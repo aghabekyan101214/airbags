@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div v-if="width > 600" id="carouselExampleControls" class="video-block carousel slide" data-ride="carousel">
+        <div v-if="width > 600" id="carouselExampleControls" data-interval="false" class="video-block carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active video-content">
                     <img src="/site/images/slider-item1-min.jpg" alt="Morgan Freeman" class="video-desktop">
