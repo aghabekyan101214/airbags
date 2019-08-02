@@ -5,11 +5,22 @@
                 <div class="carousel-item active video-content">
                     <img src="/site/images/slider-item1-min.jpg" alt="Morgan Freeman" class="video-desktop">
                     <div class="video-details">
-                        <div class="desktop-details">
+                        <div v-if="getLang === 'en'" class="desktop-details">
                             <p>
-                                {{ $lang.home.slider_text1 }}
+                                “The fix is simple, fast and <span class="yellow-txt">FREE.</span>
+                                Parts are available at your local dealer. Schedule your repair today.
                             </p>
                             <br>
+                            <p>It could save your life.”</p>
+                            <p>- Morgan</p>
+                        </div>
+                        <div v-else class="desktop-details">
+                            <p>
+                                “1 de cada 6 vehículos han sido
+                                afectados con <span class="yellow-txt"> bolsas de aire Takata defectuosas. </span> Verifique si su vehículo está en la lista.
+                            </p>
+                            <br>
+                            <p>Puede salvar tu vida.”</p>
                             <p>- Morgan</p>
                         </div>
                         <div class="dropdown">
@@ -32,14 +43,26 @@
                 <div class="carousel-item  video-content">
                     <img src="/site/images/slider-item3-min.jpg" class="video-desktop">
                     <div class="video-details">
-                        <div class="desktop-details">
+                        <div v-if="getLang === 'en'" class="desktop-details">
                             <p>
-                                {{ $lang.home.slider_text1 }}
+                                “1 out of 6 vehicles have been
+                                affected by the <span class="yellow-txt">Takata Airbag Recall.</span>
+                                Check to see if yours is one.
                             </p>
                             <br>
+                            <p>It could save your life.”</p>
                             <p>- Morgan</p>
                         </div>
-                        <div class="dropdown">
+                        <div v-else class="desktop-details">
+                            <p>
+                                “1 de cada 6 vehículos han sido
+                                afectados con <span class="yellow-txt"> bolsas de aire Takata defectuosas. </span> Verifique si su vehículo está en la lista.
+                            </p>
+                            <br>
+                            <p>Puede salvar tu vida.”</p>
+                            <p>- Morgan</p>
+                        </div>
+                            <div class="dropdown">
                             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                                 {{$lang.home.see_in_list}}
                             </button>
@@ -166,7 +189,12 @@
         },
         mounted() {
             this.width = window.innerWidth;
-        }
+        },
+        computed: {
+            getLang: function() {
+                return this.$lang.getLang();
+            }
+        },
 
     }
     window.addEventListener("load", function(event) {
