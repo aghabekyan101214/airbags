@@ -165,6 +165,10 @@
                 .then(function (response) {
                     self.cars = response.data;
                     self.$emit('loaded', true);
+                    let hash = window.location.hash;
+                    if(hash.length > 0) {
+                        self.$scrollTo(self.$refs.carBlock, 1500)
+                    }
                 })
                 .catch(function (error) {
                     console.log(error);
@@ -174,11 +178,7 @@
             document.querySelector('meta[name="description"]').setAttribute("content", desc);
         },
         mounted() {
-            let hash = window.location.hash;
-            if(hash.length > 0) {
-                this.$scrollTo(this.$refs.carBlock, 1500)
-            }
-            this.width =  window.innerWidth;
+            this.width = window.innerWidth;
         }
 
     }

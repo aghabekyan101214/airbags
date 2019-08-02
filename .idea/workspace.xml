@@ -24,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/components/HomeComponent.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="92" column="82" selection-start-line="92" selection-start-column="82" selection-end-line="92" selection-end-column="82" />
+            <state relative-caret-position="246">
+              <caret line="169" column="43" selection-start-line="169" selection-start-column="43" selection-end-line="169" selection-end-column="43" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -161,6 +161,7 @@
       <find>.log</find>
       <find>video-content</find>
       <find>scr</find>
+      <find>carBlock</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -588,12 +589,12 @@
       <workItem from="1564552640758" duration="243000" />
       <workItem from="1564572341563" duration="4423000" />
       <workItem from="1564635988469" duration="29772000" />
-      <workItem from="1564722281980" duration="15719000" />
+      <workItem from="1564722281980" duration="16600000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="286010000" />
+    <option name="totallyTimeSpent" value="286891000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1035,8 +1036,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/HomeComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="92" column="82" selection-start-line="92" selection-start-column="82" selection-end-line="92" selection-end-column="82" />
+        <state relative-caret-position="246">
+          <caret line="169" column="43" selection-start-line="169" selection-start-column="43" selection-end-line="169" selection-end-column="43" />
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
