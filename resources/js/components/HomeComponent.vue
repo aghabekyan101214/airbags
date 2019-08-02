@@ -90,7 +90,7 @@
                     </div>
                 </div>
             </div>
-            <div class="video-content"><img src="/site/images/video-img-mobile-min.jpg" class="video-mobile"></div>
+            <div class="video-content"><img src="/site/images/video-img-mobile.jpg" class="video-mobile"></div>
             <div class="dropdown">
                 <!--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                     SEE IF YOUR VEHICLE IS ON THE LIST
