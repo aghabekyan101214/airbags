@@ -4,7 +4,7 @@
         <h1 class="h3 mb-0 text-gray-800">Spread The World</h1>
     </div>
 
-    <form action="{{ "/control-panel/spread-the-world/28/" }}" method="post" enctype="multipart/form-data">
+    <form action="{{ "/control-panel/spread-the-world/".$data['page_data']->id }}" method="post" enctype="multipart/form-data">
         @csrf
         @method("PUT")
         <div class="form-group">
