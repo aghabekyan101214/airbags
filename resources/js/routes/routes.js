@@ -25,7 +25,7 @@ const routes = [
         {path: '/spread-the-word', component: SpreadTheWorldComponent},
         {path: '/spread-the-word/video/:id', component: SharedVideoComponent},
         {path: '/vin-lookup', component: VinLookupComponent},
-        { path: "*", component: HomeComponent }
+        { path: "*", redirect: '/en' }
     ]),
 ];
 
