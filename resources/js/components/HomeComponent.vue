@@ -2,45 +2,7 @@
     <div>
         <div v-if="width > 600" id="carouselExampleControls" data-interval="false" class="video-block carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active video-content">
-                    <img src="/site/images/slider-item1-min.jpg" alt="Morgan Freeman" class="video-desktop">
-                    <div class="video-details">
-                        <div v-if="getLang === 'en'" class="desktop-details">
-                            <p>
-                                “The fix is simple, fast and <span class="yellow-txt">FREE.</span>
-                                Parts are available at your local dealer. Schedule your repair today.
-                            </p>
-                            <br>
-                            <p>It could save your life.”</p>
-                            <p>- Morgan</p>
-                        </div>
-                        <div v-else class="desktop-details">
-                            <p>
-                                “1 de cada 6 vehículos han sido
-                                afectados con <span class="yellow-txt"> bolsas de aire Takata defectuosas. </span> Verifique si su vehículo está en la lista.
-                            </p>
-                            <br>
-                            <p>Puede salvar tu vida.”</p>
-                            <p>- Morgan</p>
-                        </div>
-                        <div class="dropdown">
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                                {{$lang.home.see_in_list}}
-                            </button>
-                            <div class="dropdown-menu">
-                                <a href="https://www.nhtsa.gov/recalls" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
-<!--                                <button @click="$emit('showIframe')" class="dropdown-item upper">{{$lang.parts.search_vin }}</button>-->
-                                <a class="dropdown-item upper" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
-                            </div>
-                            <p class="txt-sml">
-                                {{$lang.home.text}}
-                            </p>
-                            <a @click="showVideoModal = true" class="play-icon">{{$lang.home.watch}}</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="carousel-item  video-content">
+                <div class="carousel-item active  video-content">
                     <img src="/site/images/slider-item3-min.jpg" class="video-desktop">
                     <div class="video-details">
                         <div v-if="getLang === 'en'" class="desktop-details">
@@ -62,12 +24,12 @@
                             <p>Puede salvar tu vida.”</p>
                             <p>- Morgan</p>
                         </div>
-                            <div class="dropdown">
+                        <div class="dropdown">
                             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                                 {{$lang.home.see_in_list}}
                             </button>
                             <div class="dropdown-menu">
-<!--                                <button @click="$emit('showIframe')" class="dropdown-item upper">{{$lang.parts.search_vin }}</button>-->
+                                <!--                                <button @click="$emit('showIframe')" class="dropdown-item upper">{{$lang.parts.search_vin }}</button>-->
                                 <a href="https://www.nhtsa.gov/recalls" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
                                 <a class="dropdown-item upper" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                             </div>
@@ -77,6 +39,44 @@
                             <a @click="showVideoModal = true" class="play-icon">{{$lang.home.watch}}</a>
                         </div>
                     </div>
+                </div>
+                <div class="carousel-item video-content">
+                    <img src="/site/images/slider-item1-min.jpg" alt="Morgan Freeman" class="video-desktop">
+                    <div class="video-details">
+                        <div v-if="getLang === 'en'" class="desktop-details">
+                            <p>
+                                “The fix is simple, fast and <span class="yellow-txt">FREE.</span>
+                                Parts are available at your local dealer. Schedule your repair today.
+                            </p>
+                            <br>
+                            <p>It could save your life.”</p>
+                            <p>- Morgan</p>
+                        </div>
+                        <div v-else class="desktop-details">
+                            <p>
+                                “La reparación es simple, rápida y
+                                <span class="yellow-txt">gratis.</span> Coordinar su reparación hoy.
+                            </p>
+                            <br>
+                            <p>Puede salvar tu vida.”</p>
+                            <p>- Morgan</p>
+                        </div>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                {{$lang.home.see_in_list}}
+                            </button>
+                            <div class="dropdown-menu">
+                                <a href="https://www.nhtsa.gov/recalls" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
+<!--                                <button @click="$emit('showIframe')" class="dropdown-item upper">{{$lang.parts.search_vin }}</button>-->
+                                <a class="dropdown-item upper" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
+                            </div>
+                            <p class="txt-sml">
+                                {{$lang.home.text}}
+                            </p>
+                            <a @click="showVideoModal = true" class="play-icon">{{$lang.home.watch}}</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <a style="width: 10%" class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -123,7 +123,7 @@
                 <div class="container car-block-inner">
                     <div v-for="(car, i) in cars">
                         <img @click="info(i)" v-if="car.img !== ''" class="cursor-pointer car-logo" v-bind:src="'/storage/' + car.img" :alt="car.name">
-                        <span @click="info(i)" v-else>{{ car.name }}</span>
+                        <span @click="info(i)" v-else class="cursor-pointer">{{ car.name }}</span>
                     </div>
                 </div>
             </div>
