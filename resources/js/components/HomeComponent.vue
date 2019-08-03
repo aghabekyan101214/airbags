@@ -123,7 +123,7 @@
                 <div class="container car-block-inner">
                     <div v-for="(car, i) in cars">
                         <img @click="info(i)" v-if="car.img !== ''" class="cursor-pointer car-logo" v-bind:src="'/storage/' + car.img" :alt="car.name">
-                        <span @click="info(i)" v-else class="cursor-pointer">{{ car.name }}</span>
+                        <span @click="info(i)" :class="{lower: car.name === 'Volkswagen'}" v-else class="cursor-pointer">{{ car.name }}</span>
                     </div>
                 </div>
             </div>
@@ -252,6 +252,9 @@
             width: 100%;
             text-align: center;
             padding: 0 30px;
+        }
+        .lower {
+            font-size: 18px;
         }
     }
     @media (min-width: 1200px) {
