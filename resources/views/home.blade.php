@@ -42,7 +42,7 @@
 
     <meta property="og:url" content="{{ url("/spread-the-world") }}" />
     <meta property="og:title" content="Airbags Recall"/>
-    <meta property="og:image" content="{{ asset('site/images/mf.png') }}"/>
+    <meta property="og:image" content="{{ asset('site/images/og-image.jpg') }}"/>
     <meta property="og:description" content="Airbags Recall By Morgan" />
     <meta name="description" content="">
 </head>
