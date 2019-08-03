@@ -30,7 +30,7 @@
                             </button>
                             <div class="dropdown-menu">
                                 <!--                                <button @click="$emit('showIframe')" class="dropdown-item upper">{{$lang.parts.search_vin }}</button>-->
-                                <a href="https://www.nhtsa.gov/recalls" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
+                                <a :href="$lang.parts.link" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
                                 <a class="dropdown-item upper" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                             </div>
                             <p class="txt-sml">
@@ -66,7 +66,7 @@
                                 {{$lang.home.see_in_list}}
                             </button>
                             <div class="dropdown-menu">
-                                <a href="https://www.nhtsa.gov/recalls" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
+                                <a :href="$lang.parts.link" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
 <!--                                <button @click="$emit('showIframe')" class="dropdown-item upper">{{$lang.parts.search_vin }}</button>-->
                                 <a class="dropdown-item upper" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                             </div>
@@ -98,7 +98,7 @@
                         </button>
                         <div class="dropdown-menu">
                             <!--                                <button @click="$emit('showIframe')" class="dropdown-item upper">{{$lang.parts.search_vin }}</button>-->
-                            <a href="https://www.nhtsa.gov/recalls" target="_blank" class="dropdown-item">{{$lang.parts.search_vin }}</a>
+                            <a :href="$lang.parts.link" target="_blank" class="dropdown-item">{{$lang.parts.search_vin }}</a>
                             <a class="dropdown-item" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                         </div>
 

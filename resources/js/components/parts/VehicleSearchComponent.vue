@@ -4,7 +4,7 @@
             <p class="upper">{{ $lang.parts.see_in_list }}</p>
 <!--            <button @click="showIframe = true" class="btn btn-primary">{{ $lang.parts.search_vin }}</button>-->
             <a :href="$lang.parts.link" target="_blank">
-                <button class="btn btn-primary upper">
+                <button :class="{font: this.$lang.getLang() === 'es'}" class="btn btn-primary upper" >
                     {{$lang.parts.search_vin }}
                 </button>
             </a>
@@ -66,7 +66,13 @@
 
     @media (max-width: 600px) {
         .font{
-            font-size: 13px!important;
+            font-size: 12px ;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .font{
+            font-size: 10px;
         }
     }
 
