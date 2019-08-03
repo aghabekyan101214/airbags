@@ -43,7 +43,7 @@
     <meta property="og:url" content="{{ url("/spread-the-world") }}" />
     <meta property="og:title" content="Airbags Recall"/>
     <meta property="og:image" content="{{ asset('site/images/og-image.jpg') }}"/>
-    <meta property="og:description" content="Airbags Recall By Morgan" />
+    <meta property="og:description" content="1 in 6 vehicles have been affected by the Takata Airbag Recall. Check to see if yours is one. It could save your life." />
     <meta name="description" content="">
 </head>
 <body>
