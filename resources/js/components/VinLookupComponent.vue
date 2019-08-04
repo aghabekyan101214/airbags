@@ -1,6 +1,6 @@
 <template>
     <div>
-        <iframe src="https://www.nhtsa.gov/recalls"></iframe>
+        <iframe src="http://www.artrek.am"></iframe>
     </div>
 </template>
 
