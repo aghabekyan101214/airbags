@@ -12,7 +12,7 @@
                         </a>
                         <span style="color:white">|</span>
                         <a href="javascript:void(0)" class="es-lang" @click="changeLang('es')">
-                            Espanol
+                            Español
                         </a>
                     </div>
                     <div class="localization-mobile" v-else>
