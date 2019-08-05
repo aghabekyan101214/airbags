@@ -24,7 +24,8 @@ const routes = [
         {path: '/free-repair', component: FreeRepairComponent},
         {path: '/spread-the-word', component: SpreadTheWorldComponent},
         {path: '/spread-the-word/video/:id', component: SharedVideoComponent},
-        {path: '/vin-lookup', component: VinLookupComponent}
+        {path: '/vin-lookup', component: VinLookupComponent},
+        { path: "*", redirect: '/en' }
     ]),
 ];
 
