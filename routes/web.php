@@ -23,7 +23,7 @@ Route::get('/vehicles', 'VehiclesController@index');
 Route::post('/unsubscribing', 'UnsubscribeController@store');
 Route::get('/get-report', 'CarfaxController@get_report');
 //Route::post('/insert', 'InsertController@insert');
-Route::group(['prefix' => '/{lang?}/control-panel',  'middleware' => 'auth'], function()
+Route::group(['prefix' => '/control-panel',  'middleware' => 'auth'], function()
 {
     Route::get('/', 'admin\AdminController@index');
     Route::resource('/spread-the-world', 'admin\SpreadTheWorldController');
