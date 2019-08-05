@@ -32,7 +32,7 @@
                                 <span v-else-if="data.urls.length === 1">{{ $lang.vehicles.visit }}</span>
                             </a>
                             <a v-if="data.text == '1' && mobile && data.phone !== ''" :href="'sms:/' + data.phone"
-                               style="color: white; text-decoration: none" class="text-icon detail-icon">{{ $lang.vehicles.text }}</a>
+                               style="color: white; text-decoration: none" class="text-icon detail-icon">{{ data.phone }}</a>
                         </div>
                     </div>
                 </div>
