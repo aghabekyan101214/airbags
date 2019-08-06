@@ -43,8 +43,8 @@ class SpreadTheWorldController extends Controller
     public function store(Request $request)
     {
         $data = new SpreadTheWorld();
-        $path = Storage::putFile('public', $request->file, 'public');
-        $data->video = !empty($path) ? $path = explode("/", $path)[1] : "";
+//        $path = Storage::putFile('public', $request->file, 'public');
+        $data->video = $request->file;
         $data->save();
         return redirect($this->url);
     }
@@ -86,8 +86,7 @@ class SpreadTheWorldController extends Controller
     {
         if(!empty($request->file)) {
             $data = SpreadTheWorld::findOrFail($id);
-            $path = Storage::putFile('public', $request->file, 'public');
-            $data->video = !empty($path) ? $path = explode("/", $path)[1] : "";
+            $data->video = $request->file;
             $data->save();
         }
         return redirect($this->url);

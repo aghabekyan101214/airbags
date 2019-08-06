@@ -7,7 +7,7 @@
     <form action="/control-panel/spread-the-world" method="post" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
-            <input type="file" class="form-control form-control-user" name="file" required placeholder="file">
+            <input type="text" class="form-control form-control-user" name="file" required placeholder="file">
         </div>
         <button class="btn btn-primary btn-user btn-block">Add</button>
     </form>

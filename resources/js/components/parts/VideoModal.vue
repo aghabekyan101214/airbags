@@ -3,9 +3,7 @@
         <div class="modal-mask">
             <div class="modal-wrapper" @click="$emit('close')">
                 <div class="modal-container">
-                    <video  v-if="staticData.home_video" autoplay controls>
-                        <source :src="'/storage/' + staticData.home_video" type="video/mp4">
-                    </video>
+                    <iframe src="https://www.youtube.com/embed/akyWT6oz3Fc?autoplay=1" frameborder="0"></iframe>
                 </div>
             </div>
         </div>
@@ -40,12 +38,12 @@
             height: 500px;
             text-align: center;
         }
-        video{
+        iframe{
+            width: 50%!important;
             height: 100%;
-            width: auto!important;
         }
     }
-    video {
+    iframe {
         width: 100%;
     }
     .modal-mask {

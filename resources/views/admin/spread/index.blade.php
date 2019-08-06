@@ -32,9 +32,7 @@
                             <tr>
                                 <td>{{ $d->id }}</td>
                                 <td>
-                                    <video width="320" height="240" controls>
-                                        <source src="{{ asset("storage/$d->video") }}">
-                                    </video>
+                                    <iframe width="320" height="240" src="https://www.youtube.com/embed/{{ $d->video }}" frameborder="0"></iframe>
                                 </td>
                                 <td style="display: flex; justify-content: center; vertical-align: middle">
                                     <a class="btn btn-primary" href="/{{ Request::path()."/".$d->id }}/edit"><i class="fa fa-edit"></i></a>

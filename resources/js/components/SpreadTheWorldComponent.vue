@@ -9,15 +9,13 @@
             </section>
             <div class="col-sm-7">
                 <section v-for="(video, i) in data">
-                    <video width="100%" :id="'share' + i" controls>
-                        <source :src="'/storage/' + video.video">
-                    </video>
+                    <iframe width="100%" height="235px" :src="'https://www.youtube.com/embed/'+video.video" frameborder="0"></iframe>
                     <div class="social-row">
                         {{ $lang.spread.share }}
 
-                        <a target="_blank" :href="'https://www.facebook.com/sharer/sharer.php?u=' + baseUrl+ '/' + lang +'/spread-the-word/video/'+video.video+'&quote='+shareText+'&amp;src=sdkpreparse'" class="fb-xfbml-parse-ignore"><img src="/site/images/fb-icon.png" alt="icon"></a>
+                        <a target="_blank" :href="'https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/embed/'+video.video+'&quote='+shareText+'&amp;src=sdkpreparse'" class="fb-xfbml-parse-ignore"><img src="/site/images/fb-icon.png" alt="icon"></a>
 <!--                        <a :href="'https://www.facebook.com/sharer/sharer.php?u=' + baseUrl + '/storage/' + video.video" target="_blank"><img src="/site/images/fb-icon.png" alt="icon"> </a>-->
-                        <a :href="'https://twitter.com/intent/tweet?url=' + baseUrl+ '/' + lang +'/spread-the-word/video/' + video.video+'&text='+shareText"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
+                        <a :href="'https://twitter.com/intent/tweet?url=https://www.youtube.com/embed/'+video.video+'&quote='+shareText+'&text='+shareText"><img src="/site/images/twitter-icon.png" alt="icon"> </a>
                     </div>
                 </section>
             </div>
