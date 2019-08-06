@@ -33,6 +33,7 @@
   "author": "aimtech",
   "license": "ISC",
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "mobile-device-detect": "^0.2.3",
     "vee-validate": "^2.2.13",
     "vue-flag-icon": "^1.0.6",
