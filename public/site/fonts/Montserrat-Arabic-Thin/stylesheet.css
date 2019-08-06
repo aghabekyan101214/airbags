@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Montserrat-Arabic';
+    src: url('Montserrat-Arabic-Thin.eot');
+    src: url('Montserrat-Arabic-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat-Arabic-Thin.woff2') format('woff2'),
+        url('Montserrat-Arabic-Thin.woff') format('woff'),
+        url('Montserrat-Arabic-Thin.ttf') format('truetype'),
+        url('Montserrat-Arabic-Thin.svg#Montserrat-Arabic-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
