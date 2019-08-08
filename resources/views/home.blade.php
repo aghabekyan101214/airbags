@@ -39,6 +39,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset("site/css/bootstrap.min.css") }}"/>
     <link rel="stylesheet" type="text/css" href="{{ asset("site/css/style.css") }}">
 
+    <meta property="fb:app_id" content="599147317278987" />
     <meta property="og:video" content="https://www.youtube.com/embed/akyWT6oz3Fc" />
     <meta property="og:video:secure_url" content="https://www.youtube.com/embed/akyWT6oz3Fc" />
     <meta property="og:video:type" content="application/x-shockwave-flash" />
