@@ -12,13 +12,13 @@ class CurlController extends Controller
     {
         $curl = curl_init();
         if($JWTtoken) {
-            $token = ", Authorization: JWT '".$JWTtoken."'";
+            $token = "Authorization: JWT $JWTtoken";
         } elseif(null !== $Btoken) {
-            $token = ", Authorization: Bearer $Btoken";
+            $token = "Authorization: Bearer $Btoken";
         } else {
             $token = "";
         }
-        $headers = array('Content-Type: application/json' . $token);
+        $headers = array('Content-Type: application/json', $token);
         curl_setopt($curl, CURLOPT_URL, self::$url . $url );
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($curl, CURLOPT_TIMEOUT, 10);
