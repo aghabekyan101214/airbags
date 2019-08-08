@@ -39,16 +39,9 @@
     <link rel="stylesheet" type="text/css" href="{{ asset("site/css/bootstrap.min.css") }}"/>
     <link rel="stylesheet" type="text/css" href="{{ asset("site/css/style.css") }}">
 
-    <meta property="fb:app_id" content="599147317278987" />
-    <meta property="og:video" content="https://www.youtube.com/embed/akyWT6oz3Fc" />
-    <meta property="og:video:secure_url" content="https://www.youtube.com/embed/akyWT6oz3Fc" />
-    <meta property="og:video:type" content="application/x-shockwave-flash" />
-    <meta property="og:video:width" content="400" />
-    <meta property="og:video:height" content="300" />
-
-{{--    <meta property="og:url" content="{{ url("/spread-the-world") }}" />--}}
-{{--    <meta property="og:title" content="Airbags Recall"/>--}}
-{{--    <meta property="og:image" content="{{ asset('site/images/og-image.jpg') }}"/>--}}
+    <meta property="og:url" content="{{ url("/spread-the-world") }}" />
+    <meta property="og:title" content="Airbags Recall"/>
+    <meta property="og:image" content="{{ asset('site/images/og-image.jpg') }}"/>
     <meta property="og:description" content="1 in 6 vehicles have been affected by the Takata Airbag Recall. Check to see if yours is one. It could save your life." />
     <meta name="description" content="">
 </head>
