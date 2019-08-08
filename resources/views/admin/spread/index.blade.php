@@ -32,7 +32,7 @@
                             <tr>
                                 <td>{{ $d->id }}</td>
                                 <td>
-                                    <iframe width="320" height="240" src="https://www.youtube.com/embed/{{ $d->video }}" frameborder="0"></iframe>
+                                    <iframe allowfullscreen width="320" height="240" src="https://www.youtube.com/embed/{{ $d->video }}" frameborder="0"></iframe>
                                 </td>
                                 <td style="display: flex; justify-content: center; vertical-align: middle">
                                     <a class="btn btn-primary" href="/{{ Request::path()."/".$d->id }}/edit"><i class="fa fa-edit"></i></a>

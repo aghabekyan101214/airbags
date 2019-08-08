@@ -12,7 +12,7 @@ use phpDocumentor\Reflection\Types\Object_;
 class CarfaxController extends Controller
 {
     private $url = "https://api.carfax.com";
-    private $username = "fadi@unitedigita.com";
+    private $username = "fadi@unitedigital.com";
     private $password = "Carfax2019";
     public function get_report()
     {
@@ -29,7 +29,7 @@ class CarfaxController extends Controller
         $data = CarfaxLogin::get()->first();
         if(null !== $data) {
             $now = Carbon::now()->timestamp;
-            if($now > $data->expires) {
+            if($now < $data->expires) {
                 $token = $data->token;
             } else {
                 $token = $this->login();
@@ -46,7 +46,7 @@ class CarfaxController extends Controller
     private function login()
     {
         $url = "/auth/ak_one_account/tokens";
-//        CarfaxLogin::where("expires", "<", Carbon::now()->timestamp - 5)->delete();
+        CarfaxLogin::where("expires", "<", Carbon::now()->timestamp)->delete();
         $credentials = json_encode(
             array(
                 "username" => $this->username,
@@ -55,11 +55,12 @@ class CarfaxController extends Controller
         );
         $carfax_data = CurlController::generate($url, false, "POST", $credentials);
         $data = new CarfaxLogin();
+        $carfax_data = json_decode($carfax_data);
+        if(isset($carfax_data->error)) return false;
         $data->token = $carfax_data->token;
         $data->expires = $carfax_data->expires;
-        $data->identifiers = $carfax_data->identifiers;
+        $data->identifiers = json_encode($carfax_data->identifiers);
         $data->save();
-        var_dump($carfax_data);die;
         return $carfax_data->token;
     }
 
@@ -68,11 +69,13 @@ class CarfaxController extends Controller
         $url = "/asymmetric/key/create";
         $credentials = json_encode(
             array(
-                "accessIdentifier" => "",
-                "keyName" => ""
+                "accessIdentifier" => "SSA",
+                "keyName" => "privateKey"
             )
         );
         $carfax_data = CurlController::generate($url, $token, "POST", $credentials);
+        $carfax_data = json_decode($carfax_data);
+        var_dump($carfax_data);die;
         return $carfax_data->privateKey;
     }
 

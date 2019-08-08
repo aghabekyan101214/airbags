@@ -3,7 +3,7 @@
         <div class="modal-mask">
             <div class="modal-wrapper" @click="$emit('close')">
                 <div class="modal-container">
-                    <iframe src="https://www.youtube.com/embed/akyWT6oz3Fc?autoplay=1" frameborder="0"></iframe>
+                    <iframe src="https://www.youtube.com/embed/akyWT6oz3Fc?autoplay=1" allow="autoplay" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -17,18 +17,6 @@
                 staticData: {}
             }
         },
-        created() {
-            var self = this;
-            axios.get('/static', {
-
-            })
-                .then(function (response) {
-                    self.staticData = response.data;
-                })
-                .catch(function (error) {
-                    console.log(error);
-                });
-        }
     }
 </script>
 
@@ -40,11 +28,12 @@
         }
         iframe{
             width: 50%!important;
-            height: 100%;
+            height: 100%!important;
         }
     }
     iframe {
         width: 100%;
+        height: 300px;
     }
     .modal-mask {
         position: fixed;

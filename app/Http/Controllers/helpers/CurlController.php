@@ -12,7 +12,7 @@ class CurlController extends Controller
     {
         $curl = curl_init();
         if($JWTtoken) {
-            $token = ", Authorization: JWT $JWTtoken";
+            $token = ", Authorization: JWT '".$JWTtoken."'";
         } elseif(null !== $Btoken) {
             $token = ", Authorization: Bearer $Btoken";
         } else {
@@ -30,10 +30,8 @@ class CurlController extends Controller
         }
         curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
         $response = curl_exec($curl);
-        var_dump($response);die;
         $err = curl_error($curl);
         curl_close($curl);
-// print_r($response);
         if ($err) {
             return $err;
         } else {
