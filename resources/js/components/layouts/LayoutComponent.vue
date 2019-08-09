@@ -51,12 +51,12 @@
                 <div class="row">
                     <p>{{$lang.footer.more_info}}</p>
                     <div class="col-sm-6">
-                        <img src="/site/images/logo-nhtsa-white.png" width="35%" alt="logo-nhtsa-white">
+                        <img src="/site/images/logo-nhtsa-white.png" width="35%" alt="'NHTSA' Takata Airbag Recall Info">
                         <a :href="$lang.footer.link1" target="_blank">{{$lang.footer.nhtsa}}</a>
                         <br/>
                     </div>
                     <div class="col-sm-6">
-                        <img src="/site/images/airbag-recall-desktop.png" width="30%" alt="airbag-recall">
+                        <img src="/site/images/airbag-recall-desktop.png" width="30%" alt="Takata Airbag Recall Info">
                         <a :href="$lang.footer.link2" target="_blank">{{$lang.footer.recall}}</a>
                     </div>
                 </div>

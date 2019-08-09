@@ -3,7 +3,7 @@
         <div v-if="width > 600" id="carouselExampleControls" data-interval="false" class="video-block carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active  video-content">
-                    <img src="/site/images/slider-item3-min.jpg" class="video-desktop">
+                    <img src="/site/images/slider-item3-min.jpg" alt="Morgan Freeman for the Takata AirBag Recall" class="video-desktop">
                     <div class="video-details">
                         <div v-if="getLang === 'en'" class="desktop-details">
                             <p>
@@ -29,7 +29,6 @@
                                 {{$lang.home.see_in_list}}
                             </button>
                             <div class="dropdown-menu">
-                                <!--                                <button @click="$emit('showIframe')" class="dropdown-item upper">{{$lang.parts.search_vin }}</button>-->
                                 <a :href="$lang.parts.link" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
                                 <a class="dropdown-item upper" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                             </div>
@@ -41,7 +40,7 @@
                     </div>
                 </div>
                 <div class="carousel-item video-content">
-                    <img src="/site/images/slider-item1-min.jpg" alt="Morgan Freeman" class="video-desktop">
+                    <img src="/site/images/slider-item1-min.jpg" alt="Morgan Freeman for the Takata AirBag Recall" class="video-desktop">
                     <div class="video-details">
                         <div v-if="getLang === 'en'" class="desktop-details">
                             <p>
