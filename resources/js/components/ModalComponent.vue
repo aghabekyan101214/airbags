@@ -25,9 +25,8 @@
                             <a class="visit-icon detail-icon" :style="'color: white; text-decoration: none;' + style"
                                target="_blank" :href="url.url" v-for="(url, i) in data.urls">
                             <span v-if="data.urls.length > 1" class="fz-17">
-                                <span v-if="i == 0" style="display: inline">Mercedes-Benz Sprinter Customers</span>
-                                <span v-if="i == 1" style="display: inline">Freightliner Sprinter Customers</span>
-                                <span style="text-decoration: underline; display: inline" class="fz-17">Visit our Website</span>
+                                <span v-if="i == 0" style="display: inline">{{ $lang.parts.mb }}</span>
+                                <span v-if="i == 1" style="display: inline">{{ $lang.parts.fs }}</span>
                             </span>
                                 <span v-else-if="data.urls.length === 1">{{ $lang.vehicles.visit }}</span>
                             </a>

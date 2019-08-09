@@ -20,7 +20,7 @@ class CarfaxController extends Controller
         $productTokenData = CarfaxProductToken::get()->first();
         if(null !== $productTokenData) {
             $now = Carbon::now()->timestamp;
-            if($now < $productTokenData->expires) {
+            if($now < substr($productTokenData->expires, 0, -3)) {
                 $productToken = $productTokenData->token;
                 $carfax = $this->get_carfax($productToken);
                 return $carfax;
@@ -30,7 +30,7 @@ class CarfaxController extends Controller
         $data = CarfaxLogin::get()->first();
         if(null !== $data) {
             $now = Carbon::now()->timestamp;
-            if($now < $data->expires) {
+            if($now < substr($data->expires, 0, -3)) {
                 $token = $data->token;
             } else {
                 $token = $this->login();
@@ -91,7 +91,7 @@ class CarfaxController extends Controller
         );
         $carfax_data = CurlController::generate($url, false, "POST", $credentials);
         $carfax_data = json_decode($carfax_data);
-        CarfaxProductToken::where("expires", "<", Carbon::now()->timestamp)->delete();
+        CarfaxProductToken::where("id", ">", 0)->delete();
         $data = new CarfaxProductToken();
         $data->token = $carfax_data->token;
         $data->expires = $carfax_data->expires;
@@ -105,7 +105,7 @@ class CarfaxController extends Controller
         $credentials = json_encode(
             array(
                 "vins" => array(
-                    "3C63RRKL2DG613020"
+                    "1c3ccbbb0dn763194"
                 ),
             )
         );
