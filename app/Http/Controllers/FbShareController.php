@@ -17,6 +17,7 @@ class FbShareController extends Controller
         ]);
         $helper = $fb->getRedirectLoginHelper();
 
+
         $permissions = ['email']; // Optional permissions
         $loginUrl = $helper->getLoginUrl('https://safeairbags.com/en', $permissions);
 
