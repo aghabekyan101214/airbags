@@ -5,9 +5,13 @@
 </template>
 
 <script>
+
     export default {
         created() {
             this.$emit("loaded");
+            FB.getLoginStatus(function(response) {
+                statusChangeCallback(response);
+            });
         }
     }
 </script>
