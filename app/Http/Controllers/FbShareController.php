@@ -18,7 +18,7 @@ class FbShareController extends Controller
         $helper = $fb->getRedirectLoginHelper();
 
         $permissions = ['email']; // Optional permissions
-        $loginUrl = $helper->getLoginUrl('https://example.com/fb-callback.php', $permissions);
+        $loginUrl = $helper->getLoginUrl('https://safeairbags.com/en', $permissions);
 
         echo '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';
     }
