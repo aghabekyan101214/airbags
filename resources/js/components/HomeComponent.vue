@@ -66,7 +66,6 @@
                             </button>
                             <div class="dropdown-menu">
                                 <a :href="$lang.parts.link" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
-<!--                                <button @click="$emit('showIframe')" class="dropdown-item upper">{{$lang.parts.search_vin }}</button>-->
                                 <a class="dropdown-item upper" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                             </div>
                             <p class="txt-sml">
@@ -96,7 +95,6 @@
                             {{$lang.home.see_in_list}}
                         </button>
                         <div class="dropdown-menu">
-                            <!--                                <button @click="$emit('showIframe')" class="dropdown-item upper">{{$lang.parts.search_vin }}</button>-->
                             <a :href="$lang.parts.link" target="_blank" class="dropdown-item">{{$lang.parts.search_vin }}</a>
                             <a class="dropdown-item" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                         </div>
@@ -154,7 +152,7 @@
                 mobile: isMobileOnly,
                 ios: isIOS,
                 android: isAndroid,
-                width: ""
+                width: "",
             }
 
         },
@@ -178,9 +176,6 @@
                     if(hash.length > 0) {
                         self.$scrollTo(self.$refs.carBlock, 1500)
                     }
-                })
-                .catch(function (error) {
-                    console.log(error);
                 });
             document.title = "Takata Airbag Recall - SafeAirbags.com";
             let desc = "1 in 6 vehicles have been affected by the Takata Airbag Recall. Check to see if yours is one. It could save your life.";
@@ -196,7 +191,7 @@
         },
 
     }
-    window.addEventListener("load", function(event) {
+    window.addEventListener("load", function() {
         let hash = window.location.hash;
         if(hash.length > 0) {
             var top = document.getElementById('car-block').offsetTop;
@@ -265,15 +260,33 @@
             line-height: 1.25;
 
         }
-
         .text-block {
             position: absolute;
             right: 15%;
             top: 20%;
         }
-
-
     }
-
+    @media (max-height: 670px) {
+        .dropdown .btn {
+            top: 460px;
+        }
+        .txt-sml {
+            top: 365px;
+        }
+        .play-icon-mobile{
+            top: 285px;
+        }
+    }
+    @media (max-height: 580px) {
+        .dropdown .btn {
+            top: 385px;
+        }
+        .txt-sml {
+            top: 300px;
+        }
+        .play-icon-mobile{
+            top: 225px;
+        }
+    }
 
 </style>

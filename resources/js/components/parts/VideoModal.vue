@@ -3,7 +3,7 @@
         <div class="modal-mask">
             <div class="modal-wrapper" @click="$emit('close')">
                 <div class="modal-container">
-                    <iframe src="https://www.youtube.com/embed/akyWT6oz3Fc?autoplay=1" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/akyWT6oz3Fc?autoplay=1&muted=1" allow="autoplay" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -17,6 +17,10 @@
                 staticData: {}
             }
         },
+        mounted() {
+            var a = document.getElementsByClassName("ytp-cued-thumbnail-overlay-image");
+            console.log(a);
+        }
     }
 </script>
 
