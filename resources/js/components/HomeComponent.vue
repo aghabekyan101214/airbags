@@ -29,7 +29,8 @@
                                 {{$lang.home.see_in_list}}
                             </button>
                             <div class="dropdown-menu">
-                                <a :href="$lang.parts.link" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
+                                <router-link :to="'/'+getLang+'/vin-lookup'" class="dropdown-item upper">{{$lang.parts.search_vin }}</router-link>
+<!--                                <a href="javascript:void(0)" @click="showIframe = true" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>-->
                                 <a class="dropdown-item upper" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                             </div>
                             <p class="txt-sml">
@@ -65,7 +66,8 @@
                                 {{$lang.home.see_in_list}}
                             </button>
                             <div class="dropdown-menu">
-                                <a :href="$lang.parts.link" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
+                                <router-link :to="'/'+getLang+'/vin-lookup'" class="dropdown-item upper">{{$lang.parts.search_vin }}</router-link>
+<!--                                <a :href="$lang.parts.link" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>-->
                                 <a class="dropdown-item upper" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                             </div>
                             <p class="txt-sml">
@@ -95,7 +97,8 @@
                             {{$lang.home.see_in_list}}
                         </button>
                         <div class="dropdown-menu">
-                            <a :href="$lang.parts.link" target="_blank" class="dropdown-item">{{$lang.parts.search_vin }}</a>
+<!--                            <a :href="$lang.parts.link" target="_blank" class="dropdown-item">{{$lang.parts.search_vin }}</a>-->
+                            <router-link :to="'/'+getLang+'/vin-lookup'" class="dropdown-item upper">{{$lang.parts.search_vin }}</router-link>
                             <a class="dropdown-item" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                         </div>
 
@@ -136,6 +139,7 @@
     import Vue from 'vue';
     import Modal from "./ModalComponent";
     import VideoModal from "./parts/VideoModal";
+    import IframeComponent from "./parts/IframeComponent";
     import {isMobileOnly, isIOS, isAndroid} from "mobile-device-detect";
     import VueScrollTo from 'vue-scrollto';
 
@@ -148,6 +152,7 @@
                 staticData: "",
                 showModal: false,
                 showVideoModal: false,
+                showIframe: false,
                 carData: "",
                 mobile: isMobileOnly,
                 ios: isIOS,
@@ -163,6 +168,7 @@
             },
         },
         components: {
+            IframeComponent,
             Modal,
             VideoModal
         },

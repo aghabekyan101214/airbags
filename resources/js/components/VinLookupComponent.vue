@@ -1,7 +1,6 @@
 <template>
     <div>
-        <iframe src="https://nhtsa.gov/recalls"></iframe>
-
+        <iframe src="https://nhtsa.gov/recalls#vin-7686"></iframe>
     </div>
 </template>
 
@@ -12,11 +11,6 @@
             this.$emit("loaded");
 
         },
-        mounted() {
-            FB.getLoginStatus(function(response) {
-                statusChangeCallback(response);
-            });
-        }
     }
 </script>
 <style scoped>

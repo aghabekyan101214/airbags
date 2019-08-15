@@ -62,7 +62,6 @@
                 </div>
             </div>
         </footer>
-        <iframeComponent v-if="showIframe" @close="showIframe = false"></iframeComponent>
     </div>
     <!--header end-->
 </template>
