@@ -6,7 +6,7 @@
                     <router-link class="navbar-brand nb" :to="'/' + getLang">
                         <img src="/site/images/logo.png" alt="logo" height="" width="">
                     </router-link>
-                    <div class="localization" v-if="width > 600">
+                    <div class="localization">
                         <a href="javascript:void(0)" class="en-lang" @click="changeLang('en')">
                             English
                         </a>
@@ -15,7 +15,7 @@
                             Español
                         </a>
                     </div>
-                    <div class="localization-mobile" v-else>
+                    <div class="localization-mobile">
                         <select class="language-mobile" v-model="getLang" @change="changeLang($event)">
                             <option value="en">En</option>
                             <option value="es">Es</option>
@@ -147,6 +147,20 @@
         right: 60px;
         width: 55px;
         top: 17px;
+        display: none;
+    }
+
+    .localization {
+        display: block;
+    }
+
+    @media (max-width: 600px) {
+        .localization {
+            display: none;
+        }
+        .localization-mobile {
+            display: block;
+        }
     }
 
 </style>

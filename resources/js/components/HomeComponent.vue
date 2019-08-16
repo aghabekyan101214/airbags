@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div v-if="width > 600" id="carouselExampleControls" data-interval="false" class="video-block carousel slide" data-ride="carousel">
+        <div id="carouselExampleControls" data-interval="false" class="video-block carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active  video-content">
                     <img src="/site/images/slider-item3-min.jpg" alt="Morgan Freeman for the Takata AirBag Recall" class="video-desktop">
@@ -89,7 +89,7 @@
             </a>
         </div>
 
-        <section v-else class="video-block">
+        <section class="video-block">
             <div class="video-content">
                 <div class="video-details">
                     <div class="dropdown">
@@ -211,6 +211,12 @@
         max-height: 55px;
         max-width: 90px;
     }
+    #carouselExampleControls{
+        display: block;
+    }
+    .video-block{
+        display: none;
+    }
 
     .panel img {
         margin-top: 10px;
@@ -223,6 +229,12 @@
     @media (max-width: 600px) {
         .panel {
             padding: 20px 0 15px 0;
+        }
+        #carouselExampleControls{
+            display: none;
+        }
+        .video-block{
+            display: block;
         }
         .play-icon {
             display: none;
