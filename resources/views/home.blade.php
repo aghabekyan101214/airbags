@@ -35,10 +35,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="{{ asset("site/css/fontawesome.min.css") }}"/>
-    <link rel="stylesheet" type="text/css" href="{{ asset("site/css/bootstrap.min.css") }}"/>
     <link rel="stylesheet" type="text/css" href="{{ asset("site/css/style.css") }}">
-
     <meta property="og:url" content="{{ url("/spread-the-world") }}" />
     <meta property="og:title" content="Airbags Recall"/>
     <meta property="og:image" content="{{ asset('site/images/og-image.jpg') }}"/>
