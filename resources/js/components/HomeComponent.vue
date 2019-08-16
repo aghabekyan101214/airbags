@@ -139,7 +139,6 @@
     import Vue from 'vue';
     import Modal from "./ModalComponent";
     import VideoModal from "./parts/VideoModal";
-    import IframeComponent from "./parts/IframeComponent";
     import {isMobileOnly, isIOS, isAndroid} from "mobile-device-detect";
     import VueScrollTo from 'vue-scrollto';
 
@@ -168,7 +167,6 @@
             },
         },
         components: {
-            IframeComponent,
             Modal,
             VideoModal
         },
@@ -209,15 +207,6 @@
     });
 </script>
 <style scoped>
-    .play-button {
-        position: absolute;
-        height: 80px;
-        width: 80px;
-        top: 62%;
-        left: 50%;
-        transform: translate(-50%, -12%);
-    }
-
     .car-logo {
         max-height: 55px;
         max-width: 90px;
