@@ -92,7 +92,7 @@
         <section class="video-block">
             <div class="video-content">
                 <div class="video-details">
-                    <div class="dropdown">
+                    <div class="dropdown dropdown-mob">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                             {{$lang.home.see_in_list}}
                         </button>
@@ -274,7 +274,7 @@
         }
     }
     @media (max-height: 670px) {
-        .dropdown .btn {
+        .dropdown-mob .btn {
             top: 460px;
         }
         .txt-sml {
@@ -285,7 +285,7 @@
         }
     }
     @media (max-height: 580px) {
-        .dropdown .btn {
+        .dropdown-mob .btn {
             top: 385px;
         }
         .txt-sml {
