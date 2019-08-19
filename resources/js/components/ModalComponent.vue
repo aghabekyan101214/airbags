@@ -4,7 +4,7 @@
             <div class="modal-wrapper">
                 <div class="modal-container">
 
-                    <div class="model-description">
+                    <div class="model-description" style="overflow: auto">
                         <h3>{{data.name}}</h3>
                         <img src="/site/images/close.png" class="modal-default-button close-btn cursor-pointer" @click="$emit('close')" alt="close">
                         <span class="recall-vehicle">{{ $lang.vehicles.under_recall }}</span><br>
