@@ -9,6 +9,7 @@ use App\Http\Controllers\helpers\CurlController;
 use App\CarfaxProductToken;
 use App\CarfaxPrivateKey;
 use phpDocumentor\Reflection\Types\Object_;
+use App\NhtsaList;
 
 class CarfaxController extends Controller
 {
@@ -105,13 +106,35 @@ class CarfaxController extends Controller
         $credentials = json_encode(
             array(
                 "vins" => array(
-                    "JN1CV6AR1CM975783"
+                    "3C63RRKL2DG613020"
                 ),
             )
         );
         $carfax_data = CurlController::generate($url, false, "POST", $credentials, $productToken);
         $carfax_data = json_decode($carfax_data);
-        dd($carfax_data);
-        return $carfax_data;
+        if(isset($carfax_data->recallInformation[0]->model) && null != $carfax_data->recallInformation[0]->model) {
+            $result = array();
+//            if there is recall for the car
+            if(isset($carfax_data->recallInformation[0]->recalls[0])) {
+                foreach ($carfax_data->recallInformation[0]->recalls as $rec) {
+                    $data = NhtsaList::where("nhtsa_id", $rec->nhtsaNumber)->first();
+                    if(null != $data) {
+                        $result[] = $rec;
+                    }
+                }
+                if(!empty($result)) {
+                    return json_encode($result);
+                } else {
+//                    Has recall info, no one matches the ids
+                    return -2;
+                }
+            } else {
+//                no recall info
+                return 0;
+            }
+        } else {
+//            Wrong vin provided
+            return -1;
+        }
     }
 }
