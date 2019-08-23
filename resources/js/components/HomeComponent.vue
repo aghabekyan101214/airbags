@@ -5,7 +5,7 @@
                 <div class="carousel-item active  video-content">
                     <img src="/site/images/slider-item3-min.jpg" alt="Morgan Freeman for the Takata AirBag Recall" class="video-desktop">
                     <div class="video-details">
-                        <div v-if="getLang === 'en'" class="desktop-details">
+                        <div v-if="lang === 'en'" class="desktop-details">
                             <p>
                                 “1 out of 6 vehicles have been
                                 affected by the <span class="yellow-txt">Takata Airbag Recall.</span>
@@ -29,8 +29,7 @@
                                 {{$lang.home.see_in_list}}
                             </button>
                             <div class="dropdown-menu">
-                                <router-link :to="'/'+getLang+'/vin-lookup'" class="dropdown-item upper">{{$lang.parts.search_vin }}</router-link>
-<!--                                <a href="javascript:void(0)" @click="showIframe = true" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>-->
+                                <router-link :to="'/'+lang+'/vin-lookup'" class="dropdown-item upper">{{$lang.parts.search_vin }}</router-link>
                                 <a class="dropdown-item upper" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                             </div>
                             <p class="txt-sml">
@@ -43,7 +42,7 @@
                 <div class="carousel-item video-content">
                     <img src="/site/images/slider-item1-min.jpg" alt="Morgan Freeman for the Takata AirBag Recall" class="video-desktop">
                     <div class="video-details">
-                        <div v-if="getLang === 'en'" class="desktop-details">
+                        <div v-if="lang === 'en'" class="desktop-details">
                             <p>
                                 “The fix is simple, fast and <span class="yellow-txt">FREE.</span>
                                 Parts are available at your local dealer. Schedule your repair today.
@@ -66,8 +65,7 @@
                                 {{$lang.home.see_in_list}}
                             </button>
                             <div class="dropdown-menu">
-                                <router-link :to="'/'+getLang+'/vin-lookup'" class="dropdown-item upper">{{$lang.parts.search_vin }}</router-link>
-<!--                                <a :href="$lang.parts.link" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>-->
+                                <router-link :to="'/'+lang+'/vin-lookup'" class="dropdown-item upper">{{$lang.parts.search_vin }}</router-link>
                                 <a class="dropdown-item upper" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                             </div>
                             <p class="txt-sml">
@@ -97,8 +95,7 @@
                             {{$lang.home.see_in_list}}
                         </button>
                         <div class="dropdown-menu">
-<!--                            <a :href="$lang.parts.link" target="_blank" class="dropdown-item">{{$lang.parts.search_vin }}</a>-->
-                            <router-link :to="'/'+getLang+'/vin-lookup'" class="dropdown-item upper">{{$lang.parts.search_vin }}</router-link>
+                            <router-link :to="'/'+lang+'/vin-lookup'" class="dropdown-item upper">{{$lang.parts.search_vin }}</router-link>
                             <a class="dropdown-item" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                         </div>
 
@@ -142,7 +139,7 @@
     import VideoModal from "./parts/VideoModal";
     import {isMobileOnly, isIOS, isAndroid} from "mobile-device-detect";
     import VueScrollTo from 'vue-scrollto';
-    import VueLazyload from 'vue-lazyload'
+    import VueLazyload from 'vue-lazyload';
 
     Vue.use(VueLazyload, {
         preLoad: 1.3,
@@ -155,6 +152,7 @@
     Vue.use(VueScrollTo);
 
     export default {
+        props: ['lang'],
         data: function () {
             return {
                 cars: "",
@@ -198,11 +196,11 @@
         mounted() {
             this.width = window.innerWidth;
         },
-        computed: {
-            getLang: function() {
-                return this.$lang.getLang();
-            }
-        },
+        // computed: {
+        //     getLang: function() {
+        //         return this.$lang.getLang() !== undefined ? this.$lang.getLang() : "en";
+        //     }
+        // },
 
     }
     window.addEventListener("load", function() {

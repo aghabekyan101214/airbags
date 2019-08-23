@@ -107,7 +107,7 @@
         computed: {
             getLang:  {
                 get: function() {
-                    return this.$lang.getLang();
+                    return this.$lang.getLang() !== undefined ? this.$lang.getLang() : "en";
                 },
                 set: function(newValue) {
                 }

@@ -25,7 +25,7 @@ const routes = [
         {path: '/spread-the-word', component: SpreadTheWorldComponent},
         {path: '/spread-the-word/video/:id', component: SharedVideoComponent},
         {path: '/vin-lookup', component: VinLookupComponent},
-        { path: "*", redirect: '/en' }
+        // { path: "*", redirect: '/en' }
     ]),
 ];
 
@@ -35,13 +35,13 @@ const router = new VueRouter({
     linkActiveClass: "active",
 });
 
-router.beforeEach((to, from, next) => {
-    if(to.path.split("/")[1] === "en" || to.path.split("/")[1] === "es") {
-        next();
-    } else {
-        next('/en' + to.path);
-    }
-});
+// router.beforeEach((to, from, next) => {
+//     if(to.path.split("/")[1] === "en" || to.path.split("/")[1] === "es") {
+//         next();
+//     } else {
+//         next('/en' + to.path);
+//     }
+// });
 
 export default router
 
