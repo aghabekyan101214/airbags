@@ -86,7 +86,6 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
         <section class="video-block">
             <div class="video-content">
                 <div class="video-details">
@@ -108,7 +107,6 @@
             </div>
             <div class="video-content"><img src="/site/images/video-img-mobile.jpg" class="video-mobile"></div>
         </section>
-
         <!--video-block end-->
         <section class="model-details">
             <div class="panel">
@@ -119,8 +117,7 @@
             <div class="car-block" id="car-block" ref="carBlock">
                 <div class="container car-block-inner">
                     <div v-for="(car, i) in cars">
-                        <img @click="info(i)" v-if="car.img !== ''" class="cursor-pointer car-logo" v-lazy="'/storage/' + car.img"  :alt="car.name">
-<!--                        <img @click="info(i)" v-if="car.img !== ''" class="cursor-pointer car-logo" v-lazyload :src="'/storage/' + car.img"  :alt="car.name">-->
+                        <img @click="info(i)" v-if="car.img !== ''" class="cursor-pointer car-logo" :src="'/storage/' + car.img"  :alt="car.name">
                         <span @click="info(i)" :class="{lower: car.name === 'Volkswagen'}" v-else class="cursor-pointer">{{ car.name }}</span>
                     </div>
                 </div>
@@ -145,7 +142,6 @@
         preLoad: 1.3,
         loading: '/site/images/placeholder.png',
         attempt: 1,
-        // the default is ['scroll', 'wheel', 'mousewheel', 'resize', 'animationend', 'transitionend']
         listenEvents: [ 'scroll' ]
     });
 
@@ -196,12 +192,6 @@
         mounted() {
             this.width = window.innerWidth;
         },
-        // computed: {
-        //     getLang: function() {
-        //         return this.$lang.getLang() !== undefined ? this.$lang.getLang() : "en";
-        //     }
-        // },
-
     }
     window.addEventListener("load", function() {
         let hash = window.location.hash;
