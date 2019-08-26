@@ -117,7 +117,7 @@
             <div class="car-block" id="car-block" ref="carBlock">
                 <div class="container car-block-inner">
                     <div v-for="(car, i) in cars">
-                        <img @click="info(i)" v-if="car.img !== ''" class="cursor-pointer car-logo" :src="'/storage/' + car.img"  :alt="car.name">
+                        <img @click="info(i)" v-if="car.img !== ''" class="cursor-pointer car-logo" v-lazy="'/storage/' + car.img"  :alt="car.name">
                         <span @click="info(i)" :class="{lower: car.name === 'Volkswagen'}" v-else class="cursor-pointer">{{ car.name }}</span>
                     </div>
                 </div>
@@ -136,6 +136,14 @@
     import VideoModal from "./parts/VideoModal";
     import {isMobileOnly, isIOS, isAndroid} from "mobile-device-detect";
     import VueScrollTo from 'vue-scrollto';
+    import VueLazyload from 'vue-lazyload';
+
+    Vue.use(VueLazyload, {
+        preLoad: 1.3,
+        loading: '/site/images/placeholder.png',
+        attempt: 1,
+        listenEvents: [ 'scroll' ]
+    });
 
     Vue.use(VueScrollTo);
 
