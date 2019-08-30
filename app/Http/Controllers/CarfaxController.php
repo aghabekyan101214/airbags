@@ -114,7 +114,6 @@ class CarfaxController extends Controller
         $carfax_data = CurlController::generate($url, false, "POST", $credentials, $productToken);
         $carfax_data = json_decode($carfax_data);
         if(isset($carfax_data->recallInformation[0]->model) && null != $carfax_data->recallInformation[0]->model) {
-            var_dump($carfax_data);die;
             $result = array();
 //            if there is recall for the car
             if(isset($carfax_data->recallInformation[0]->recalls[0])) {
@@ -128,15 +127,15 @@ class CarfaxController extends Controller
                     return json_encode($result);
                 } else {
 //                    Has recall info, no one matches the ids
-                    return -2;
+                    echo -2;
                 }
             } else {
 //                no recall info
-                return 0;
+                echo 0;
             }
         } else {
 //            Wrong vin provided
-            return -1;
+            echo -1;
         }
     }
 }
