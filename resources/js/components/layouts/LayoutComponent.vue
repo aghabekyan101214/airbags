@@ -46,6 +46,7 @@
             </div>
         </header>
         <router-view @loaded="change" @showIframe="showIframe = true" :lang="getLang"></router-view>
+        <iframeComponent v-if="showIframe" @close="showIframe = false"></iframeComponent>
         <footer>
             <div class="container">
                 <div class="row">

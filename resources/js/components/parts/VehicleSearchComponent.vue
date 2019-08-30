@@ -2,12 +2,7 @@
     <div class="col-sm-5">
         <div class="gradient-bg search-banner vehicleBlock" id="vehicleBlock" ref="vehicleBlock">
             <p class="upper">{{ $lang.parts.see_in_list }}</p>
-<!--            <button @click="showIframe = true" class="btn btn-primary">{{ $lang.parts.search_vin }}</button>-->
-            <router-link :to="'/'+getLang+'/vin-lookup'">
-                <button :class="{font: this.$lang.getLang() === 'es'}" class="btn btn-primary upper" >
-                    {{$lang.parts.search_vin }}
-                </button>
-            </router-link>
+            <button @click="showIframe = true" class="btn btn-primary">{{ $lang.parts.search_vin }}</button>
             <router-link  :to="'/' + getLang +'/#car-block'">
                 <button :class="{font: this.$lang.getLang() === 'es'}" type="button" class="btn btn-primary">{{ $lang.parts.search_vehicle }}</button>
             </router-link>

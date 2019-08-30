@@ -13,7 +13,6 @@ class VehiclesController extends Controller
         $data = Cache::remember('vehicles', 6000, function () {
             return Vehicle::with(['urls', "makes"])->get()->toArray();
         });
-//        sleep(5);
         return $data;
     }
 }
