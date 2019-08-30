@@ -92,6 +92,7 @@ class CarfaxController extends Controller
         );
         $carfax_data = CurlController::generate($url, false, "POST", $credentials);
         $carfax_data = json_decode($carfax_data);
+        if(isset($carfax_data->error) || $carfax_data == null) return false;
         CarfaxProductToken::where("id", ">", 0)->delete();
         $data = new CarfaxProductToken();
         $data->token = $carfax_data->token;
@@ -112,6 +113,7 @@ class CarfaxController extends Controller
         );
         $carfax_data = CurlController::generate($url, false, "POST", $credentials, $productToken);
         $carfax_data = json_decode($carfax_data);
+        var_dump($carfax_data);die;
         if(isset($carfax_data->recallInformation[0]->model) && null != $carfax_data->recallInformation[0]->model) {
             $result = array();
 //            if there is recall for the car
