@@ -39,7 +39,6 @@
             axios.get('/get-spread-videos')
                 .then( (response) => {
                     this.data = response.data;
-                    this.$emit('loaded', true);
                 });
         },
         created() {

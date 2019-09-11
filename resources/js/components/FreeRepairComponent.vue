@@ -32,7 +32,6 @@
 <script>
     export default {
         created() {
-            this.$emit('loaded', true);
             document.title = "Free Takata Airbag Repair - Safeairbags.com";
             let desc = "If your vehicle is on the Takata Airbag Recall list, the repairs are free. Learn more about the free repair, and how to schedule.";
             document.querySelector('meta[name="description"]').setAttribute("content", desc);

@@ -38,7 +38,6 @@
             axios.get('/get-quick-facts')
                 .then((response) => {
                     this.data = response.data;
-                    this.$emit('loaded', true)
                 });
         },
         created() {

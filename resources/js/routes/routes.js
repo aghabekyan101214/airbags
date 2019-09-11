@@ -8,6 +8,7 @@ const SpreadTheWorldComponent = () => import('../components/SpreadTheWorldCompon
 const SharedVideoComponent = () => import('../components/SharedVideoComponent');
 const VinLookupComponent = () => import('../components/VinLookupComponent');
 // const UnsubscribeComponent = () => import('../components/UnsubscribeComponent');
+const CarfaxComponent = () => import('../components/CarfaxComponent');
 
 
 const prefixWith = (prefix, routes) =>
@@ -25,7 +26,7 @@ const routes = [
         {path: '/spread-the-word', component: SpreadTheWorldComponent},
         {path: '/spread-the-word/video/:id', component: SharedVideoComponent},
         {path: '/vin-lookup', component: VinLookupComponent},
-        // { path: "*", redirect: '/en' }
+        {path: "/carfax", component: CarfaxComponent}
     ]),
 ];
 

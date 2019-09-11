@@ -9,7 +9,6 @@
     export default {
         created() {
             this.$emit("loaded");
-
         },
     }
 </script>

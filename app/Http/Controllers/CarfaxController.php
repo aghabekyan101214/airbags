@@ -10,20 +10,21 @@ use App\CarfaxProductToken;
 use App\CarfaxPrivateKey;
 use phpDocumentor\Reflection\Types\Object_;
 use App\NhtsaList;
+use App\Vehicle;
 
 class CarfaxController extends Controller
 {
     private $url = "https://api.carfax.com";
     private $username = "fadi@unitedigital.com";
     private $password = "Carfax2019";
-    public function get_report()
+    public function get_report(Request $r)
     {
         $productTokenData = CarfaxProductToken::get()->first();
         if(null !== $productTokenData) {
             $now = Carbon::now()->timestamp;
             if($now < substr($productTokenData->expires, 0, -3)) {
                 $productToken = $productTokenData->token;
-                $carfax = $this->get_carfax($productToken);
+                $carfax = $this->get_carfax($productToken, $r);
                 return $carfax;
             }
         }
@@ -101,13 +102,13 @@ class CarfaxController extends Controller
         return $carfax_data->token;
     }
 
-    private function get_carfax($productToken)
+    private function get_carfax($productToken, $request)
     {
         $url = "/open-recalls/batch";
         $credentials = json_encode(
             array(
                 "vins" => array(
-                    "JN1CV6AR1CM975783"
+                    $request->vin
                 ),
             )
         );
@@ -124,18 +125,44 @@ class CarfaxController extends Controller
                     }
                 }
                 if(!empty($result)) {
-                    return json_encode($result);
+//                  has takata recall
+                    if(isset($carfax_data->recallInformation[0]->make)) {
+                        $cred = $this->getCredentials($carfax_data->recallInformation[0]->make);
+                    }
+                    $data = array(
+                        "data" => $carfax_data,
+                        "credentials" => $cred != null ? $cred : array(),
+                        "status" => 1
+                    );
+                    return $data;
                 } else {
 //                    Has recall info, no one matches the ids
-                    echo -2;
+                    $data = array(
+                        "data" => $carfax_data,
+                        "status" => 2
+                    );
+                    return $data;
                 }
             } else {
 //                no recall info
-                echo 0;
+                $data = array(
+                    "data" => $carfax_data,
+                    "status" => 0
+                );
+                return $data;
             }
         } else {
 //            Wrong vin provided
-            echo -1;
+            $data = array(
+                "status" => -1
+            );
+            return $data;
         }
+    }
+
+    private function getCredentials($make)
+    {
+        $vehicle = Vehicle::with('urls')->where("name", $make)->first();
+        return $vehicle;
     }
 }
