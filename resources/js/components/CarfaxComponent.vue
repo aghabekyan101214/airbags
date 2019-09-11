@@ -291,7 +291,7 @@
     }
     .identification-box p{
         font-size:12px;
-        font-family: 'Montserrat-Arabic-Regular';
+        font-family: 'Montserrat-Regular';
     }
     .has-search{
         position:relative;
