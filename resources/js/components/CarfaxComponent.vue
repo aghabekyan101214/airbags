@@ -8,7 +8,8 @@
                 <input type="text" v-model="vin" name="vin" ref="vinInput" class="ind-input" placeholder="Enter 17 character VIN ">
             </div>
             <section class="container black-block panel">
-                <button @click="getRecall()" type="button" class="btn btn-primary ind-button">Check my vehicle</button>
+                <button @click="getRecall()" type="button" v-show="!loading" class="btn btn-primary ind-button">Check my vehicle</button>
+                <img src="/site/images/loading.gif" v-show="loading" alt="">
                 <div class="row">
                     <ul class="col-sm-6 col-xs-12 pl-lg-0">
                         <li class="list-sml-title">Where's my VIN?</li>
@@ -154,6 +155,26 @@
                 Provided Vin is incorrect
             </div>
         </div>
+    <div v-show="showModal">
+        <transition name="modal">
+            <div class="modal-mask">
+                <div class="modal-wrapper">
+                    <div class="modal-container">
+                        <div class="modal-body">
+                            <slot name="body">
+                                <h3 style="color: white">Provided Vin Number Is Incorrect, Please Provide Valid Vin.</h3>
+                            </slot>
+                        </div>
+                        <div class="modal-footer">
+                            <slot name="footer">
+                                <button style="margin: 0" @click="showModal = false" type="button" v-show="!loading" class="btn btn-primary ind-button">Ok</button>
+                            </slot>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </transition>
+    </div>
     </div>
 </template>
 
@@ -166,17 +187,23 @@
                 recalls: [],
                 vin: "",
                 credentials: [],
+                loading: false,
+                showModal: false
             }
         },
         methods: {
             getRecall() {
+                this.vin = this.vin.replace(/\s/g,'');
                 if(this.vin.length != 17) {
                     this.$refs.vinInput.style.border = "1px solid red";
+                    this.showModal = true;
                     return;
                 }
                 this.$refs.vinInput.style.border = "1px solid gray";
+                this.loading = true;
                 axios.post('/get-report', {vin: this.vin})
                     .then((response) => {
+                        this.loading = false;
                         this.$refs.details.style.display = "none";
                         this.$refs.noRec.style.display = "none";
                         this.$refs.takataReport.style.display = "none";
@@ -192,13 +219,16 @@
                             this.recalls = this.data.recalls;
                             this.credentials = response.data.credentials;
                         } else if(response.data.status == -1) {
-                            console.log('s')
                             this.$refs.wrongVin.style.display = "block";
+                            this.showModal = true;
                         } else if(response.data.status == 2) {
                             this.recalls = this.data.recalls;
                             this.$refs.otherRecall.style.display = "block";
                         }
-                    });
+                    }).catch((e) => {
+                    this.loading = false;
+                    alert("Something Went Wrong, Please, Try Again Later.");
+                });
             }
         },
         created() {
@@ -391,5 +421,69 @@
             font-size:20px;
             /*font-family: 'Montserrat-Arabic-Light';*/
         }
+    }
+    .modal-mask {
+        position: fixed;
+        z-index: 9998;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .5);
+        display: table;
+        transition: opacity .3s ease;
+    }
+
+    .modal-wrapper {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .modal-container {
+        width: 500px;
+        margin: 0px auto;
+        padding: 20px 30px;
+        background-color: black;
+        border-radius: 2px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+        transition: all .3s ease;
+        font-family: Helvetica, Arial, sans-serif;
+        border: 1px solid white;
+    }
+
+    .modal-header h3 {
+        margin-top: 0;
+        color: #42b983;
+    }
+
+    .modal-body {
+        margin: 20px 0;
+    }
+
+    .modal-default-button {
+        float: right;
+    }
+
+    /*
+     * The following styles are auto-applied to elements with
+     * transition="modal" when their visibility is toggled
+     * by Vue.js.
+     *
+     * You can easily play with the modal transition by editing
+     * these styles.
+     */
+
+    .modal-enter {
+        opacity: 0;
+    }
+
+    .modal-leave-active {
+        opacity: 0;
+    }
+
+    .modal-enter .modal-container,
+    .modal-leave-active .modal-container {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
     }
 </style>
