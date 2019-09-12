@@ -167,7 +167,7 @@
                         </div>
                         <div class="modal-footer">
                             <slot name="footer">
-                                <button style="margin: 0" @click="showModal = false" type="button" v-show="!loading" class="btn btn-primary ind-button">Ok</button>
+                                <button style="margin: 0" @click="showModal = false" type="button" v-show="!loading" class="btn btn-primary ind-button">Ok </button>
                             </slot>
                         </div>
                     </div>
