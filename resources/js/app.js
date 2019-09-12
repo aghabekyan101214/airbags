@@ -7,8 +7,8 @@ window.axios.defaults.headers.common = {
     'X-CSRF-TOKEN' : document.querySelector('meta[name="csrf-token"]').getAttribute('content')
 };
 
-import Lang from "vuejs-localization";
 import router from "./routes/routes";
+import Lang from "vuejs-localization";
 import 'babel-polyfill';
 // import VueSignaturePad from 'vue-signature-pad';
 // import VeeValidate from "vee-validate";
