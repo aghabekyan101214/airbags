@@ -9,11 +9,11 @@ window.axios.defaults.headers.common = {
 
 import router from "./routes/routes";
 import 'babel-polyfill';
-// import VueSignaturePad from 'vue-signature-pad';
-// import VeeValidate from "vee-validate";
+import VueSignaturePad from 'vue-signature-pad';
+import VeeValidate from "vee-validate";
 import Lang from "vuejs-localization";
-// Vue.use(VeeValidate);
-// Vue.use(VueSignaturePad);
+Vue.use(VeeValidate);
+Vue.use(VueSignaturePad);
 
 Vue.use(Lang, {
     default : 'en'
