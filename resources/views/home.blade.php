@@ -57,6 +57,7 @@
 <script src="{{ mix('/js/app.js') }}"></script>
 {{--<script src="{{ asset("site/js/popper.js") }}"></script>--}}
 {{--twitter--}}
+
 <script>
     window.twttr = (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0],
