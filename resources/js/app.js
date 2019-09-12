@@ -1,4 +1,4 @@
-require('./bootstrap');
+require('./bootstrap2');
 
 window.Vue = require('vue');
 window.axios = require('axios');
@@ -9,10 +9,9 @@ window.axios.defaults.headers.common = {
 import 'babel-polyfill';
 import router from "./routes/routes";
 // import VueSignaturePad from 'vue-signature-pad';
-import VeeValidate from "vee-validate";
+// import VeeValidate from "vee-validate";
 import Lang from "vuejs-localization";
-
-Vue.use(VeeValidate);
+// Vue.use(VeeValidate);
 // Vue.use(VueSignaturePad);
 Vue.use(Lang, {
     default : 'en'
