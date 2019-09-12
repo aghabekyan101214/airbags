@@ -8,8 +8,8 @@ window.axios.defaults.headers.common = {
 };
 
 import router from "./routes/routes";
-import Lang from "vuejs-localization";
 import 'babel-polyfill';
+import Lang from "vuejs-localization";
 // import VueSignaturePad from 'vue-signature-pad';
 // import VeeValidate from "vee-validate";
 // Vue.use(VeeValidate);
