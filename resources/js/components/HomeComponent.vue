@@ -74,7 +74,6 @@
                             <a @click="showVideoModal = true" class="play-icon">{{$lang.home.watch}}</a>
                         </div>
                     </div>
-
                 </div>
             </div>
             <a style="width: 10%" class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
