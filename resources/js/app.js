@@ -22,7 +22,7 @@ Lang.requireAll(require.context('./lang', true, /\.js$/));
 Vue.component('layout', require('./components/layouts/LayoutComponent').default);
 Vue.component('vehicle-search', require('./components/parts/VehicleSearchComponent').default);
 
-const airbag = new Vue({
+const app = new Vue({
     el: '#app',
     router,
 });
