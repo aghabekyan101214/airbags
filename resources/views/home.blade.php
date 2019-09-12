@@ -54,7 +54,7 @@
     <layout></layout>
 </div>
 <!-- Scripts -->
-<script src="{{ mix('/js/app.js') }}"></script>
+<script src="{{ asset('/js/app.js') }}?id=3eqeqwe"></script>
 {{--<script src="{{ asset("site/js/popper.js") }}"></script>--}}
 {{--twitter--}}
 
