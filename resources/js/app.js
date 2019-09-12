@@ -26,3 +26,4 @@ const airbag = new Vue({
     el: '#app',
     router,
 });
+
