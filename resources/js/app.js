@@ -1,4 +1,4 @@
-require('./bootstrap');
+require('./bootstrap2');
 
 window.Vue = require('vue');
 window.axios = require('axios');
@@ -7,9 +7,9 @@ window.axios.defaults.headers.common = {
     'X-CSRF-TOKEN' : document.querySelector('meta[name="csrf-token"]').getAttribute('content')
 };
 
+import Lang from "vuejs-localization";
 import router from "./routes/routes";
 import 'babel-polyfill';
-import Lang from "vuejs-localization";
 // import VueSignaturePad from 'vue-signature-pad';
 // import VeeValidate from "vee-validate";
 // Vue.use(VeeValidate);
