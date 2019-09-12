@@ -35,8 +35,10 @@
 
         },
         mounted () {
+            var self = this;
             axios.get('/get-quick-facts')
                 .then((response) => {
+                    self.$emit('loaded');
                     this.data = response.data;
                 });
         },

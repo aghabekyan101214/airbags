@@ -178,6 +178,7 @@
             var self = this;
             axios.get('/vehicles', {})
                 .then(function (response) {
+                    self.$emit('loaded', true);
                     self.cars = response.data;
                     let hash = window.location.hash;
                     if(hash.length > 0) {

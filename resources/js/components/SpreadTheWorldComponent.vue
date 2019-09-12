@@ -38,6 +38,7 @@
         mounted () {
             axios.get('/get-spread-videos')
                 .then( (response) => {
+                    this.$emit('loaded');
                     this.data = response.data;
                 });
         },

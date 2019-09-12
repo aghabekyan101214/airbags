@@ -1,5 +1,5 @@
 <template>
-    <div id="wrapper">
+    <div v-show="loaded" id="wrapper">
         <header>
             <div class="container header">
                 <nav  class="navbar navbar-toggleable-sm bg-faded">
