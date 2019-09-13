@@ -61,7 +61,6 @@
     </div>
 
 </template>
-
 <script>
     import UnsubscribePopup from "./parts/UnsubscribePopup"
     export default {

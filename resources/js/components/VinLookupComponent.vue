@@ -3,7 +3,6 @@
         <iframe src="https://nhtsa.gov/recalls#vin-7686"></iframe>
     </div>
 </template>
-
 <script>
 
     export default {

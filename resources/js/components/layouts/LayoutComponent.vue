@@ -66,7 +66,6 @@
     </div>
     <!--header end-->
 </template>
-
 <script>
     import iframeComponent from '../parts/IframeComponent';
     export default {

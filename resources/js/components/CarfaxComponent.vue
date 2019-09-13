@@ -232,7 +232,7 @@
             }
         },
         created() {
-            this.$emit('loaded');
+            this.$emit('loaded', true);
             document.title = "Check For Recalls";
             let desc = "More than 41 million vehicles are affected by the Takata Airbag Recall, making it the largest auto recall in US history. See, if your car is in recall list.";
             document.querySelector('meta[name="description"]').setAttribute("content", desc);
