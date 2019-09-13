@@ -176,12 +176,12 @@
             var self = this;
             axios.get('/vehicles')
                 .then(function (response) {
-                    self.$emit('loaded', true);
                     self.cars = response.data;
                     let hash = window.location.hash;
                     if(hash.length > 0) {
                         self.$scrollTo(self.$refs.carBlock, 1500)
                     }
+                    self.$emit('loaded', true);
                 });
             document.title = "Takata Airbag Recall - SafeAirbags.com";
             let desc = "1 in 6 vehicles have been affected by the Takata Airbag Recall. Check to see if yours is one. It could save your life.";

@@ -422,6 +422,9 @@
             font-size:20px;
             /*font-family: 'Montserrat-Arabic-Light';*/
         }
+        .modal-container {
+            width: 100%!important;
+        }
     }
     .modal-mask {
         position: fixed;
