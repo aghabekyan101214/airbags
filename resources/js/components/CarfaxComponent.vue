@@ -106,7 +106,7 @@
 <!--                <span class="col-2 numbering">{{ noTakata.length }}</span>-->
                 <span class="col-10 p0"></span>
 			<span class="font-weight-bold re-text">
-			Other Recalls
+			Other Unrepaired Recalls
 			</span>
             </div>
             <div v-for="recall in noTakata">
@@ -137,12 +137,6 @@
                 Provided Vin is incorrect
             </div>
         </div>
-
-        <p class="txt-white hidden" style="margin-top: 20px" ref="recText">
-            If your car isn't recalled now, it could be recalled later.
-            Please check back every 3 months to make sure there are no recalls on your vehicle.
-            To check if your vehicle has other recalls, please visit <a href="https://www.nhtsa.gov/recalls"  target="_blank">https://www.nhtsa.gov/recalls</a>
-        </p>
 
         <div class="identification-box">
             <section class="container black-block panel">
@@ -225,7 +219,6 @@
                 this.$refs.takataReport.style.display = "none";
                 this.$refs.otherRecall.style.display = "none";
                 this.$refs.wrongVin.style.display = "none";
-                this.$refs.recText.style.display = "none";
 
                 axios.post('/get-report', {vin: this.vin})
                     .then((response) => {
@@ -234,7 +227,6 @@
                         this.takata = response.data.takata != "" ? response.data.takata : [];
                         this.noTakata = response.data.noTakata != "" ? response.data.noTakata : [];
                         this.$refs.details.style.display = "block";
-                        this.$refs.recText.style.display = "block";
 
                         if(response.data.status == 0) {
 
@@ -264,6 +256,7 @@
                             this.showModal = true;
                         }
                     }).catch((e) => {
+                        // try one more time if something went wrong
                         if(this.send == 0) {
                             this.send++;
                             return this.getRecall();
