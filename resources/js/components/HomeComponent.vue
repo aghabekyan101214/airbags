@@ -129,7 +129,7 @@
 
 </template>
 <script>
-    // import Vue from 'vue';
+    import Vue from 'vue';
     import Modal from "./ModalComponent";
     import VideoModal from "./parts/VideoModal";
     import {isMobileOnly, isIOS, isAndroid} from "mobile-device-detect";

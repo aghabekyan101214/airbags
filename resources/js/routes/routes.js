@@ -1,15 +1,22 @@
 import Vue from 'vue';
 import VueRouter from "vue-router";
 
-const HomeComponent = () => import('../components/HomeComponent');
-const QuickFactsComponent = () => import('../components/QuickFactsComponent');
-const FreeRepairComponent = () => import('../components/FreeRepairComponent');
-const SpreadTheWorldComponent = () => import('../components/SpreadTheWorldComponent');
-const SharedVideoComponent = () => import('../components/SharedVideoComponent');
-const VinLookupComponent = () => import('../components/VinLookupComponent');
-// const UnsubscribeComponent = () => import('../components/UnsubscribeComponent');
-const CarfaxComponent = () => import('../components/CarfaxComponent');
+// const HomeComponent = () => import('../components/HomeComponent');
+// const QuickFactsComponent = () => import('../components/QuickFactsComponent');
+// const FreeRepairComponent = () => import('../components/FreeRepairComponent');
+// const SpreadTheWorldComponent = () => import('../components/SpreadTheWorldComponent');
+// const SharedVideoComponent = () => import('../components/SharedVideoComponent');
+// const VinLookupComponent = () => import('../components/VinLookupComponent');
+// // const UnsubscribeComponent = () => import('../components/UnsubscribeComponent');
+// const CarfaxComponent = () => import('../components/CarfaxComponent');
 
+import HomeComponent from "../components/HomeComponent";
+import QuickFactsComponent from "../components/QuickFactsComponent";
+import FreeRepairComponent from "../components/FreeRepairComponent";
+import SpreadTheWorldComponent from "../components/SpreadTheWorldComponent";
+import SharedVideoComponent from "../components/SharedVideoComponent";
+import VinLookupComponent from "../components/VinLookupComponent";
+import CarfaxComponent from "../components/CarfaxComponent";
 
 const prefixWith = (prefix, routes) =>
     routes.map((route) => {
