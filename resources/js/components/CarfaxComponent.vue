@@ -205,7 +205,8 @@
                 vin: "",
                 credentials: [],
                 loading: false,
-                showModal: false
+                showModal: false,
+                send: 0,
             }
         },
         methods: {
@@ -239,6 +240,7 @@
 
                             // no recall
                             this.$refs.noRec.style.display = "block";
+                            this.$refs.noRec2.style.display = "block";
                         } else if(response.data.status == 1) {
 
                             // has takata recall
@@ -262,6 +264,10 @@
                             this.showModal = true;
                         }
                     }).catch((e) => {
+                        if(this.send == 0) {
+                            this.send++;
+                            return this.getRecall();
+                        }
                     this.loading = false;
                     alert("Something Went Wrong, Please, Try Again Later.");
                 });
