@@ -138,7 +138,7 @@
             </div>
         </div>
 
-        <p class="txt-white" style="margin-top: 20px" ref="recText">
+        <p class="txt-white hidden" style="margin-top: 20px" ref="recText">
             If your car isn't recalled now, it could be recalled later.
             Please check back every 3 months to make sure there are no recalls on your vehicle.
             To check if your vehicle has other recalls, please visit <a href="https://www.nhtsa.gov/recalls"  target="_blank">https://www.nhtsa.gov/recalls</a>
