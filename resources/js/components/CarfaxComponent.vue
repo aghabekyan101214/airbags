@@ -7,30 +7,14 @@
                 <span class="fa fa-search form-control-feedback"></span>
                 <input type="text" v-model="vin" name="vin" ref="vinInput" class="ind-input" placeholder="Enter 17 character VIN ">
             </div>
-            <section class="container black-block panel">
-                <button @click="getRecall()" type="button" v-show="!loading" class="btn btn-primary ind-button">Check my vehicle</button>
-                <img src="/site/images/loading.gif" v-show="loading" alt="">
-                <div class="row">
-                    <ul class="col-sm-6 col-xs-12 pl-lg-0">
-                        <li class="list-sml-title">Where's my VIN?</li>
-                        <li>
-                            Look on the lower left of your car's windshield for your 17-character Vehicle Identification Number.
-                            Your VIN is also located on your car's registration card, and it may be shown on your insurance card
-                        </li>
-                    </ul>
-                    <ul class="col-sm-6 col-xs-12 pl-lg-0">
-                        <li class="list-sml-title">What this VIN search tool will show</li>
-                        <li>
-                            An unrepaired vehicle affected by a
-                            vehicle safety recall in the past 15
-                            calendar years
-                        </li>
-                        <li>
-                            Vehicle safety recalls from major automakers, including motorcycle manufacturers.
-                        </li>
-                    </ul>
-                </div>
-            </section>
+
+            <div class="identification-box">
+                <section class="container black-block panel" style="padding-bottom: 0">
+                    <button @click="getRecall()" type="button" v-show="!loading" class="btn btn-primary ind-button">Check my vehicle</button>
+                    <img src="/site/images/loading.gif" v-show="loading" alt="">
+                </section>
+            </div>
+
             <div class="container pl-m-30 pr-m-30 hidden" ref="details">
                 <div class="row">
                     <div class="col-sm-5 col-xs-12 vin-group mr-lg-40 txt-white">
@@ -55,16 +39,27 @@
             </div>
         </div>
 
+        <div class="grey-box hidden" ref="noRec" id="unrepaired-div">
+            <p class="font-weight-bold d-inline-block mb-0" ref="greatNews">Great News!</p>
+            <p class="font-weight-bold d-inline-block">Your Vehicle doesn’t have any recalls associated with the TAKATA Airbag recall.</p>
+            <p>
+                If your car isn't recalled now, it could be recalled later.
+                Please check back every 3 months to make sure there are no recalls on your vehicle.
+                To check if your vehicle has other recalls, please visit <a href="https://www.nhtsa.gov/recalls"  target="_blank">https://www.nhtsa.gov/recalls</a>
+            </p>
+        </div>
+
+
         <div class="grey-box hidden" ref="takataReport">
                 <div class="identif-details row">
-                    <span class="col-2 numbering">{{ recalls.length }}</span>
+<!--                    <span class="col-2 numbering">{{ takata.length }}</span>-->
                     <span class="col-10 p0">
                         <span class="font-weight-bold re-text">Unrepaired Recalls</span>
                         <br>
                         associated with this VIN
 			        </span>
                 </div>
-            <div v-for="d in recalls">
+            <div v-for="d in takata">
                 <span class="indetif-date">{{ new Date(d.date).toDateString() }}</span>
                 <div class="recall-txt-list">
                     <p><span class="font-weight-bold d-inline-block">NHTSA Recall Number:</span> {{ d.nhtsaNumber }}</p>
@@ -83,32 +78,38 @@
                 </div>
                 <u class="txt-middle font-weight-bold">What To Do:</u>
                 <p>
-                    The fix is <span class="font-weight-bold"> simple, fast and FREE.</span>
-                </p>
-                <p>
-                    Parts are available at your local dealer.
+                    <span class="font-weight-bold">The fix is  simple, fast and FREE. Parts are available at your local dealer.
                     Schedule your repair today. Have your VIN ready, and call to schedule your
-                    <span class="font-weight-bold"> FREE</span> repair.
+                    <span class="font-weight-bold"> FREE</span> repair.</span>
                 </p>
                 <p><span class="font-weight-bold d-inline-block" v-if="d.expirationDate != null">• Expiration Date: </span>{{ d.expirationDate }}</p>
                 <hr>
             </div>
             <div class="contact-row row" v-if="credentials.phone">
                 <a href="#" class="contact-link col-sm-4"><i class="fa fa-phone" aria-hidden="true"></i> {{ credentials.phone }}</a>
-                <a href="#" class="contact-link col-sm-4"><i class="fa fa-globe" aria-hidden="true">{{ credentials.urls[0].url }}</i> </a>
-                <a :href="'sms:/' + credentials.phone" class="contact-link col-sm-4"><i class="fa fa-envelope" aria-hidden="true"></i> Text FIX to {{ credentials.phone }}</a>
+                <a :href="credentials.urls[0].url" target="_blank" class="contact-link col-sm-4"><i class="fa fa-globe" aria-hidden="true">Visit Our Website</i> </a>
+                <a v-if="credentials.text == 1" :href="'sms:/' + credentials.phone" class="contact-link col-sm-4"><i class="fa fa-envelope" aria-hidden="true"></i> Text FIX to {{ credentials.phone }}</a>
             </div>
+        </div>
+
+        <div class="grey-box hidden" style="margin-top: 20px" ref="noRec2">
+            <p class="font-weight-bold d-inline-block">Your Vehicle doesn’t have any recalls at this time.</p>
+            <p>
+                If your car isn't recalled now, it could be recalled later.
+                Please check back every 3 months to make sure there are no recalls on your vehicle.
+                To check if your vehicle has other recalls, please visit <a href="https://www.nhtsa.gov/recalls"  target="_blank">https://www.nhtsa.gov/recalls</a>
+            </p>
         </div>
 
         <div class="grey-box box2 hidden" ref="otherRecall">
             <div class="identif-details row">
-                <span class="col-2 numbering">{{ recalls.length }}</span>
+<!--                <span class="col-2 numbering">{{ noTakata.length }}</span>-->
                 <span class="col-10 p0"></span>
 			<span class="font-weight-bold re-text">
 			Other Recalls
 			</span>
             </div>
-            <div v-for="recall in recalls">
+            <div v-for="recall in noTakata">
                 <span class="indetif-date">{{ new Date(recall.date).toDateString() }}</span>
                 <div class="description">
                     <p class="mb-0 font-weight-bold d-block">Description:</p>
@@ -131,30 +132,44 @@
             </div>
         </div>
 
-        <div class="grey-box hidden" ref="noRec" id="unrepaired-div">
-            <div class="identif-details row">
-                <span class="col-2 numbering">0</span>
-                <span class="col-10 p0">
-			<span class="font-weight-bold re-text">
-			Unrepaired Recalls
-			</span>
-			<br>
-			associated with this VIN
-			</span>
-            </div>
-            <p class="font-weight-bold d-inline-block mb-0">Great News!</p>
-            <p class="font-weight-bold d-inline-block">Your Vehicle doesn’t have any recalls associated with the TAKATA Airbag recall.</p>
-            <p>
-                If your car isn't recalled now, it could be recalled later.
-                Please check back every 3 months to make sure there are no recalls on your vehicle.
-                To check if your vehicle has other recalls, please visit <a href="https://www.nhtsa.gov/recalls"  target="_blank">https://www.nhtsa.gov/recalls</a>
-            </p>
-        </div>
         <div class="grey-box hidden" ref="wrongVin">
             <div class="identif-details row">
                 Provided Vin is incorrect
             </div>
         </div>
+
+        <p class="txt-white" style="margin-top: 20px" ref="recText">
+            If your car isn't recalled now, it could be recalled later.
+            Please check back every 3 months to make sure there are no recalls on your vehicle.
+            To check if your vehicle has other recalls, please visit <a href="https://www.nhtsa.gov/recalls"  target="_blank">https://www.nhtsa.gov/recalls</a>
+        </p>
+
+        <div class="identification-box">
+            <section class="container black-block panel">
+                <div class="row">
+                    <ul class="col-sm-6 col-xs-12 pl-lg-0">
+                        <li class="list-sml-title">Where's my VIN?</li>
+                        <li>
+                            Look on the lower left of your car's windshield for your 17-character Vehicle Identification Number.
+                            Your VIN is also located on your car's registration card, and it may be shown on your insurance card
+                        </li>
+                    </ul>
+                    <ul class="col-sm-6 col-xs-12 pl-lg-0">
+                        <li class="list-sml-title">What this VIN search tool will show</li>
+                        <li>
+                            An unrepaired vehicle affected by a
+                            vehicle safety recall in the past 15
+                            calendar years
+                        </li>
+                        <li>
+                            Vehicle safety recalls from major automakers, including motorcycle manufacturers.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+
     <div v-show="showModal">
         <transition name="modal">
             <div class="modal-mask">
@@ -162,10 +177,10 @@
                     <div class="modal-container">
                         <div class="modal-body">
                             <slot name="body">
-                                <h3 style="color: white">Provided Vin Number Is Incorrect, Please Provide Valid Vin.</h3>
+                                <h3 style="color: white">Provided VIN Is not valid. Please Provide a valid VIN to continue.</h3>
                             </slot>
                         </div>
-                        <div class="modal-footer">
+                        <div class="modal-footer" style="border: none; justify-content: center">
                             <slot name="footer">
                                 <button style="margin: 0" @click="showModal = false" type="button" v-show="!loading" class="btn btn-primary ind-button">Ok </button>
                             </slot>
@@ -184,6 +199,8 @@
         data: function() {
             return {
                 data: "",
+                noTakata: [],
+                takata: [],
                 recalls: [],
                 vin: "",
                 credentials: [],
@@ -201,29 +218,48 @@
                 }
                 this.$refs.vinInput.style.border = "1px solid gray";
                 this.loading = true;
+                this.$refs.details.style.display = "none";
+                this.$refs.noRec.style.display = "none";
+                this.$refs.noRec2.style.display = "none";
+                this.$refs.takataReport.style.display = "none";
+                this.$refs.otherRecall.style.display = "none";
+                this.$refs.wrongVin.style.display = "none";
+                this.$refs.recText.style.display = "none";
+
                 axios.post('/get-report', {vin: this.vin})
                     .then((response) => {
                         this.loading = false;
-                        this.$refs.details.style.display = "none";
-                        this.$refs.noRec.style.display = "none";
-                        this.$refs.takataReport.style.display = "none";
-                        this.$refs.otherRecall.style.display = "none";
-                        this.$refs.wrongVin.style.display = "none";
-
                         this.data = response.data.data ? response.data.data.recallInformation[0] : "";
+                        this.takata = response.data.takata != "" ? response.data.takata : [];
+                        this.noTakata = response.data.noTakata != "" ? response.data.noTakata : [];
                         this.$refs.details.style.display = "block";
+                        this.$refs.recText.style.display = "block";
+
                         if(response.data.status == 0) {
+
+                            // no recall
                             this.$refs.noRec.style.display = "block";
                         } else if(response.data.status == 1) {
-                            this.$refs.takataReport.style.display = "block";
-                            this.recalls = this.data.recalls;
+
+                            // has takata recall
+                            if(this.takata != "") {
+                                this.$refs.takataReport.style.display = "block";
+                            } else {
+                                this.$refs.noRec.style.display = "block";
+                            }
+                            // has other recall
+                            if(this.noTakata != "") {
+                                this.$refs.otherRecall.style.display = "block";
+                            } else {
+                                this.$refs.noRec2.style.display = "block";
+                            }
+
                             this.credentials = response.data.credentials;
                         } else if(response.data.status == -1) {
+
+                            // wrong vin
                             this.$refs.wrongVin.style.display = "block";
                             this.showModal = true;
-                        } else if(response.data.status == 2) {
-                            this.recalls = this.data.recalls;
-                            this.$refs.otherRecall.style.display = "block";
                         }
                     }).catch((e) => {
                     this.loading = false;
@@ -241,7 +277,12 @@
 </script>
 
 <style scoped>
-
+    hr {
+        border-top: 3px solid black;
+    }
+    .contact-row a {
+        text-decoration: none;
+    }
     .main-content{
         max-width: 800px;
     }

@@ -116,21 +116,26 @@ class CarfaxController extends Controller
         $carfax_data = json_decode($carfax_data);
         if(isset($carfax_data->recallInformation[0]->model) && null != $carfax_data->recallInformation[0]->model) {
             $result = array();
+            $noTakata = array();
 //            if there is recall for the car
             if(isset($carfax_data->recallInformation[0]->recalls[0])) {
                 foreach ($carfax_data->recallInformation[0]->recalls as $rec) {
                     $data = NhtsaList::where("nhtsa_id", $rec->nhtsaNumber)->first();
                     if(null != $data) {
                         $result[] = $rec;
+                    } else {
+                        $noTakata[] = $rec;
                     }
                 }
-                if(!empty($result)) {
+                if(!empty($result) || !empty($noTakata)) {
 //                  has takata recall
                     if(isset($carfax_data->recallInformation[0]->make)) {
                         $cred = $this->getCredentials($carfax_data->recallInformation[0]->make);
                     }
                     $data = array(
                         "data" => $carfax_data,
+                        "takata" => $result,
+                        "noTakata" => $noTakata,
                         "credentials" => $cred != null ? $cred : array(),
                         "status" => 1
                     );
@@ -139,6 +144,8 @@ class CarfaxController extends Controller
 //                    Has recall info, no one matches the ids
                     $data = array(
                         "data" => $carfax_data,
+                        "takata" => $result,
+                        "noTakata" => $noTakata,
                         "status" => 2
                     );
                     return $data;
@@ -147,6 +154,8 @@ class CarfaxController extends Controller
 //                no recall info
                 $data = array(
                     "data" => $carfax_data,
+                    "takata" => $result,
+                    "noTakata" => $noTakata,
                     "status" => 0
                 );
                 return $data;
