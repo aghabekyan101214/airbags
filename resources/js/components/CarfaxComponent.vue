@@ -238,7 +238,6 @@
 
                             // no recall
                             this.$refs.noRec.style.display = "block";
-                            this.$refs.noRec2.style.display = "block";
                         } else if(response.data.status == 1) {
 
                             // has takata recall
