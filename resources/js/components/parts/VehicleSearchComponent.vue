@@ -2,7 +2,7 @@
     <div class="col-sm-5">
         <div class="gradient-bg search-banner vehicleBlock" id="vehicleBlock" ref="vehicleBlock">
             <p class="upper">{{ $lang.parts.see_in_list }}</p>
-            <a href="https://www.nhtsa.gov/recalls#vin-7686" target="_blank">
+            <a :href="$lang.parts.recLink" target="_blank">
                 <button class="btn btn-primary">{{ $lang.parts.search_vin }}</button>
             </a>
             <router-link  :to="'/' + getLang +'/#car-block'">

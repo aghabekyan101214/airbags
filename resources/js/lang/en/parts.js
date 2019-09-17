@@ -5,5 +5,6 @@ module.exports = {
     quick_facts_header: "Quick Facts About the largest automotive safety recall in US history:",
     link: "https://www.nhtsa.gov/recalls",
     mb: "Mercedes-Benz Sprinter Customers Visit our Website",
-    fs: "Freightliner Sprinter Customers Visit our Website"
+    fs: "Freightliner Sprinter Customers Visit our Website",
+    recLink: "https://www.nhtsa.gov/recalls#vin-7686",
 }

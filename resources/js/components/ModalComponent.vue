@@ -17,7 +17,8 @@
                             {{ $lang.vehicles.on_list2 }}
                         </div>
                         <div class="contact-vehicle">
-                            <a v-if="data.phone !== null && mobile" class="contact-icon detail-icon"
+                            <a v-if="data.phone !== null && mobile" class="
+                             detail-icon"
                                style="color: white; text-decoration: none" :href="'tel:' + data.phone">{{ data.phone }}</a>
                             <a v-else-if="!mobile && data.phone !== null" class="contact-icon detail-icon"
                                style="color: white; text-decoration: none">{{ data.phone }}</a>

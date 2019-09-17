@@ -29,7 +29,7 @@
                                 {{$lang.home.see_in_list}}
                             </button>
                             <div class="dropdown-menu">
-                                <a href="https://www.nhtsa.gov/recalls#vin-7686" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
+                                <a :href="$lang.parts.recLink" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
                                 <a class="dropdown-item upper" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                             </div>
                             <p class="txt-sml">
@@ -65,7 +65,7 @@
                                 {{$lang.home.see_in_list}}
                             </button>
                             <div class="dropdown-menu">
-                                <a href="https://www.nhtsa.gov/recalls#vin-7686" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
+                                <a :href="$lang.parts.recLink" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
                                 <a class="dropdown-item upper" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                             </div>
                             <p class="txt-sml">
@@ -93,7 +93,7 @@
                             {{$lang.home.see_in_list}}
                         </button>
                         <div class="dropdown-menu">
-                            <a href="https://www.nhtsa.gov/recalls#vin-7686" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
+                            <a :href="$lang.parts.recLink" target="_blank" class="dropdown-item upper">{{$lang.parts.search_vin }}</a>
                             <a class="dropdown-item" v-scroll-to="'#car-block'" href="#">{{$lang.parts.search_vehicle }}</a>
                         </div>
 

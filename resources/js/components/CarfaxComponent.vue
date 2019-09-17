@@ -78,17 +78,20 @@
                 </div>
                 <u class="txt-middle font-weight-bold">What To Do:</u>
                 <p>
-                    <span class="font-weight-bold">The fix is  simple, fast and FREE. Parts are available at your local dealer.
+                    The fix is <span class="font-weight-bold"> simple, fast and FREE.</span>
+                </p>
+                <p>
+                    Parts are available at your local dealer.
                     Schedule your repair today. Have your VIN ready, and call to schedule your
-                    <span class="font-weight-bold"> FREE</span> repair.</span>
+                    <span class="font-weight-bold"> FREE</span> repair.
                 </p>
                 <p><span class="font-weight-bold d-inline-block" v-if="d.expirationDate != null">• Expiration Date: </span>{{ d.expirationDate }}</p>
                 <hr>
             </div>
             <div class="contact-row row" v-if="credentials.phone">
-                <a href="#" class="contact-link col-sm-4"><i class="fa fa-phone" aria-hidden="true"></i> {{ credentials.phone }}</a>
-                <a :href="credentials.urls[0].url" target="_blank" class="contact-link col-sm-4"><i class="fa fa-globe" aria-hidden="true">Visit Our Website</i> </a>
-                <a v-if="credentials.text == 1" :href="'sms:/' + credentials.phone" class="contact-link col-sm-4"><i class="fa fa-envelope" aria-hidden="true"></i> Text FIX to {{ credentials.phone }}</a>
+                <a href="#" class="contact-link phone-icon col-sm-4"><i class="fa fa-phone" aria-hidden="true">{{ credentials.phone }}</i></a>
+                <a :href="credentials.urls[0].url" target="_blank" class="contact-link web-icon col-sm-4"><i class="fa fa-globe" aria-hidden="true">Visit Our Website</i> </a>
+                <a v-if="credentials.text == 1 && isMobileOnly" :href="'sms:/' + credentials.phone" class="contact-link sms-icon col-sm-4"><i class="fa fa-envelope" aria-hidden="true">Text FIX to {{ credentials.phone }}</i></a>
             </div>
         </div>
 
@@ -188,6 +191,8 @@
 </template>
 
 <script>
+    import isMobileOnly from "mobile-device-detect";
+
     export default {
         props: ['lang'],
         data: function() {
@@ -201,6 +206,7 @@
                 loading: false,
                 showModal: false,
                 send: 0,
+                isMobileOnly: isMobileOnly,
             }
         },
         methods: {
@@ -278,6 +284,21 @@
 <style scoped>
     hr {
         border-top: 3px solid black;
+    }
+    .contact-link i {
+        margin-left: 20px;
+    }
+    .phone-icon{
+        background: url(/site/images/phone.png) no-repeat;
+        background-size: contain;
+    }
+    .web-icon{
+        background: url(/site/images/web.png) no-repeat;
+        background-size: contain;
+    }
+    .sms-icon{
+        background: url(/site/images/sms.png) no-repeat;
+        background-size: contain;
     }
     .contact-row a {
         text-decoration: none;

@@ -62,6 +62,21 @@
                     </div>
                 </div>
             </div>
+            <hr style="border-top: 1px solid #d5d5d5;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 footer-links">
+                        <span class="yellow-txt">Follow us</span>
+                        <a style="margin-left: 10px" href="https://facebook.com/safeairbags" target="_blank">
+                            <img style="padding: 0" src="/site/images/fb.png" alt="Facebook Icon">
+                        </a>
+<!--                        <img src="/site/images/twitter.png" alt="Twitter Icon">-->
+                        <a style="margin-left: 10px" href="https://www.youtube.com/channel/UC5OyeSxqE4duU9WCFm6tUog" target="_blank">
+                            <img style="padding: 0" src="/site/images/youtube.png" alt="Youtube Icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
     <!--header end-->
@@ -161,6 +176,15 @@
         .localization-mobile {
             display: block;
         }
+        .footer-links {
+            justify-content: center!important;
+        }
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
     }
 
 </style>
