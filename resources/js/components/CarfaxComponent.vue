@@ -42,11 +42,6 @@
         <div class="grey-box hidden" ref="noRec" id="unrepaired-div">
             <p class="font-weight-bold d-inline-block mb-0" ref="greatNews">Great News!</p>
             <p class="font-weight-bold d-inline-block">Your Vehicle doesn’t have any recalls associated with the TAKATA Airbag recall.</p>
-            <p>
-                If your car isn't recalled now, it could be recalled later.
-                Please check back every 3 months to make sure there are no recalls on your vehicle.
-                To check if your vehicle has other recalls, please visit <a href="https://www.nhtsa.gov/recalls"  target="_blank">https://www.nhtsa.gov/recalls</a>
-            </p>
         </div>
 
 
@@ -165,6 +160,12 @@
                 </div>
             </section>
         </div>
+
+        <p class="txt-white">
+            If your car isn't recalled now, it could be recalled later.
+            Please check back every 3 months to make sure there are no recalls on your vehicle.
+            To check if your vehicle has other recalls, please visit <a href="https://www.nhtsa.gov/recalls"  target="_blank">https://www.nhtsa.gov/recalls</a>
+        </p>
 
 
     <div v-show="showModal">
