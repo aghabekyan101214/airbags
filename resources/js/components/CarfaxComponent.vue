@@ -130,6 +130,12 @@
             </div>
         </div>
 
+        <p class="txt-white">
+            If your car isn't recalled now, it could be recalled later.
+            Please check back every 3 months to make sure there are no recalls on your vehicle.
+            To check if your vehicle has other recalls, please visit <a href="https://www.nhtsa.gov/recalls"  target="_blank">https://www.nhtsa.gov/recalls</a>
+        </p>
+
         <div class="grey-box hidden" ref="wrongVin">
             <div class="identif-details row">
                 Provided Vin is incorrect
@@ -160,12 +166,6 @@
                 </div>
             </section>
         </div>
-
-        <p class="txt-white">
-            If your car isn't recalled now, it could be recalled later.
-            Please check back every 3 months to make sure there are no recalls on your vehicle.
-            To check if your vehicle has other recalls, please visit <a href="https://www.nhtsa.gov/recalls"  target="_blank">https://www.nhtsa.gov/recalls</a>
-        </p>
 
 
     <div v-show="showModal">
