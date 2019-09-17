@@ -130,7 +130,7 @@
             </div>
         </div>
 
-        <p class="txt-white">
+        <p class="txt-white hidden" ref="recInfo">
             If your car isn't recalled now, it could be recalled later.
             Please check back every 3 months to make sure there are no recalls on your vehicle.
             To check if your vehicle has other recalls, please visit <a href="https://www.nhtsa.gov/recalls"  target="_blank">https://www.nhtsa.gov/recalls</a>
@@ -226,6 +226,7 @@
                 this.$refs.takataReport.style.display = "none";
                 this.$refs.otherRecall.style.display = "none";
                 this.$refs.wrongVin.style.display = "none";
+                this.$refs.recInfo.style.display = "none";
 
                 axios.post('/get-report', {vin: this.vin})
                     .then((response) => {
@@ -234,6 +235,7 @@
                         this.takata = response.data.takata != "" ? response.data.takata : [];
                         this.noTakata = response.data.noTakata != "" ? response.data.noTakata : [];
                         this.$refs.details.style.display = "block";
+                        this.$refs.recInfo.style.display = "block";
 
                         if(response.data.status == 0) {
 
