@@ -90,10 +90,6 @@
             </div>
         </div>
 
-        <div class="grey-box hidden" style="margin-top: 20px" ref="noRec2">
-            <p class="font-weight-bold d-inline-block">Your Vehicle doesn’t have any recalls at this time.</p>
-        </div>
-
         <div class="grey-box box2 hidden" ref="otherRecall">
             <div class="identif-details row">
 <!--                <span class="col-2 numbering">{{ noTakata.length }}</span>-->
@@ -217,7 +213,6 @@
                 this.loading = true;
                 this.$refs.details.style.display = "none";
                 this.$refs.noRec.style.display = "none";
-                this.$refs.noRec2.style.display = "none";
                 this.$refs.takataReport.style.display = "none";
                 this.$refs.otherRecall.style.display = "none";
                 this.$refs.wrongVin.style.display = "none";
@@ -247,8 +242,6 @@
                             // has other recall
                             if(this.noTakata != "") {
                                 this.$refs.otherRecall.style.display = "block";
-                            } else {
-                                this.$refs.noRec2.style.display = "block";
                             }
 
                             this.credentials = response.data.credentials;
