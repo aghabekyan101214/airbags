@@ -81,12 +81,12 @@
                     <span class="font-weight-bold"> FREE</span> repair.
                 </p>
                 <p><span class="font-weight-bold d-inline-block" v-if="d.expirationDate != null">• Expiration Date: </span>{{ d.expirationDate }}</p>
+                <div class="contact-row row" v-if="credentials.phone" style="margin: 0">
+                    <a href="#" class="contact-link phone-icon col-sm-4"><i class="fa fa-phone" aria-hidden="true">{{ credentials.phone }}</i></a>
+                    <a :href="credentials.urls[0].url" target="_blank" class="contact-link web-icon col-sm-4"><i class="fa fa-globe" aria-hidden="true">Visit Our Website</i> </a>
+                    <a v-if="credentials.text == 1 && isMobile" :mob="isMobile" :href="'sms:/' + credentials.phone" class="contact-link sms-icon col-sm-4"><i class="fa fa-envelope" aria-hidden="true">Text FIX to {{ credentials.phone }}</i></a>
+                </div>
                 <hr>
-            </div>
-            <div class="contact-row row" v-if="credentials.phone">
-                <a href="#" class="contact-link phone-icon col-sm-4"><i class="fa fa-phone" aria-hidden="true">{{ credentials.phone }}</i></a>
-                <a :href="credentials.urls[0].url" target="_blank" class="contact-link web-icon col-sm-4"><i class="fa fa-globe" aria-hidden="true">Visit Our Website</i> </a>
-                <a v-if="credentials.text == 1 && isMobileOnly" :href="'sms:/' + credentials.phone" class="contact-link sms-icon col-sm-4"><i class="fa fa-envelope" aria-hidden="true">Text FIX to {{ credentials.phone }}</i></a>
             </div>
         </div>
 
@@ -192,7 +192,7 @@
 </template>
 
 <script>
-    import isMobileOnly from "mobile-device-detect";
+    import {isMobileOnly} from "mobile-device-detect";
 
     export default {
         props: ['lang'],
@@ -207,7 +207,7 @@
                 loading: false,
                 showModal: false,
                 send: 0,
-                isMobileOnly: isMobileOnly,
+                isMobile: isMobileOnly,
             }
         },
         methods: {
