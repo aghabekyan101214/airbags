@@ -92,11 +92,6 @@
 
         <div class="grey-box hidden" style="margin-top: 20px" ref="noRec2">
             <p class="font-weight-bold d-inline-block">Your Vehicle doesn’t have any recalls at this time.</p>
-            <p>
-                If your car isn't recalled now, it could be recalled later.
-                Please check back every 3 months to make sure there are no recalls on your vehicle.
-                To check if your vehicle has other recalls, please visit <a href="https://www.nhtsa.gov/recalls"  target="_blank">https://www.nhtsa.gov/recalls</a>
-            </p>
         </div>
 
         <div class="grey-box box2 hidden" ref="otherRecall">
