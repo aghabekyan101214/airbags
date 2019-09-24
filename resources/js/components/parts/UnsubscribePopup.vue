@@ -30,7 +30,6 @@
                     self.staticData = response.data;
                 })
                 .catch(function (error) {
-                    console.log(error);
                 });
         }
     }

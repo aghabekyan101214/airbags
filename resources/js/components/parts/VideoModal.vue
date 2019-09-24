@@ -18,7 +18,6 @@
         },
         mounted() {
             var a = document.getElementsByClassName("ytp-cued-thumbnail-overlay-image");
-            console.log(a);
         }
     }
 </script>
