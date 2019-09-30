@@ -85,7 +85,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <section class="video-block">
+        <section class="video-block" style="min-height: 500px">
             <div class="video-content">
                 <div class="video-details">
                     <div class="dropdown dropdown-mob">
