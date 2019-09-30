@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id="carouselExampleControls" data-interval="false" class="video-block carousel slide" data-ride="carousel">
+        <div style="min-height: 500px" id="carouselExampleControls" data-interval="false" class="video-block carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active  video-content">
                     <img src="/site/images/slider-item3-min.jpg" alt="Morgan Freeman for the Takata AirBag Recall" class="video-desktop">
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="carousel-item video-content">
-                    <img src="/site/images/slider-item1-min.jpg" alt="Morgan Freeman for the Takata AirBag Recall" class="video-desktop">
+                    <img src="/site/images/s2.jpg" alt="Morgan Freeman for the Takata AirBag Recall" class="video-desktop">
                     <div class="video-details">
                         <div v-if="lang === 'en'" class="desktop-details">
                             <p>
@@ -150,7 +150,6 @@
         data: function () {
             return {
                 cars: "",
-                staticData: "",
                 showModal: false,
                 showVideoModal: false,
                 showIframe: false,
